@@ -5,7 +5,7 @@ title: $:/plugins/nico/pm/ui/ProjectNextActionTemplate
 type: text/vnd.tiddlywiki
 
 <dt>
-  {{!!title}} <$macrocall $name="todo-count" tag={{!!title}}/>
+  {{!!title}} <$pie tag={{!!title}}/>
 </dt>
 <dd>
   <$list filter="[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]" template="$:/plugins/nico/pm/ui/TodoTemplate"></$list>

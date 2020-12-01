@@ -15,8 +15,8 @@ type: text/vnd.tiddlywiki
 }
 
 .pm-btn.btn-primary {
-  background-color: #2da562;
-  border-color: #2da562;
+  background-color: <<colour primary>>;
+  border-color: <<colour primary>>;
   color: white;
   fill: white;
 }
@@ -26,6 +26,14 @@ type: text/vnd.tiddlywiki
   border-color: #c63636;
   color: #c63636;
   fill: #c63636;
+}
+
+.pm-icon {
+  vertical-align: middle;
+}
+
+.pm-pie circle {
+  stroke: <<colour primary>>;
 }
 
 input.pm-input {
@@ -50,7 +58,7 @@ input.pm-input.input-large {
 }
 
 .pm-checkbox {
-  fill: <<colour muted-foreground>>;
+  color: <<colour muted-foreground>>;
   cursor: pointer;
   transition: all ease-in .2s;
   margin-right: 3px;
@@ -69,11 +77,11 @@ input.pm-input.input-large {
 }
 
 .pm-checkbox:hover {
-  fill: #2da562;
+  color: #2da562;
 }
 
 .pm-checkbox .done {
-  fill: #2da562;
+  color: #2da562;
 }
 
 .pm-label {
@@ -89,23 +97,17 @@ input.pm-input.input-large {
   text-overflow: ellipsis;
 }
 
-.pm-todo-count {
-  background: #2da562;
-  border-radius: 1em;
-  font-size: .6em;
-  font-weight: bold;
-  padding: .1em .5em;
-  color: white;
-  vertical-align: middle;
-}
-
 .pm-count {
   background: #df3f3f;
   color: white;
   font-weight: bold;
-  padding: .2em .7em;
-  border-radius: 1em;
+  padding: 6px;
   font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 24px;
+  min-width: 24px;
+  line-height: 1;
   vertical-align: middle;
 }
 

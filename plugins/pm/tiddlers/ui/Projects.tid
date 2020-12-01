@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
 <ul class="pm-projects">
   <$list filter="[tag[Project]!title[Inbox]!tag[Archived]]">
       <$droppable actions=<<refile-inbox-actions>>>
-        <li><$link to={{!!title}}><$view field="title"/></$link> <$macrocall $name="todo-count" tag={{!!title}}/></li>
+        <li><$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/></li>
       </$droppable>
   </$list>
 </ul>
@@ -42,7 +42,7 @@ or
 
   <ul>
     <$list filter="[tag[Project]!title[Inbox]tag[Archived]]" emptyMessage="No archived project yet.">
-      <li><$link to={{!!title}}><$view field="title"/></$link> <$macrocall $name="todo-count" tag={{!!title}}/></li>
+      <li><$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/></li>
     </$list>
   </ul>
   

@@ -1,5 +1,5 @@
 created: 20200422200514984
-modified: 20201130164535664
+modified: 20201201195659287
 tags: $:/tags/Macro
 title: $:/plugins/nico/pm/macros/project
 type: text/vnd.tiddlywiki
@@ -38,14 +38,6 @@ type: text/vnd.tiddlywiki
   </$button>
 \end
 
-\define todo-count(tag)
-  <span class="pm-todo-count">
-    <$list filter="[tag[$tag$]!has[draft.of]tag[done]count[]]">{{!!title}}</$list> 
-    / 
-    <$list filter="[tag[$tag$]!has[draft.of]count[]]">{{!!title}}</$list>
-  </span>
-\end
-
 \define project-with-tag(tag newTodoLabel:"Add a todo")
   <$list filter="[is[current]tag[Archived]]">
     <div class="pm-banner">
@@ -53,9 +45,7 @@ type: text/vnd.tiddlywiki
     </div>
   </$list>
 
-  <h2>Todos 
-    <$macrocall $name="todo-count" tag="$tag$"/>
-  </h2>
+  <h2>Todos <$pie tag="$tag$"/></h2>
   
   <$macrocall $name="todo-list" tag="$tag$"/>
   <$macrocall $name="new-todo-button" tag="$tag$" label="$newTodoLabel$"/>

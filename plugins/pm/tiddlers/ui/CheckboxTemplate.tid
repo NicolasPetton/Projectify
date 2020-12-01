@@ -6,10 +6,10 @@ type: text/vnd.tiddlywiki
 
 <span class="pm-checkbox">
   <$list filter="[is[current]!tag[done]]">
-    <span class="todo"> {{$:/plugins/nico/pm/images/circle}}</span>
-    <span class="todo-hover"> {{$:/plugins/nico/pm/images/check-circle-light}}</span>
+    <span class="todo"> {{$:/plugins/nico/pm/images/checkbox}}</span>
+    <span class="todo-hover"> {{$:/plugins/nico/pm/images/checkbox-checked}}</span>
   </$list>
   <$list filter="[is[current]tag[done]]">
-    <span class="done"> {{$:/plugins/nico/pm/images/check-circle}}</span>
+    <span class="done"> {{$:/plugins/nico/pm/images/checkbox-checked-solid}}</span>
   </$list>
 </span>
