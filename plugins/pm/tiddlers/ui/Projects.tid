@@ -12,6 +12,58 @@ type: text/vnd.tiddlywiki
   </$fieldmangler>
 \end
 
+\define projects-actions()
+  <$reveal type="match" state="$:/state/pm-show-new-project-form" text="">
+
+    <$button class="pm-btn btn-primary" set="$:/state/pm-show-new-project-form" setTo="show">
+      {{$:/core/images/edit-button}}
+      New project
+    </$button>
+
+    or
+
+    <$reveal type="match" state="$:/state/pm-show-archived" text="">
+      <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="show">
+        Show archived
+      </$button>
+    </$reveal>
+
+    <$reveal type="match" state="$:/state/pm-show-archived" text="show">
+      <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="">
+        Hide archived
+      </$button>
+
+      <h2>Archive</h2>
+
+      <ul>
+        <$list filter="[tag[Project]!title[Inbox]tag[Archived]]" emptyMessage="No archived project yet.">
+          <li><$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/></li>
+        </$list>
+      </ul>
+
+    </$reveal>
+  </$reveal>
+
+  <$reveal type="match" state="$:/state/pm-show-new-project-form" text="show">
+    <$keyboard key="enter">
+      <$action-createtiddler $basetitle={{$:/state/new-project!!project_name}} tags="Project" text="<<project>>"/>
+      <$action-setfield $tiddler="$:/state/new-project" project_name=""/>
+      <$edit-text class="pm-input" focus="true" tiddler="$:/state/new-project" field="project_name" placeholder="Describe this project"/>
+    </$keyboard>
+    <div class="pm-actions">
+      <$button class="pm-btn btn-primary">
+        <$action-createtiddler $basetitle={{$:/state/new-project!!project_name}} tags="Project" text="<<project>>"/>
+        <$action-setfield $tiddler="$:/state/new-project" project_name=""/>
+        Add project
+      </$button>
+       or
+      <$button class="pm-btn" set="$:/state/pm-show-new-project-form" setTo="">
+        Cancel
+      </$button>
+    </div>
+  </$reveal>
+\end
+
 <h2>Projects</h2>
 
 <ul class="pm-projects">
@@ -22,28 +74,4 @@ type: text/vnd.tiddlywiki
   </$list>
 </ul>
 
-<$button class="pm-btn btn-primary">
-  <$action-sendmessage $message="tm-new-tiddler" tags="Project" text="<<project>>"/>
-  {{$:/core/images/edit-button}}
-  New project
-</$button> 
-or
-<$reveal type="match" state="$:/state/pm-show-archived" text="">
-  <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="show">
-    Show archived
-  </$button>
-</$reveal>
-<$reveal type="match" state="$:/state/pm-show-archived" text="show">
-  <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="">
-    Hide archived
-  </$button>
-
-  <h2>Archive</h2>
-
-  <ul>
-    <$list filter="[tag[Project]!title[Inbox]tag[Archived]]" emptyMessage="No archived project yet.">
-      <li><$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/></li>
-    </$list>
-  </ul>
-  
-</$reveal>
+<<projects-actions>>
