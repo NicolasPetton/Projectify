@@ -28,6 +28,10 @@ type: text/vnd.tiddlywiki
   fill: #c63636;
 }
 
+.pm-actions {
+  margin: 10px 0 20px 0;
+}
+
 .pm-icon {
   vertical-align: middle;
 }
