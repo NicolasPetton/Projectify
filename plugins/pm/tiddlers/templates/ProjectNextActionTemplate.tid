@@ -4,9 +4,11 @@ tags:
 title: $:/plugins/nico/pm/templates/ProjectNextActionTemplate
 type: text/vnd.tiddlywiki
 
-<dt>
-  {{!!title}} <$pie tag={{!!title}}/>
-</dt>
-<dd>
-  <$list filter="[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]" template="$:/plugins/nico/pm/templates/TodoTemplate"></$list>
-</dd>
+<$list filter="[!has[draft.of]tag{!!title}!tag[done]limit[1]]" variable="ignore">
+  <dt>
+    {{!!title}} <$pie tag={{!!title}}/>
+  </dt>
+  <dd>
+    <$list filter="[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]" template="$:/plugins/nico/pm/templates/TodoTemplate"></$list>
+  </dd>
+</$list>
