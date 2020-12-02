@@ -122,6 +122,10 @@ input.pm-input.input-large {
   vertical-align: middle;
 }
 
+.pm-count.info {
+  background: <<colour primary>>;
+}
+
 .pm-tiddler-due-date {
   margin-top: 5px;
 }

@@ -66,7 +66,11 @@ type: text/vnd.tiddlywiki
   <$macrocall $name="project-actions" tag="$tag$" label="$newTodoLabel$"/>
   
   <$list filter="[!has[draft.of]tag[$tag$]tag[done]limit[1]]" variable="ignore">
-    <h2>Completed</h2>
+    <h2>Completed
+      <span class="pm-count info">
+        <$list filter="[!has[draft.of]tag[$tag$]tag[done]count[]]">{{!!title}}</$list>
+      </span>
+    </h2>
     <$macrocall $name="todo-list-completed" tag="$tag$"/>
   </$list>
 \end
