@@ -22,14 +22,6 @@ type: text/vnd.tiddlywiki
   </$fieldmangler>
 \end
 
-\define todo-list(tag emptyMessage:"''🙌 All done!''")
-  <<list-tagged-draggable tag:"$tag$" subFilter:"!has[draft.of]!tag[done]" itemTemplate:"$:/plugins/nico/pm/ui/TodoTemplate" emptyMessage:"$emptyMessage$">>
-\end
-
-\define todo-list-completed(tag)
-  <$list filter="[!has[draft.of]tag[$tag$]tag[done]sort[created]]" template="$:/plugins/nico/pm/ui/CompletedTodoTemplate"/>
-\end
-
 \define project-actions(tag label)
   <$reveal type="match" state="$:/state/pm-show-todo-form-$tag$" text="">
     <$button class="pm-btn" set="$:/state/pm-show-todo-form-$tag$" setTo="show">

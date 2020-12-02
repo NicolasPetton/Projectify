@@ -1,0 +1,13 @@
+created: 20201202200514984
+modified: 20201202200514984
+tags: $:/tags/Macro
+title: $:/plugins/nico/pm/macros/todo-list
+type: text/vnd.tiddlywiki
+
+\define todo-list(tag emptyMessage:"''🙌 All done!''")
+  <<list-tagged-draggable tag:"$tag$" subFilter:"!has[draft.of]!tag[done]" itemTemplate:"$:/plugins/nico/pm/ui/TodoTemplate" emptyMessage:"$emptyMessage$">>
+\end
+
+\define todo-list-completed(tag)
+  <$list filter="[!has[draft.of]tag[$tag$]tag[done]sort[created]]" template="$:/plugins/nico/pm/ui/CompletedTodoTemplate"/>
+\end
