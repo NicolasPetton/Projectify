@@ -104,6 +104,10 @@ input.pm-input.input-large {
   text-overflow: ellipsis;
 }
 
+.pm-todo.pm-completed a {
+  color: <<colour muted-foreground>>;
+}
+
 .pm-count {
   background: #df3f3f;
   color: white;
