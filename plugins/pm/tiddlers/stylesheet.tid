@@ -45,6 +45,7 @@ input.pm-input {
   border: 1px solid #d9d9d9;
   padding: 8px;
   border-radius: 4px;
+  width: 300px;
 }
 
 input.pm-input:focus {
