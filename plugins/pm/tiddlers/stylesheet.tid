@@ -41,14 +41,17 @@ type: text/vnd.tiddlywiki
 }
 
 input.pm-input {
-  transition: box-shadow 0.15s ease-in-out;
+  transition: border .14s ease-in-out;
   border: 1px solid #d9d9d9;
-  padding: 0.3em;
+  padding: 8px;
   border-radius: 4px;
 }
 
 input.pm-input:focus {
+  box-shadow: 0 0 0 0.2rem #e6f0ff;
+  outline: 0;
   border-color: <<colour primary>>;
+
 }
 
 input.pm-input.input-large {
