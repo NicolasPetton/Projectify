@@ -43,13 +43,13 @@ type: text/vnd.tiddlywiki
   
   <$reveal type="match" state="$:/state/pm-show-todo-form-$tag$" text="show">
     <$keyboard key="enter">
-      <$action-setfield $tiddler={{$:/state/$tag$!!todo_name}} tags="[[$tag$]] todo"/>
+      <$action-createtiddler $basetitle={{$:/state/$tag$!!todo_name}} tags="[[$tag$]] todo"/>
       <$action-setfield $tiddler="$:/state/$tag$" todo_name=""/>
       <$edit-text class="pm-input" focus="true" tiddler="$:/state/$tag$" field="todo_name" placeholder="Describe this task"/>
     </$keyboard>
     <div class="pm-actions">
       <$button class="pm-btn btn-primary">
-        <$action-setfield $tiddler={{$:/state/$tag$!!todo_name}} tags="[[$tag$]] todo"/>
+        <$action-createtiddler $basetitle={{$:/state/$tag$!!todo_name}} tags="[[$tag$]] todo"/>
         <$action-setfield $tiddler="$:/state/$tag$" todo_name=""/>
         Add task
       </$button>

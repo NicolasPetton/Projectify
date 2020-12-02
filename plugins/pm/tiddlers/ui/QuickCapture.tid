@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 !! {{$:/plugins/nico/pm/images/tasks}} Quick add todo
 
 <$keyboard key="enter">
-  <$action-setfield $tiddler={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
+  <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
   <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
   <$action-sendmessage $message="tm-close-tiddler"/>
   <$edit-text class="pm-input input-large" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..." focus="true"/> 
