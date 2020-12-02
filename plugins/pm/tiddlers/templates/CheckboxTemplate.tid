@@ -1,7 +1,7 @@
 created: 20200428151242242
 modified: 20201130164535704
 tags: 
-title: $:/plugins/nico/pm/ui/CheckboxTemplate
+title: $:/plugins/nico/pm/templates/CheckboxTemplate
 type: text/vnd.tiddlywiki
 
 <span class="pm-checkbox">

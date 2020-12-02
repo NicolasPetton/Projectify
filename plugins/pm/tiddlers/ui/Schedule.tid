@@ -7,15 +7,15 @@ title: $:/plugins/nico/pm/ui/Schedule
 type: text/vnd.tiddlywiki
 
 \define schedule-today()
-  <$list filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]]" template="$:/plugins/nico/pm/ui/TodoTemplate" emptyMessage="🌞 All clear!"/>
+  <$list filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]]" template="$:/plugins/nico/pm/templates/TodoTemplate" emptyMessage="🌞 All clear!"/>
 \end
 
 \define schedule-range(start end)
-  <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[$start$]days:due[$end$]sort[due]]" template="$:/plugins/nico/pm/ui/TodoTemplate" emptyMessage="🌞 All clear!"/>
+  <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[$start$]days:due[$end$]sort[due]]" template="$:/plugins/nico/pm/templates/TodoTemplate" emptyMessage="🌞 All clear!"/>
 \end
 
 \define schedule-overdue()
-  <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]]" template="$:/plugins/nico/pm/ui/TodoTemplate"/>
+  <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]]" template="$:/plugins/nico/pm/templates/TodoTemplate"/>
 \end
 
 <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[-1]limit[1]]">

@@ -7,5 +7,5 @@ title: $:/plugins/nico/pm/ui/NextActions
 type: text/vnd.tiddlywiki
 
 <dl>
-  <$list filter="[tag[Project]!tag[Archived]]" template="$:/plugins/nico/pm/ui/ProjectNextActionTemplate"/>
+  <$list filter="[tag[Project]!tag[Archived]]" template="$:/plugins/nico/pm/templates/ProjectNextActionTemplate"/>
   </dl>
