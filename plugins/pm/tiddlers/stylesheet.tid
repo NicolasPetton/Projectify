@@ -1,0 +1,190 @@
+created: 20200426194806637
+modified: 20201130164535690
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/pm/stylesheet
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+.pm-btn {
+  border-radius: 1.5em;
+  border: 1px solid #ccc;
+  background: white;
+  padding: .3em 1em;
+  cursor: pointer;
+}
+
+.pm-btn.btn-primary {
+  background-color: #2da562;
+  border-color: #2da562;
+  color: white;
+  fill: white;
+}
+
+.pm-btn.btn-danger {
+  background-color: #ffefef;
+  border-color: #c63636;
+  color: #c63636;
+  fill: #c63636;
+}
+
+input.pm-input {
+  transition: box-shadow 0.15s ease-in-out;
+  border: 1px solid #d9d9d9;
+  padding: 0.3em;
+  border-radius: 4px;
+}
+
+input.pm-input:focus {
+  border-color: <<colour primary>>;
+}
+
+input.pm-input.input-large {
+  width: 100%;
+  padding: .5em 1em;
+  font-size: 1.1em;
+}
+
+.pm-todo input[type="checkbox"] {
+  display: none;
+}
+
+.pm-checkbox {
+  fill: <<colour muted-foreground>>;
+  cursor: pointer;
+  transition: all ease-in .2s;
+  margin-right: 3px;
+}
+
+.pm-checkbox .todo-hover {
+  display: none;
+}
+
+.pm-checkbox:hover .todo-hover {
+  display: initial;
+}
+
+.pm-checkbox:hover .todo {
+  display: none;
+}
+
+.pm-checkbox:hover {
+  fill: #2da562;
+}
+
+.pm-checkbox .done {
+  fill: #2da562;
+}
+
+.pm-label {
+  display: block;
+  text-align: right;
+  font-size: .8em;
+  opacity: .6;
+}
+
+.pm-todo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pm-todo-count {
+  background: #2da562;
+  border-radius: 1em;
+  font-size: .6em;
+  font-weight: bold;
+  padding: .1em .5em;
+  color: white;
+  vertical-align: middle;
+}
+
+.pm-count {
+  background: #df3f3f;
+  color: white;
+  font-weight: bold;
+  padding: .2em .7em;
+  border-radius: 1em;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.pm-tiddler-due-date {
+  margin-top: 5px;
+}
+
+.pm-due-date {
+  color: #753e2d;
+  fill: #753e2d;
+  white-space: nowrap;
+}
+
+.pm-due-date svg {
+  cursor: pointer;
+}
+
+.pm-due-date a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pm-todo .pm-due-date {
+  padding-left: 14px;
+  font-size: .8em;
+  transition: opacity ease-in-out .15s;
+}
+
+.pm-todo .pm-due-date.no-due-date {
+  opacity: 0;
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .pm-todo .pm-due-date {
+    display: block;
+    margin-left: 6px;
+  }
+  
+  .pm-todo .pm-due-date.no-due-date {
+    display: none;
+  }
+}
+
+.pm-todo:hover .pm-due-date.no-due-date {
+  opacity: 1;
+}
+
+.pm-projects .tc-droppable.tc-dragover {
+  background: #ffd;
+  display: block;
+}
+
+.pm-tabs.tc-tab-buttons button {
+  font-weight: bold;
+  font-size: 1.3em;
+  border: 0;
+  padding: 5px 10px;
+  background: transparent;
+  cursor: pointer;
+  color: <<colour tiddler-title-foreground>>;
+}
+
+.pm-tabs.tc-tab-buttons button.tc-tab-selected {
+  border: 0;
+  border-bottom: 4px solid <<colour primary>>;
+  color: <<colour tiddler-title-foreground>>;
+}
+
+.pm-banner {
+  padding: 10px 20px;
+  background: #f9f9d5;
+  border: 1px solid #dbdba8;
+  color: #626235;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+.pm-banner button {
+  color: #554535;
+  fill: #554535;
+  text-decoration: underline;
+}

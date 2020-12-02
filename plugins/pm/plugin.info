@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/nico/pm",
+    "name": "Project Manager",
+    "description": "Simple project management for TiddlyWiki",
+    "author": "NicolasPetton",
+    "version": "0.1.0",
+    "core-version": ">=5.0.8",
+    "source": "https://github.com/NicolasPetton/pm",
+    "list": "installation usage",
+    "dependents": "$:/plugins/kixam/moment $:/plugins/kixam/datepicker $:/plugins/flibbles/relink",
+    "plugin-type": "plugin"
+}

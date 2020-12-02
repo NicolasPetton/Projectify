@@ -1,0 +1,12 @@
+created: 20200422200123438
+modified: 20201130164535796
+tags: 
+title: $:/plugins/nico/pm/ui/TodoTemplate
+type: text/vnd.tiddlywiki
+
+<div class="pm-todo">
+  <$checkbox tag="done">
+    {{||$:/plugins/nico/pm/ui/CheckboxTemplate}}
+    <$link to={{!!title}}><$view field="title"/></$link>
+  </$checkbox> {{||$:/plugins/nico/pm/ui/TodoDueDateTemplate}}
+</div>

@@ -1,0 +1,22 @@
+caption: {{$:/plugins/nico/pm/images/inbox}} Inbox
+created: 20200425193337699
+modified: 20201130164535731
+tags: 
+title: $:/plugins/nico/pm/ui/Inbox
+type: text/vnd.tiddlywiki
+
+\define inbox-count()
+  <span class="pm-count">
+    <$list filter="[tag[Inbox]!has[draft.of]!tag[done]count[]]">{{!!title}}</$list> 
+  </span>
+\end
+
+<h2>Inbox <$macrocall $name="inbox-count"/></h2>
+
+<$keyboard key="enter">
+  <$action-setfield $tiddler={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
+  <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
+  <$edit-text class="pm-input" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..."/>
+</$keyboard>
+
+<$macrocall class="nc-inbox-input" $name="todo-list" tag="Inbox" emptyMessage="🌞 You're all done! Have a good day."/>

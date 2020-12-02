@@ -1,0 +1,74 @@
+created: 20200422200514984
+modified: 20201130164535664
+tags: $:/tags/Macro
+title: $:/plugins/nico/pm/macros/project
+type: text/vnd.tiddlywiki
+
+\define archive-project()
+  <$fieldmangler>
+    <$button class="pm-btn btn-danger nc-archive-project">
+      <$action-sendmessage $message="tm-add-tag" $param="Archived"/>
+        {{$:/core/images/delete-button}} Archive project
+    </$button>
+  </$fieldmangler>
+\end
+
+\define restore-project()
+  <$fieldmangler>
+    <$button class="tc-btn-invisible">
+      <$action-sendmessage $message="tm-remove-tag" $param="Archived"/>
+        Restore project
+    </$button>
+  </$fieldmangler>
+\end
+
+\define todo-list(tag emptyMessage:"''🙌 All done!''")
+  <<list-tagged-draggable tag:"$tag$" subFilter:"!has[draft.of]!tag[done]" itemTemplate:"$:/plugins/nico/pm/ui/TodoTemplate" emptyMessage:"$emptyMessage$">>
+\end
+
+\define todo-list-completed(tag)
+  <$list filter="[!has[draft.of]tag[$tag$]tag[done]sort[created]]" template="$:/plugins/nico/pm/ui/CompletedTodoTemplate"/>
+\end
+
+\define new-todo-button(tag label)
+  <$button class="pm-btn">
+    <$action-sendmessage $message="tm-new-tiddler" tags="[[$tag$]] todo"/>
+    {{$:/core/images/list-bullet}}
+    $label$
+  </$button>
+\end
+
+\define todo-count(tag)
+  <span class="pm-todo-count">
+    <$list filter="[tag[$tag$]!has[draft.of]tag[done]count[]]">{{!!title}}</$list> 
+    / 
+    <$list filter="[tag[$tag$]!has[draft.of]count[]]">{{!!title}}</$list>
+  </span>
+\end
+
+\define project-with-tag(tag newTodoLabel:"Add a todo")
+  <$list filter="[is[current]tag[Archived]]">
+    <div class="pm-banner">
+      This project is archived. <$macrocall $name="restore-project"/>
+    </div>
+  </$list>
+
+  <h2>Todos 
+    <$macrocall $name="todo-count" tag="$tag$"/>
+  </h2>
+  
+  <$macrocall $name="todo-list" tag="$tag$"/>
+  <$macrocall $name="new-todo-button" tag="$tag$" label="$newTodoLabel$"/>
+  <$list filter="[is[current]!tag[Archived]]">
+    or <$macrocall $name="archive-project"/>
+  </$list>
+
+  <$list filter="[!has[draft.of]tag[$tag$]tag[done]limit[1]]" variable="ignore">
+    <h2>Completed</h2>
+    <$macrocall $name="todo-list-completed" tag="$tag$"/>
+  </$list>
+\end
+
+\define project()
+  <$macrocall $name="project-with-tag" tag={{!!title}}/>
+\end

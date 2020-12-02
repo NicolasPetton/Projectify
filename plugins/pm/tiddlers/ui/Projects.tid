@@ -1,0 +1,49 @@
+caption: {{$:/plugins/nico/pm/images/tasks}} Projects
+created: 20200424193106051
+modified: 20201130164535764
+tags: $:/plugins/nico/pm/ui/Projects
+title: $:/plugins/nico/pm/ui/Projects
+type: text/vnd.tiddlywiki
+
+\define refile-inbox-actions()
+  <$fieldmangler tiddler=<<actionTiddler>>>
+    <$action-sendmessage $message="tm-add-tag" $param=<<currentTiddler>>/>
+    <$action-sendmessage $message="tm-remove-tag" $param="Inbox"/>
+  </$fieldmangler>
+\end
+
+<h2>Projects</h2>
+
+<ul class="pm-projects">
+  <$list filter="[tag[Project]!title[Inbox]!tag[Archived]]">
+      <$droppable actions=<<refile-inbox-actions>>>
+        <li><$link to={{!!title}}><$view field="title"/></$link> <$macrocall $name="todo-count" tag={{!!title}}/></li>
+      </$droppable>
+  </$list>
+</ul>
+
+<$button class="pm-btn btn-primary">
+  <$action-sendmessage $message="tm-new-tiddler" tags="Project" text="<<project>>"/>
+  {{$:/core/images/edit-button}}
+  New project
+</$button> 
+or
+<$reveal type="match" state="$:/state/pm-show-archived" text="">
+  <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="show">
+    Show archived
+  </$button>
+</$reveal>
+<$reveal type="match" state="$:/state/pm-show-archived" text="show">
+  <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="">
+    Hide archived
+  </$button>
+
+  <h2>Archive</h2>
+
+  <ul>
+    <$list filter="[tag[Project]!title[Inbox]tag[Archived]]" emptyMessage="No archived project yet.">
+      <li><$link to={{!!title}}><$view field="title"/></$link> <$macrocall $name="todo-count" tag={{!!title}}/></li>
+    </$list>
+  </ul>
+  
+</$reveal>

@@ -1,0 +1,12 @@
+author: kixam
+core-version: >=5.1.8
+created: 20201130170503289
+dependents: 
+description: moment.js plugin for TiddlyWiki5
+list: readme license
+modified: 20201130170503289
+plugin-type: plugin
+source: https://github.com/kixam/TW5-moment.js
+title: $:/plugins/kixam/moment
+type: application/json
+version: 2.24.0

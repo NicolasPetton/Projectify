@@ -1,0 +1,39 @@
+caption: {{$:/plugins/nico/pm/images/calendar-check}} Schedule
+created: 20200424193230404
+list-after: $:/plugins/nico/pm/ui/InboxAndProjects
+modified: 20201130164535781
+tags: $:/plugins/nico/pm/tags/dashboard
+title: $:/plugins/nico/pm/ui/Schedule
+type: text/vnd.tiddlywiki
+
+\define schedule-today()
+  <$list filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]]" template="$:/plugins/nico/pm/ui/TodoTemplate" emptyMessage="🌞 All clear!"/>
+\end
+
+\define schedule-range(start end)
+  <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[$start$]days:due[$end$]sort[due]]" template="$:/plugins/nico/pm/ui/TodoTemplate" emptyMessage="🌞 All clear!"/>
+\end
+
+\define schedule-overdue()
+  <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]]" template="$:/plugins/nico/pm/ui/TodoTemplate"/>
+\end
+
+<$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[-1]limit[1]]">
+
+  !! Overdue
+
+  <<schedule-overdue>>
+
+</$list>
+
+!! Today
+
+<<schedule-today>>
+
+!! Next 7 days
+
+<<schedule-range 1 7>>
+
+!! Next 30 days
+
+<<schedule-range 7 30>>
