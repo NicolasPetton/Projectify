@@ -19,29 +19,6 @@ type: text/vnd.tiddlywiki
       {{$:/core/images/edit-button}}
       New project
     </$button>
-
-    or
-
-    <$reveal type="match" state="$:/state/pm-show-archived" text="">
-      <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="show">
-        Show archived
-      </$button>
-    </$reveal>
-
-    <$reveal type="match" state="$:/state/pm-show-archived" text="show">
-      <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="">
-        Hide archived
-      </$button>
-
-      <h2>Archive</h2>
-
-      <ul>
-        <$list filter="[tag[Project]!title[Inbox]tag[Archived]]" emptyMessage="No archived project yet.">
-          <li><$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/></li>
-        </$list>
-      </ul>
-
-    </$reveal>
   </$reveal>
 
   <$reveal type="match" state="$:/state/pm-show-new-project-form" text="show">
@@ -75,3 +52,23 @@ type: text/vnd.tiddlywiki
 </ul>
 
 <<projects-actions>>
+
+<$reveal type="match" state="$:/state/pm-show-archived" text="">
+  <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="show">
+    {{$:/plugins/nico/pm/images/archive}} Show archived
+  </$button>
+</$reveal>
+
+<$reveal type="match" state="$:/state/pm-show-archived" text="show">
+  <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="">
+    {{$:/plugins/nico/pm/images/archive}} Hide archived
+  </$button>
+
+  <h2>Archive</h2>
+
+  <ul>
+    <$list filter="[tag[Project]!title[Inbox]tag[Archived]]" emptyMessage="No archived project yet.">
+      <li><$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/></li>
+    </$list>
+  </ul>
+</$reveal>
