@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201130164535690
+modified: 20201203115256244
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/pm/stylesheet
 type: text/vnd.tiddlywiki
@@ -99,10 +99,32 @@ input.pm-input.input-large {
   opacity: .6;
 }
 
-.pm-todo {
+.pm-projects {
+  padding-left: 0;
+  border-top: 1px solid #eee;
+}
+
+.pm-todo, .pm-project {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 2px 0;
+}
+
+.pm-project {
+  border-bottom: 1px solid #eee;
+  padding: 5px 0;
+}
+
+.pm-project a {
+  font-weight: bold;
+}
+
+.pm-project .pm-project-infos {
+  font-size: .8em;
+  line-height: 1em;
+  color: <<colour muted-foreground>>;
+  margin-left: 20px;
 }
 
 .pm-todo.pm-completed a {
