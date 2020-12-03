@@ -1,10 +1,11 @@
 created: 20200422200123438
-modified: 20201130164535796
+modified: 20201203125935145
 tags: 
 title: $:/plugins/nico/pm/templates/TodoTemplate
 type: text/vnd.tiddlywiki
 
 <div class="pm-todo">
+  {{||$:/plugins/nico/pm/templates/DragHandleTemplate}}
   <$checkbox tag="done">
     {{||$:/plugins/nico/pm/templates/CheckboxTemplate}}
     <$link to={{!!title}}><$view field="title"/></$link>

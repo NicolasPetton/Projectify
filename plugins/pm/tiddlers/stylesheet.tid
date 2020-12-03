@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201203115256244
+modified: 20201203125621904
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/pm/stylesheet
 type: text/vnd.tiddlywiki
@@ -125,6 +125,14 @@ input.pm-input.input-large {
   line-height: 1em;
   color: <<colour muted-foreground>>;
   margin-left: 20px;
+}
+
+.pm-drag-handle {
+  color: <<colour muted-foreground>>;
+}
+
+.pm-drag-handle svg {
+  vertical-align: middle;
 }
 
 .pm-todo.pm-completed a {

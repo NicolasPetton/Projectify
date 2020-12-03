@@ -1,0 +1,9 @@
+created: 20201203125832530
+modified: 20201203125849833
+tags: 
+title: $:/plugins/nico/pm/templates/DragHandleTemplate
+type: text/vnd.tiddlywiki
+
+<$draggable tag="span" class="pm-drag-handle" tiddler={{!!title}}>
+  {{$:/plugins/nico/pm/images/drag-handle}}
+</$draggable>
