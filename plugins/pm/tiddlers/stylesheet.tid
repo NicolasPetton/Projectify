@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201203125621904
+modified: 20201203164118126
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/pm/stylesheet
 type: text/vnd.tiddlywiki
@@ -12,6 +12,15 @@ type: text/vnd.tiddlywiki
   background: white;
   padding: .3em 1em;
   cursor: pointer;
+  transition: box-shadow ease-in .1s;
+}
+
+.pm-btn:focus {
+  outline: 0 none;
+}
+
+.pm-btn:active {
+  box-shadow: 0 0 0 0.2rem #cccccc55;
 }
 
 .pm-btn.btn-primary {
@@ -21,11 +30,19 @@ type: text/vnd.tiddlywiki
   fill: white;
 }
 
+.pm-btn.btn-primary:active {
+  box-shadow: 0 0 0 0.2rem #d0e7ff;
+}
+
 .pm-btn.btn-danger {
   background-color: #ffefef;
   border-color: #c63636;
   color: #c63636;
   fill: #c63636;
+}
+
+.pm-btn.btn-danger:active {
+  box-shadow: 0 0 0 0.2rem #ffdcda;
 }
 
 .pm-actions {
