@@ -41,34 +41,49 @@ type: text/vnd.tiddlywiki
   </$reveal>
 \end
 
+\define archived-projects()
+  <$list filter="[tag[Project]!title[Inbox]tag[Archived]limit[1]]" variable="ignore">
+    <$reveal type="match" state="$:/state/pm-show-archived" text="">
+      <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="show">
+        {{$:/plugins/nico/pm/images/archive}} Show archived
+      </$button>
+    </$reveal>
+
+    <$reveal type="match" state="$:/state/pm-show-archived" text="show">
+      <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="">
+        {{$:/plugins/nico/pm/images/archive}} Hide archived
+      </$button>
+
+      <h2>Archive</h2>
+
+      <ul class="pm-projects">
+        <$list filter="[tag[Project]!title[Inbox]tag[Archived]]">
+          <li class="pm-project">
+            <$pie tag={{!!title}}/> <$link to={{!!title}}><$view field="title"/></$link>
+            <div class="pm-project-infos">
+              <$count filter="[tag{!!title}!has[draft.of]!tag[done]]"/> open tasks
+            </div>
+          </li>
+        </$list>
+      </ul>
+    </$reveal>
+  </$list>
+\end
+
 <h2>Projects</h2>
 
 <ul class="pm-projects">
   <$list filter="[tag[Project]!title[Inbox]!tag[Archived]]">
       <$droppable actions=<<refile-inbox-actions>>>
-        <li><$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/></li>
+        <li class="pm-project">
+          <$pie tag={{!!title}}/> <$link to={{!!title}}><$view field="title"/></$link>
+          <div class="pm-project-infos">
+            <$count filter="[tag{!!title}!has[draft.of]!tag[done]]"/> open tasks
+          </div>
+        </li>
       </$droppable>
   </$list>
 </ul>
 
 <<projects-actions>>
-
-<$reveal type="match" state="$:/state/pm-show-archived" text="">
-  <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="show">
-    {{$:/plugins/nico/pm/images/archive}} Show archived
-  </$button>
-</$reveal>
-
-<$reveal type="match" state="$:/state/pm-show-archived" text="show">
-  <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="">
-    {{$:/plugins/nico/pm/images/archive}} Hide archived
-  </$button>
-
-  <h2>Archive</h2>
-
-  <ul>
-    <$list filter="[tag[Project]!title[Inbox]tag[Archived]]" emptyMessage="No archived project yet.">
-      <li><$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/></li>
-    </$list>
-  </ul>
-</$reveal>
+<<archived-projects>>
