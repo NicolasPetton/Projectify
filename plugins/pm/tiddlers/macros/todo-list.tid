@@ -5,17 +5,24 @@ title: $:/plugins/nico/pm/macros/todo-list
 type: text/vnd.tiddlywiki
 
 \define todo-dragstart-actions()
-  <$fieldmangler tiddler=<<actionTiddler>>>
-    <$action-sendmessage $message="tm-remove-tag" $param="$(projectTag)$"/>
-  </$fieldmangler>
+  <$action-listops $tags="-[<projectTag>]"/>
 \end
 
 \define todo-list(tag emptyMessage:"''🙌 All done!''")
   <$set name="projectTag" value=<<__tag__>>>
-    <<list-tagged-draggable tag:"$tag$" subFilter:"!has[draft.of]!tag[done]" itemTemplate:"$:/plugins/nico/pm/templates/TodoTemplate" emptyMessage:"$emptyMessage$">>
+    <$macrocall
+      $name="list-tagged-draggable"
+      tag=<<__tag__>>
+      subFilter="!has[draft.of]!tag[done]"
+      emptyMessage=<<__emptyMessage__>>
+      itemTemplate="$:/plugins/nico/pm/templates/TodoTemplate"
+    />
   </$set>
 \end
 
 \define todo-list-completed(tag)
-  <$list filter="[!has[draft.of]tag[$tag$]tag[done]sort[created]]" template="$:/plugins/nico/pm/templates/CompletedTodoTemplate"/>
+  <$list
+    filter="[!has[draft.of]tag<__tag__>tag[done]sort[created]]"
+    template="$:/plugins/nico/pm/templates/CompletedTodoTemplate"
+  />
 \end
