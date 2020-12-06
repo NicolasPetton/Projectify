@@ -23,14 +23,14 @@ type: text/vnd.tiddlywiki
 
   <$reveal type="match" state="$:/state/pm-show-new-project-form" text="show">
     <$keyboard key="enter">
-      <$action-createtiddler $basetitle={{$:/state/new-project!!project_name}} tags="Project" text="<<project>>"/>
-      <$action-setfield $tiddler="$:/state/new-project" project_name=""/>
-      <$edit-text class="pm-input" focus="true" tiddler="$:/state/new-project" field="project_name" placeholder="Describe this project"/>
+      <$action-createtiddler $basetitle={{$:/state/pm-new-project!!project_name}} tags="Project" text="<<project>>"/>
+      <$action-setfield $tiddler="$:/state/pm-new-project" project_name=""/>
+      <$edit-text class="pm-input" focus="true" tiddler="$:/state/pm-new-project" field="project_name" placeholder="Describe this project"/>
     </$keyboard>
     <div class="pm-actions">
       <$button class="pm-btn btn-primary">
-        <$action-createtiddler $basetitle={{$:/state/new-project!!project_name}} tags="Project" text="<<project>>"/>
-        <$action-setfield $tiddler="$:/state/new-project" project_name=""/>
+        <$action-createtiddler $basetitle={{$:/state/pm-new-project!!project_name}} tags="Project" text="<<project>>"/>
+        <$action-setfield $tiddler="$:/state/pm-new-project" project_name=""/>
         Add project
       </$button>
        or
