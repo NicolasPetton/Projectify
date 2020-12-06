@@ -4,7 +4,14 @@ tags:
 title: $:/plugins/nico/pm/templates/TodoTemplate
 type: text/vnd.tiddlywiki
 
+\define drag-handle()
+  <$draggable tag="span" class="pm-drag-handle" tiddler={{!!title}} startactions=<<todo-dragstart-actions>>>
+    {{$:/plugins/nico/pm/images/drag-handle}}
+  </$draggable>
+\end
+
 <div class="pm-todo">
+  <<drag-handle>>
   {{||$:/plugins/nico/pm/templates/DragHandleTemplate}}
   <$checkbox tag="done">
     {{||$:/plugins/nico/pm/templates/CheckboxTemplate}}
