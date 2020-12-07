@@ -1,0 +1,14 @@
+created: 20200420105800700
+modified: 20201207184038860
+tags: $:/tags/ViewToolbar
+title: $:/plugins/nico/pm/templates/ToggleTodoButton
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]tag[todo]]">
+  <span class="pm-toggle-todo-button">
+    <$checkbox tag="done">
+      {{||$:/plugins/nico/pm/templates/CheckboxTemplate}}
+    </$checkbox>
+  </span>
+</$list>
+

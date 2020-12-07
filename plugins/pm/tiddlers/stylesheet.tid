@@ -78,7 +78,8 @@ input.pm-input.input-large {
   font-size: 1.1em;
 }
 
-.pm-todo input[type="checkbox"] {
+.pm-todo input[type="checkbox"],
+.pm-toggle-todo-button input[type="checkbox"] {
   display: none;
 }
 
@@ -174,8 +175,9 @@ input.pm-input.input-large {
   background: <<colour primary>>;
 }
 
-.pm-tiddler-due-date {
+.pm-todo-heading {
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .pm-due-date {
