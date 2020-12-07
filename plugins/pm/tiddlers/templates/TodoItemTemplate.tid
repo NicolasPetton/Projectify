@@ -5,10 +5,9 @@ title: $:/plugins/nico/pm/templates/TodoItemTemplate
 type: text/vnd.tiddlywiki
 
 <div class="pm-todo">
-    <$checkbox tag="done">
-      {{||$:/plugins/nico/pm/templates/CheckboxTemplate}}
-      <$link to={{!!title}}><$view field="title"/></$link>
-    </$checkbox>
-  </span>
+  <$checkbox tag="done">
+    {{||$:/plugins/nico/pm/templates/CheckboxTemplate}}
+    <$link to={{!!title}}><$view field="title"/></$link>
+  </$checkbox>
   {{||$:/plugins/nico/pm/templates/TodoDueDateTemplate}}
 </div>
