@@ -180,10 +180,15 @@ input.pm-input.input-large {
   margin-bottom: 5px;
 }
 
-.pm-due-date {
+.pm-due-date,
+.pm-todo-heading button.tc-btn-invisible {
   color: #753e2d;
   fill: #753e2d;
   white-space: nowrap;
+}
+
+.pm-todo-heading button.tc-btn-invisible {
+  text-decoration: underline;
 }
 
 .pm-due-date svg {
