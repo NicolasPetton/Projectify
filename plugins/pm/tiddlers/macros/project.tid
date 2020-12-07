@@ -7,7 +7,7 @@ type: text/vnd.tiddlywiki
 \define archive-project()
   <$fieldmangler>
     <$button class="pm-btn btn-danger nc-archive-project">
-      <$action-sendmessage $message="tm-add-tag" $param="Archived"/>
+      <$action-sendmessage $message="tm-add-tag" $param="done"/>
         {{$:/core/images/delete-button}} Archive project
     </$button>
   </$fieldmangler>
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 \define restore-project()
   <$fieldmangler>
     <$button class="tc-btn-invisible">
-      <$action-sendmessage $message="tm-remove-tag" $param="Archived"/>
+      <$action-sendmessage $message="tm-remove-tag" $param="done"/>
         Restore project
     </$button>
   </$fieldmangler>
@@ -38,7 +38,7 @@ type: text/vnd.tiddlywiki
         {{$:/core/images/list-bullet}}
         $label$
       </$button>
-      <$list filter="[is[current]!tag[Archived]]">
+      <$list filter="[is[current]!tag[done]]">
         or <$macrocall $name="archive-project"/>
       </$list>
     </$reveal>
@@ -63,7 +63,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define project-with-tag(tag newTodoLabel:"Add a todo")
-  <$list filter="[is[current]tag[Archived]]">
+  <$list filter="[is[current]tag[done]]">
     <div class="pm-banner">
       This project is archived. <$macrocall $name="restore-project"/>
     </div>
