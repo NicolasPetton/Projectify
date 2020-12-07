@@ -1,11 +1,11 @@
 created: 20200428151856963
-modified: 20201130164535597
+modified: 20201207181004275
 title: $:/plugins/nico/pm/images/checkbox-checked
 type: text/vnd.tiddlywiki
 
 <svg
-  width="16px"
-  height="16px"
+  width="1em"
+  height="1em"
   viewBox="0 0 4.2333 4.2333"
   xmlns="http://www.w3.org/2000/svg"
 >

@@ -1,11 +1,11 @@
 created: 20200428151856963
-modified: 20201130164535597
+modified: 20201207180957503
 title: $:/plugins/nico/pm/images/checkbox-checked-solid
 type: text/vnd.tiddlywiki
 
 <svg
-  width="16px"
-  height="16px"
+  width="1em"
+  height="1em"
   fill="currentColor"
   version="1.1"
   viewBox="0 0 16 16"
