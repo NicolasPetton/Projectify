@@ -15,7 +15,7 @@ type: text/vnd.tiddlywiki
       tag=<<__tag__>>
       subFilter="!has[draft.of]!tag[done]"
       emptyMessage=<<__emptyMessage__>>
-      itemTemplate="$:/plugins/nico/pm/templates/TodoTemplate"
+      itemTemplate="$:/plugins/nico/pm/templates/DraggableTodoTemplate"
     />
   </$set>
 \end
