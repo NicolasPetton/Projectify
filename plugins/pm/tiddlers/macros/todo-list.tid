@@ -9,15 +9,15 @@ type: text/vnd.tiddlywiki
 \end
 
 \define todo-list(tag emptyMessage:"''🙌 All done!''")
-  <$set name="projectTag" value=<<__tag__>>>
+  <$vars projectTag=<<__tag__>> dragHandle="yes">
     <$macrocall
       $name="list-tagged-draggable"
       tag=<<__tag__>>
       subFilter="!has[draft.of]!tag[done]"
       emptyMessage=<<__emptyMessage__>>
-      itemTemplate="$:/plugins/nico/pm/templates/DraggableTodoItemTemplate"
+      itemTemplate="$:/plugins/nico/pm/templates/TodoItemTemplate"
     />
-  </$set>
+  </$vars>
 \end
 
 \define todo-list-completed(tag)

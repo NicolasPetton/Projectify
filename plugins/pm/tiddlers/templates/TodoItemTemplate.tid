@@ -4,13 +4,27 @@ tags:
 title: $:/plugins/nico/pm/templates/TodoItemTemplate
 type: text/vnd.tiddlywiki
 
+\define drag-handle()
+  <$draggable
+    tag="span"
+    class="pm-drag-handle"
+    tiddler={{!!title}}
+    startactions=<<todo-dragstart-actions>>>
+      {{$:/plugins/nico/pm/images/drag-handle}}
+  </$draggable>
+\end
+
 <div class={{{ [all[current]tag[done]then[pm-todo pm-completed]else[pm-todo]] }}}>
+  <$list filter="[<dragHandle>!is[blank]]" variable="ignore">
+    <<drag-handle>>
+  </$list>
+  
   <$checkbox tag="done">
     {{||$:/plugins/nico/pm/templates/CheckboxTemplate}}
     <$link to={{!!title}}><$view field="title"/></$link>
   </$checkbox>
-
-  <$list filter="[all[current]!tag[done]]" variable="ignore">
+  
+  <$list filter="[all[current]!tag[done]]">
     {{||$:/plugins/nico/pm/templates/TodoDueDateTemplate}}
   </$list>
 </div>
