@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[!has[draft.of]tag{!!title}!tag[done]limit[1]]" variable="ignore">
   <dt class="pm-project">
-    <$link to={{!!title}}><$view field="title"/></$link> <$pie tag={{!!title}}/>
+    <$link to={{!!title}}><$view field="title"/></$link> {{||$:/plugins/nico/pm/images/pie}}
   </dt>
   <dd>
     <$list filter="[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]" template="$:/plugins/nico/pm/templates/TodoTemplate"></$list>

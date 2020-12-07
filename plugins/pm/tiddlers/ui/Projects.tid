@@ -59,7 +59,7 @@ type: text/vnd.tiddlywiki
       <ul class="pm-projects">
         <$list filter="[tag[Project]!title[Inbox]tag[Archived]]">
           <li class="pm-project">
-            <$pie tag={{!!title}}/> <$link to={{!!title}}><$view field="title"/></$link>
+            {{||$:/plugins/nico/pm/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
             <div class="pm-project-infos">
               <$count filter="[tag{!!title}!has[draft.of]!tag[done]]"/> open tasks
             </div>
@@ -76,7 +76,7 @@ type: text/vnd.tiddlywiki
   <$list filter="[tag[Project]!title[Inbox]!tag[Archived]]">
       <$droppable actions=<<refile-inbox-actions>>>
         <li class="pm-project">
-          <$pie tag={{!!title}}/> <$link to={{!!title}}><$view field="title"/></$link>
+          {{||$:/plugins/nico/pm/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
           <div class="pm-project-infos">
             <$count filter="[tag{!!title}!has[draft.of]!tag[done]]"/> open tasks
           </div>

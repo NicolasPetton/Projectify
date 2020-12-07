@@ -69,7 +69,7 @@ type: text/vnd.tiddlywiki
     </div>
   </$list>
 
-  <h2>Todos <$pie tag=<<__tag__>>/></h2>
+  <h2>Todos {{$tag$||$:/plugins/nico/pm/images/pie}}</h2>
 
   <$macrocall $name="todo-list" tag=<<__tag__>>/>
   <$macrocall $name="project-actions-form" tag=<<__tag__>> label="""$newTodoLabel$"""/>
