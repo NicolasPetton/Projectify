@@ -9,6 +9,6 @@ type: text/vnd.tiddlywiki
     <$link to={{!!title}}><$view field="title"/></$link> {{||$:/plugins/nico/pm/images/pie}}
   </dt>
   <dd>
-    <$list filter="[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]" template="$:/plugins/nico/pm/templates/TodoTemplate"></$list>
+    <$list filter="[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]" template="$:/plugins/nico/pm/templates/TodoItemTemplate"></$list>
   </dd>
 </$list>
