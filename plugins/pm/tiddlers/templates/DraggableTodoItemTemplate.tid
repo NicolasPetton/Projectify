@@ -1,7 +1,7 @@
 created: 20201203125935145
 modified: 20201203125935145
 tags: 
-title: $:/plugins/nico/pm/templates/DraggableTodoTemplate
+title: $:/plugins/nico/pm/templates/DraggableTodoItemTemplate
 type: text/vnd.tiddlywiki
 
 \define drag-handle()
