@@ -282,3 +282,24 @@ input.pm-input.input-large {
   fill: #554535;
   text-decoration: underline;
 }
+
+.pm-welcome {
+  max-width: 800px;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 20px auto;
+  background: <<colour message-background>>;
+  border-radius: 12px;
+}
+
+.pm-welcome .icon {
+  font-size: 3em;
+}
+
+.pm-welcome h3 {
+  font-weight: bold;
+}
+
+.pm-welcome p {
+  margin: 0;
+}

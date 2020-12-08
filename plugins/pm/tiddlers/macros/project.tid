@@ -96,10 +96,10 @@ type: text/vnd.tiddlywiki
       This project is archived. <$macrocall $name="restore-project"/>
     </div>
   </$list>
-
+    
   <h2>Todos {{$tag$||$:/plugins/nico/pm/images/pie}}</h2>
 
-  <$macrocall $name="todo-list" tag=<<__tag__>>/>
+  <$macrocall $name="todo-list" tag=<<__tag__>> emptyMessage={{$:/plugins/nico/pm/ui/EmptyProject}}/>
   <$macrocall $name="project-actions-form" tag=<<__tag__>> label="""$newTodoLabel$"""/>
   <$macrocall $name="project-completed-todos" tag=<<__tag__>>/>
 \end

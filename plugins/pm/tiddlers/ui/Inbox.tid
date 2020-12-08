@@ -20,4 +20,4 @@ type: text/vnd.tiddlywiki
     <label class="pm-label">Press ⏎ add to the inbox</label>
 </$keyboard>
 
-<$macrocall class="pm-inbox-input" $name="todo-list" tag="Inbox" emptyMessage="🌞 You're all done! Have a good day."/>
+<$macrocall class="pm-inbox-input" $name="todo-list" tag="Inbox" emptyMessage={{$:/plugins/nico/pm/ui/EmptyInbox}}/>

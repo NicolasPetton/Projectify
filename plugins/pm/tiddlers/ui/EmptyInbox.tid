@@ -1,0 +1,11 @@
+created: 20201208175952867
+modified: 20201208205846660
+tags: 
+title: $:/plugins/nico/pm/ui/EmptyInbox
+type: text/vnd.tiddlywiki
+
+<div class="pm-welcome">
+  <div class="icon">🎉</div>
+  <h3>You're all done!</h3>
+  <p>Everything is well organized, have a great <<now DDD>>!</p>
+</div>

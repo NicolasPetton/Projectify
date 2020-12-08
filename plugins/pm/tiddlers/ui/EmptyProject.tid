@@ -1,0 +1,28 @@
+created: 20201208175952867
+modified: 20201208205209098
+tags: 
+title: $:/plugins/nico/pm/ui/EmptyProject
+type: text/vnd.tiddlywiki
+
+\define emptyWelcomeMessage()
+  <div class="pm-welcome">
+    <div class="icon">🚀</div>
+    <h3>Let's get started!</h3>
+    <p>
+      Keep your work organised by grouping todos in projects. <br/>
+      Drag & drop todos to move them between projects.
+    </p>
+  </div>
+\end
+  
+<$list
+  filter="[!has[draft.of]tag<currentTiddler>limit[1]]"
+  emptyMessage=<<emptyWelcomeMessage>>
+  variable="ignore">
+
+  <div class="pm-welcome">
+    <div class="icon">🙌</div>
+    <h3>Well done!</h3>
+    <p>Looks like you've completed this project!</p>
+  </div>
+</$list>
