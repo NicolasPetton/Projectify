@@ -1,6 +1,6 @@
 caption: {{$:/plugins/nico/pm/images/tasks}} Projects
 created: 20200424193106051
-modified: 20201130164535764
+modified: 20201208151416455
 tags: $:/plugins/nico/pm/ui/Projects
 title: $:/plugins/nico/pm/ui/Projects
 type: text/vnd.tiddlywiki
@@ -44,14 +44,14 @@ type: text/vnd.tiddlywiki
 \define archived-projects()
   <$list filter="[tag[Project]!title[Inbox]tag[done]limit[1]]" variable="ignore">
     <$reveal type="match" state="$:/state/pm-show-archived" text="">
-      <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="show">
-        {{$:/plugins/nico/pm/images/archive}} Show archived
+      <$button class="tc-btn-invisible pm-link-muted" set="$:/state/pm-show-archived" setTo="show">
+        {{$:/plugins/nico/pm/images/eye}} Show archived
       </$button>
     </$reveal>
 
     <$reveal type="match" state="$:/state/pm-show-archived" text="show">
-      <$button class="tc-btn-invisible tc-tiddlylink" set="$:/state/pm-show-archived" setTo="">
-        {{$:/plugins/nico/pm/images/archive}} Hide archived
+      <$button class="tc-btn-invisible pm-link-muted" set="$:/state/pm-show-archived" setTo="">
+        {{$:/plugins/nico/pm/images/eyeslash}} Hide archived
       </$button>
 
       <h2>Archive</h2>

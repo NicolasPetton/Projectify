@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201208130552047
+modified: 20201208132110518
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/pm/stylesheet
 type: text/vnd.tiddlywiki
@@ -43,6 +43,16 @@ type: text/vnd.tiddlywiki
 
 .pm-btn.btn-danger:active {
   box-shadow: 0 0 0 0.2rem #ffdcda;
+}
+
+.pm-link-muted {
+  text-decoration: underline;
+  color: <<colour muted-foreground>>;
+}
+
+.pm-link-muted:hover,
+.pm-link-muted:active {
+  color: <<colour primary>>;
 }
 
 .pm-actions {
@@ -120,7 +130,7 @@ input.pm-input.input-large {
   text-align: right;
 }
 
-.pm-projects {
+.pm-projects, .pm-todos {
   padding-left: 0;
   border-top: 1px solid #eee;
 }
@@ -130,9 +140,6 @@ input.pm-input.input-large {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 2px 0;
-}
-
-.pm-project {
   border-bottom: 1px solid #eee;
   padding: 5px 0;
 }
@@ -148,16 +155,21 @@ input.pm-input.input-large {
   margin-left: 20px;
 }
 
+/* Align the completed todo with the non-completed ones that have a drag handle */
+.pm-todo.pm-completed > * {
+  padding-left: 18px;
+}
+	      
+.pm-todo.pm-completed a {
+  color: <<colour muted-foreground>>;
+}
+	    
 .pm-drag-handle {
   color: <<colour muted-foreground>>;
 }
 
 .pm-drag-handle svg {
   vertical-align: middle;
-}
-
-.pm-todo.pm-completed a {
-  color: <<colour muted-foreground>>;
 }
 
 .pm-count {

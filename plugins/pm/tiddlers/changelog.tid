@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20201208093546936
-modified: 20201208095416593
+modified: 20201208150540203
 tags: 
 title: $:/plugins/nico/pm/changelog
 type: text/vnd.tiddlywiki
@@ -21,6 +21,7 @@ type: text/vnd.tiddlywiki
 * New icon set
 * Improved style for checkboxes, buttons and inputs
 * Improved style for the dashboard projects section
+* Improved layout for completed todos in a project
 * Added a drag handle for draggable todo items
 
 !! Fixes
