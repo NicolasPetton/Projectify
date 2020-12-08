@@ -1,8 +1,8 @@
 created: 20201207165347344
 list-after: $:/plugins/nico/pm/templates/TiddlerDueDateTemplate
-modified: 20201207175721641
+modified: 20201208130544734
 tags: $:/tags/ViewTemplate
-title: $:/plugins/nico/pm/templates/TiddlerProjectTemplate
+title: $:/plugins/nico/pm/templates/ProjectTemplate
 type: text/vnd.tiddlywiki
 
 <$list filter="[all[current]tag[Project]] [all[current]tag[SubProject]]" variable="ignore">
