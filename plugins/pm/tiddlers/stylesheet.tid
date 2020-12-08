@@ -132,15 +132,22 @@ input.pm-input.input-large {
 
 .pm-projects, .pm-todos {
   padding-left: 0;
-  border-top: 1px solid #eee;
+}
+
+.pm-projects .pm-project,
+.pm-todos .tc-menu-list-item {
+    border-bottom: 1px solid #eee;
+}
+
+.pm-projects,
+.pm-todos .tc-menu-list-item:first-child {
+    border-top: 1px solid #eee;
 }
 
 .pm-todo, .pm-project {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 2px 0;
-  border-bottom: 1px solid #eee;
   padding: 5px 0;
 }
 
