@@ -1,0 +1,35 @@
+caption: Usage & Help
+created: 20201208093546936
+modified: 20201208095416593
+tags: 
+title: $:/plugins/nico/pm/changelog
+type: text/vnd.tiddlywiki
+
+! Release 1.0.0
+
+!! Features
+
+* Todos can now moved between projects using drag & drop
+* Todos can now be made into sub-projects by clicking the `Make this into a sub-project` button
+* New checkbox button in the view toolbar of todo tiddlers
+* New form to add new projects including an input for the project title
+* The number of todos in a project is now represented with a small pie chart icon
+* Projects without active todos are now omitted from the "Next" dashboard section
+
+!! Improvements
+
+* New icon set
+* Improved style for checkboxes, buttons and inputs
+* Improved style for the dashboard projects section
+* Added a drag handle for draggable todo items
+
+!! Fixes
+
+* Fix creation of projects with triple double quotes
+* Fix creation of todos with triple double quotes
+* Fix drag&drop of todos with double quotes or triple double quotes
+
+!! Breaking changes
+
+* The `<<project>>` macro should not be used anymore. Instead, the plugin adds the <<tag SubProject>> tag to sub projects and renders their todo-list automatically.
+* Projects are now archived using the <<tag done>> tag. The former `Archived` tag is not used anymore.

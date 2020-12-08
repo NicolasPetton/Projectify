@@ -6,7 +6,7 @@
     "version": "0.2.2",
     "core-version": ">=5.0.8",
     "source": "https://github.com/NicolasPetton/pm",
-    "list": "installation usage",
+    "list": "installation usage changelog",
     "dependents": "$:/plugins/kixam/moment $:/plugins/kixam/datepicker $:/plugins/flibbles/relink",
     "plugin-type": "plugin"
 }

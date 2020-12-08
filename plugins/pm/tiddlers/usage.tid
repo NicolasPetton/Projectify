@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20200427133943777
-modified: 20201130164535802
+modified: 20201208093054789
 tags: 
 title: $:/plugins/nico/pm/usage
 type: text/vnd.tiddlywiki
@@ -48,7 +48,7 @@ You can build your own Dashboard using the following:
 
 ! Can I make sub-projects?
 
-Yes, any todo (or tiddler, for that matter) can be used as a project using the `<<project>>` macro.
+Yes, just click the button `Make this into a sub-project` in the todo tiddler.
 This means that you can effectively make any todo a sub-project of another project, and go as deep as you wish!
 
 Note that only tiddlers with the <<tag Project>> tag will be listed in the Dashboard.
@@ -74,3 +74,8 @@ Note that only tiddlers with the <<tag Project>> tag will be listed in the Dashb
 ! Can I easily move todos out of the inbox?
 
 Yes, just drag a todo from the inbox into one of the projects.
+
+! Can I easily move todos between projects?
+
+Yes, just like with todos in the inbox, drag & drop a todo from one project into
+another to move it.
