@@ -17,6 +17,7 @@ type: text/vnd.tiddlywiki
   <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
   <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
   <$edit-text class="pm-input" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..."/>
+    <label class="pm-label">Press ⏎ add to the inbox</label>
 </$keyboard>
 
-<$macrocall class="nc-inbox-input" $name="todo-list" tag="Inbox" emptyMessage="🌞 You're all done! Have a good day."/>
+<$macrocall class="pm-inbox-input" $name="todo-list" tag="Inbox" emptyMessage="🌞 You're all done! Have a good day."/>

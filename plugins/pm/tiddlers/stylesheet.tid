@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201203164118126
+modified: 20201208130552047
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/pm/stylesheet
 type: text/vnd.tiddlywiki
@@ -112,9 +112,12 @@ input.pm-input.input-large {
 
 .pm-label {
   display: block;
-  text-align: right;
   font-size: .8em;
   opacity: .6;
+}
+
+.pm-right-aligned {
+  text-align: right;
 }
 
 .pm-projects {
@@ -215,7 +218,7 @@ input.pm-input.input-large {
     display: block;
     margin-left: 6px;
   }
-  
+
   .pm-todo .pm-due-date.no-due-date {
     display: none;
   }
