@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20201203125935145
+modified: 20201209132912332
 tags:
 title: $:/plugins/nico/pm/templates/TodoItemTemplate
 type: text/vnd.tiddlywiki
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
   </$list>
   
   <$checkbox tag="done">
-    {{||$:/plugins/nico/pm/templates/CheckboxTemplate}}
+    {{||$:/plugins/nico/pm/ui/buttons/Checkbox}}
     <$link to={{!!title}}><$view field="title"/></$link>
   </$checkbox>
   
