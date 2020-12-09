@@ -1,7 +1,7 @@
 created: 20200420105800700
-modified: 20201207184038860
+modified: 20201209131913806
 tags: $:/tags/ViewToolbar
-title: $:/plugins/nico/pm/templates/ToggleTodoButton
+title: $:/plugins/nico/pm/ui/buttons/ToggleTodoButton
 type: text/vnd.tiddlywiki
 
 <$list filter="[all[current]tag[todo]]">
