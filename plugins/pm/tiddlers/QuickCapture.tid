@@ -1,9 +1,9 @@
 color: #0088cc
 created: 20200427182956318
 icon: $:/plugins/nico/pm/images/quick-capture
-modified: 20201208130255270
+modified: 20201209143241567
 tags: 
-title: $:/plugins/nico/pm/ui/QuickCapture
+title: $:/plugins/nico/pm/QuickCapture
 type: text/vnd.tiddlywiki
 
 !! {{$:/plugins/nico/pm/images/tasks}} Quick add todo

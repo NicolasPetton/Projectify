@@ -1,7 +1,7 @@
 created: 20200422200123438
-modified: 20201209132912332
+modified: 20201209143812991
 tags:
-title: $:/plugins/nico/pm/templates/TodoItemTemplate
+title: $:/plugins/nico/pm/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
 
 \define drag-handle()
@@ -25,6 +25,6 @@ type: text/vnd.tiddlywiki
   </$checkbox>
   
   <$list filter="[all[current]!tag[done]]">
-    {{||$:/plugins/nico/pm/templates/TodoDueDateTemplate}}
+    {{||$:/plugins/nico/pm/ui/todo/TodoDueDate}}
   </$list>
 </div>

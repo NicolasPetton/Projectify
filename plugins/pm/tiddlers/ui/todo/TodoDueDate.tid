@@ -1,7 +1,7 @@
 created: 20200424135048294
-modified: 20201201203419519
+modified: 20201209143813008
 tags: 
-title: $:/plugins/nico/pm/templates/TodoDueDateTemplate
+title: $:/plugins/nico/pm/ui/todo/TodoDueDate
 type: text/vnd.tiddlywiki
 
 <$reveal type="nomatch" state="!!due" text="">

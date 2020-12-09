@@ -1,8 +1,8 @@
 created: 20201207165347344
 list-after: $:/plugins/nico/pm/templates/TiddlerDueDateTemplate
-modified: 20201209132739554
+modified: 20201209143554698
 tags: $:/tags/ViewTemplate
-title: $:/plugins/nico/pm/templates/ProjectTemplate
+title: $:/plugins/nico/pm/ui/project/Project
 type: text/vnd.tiddlywiki
 
 \define archive-project()
