@@ -1,3 +1,54 @@
 # ProjectManager
 
-A simple TiddlyWiki plugin for managing projects & todo lists, inspired by tools such as Todoist and Basecamp.
+ProjectManager is a simple [TiddlyWiki](https://tiddlywiki.com) plugin for
+managing projects & todo lists, inspired by other tools such as
+[Todoist](https://todoist.com) and [Basecamp](https://basecamp.com).
+
+## Install
+
+See https://nicolas.petton.fr/tw/project-manager.html#Installation
+
+## Demo & Screenshots
+
+A demo is available at
+[nicolas.petton.fr/tw/project-manager.html](https://nicolas.petton.fr/tw/project-manager.html).
+
+<a href="./screenshots/dashboard.png"><img src="./screenshots/dashboard.png" width="24%" alt="Dashboard"/></a>
+<a href="./screenshots/new-project.png"><img src="./screenshots/new-project.png" width="24%" alt="New project"/></a>
+<a href="./screenshots/add-todo.png"><img src="./screenshots/add-todo.png" width="24%" alt="add-todo"/></a>
+<a href="./screenshots/project-with-todos.png"><img src="./screenshots/project-with-todos.png" width="24%" alt="Project with todos"/></a>
+
+## ChangeLog
+
+Here's a ChangeLog for the upcoming 1.0.0 release.  A more up-to-date version can be found [here](./plugins/pm/tiddlers/changelog.tid).
+
+##### Release 1.0.0 (not yet released)
+
+###### Features
+
+* Todos can now moved between projects using drag & drop
+* Todos can now be made into sub-projects by clicking the `Make this into a sub-project` button
+* Empty projects and Inbox now show a welcome screen
+* New checkbox button in the view toolbar of todo tiddlers
+* New form to add new projects including an input for the project title
+* The number of todos in a project is now represented with a small pie chart icon
+* Projects without active todos are now omitted from the "Next" dashboard section
+
+###### Improvements
+
+* New icon set
+* Improved style for checkboxes, buttons and inputs
+* Improved style for the dashboard projects section
+* Improved layout for completed todos in a project
+* Added a drag handle for draggable todo items
+
+###### Fixes
+
+* Fix creation of projects with triple double quotes
+* Fix creation of todos with triple double quotes
+* Fix drag&drop of todos with double quotes or triple double quotes
+
+###### Breaking changes
+
+* The `<<project>>` macro should not be used anymore. Instead, the plugin adds the <<tag SubProject>> tag to sub projects and renders their todo-list automatically.
+* Projects are now archived using the <<tag done>> tag. The former `Archived` tag is not used anymore.
