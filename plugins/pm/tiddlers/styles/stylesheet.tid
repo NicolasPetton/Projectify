@@ -1,7 +1,7 @@
 created: 20200426194806637
-modified: 20201208132110518
+modified: 20201209132023807
 tags: $:/tags/Stylesheet
-title: $:/plugins/nico/pm/stylesheet
+title: $:/plugins/nico/pm/styles/stylesheet
 type: text/vnd.tiddlywiki
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
