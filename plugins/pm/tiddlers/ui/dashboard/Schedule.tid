@@ -1,9 +1,9 @@
 caption: {{$:/plugins/nico/pm/images/calendar-check}} Schedule
 created: 20200424193230404
-list-after: $:/plugins/nico/pm/ui/InboxAndProjects
+list-after: $:/plugins/nico/pm/ui/dashboard/InboxAndProjects
 modified: 20201130164535781
 tags: $:/plugins/nico/pm/tags/dashboard
-title: $:/plugins/nico/pm/ui/Schedule
+title: $:/plugins/nico/pm/ui/dashbaord/Schedule
 type: text/vnd.tiddlywiki
 
 \define schedule-today()

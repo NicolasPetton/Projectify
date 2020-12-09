@@ -1,7 +1,0 @@
-created: 20200424192751342
-modified: 20201130164535721
-tags: 
-title: $:/plugins/nico/pm/ui/Dashboard
-type: text/vnd.tiddlywiki
-
-<<tabs "[all[tiddlers+shadows]tag[$:/plugins/nico/pm/tags/dashboard]]" "$:/plugins/nico/pm/ui/InboxAndProjects" "$:/state/projects-and-schedule"  "pm-tabs">>

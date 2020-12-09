@@ -1,8 +1,8 @@
 caption: {{$:/plugins/nico/pm/images/tasks}} Projects
 created: 20200424193106051
-modified: 20201208151416455
-tags: $:/plugins/nico/pm/ui/Projects
-title: $:/plugins/nico/pm/ui/Projects
+modified: 20201209132522473
+tags:
+title: $:/plugins/nico/pm/ui/dashboard/Projects
 type: text/vnd.tiddlywiki
 
 \define refile-inbox-actions()

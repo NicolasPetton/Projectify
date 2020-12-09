@@ -1,5 +1,5 @@
 created: 20200427152938733
-modified: 20201130164535652
+modified: 20201209132237240
 tags: 
 title: $:/plugins/nico/pm/installation
 type: text/vnd.tiddlywiki
@@ -30,7 +30,7 @@ Then save & reload your wiki.
 Transclude the Dashboard tiddler into another tiddler like the following:
 
 ```
-{{$:/plugins/nico/pm/ui/Dashboard}}
+{{$:/plugins/nico/pm/ui/dashboard/Dashboard}}
 ```
 
 See [[Usage|$:/plugins/nico/pm/usage]] for more information.
