@@ -1,0 +1,11 @@
+created: 20201209151421299
+modified: 20201209151431922
+tags: 
+title: $:/plugins/nico/pm/ui/project/ArchivedProjectBanner
+type: text/vnd.tiddlywiki
+
+<$list filter="[is[current]tag[done]]">
+  <div class="pm-banner">
+    This project is archived. {{||$:/plugins/nico/pm/ui/buttons/RestoreProjectButton}}
+  </div>
+</$list>

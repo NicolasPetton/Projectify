@@ -1,0 +1,12 @@
+created: 20201209151126748
+modified: 20201209151145137
+tags: 
+title: $:/plugins/nico/pm/ui/buttons/RestoreProjectButton
+type: text/vnd.tiddlywiki
+
+<$fieldmangler>
+  <$button class="tc-btn-invisible">
+    <$action-sendmessage $message="tm-remove-tag" $param="done"/>
+      Restore project
+  </$button>
+</$fieldmangler>

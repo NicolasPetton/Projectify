@@ -1,0 +1,12 @@
+created: 20201209150027612
+modified: 20201209150859423
+tags: 
+title: $:/plugins/nico/pm/ui/buttons/ArchiveProjectButton
+type: text/vnd.tiddlywiki
+
+<$fieldmangler>
+  <$button class="pm-btn btn-danger nc-archive-project">
+    <$action-sendmessage $message="tm-add-tag" $param="done"/>
+      {{$:/core/images/delete-button}} Archive project
+  </$button>
+</$fieldmangler>
