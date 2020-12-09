@@ -1,7 +1,7 @@
 created: 20201208175952867
-modified: 20201208205209098
+modified: 20201209131313193
 tags: 
-title: $:/plugins/nico/pm/ui/EmptyProject
+title: $:/plugins/nico/pm/ui/welcome/EmptyProject
 type: text/vnd.tiddlywiki
 
 \define emptyWelcomeMessage()

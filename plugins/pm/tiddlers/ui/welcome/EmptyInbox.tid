@@ -1,7 +1,7 @@
 created: 20201208175952867
-modified: 20201208205846660
+modified: 20201209131313143
 tags: 
-title: $:/plugins/nico/pm/ui/EmptyInbox
+title: $:/plugins/nico/pm/ui/welcome/EmptyInbox
 type: text/vnd.tiddlywiki
 
 <div class="pm-welcome">
