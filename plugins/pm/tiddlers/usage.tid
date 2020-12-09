@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20200427133943777
-modified: 20201208093054789
+modified: 20201209131713661
 tags: 
 title: $:/plugins/nico/pm/usage
 type: text/vnd.tiddlywiki
@@ -33,12 +33,12 @@ Any tiddler with the tag <<tag $:/plugins/nico/pm/tags/dashboard>> will be displ
 You can build your own Dashboard using the following:
 
 ```
-<<tabs "$:/plugins/nico/pm/ui/Inbox $:/plugins/nico/pm/ui/Projects $:/plugins/nico/pm/ui/Schedule" "$:/plugins/nico/pm/ui/Inbox" "$:/state/pm-custom-dashboard"  "pm-tabs">>
+<<tabs "$:/plugins/nico/pm/ui/inbox/Inbox $:/plugins/nico/pm/ui/Projects $:/plugins/nico/pm/ui/Schedule" "$:/plugins/nico/pm/ui/inbox/Inbox" "$:/state/pm-custom-dashboard" "pm-tabs">>
 ```
 <$reveal type="match" state="$:/state/pm-usage-custom-dashboard" text="show">
   <$button class="pm-btn btn-primary" set="$:/state/pm-usage-custom-dashboard" setTo="">Hide</$button>
   <hr/>
-  <<tabs "$:/plugins/nico/pm/ui/Inbox $:/plugins/nico/pm/ui/Projects $:/plugins/nico/pm/ui/Schedule" "$:/plugins/nico/pm/ui/Inbox" "$:/state/pm-custom-dashboard"  "pm-tabs">>
+  <<tabs "$:/plugins/nico/pm/ui/inbox/Inbox $:/plugins/nico/pm/ui/Projects $:/plugins/nico/pm/ui/Schedule" "$:/plugins/nico/pm/ui/inbox/Inbox" "$:/state/pm-custom-dashboard" "pm-tabs">>
   <hr/>
 </$reveal>
 

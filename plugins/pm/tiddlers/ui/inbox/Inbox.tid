@@ -2,7 +2,7 @@ caption: {{$:/plugins/nico/pm/images/inbox}} Inbox
 created: 20200425193337699
 modified: 20201130164535731
 tags: 
-title: $:/plugins/nico/pm/ui/Inbox
+title: $:/plugins/nico/pm/ui/inbox/Inbox
 type: text/vnd.tiddlywiki
 
 \define inbox-count()
