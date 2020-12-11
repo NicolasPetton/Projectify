@@ -308,3 +308,9 @@ input.pm-input.input-large {
 .pm-welcome p {
   margin: 0;
 }
+
+.pm-scheduled-drop-down h4 {
+  margin: 5px 10px;
+  color: <<colour foreground>>;
+  font-weight: bold;
+}

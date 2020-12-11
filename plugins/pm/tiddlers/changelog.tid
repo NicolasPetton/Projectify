@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20201208093546936
-modified: 20201208185522392
+modified: 20201211163507780
 tags: 
 title: $:/plugins/nico/pm/changelog
 type: text/vnd.tiddlywiki
@@ -16,6 +16,7 @@ type: text/vnd.tiddlywiki
 * New form to add new projects including an input for the project title
 * The number of todos in a project is now represented with a small pie chart icon
 * Projects without active todos are now omitted from the "Next" dashboard section
+* New Schedule button in the page controls listings all todos scheduled today
 
 !! Improvements
 
