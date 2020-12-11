@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201209132023807
+modified: 20201211130932510
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/pm/styles/stylesheet
 type: text/vnd.tiddlywiki
@@ -118,6 +118,11 @@ input.pm-input.input-large {
 
 .pm-checkbox .done {
   color: #2da562;
+}
+
+.tc-titlebar .pm-checkbox svg {
+  width: 22pt;
+  height: 22pt;
 }
 
 .pm-label {
