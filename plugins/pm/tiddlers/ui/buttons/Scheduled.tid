@@ -1,7 +1,7 @@
 created: 20201210171047824
 creator: nico
 description: Show all todos scheduled for today
-modified: 20201211163151179
+modified: 20201211170655724
 modifier: nico
 tags: $:/tags/PageControls
 title: $:/plugins/nico/pm/ui/buttons/Scheduled
@@ -15,18 +15,23 @@ type: text/vnd.tiddlywiki
   selectedClass="tc-selected"
 >
   <$list filter="[<tv-config-toolbar-icons>match[yes]]">
-    {{$:/plugins/nico/pm/images/calendar-check}}
+    <span class="pm-pill-container">
+      {{$:/plugins/nico/pm/images/calendar-check}}
+      <$list filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]limit[1]]">
+        <div class="pm-pill"></div>
+      </$list>
+    </span>
   </$list>
   <$list filter="[<tv-config-toolbar-text>match[yes]]">
     <span class="tc-btn-text">Today's todos/></span>
   </$list>
 </$button>
 
-<$reveal state="$:/state/pm-scheduled-dropdown" type="popup" position="below" animate="yes" retain="yes">
+<$reveal state="$:/state/pm-scheduled-dropdown" type="popup" position="below" animate="no" retain="yes">
   <div class="tc-drop-down pm-scheduled-drop-down">
     <h4>Today's tasks</h4>
     <$list
       filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]]"
-      emptyMessage="🌞 All clear!" />
+      emptyMessage="""<div class="clear">🌞 All clear!</div>""" />
   </div>
 </$reveal>

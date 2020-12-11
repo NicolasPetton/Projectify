@@ -202,6 +202,20 @@ input.pm-input.input-large {
   background: <<colour primary>>;
 }
 
+.pm-pill-container {
+  position: relative;
+}
+
+.pm-pill-container .pm-pill {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #df3f3f;
+}
+
 .pm-todo-heading {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -220,6 +234,8 @@ input.pm-input.input-large {
 
 .pm-due-date svg {
   cursor: pointer;
+  width: 16px;
+  height: 16px;
 }
 
 .pm-due-date a {
@@ -313,4 +329,8 @@ input.pm-input.input-large {
   margin: 5px 10px;
   color: <<colour foreground>>;
   font-weight: bold;
+}
+
+.pm-scheduled-drop-down .clear {
+  margin: 5px 10px;
 }
