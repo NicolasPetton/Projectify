@@ -5,7 +5,7 @@
     "author": "NicolasPetton",
     "version": "0.3.1",
     "core-version": ">=5.0.8",
-    "source": "https://github.com/NicolasPetton/pm",
+    "source": "https://github.com/NicolasPetton/ProjectManager",
     "list": "installation usage changelog",
     "dependents": "$:/plugins/kixam/moment $:/plugins/kixam/datepicker $:/plugins/flibbles/relink",
     "plugin-type": "plugin"
