@@ -7,7 +7,7 @@ inspired by other tools such as [Todoist](https://todoist.com) and
 
 ## Install
 
-See https://nicolas.petton.fr/tw/project-manager.html#Installation
+See https://nicolas.petton.fr/tw/projectify.html#Installation
 
 ## Demo & Screenshots
 
