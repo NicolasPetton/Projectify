@@ -1,11 +1,11 @@
 created: 20201209151421299
-modified: 20201212170921063
+modified: 20201212172630026
 tags: 
 title: $:/plugins/nico/projectify/ui/project/ArchivedProjectBanner
 type: text/vnd.tiddlywiki
 
 <$list filter=<<py-is-completed>>>
   <div class="py-banner">
-    This project is archived. {{||$:/plugins/nico/projectify/ui/buttons/RestoreProjectButton}}
+    This project is archived. {{||$:/plugins/nico/projectify/ui/buttons/RestoreProject}}
   </div>
 </$list>

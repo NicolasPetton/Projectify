@@ -1,0 +1,9 @@
+created: 20201212172804699
+modified: 20201212173328958
+title: $:/plugins/nico/projectify/ui/buttons/Save
+type: text/vnd.tiddlywiki
+
+<$button class="py-btn btn-primary">
+  <<save-actions>>
+  Save
+</$button>

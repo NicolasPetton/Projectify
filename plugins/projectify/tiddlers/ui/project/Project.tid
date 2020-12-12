@@ -1,78 +1,9 @@
 created: 20201207165347344
 list-after: $:/plugins/nico/projectify/templates/TiddlerDueDateTemplate
-modified: 20201212170921166
+modified: 20201212174322186
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nico/projectify/ui/project/Project
 type: text/vnd.tiddlywiki
-
-\define project-completed-todos()
-  <$list filter=<<py-has-completed-todos>> variable="ignore">
-    <$vars stateTiddler={{{ [{!!title}addprefix[$:/state/py-show-completed-]] }}}
-	   completed={{{ [!has[draft.of]tag{!!title}tag[done]count[]] }}}>
-
-      <$reveal type="match" state=<<stateTiddler>> text="">
-        <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="show">
-          {{$:/plugins/nico/projectify/images/eye}} <<completed>> completed
-        </$button>
-      </$reveal>
-
-      <$reveal type="match" state=<<stateTiddler>> text="show">
-        <$macrocall $name="todo-list-completed"/>
-
-	<div class="py-actions">
-          <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="">
-            {{$:/plugins/nico/projectify/images/eyeslash}} Hide completed
-          </$button>
-	</div>
-      </$reveal>
-
-    </$vars>
-  </$list>
-\end
-
-\define project-add-todo-actions()
-  <$action-createtiddler
-    $basetitle={{{ [<stateTiddler>get[todo_name]] }}}
-    $savetitle="$:/state/py-new-todo"
-  />
-
-  <$action-listops $tiddler={{$:/state/py-new-todo}} $tags="[{!!title}] todo"/>
-  <$action-setfield $tiddler=<<stateTiddler>> todo_name=""/>
-\end
-
-\define project-actions-form()
-  <$vars stateTiddler={{{ [{!!title}addprefix[$:/state/py-form-]] }}}>
-    <div class="py-actions">
-
-      <$reveal type="match" state=<<stateTiddler>> text="">
-        <$button class="py-btn" set=<<stateTiddler>> setTo="show">
-          {{$:/core/images/list-bullet}} Add a todo
-        </$button>
-        <$list filter=<<py-is-open>>>
-          or {{||$:/plugins/nico/projectify/ui/buttons/ArchiveProjectButton}}
-        </$list>
-      </$reveal>
-
-      <$reveal type="match" state=<<stateTiddler>> text="show">
-        <$keyboard key="enter">
-          <<project-add-todo-actions>>
-          <$edit-text class="py-input" focus="true" tiddler=<<stateTiddler>> field="todo_name" placeholder="Describe this task"/>
-        </$keyboard>
-        <div class="py-actions">
-          <$button class="py-btn btn-primary">
-            <<project-add-todo-actions>>
-            Add task
-          </$button>
-            or
-            <$button class="py-btn" set=<<stateTiddler>> setTo="">
-            Cancel
-          </$button>
-        </div>
-      </$reveal>
-
-    </div>
-  </$vars>
-\end
 
 <$list filter=<<py-is-project>> variable="ignore">
   {{||$:/plugins/nico/projectify/ui/project/ArchivedProjectBanner}}
@@ -83,6 +14,8 @@ type: text/vnd.tiddlywiki
     $name="todo-list"
     emptyMessage={{$:/plugins/nico/projectify/ui/welcome/EmptyProject}}
   />
-  <<project-actions-form>>
-  <<project-completed-todos>>
+
+  {{||$:/plugins/nico/projectify/ui/forms/ProjectActions}}
+
+  {{||$:/plugins/nico/projectify/ui/buttons/ToggleCompletedTodos}}
 </$list>

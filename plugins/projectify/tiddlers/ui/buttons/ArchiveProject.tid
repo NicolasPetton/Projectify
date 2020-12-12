@@ -1,7 +1,7 @@
 created: 20201209150027612
-modified: 20201212170921111
+modified: 20201212172610883
 tags: 
-title: $:/plugins/nico/projectify/ui/buttons/ArchiveProjectButton
+title: $:/plugins/nico/projectify/ui/buttons/ArchiveProject
 type: text/vnd.tiddlywiki
 
 <$fieldmangler>

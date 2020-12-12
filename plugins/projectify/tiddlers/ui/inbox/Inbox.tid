@@ -13,14 +13,9 @@ type: text/vnd.tiddlywiki
   </$vars>
 \end
 
-<h2>Inbox <$macrocall $name="inbox-count"/></h2>
+<h2>Inbox <<inbox-count>></h2>
 
-<$keyboard key="enter">
-  <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
-  <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
-  <$edit-text class="py-input" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..."/>
-    <label class="py-label">Press ⏎ add to the inbox</label>
-</$keyboard>
+{{$:/plugins/nico/projectify/ui/forms/NewInboxTodo}}
 
 <$vars currentTiddler="Inbox">
   <$macrocall

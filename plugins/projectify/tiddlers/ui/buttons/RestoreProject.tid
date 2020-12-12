@@ -1,7 +1,7 @@
 created: 20201209151126748
-modified: 20201212170920884
+modified: 20201212172631003
 tags: 
-title: $:/plugins/nico/projectify/ui/buttons/RestoreProjectButton
+title: $:/plugins/nico/projectify/ui/buttons/RestoreProject
 type: text/vnd.tiddlywiki
 
 <$fieldmangler>

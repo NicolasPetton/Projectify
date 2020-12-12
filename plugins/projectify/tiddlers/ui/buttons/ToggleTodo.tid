@@ -1,7 +1,7 @@
 created: 20200420105800700
-modified: 20201212170920929
+modified: 20201212172647131
 tags: $:/tags/ViewToolbar
-title: $:/plugins/nico/projectify/ui/buttons/ToggleTodoButton
+title: $:/plugins/nico/projectify/ui/buttons/ToggleTodo
 type: text/vnd.tiddlywiki
 
 <$list filter=<<py-is-todo>>>
