@@ -1,5 +1,5 @@
 created: 20201208175952867
-modified: 20201211220126721
+modified: 20201211221227485
 tags: 
 title: $:/plugins/nico/pm/ui/welcome/EmptyProject
 type: text/vnd.tiddlywiki
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
 \end
   
 <$list
-  filter="[!has[draft.of]tag<currentTiddler>tag[todo]limit[1]]"
+  filter=<<pm-is-empty-project>>
   emptyMessage=<<emptyWelcomeMessage>>
   variable="ignore">
 

@@ -4,11 +4,11 @@ tags:
 title: $:/plugins/nico/pm/ui/project/ProjectNextActionTemplate
 type: text/vnd.tiddlywiki
 
-<$list filter="[!has[draft.of]tag{!!title}!tag[done]limit[1]]" variable="ignore">
+<$list filter=<<pm-has-open-todos>> variable="ignore">
   <dt class="pm-project">
     <$link to={{!!title}}><$view field="title"/></$link> {{||$:/plugins/nico/pm/images/pie}}
   </dt>
   <dd>
-    <$list filter="[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]" template="$:/plugins/nico/pm/ui/todo/TodoItem"></$list>
+    <$list filter=<<pm-next-open-todo>> template="$:/plugins/nico/pm/ui/todo/TodoItem"></$list>
   </dd>
 </$list>

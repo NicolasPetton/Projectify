@@ -1,12 +1,12 @@
 created: 20201207165347344
 list-after: $:/plugins/nico/pm/templates/TiddlerDueDateTemplate
-modified: 20201209160211504
+modified: 20201211233833298
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nico/pm/ui/project/Project
 type: text/vnd.tiddlywiki
 
 \define project-completed-todos()
-  <$list filter="[!has[draft.of]tag{!!title}tag[done]limit[1]]" variable="ignore">
+  <$list filter=<<pm-has-completed-todos>> variable="ignore">
     <$vars stateTiddler={{{ [{!!title}addprefix[$:/state/pm-show-completed-]] }}}
 	   completed={{{ [!has[draft.of]tag{!!title}tag[done]count[]] }}}>
 
@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
       </$reveal>
 
       <$reveal type="match" state=<<stateTiddler>> text="show">
-        <$macrocall $name="todo-list-completed" tag={{!!title}}/>
+        <$macrocall $name="todo-list-completed"/>
 
 	<div class="pm-actions">
           <$button class="tc-btn-invisible pm-link-muted" set=<<stateTiddler>> setTo="">
@@ -48,7 +48,7 @@ type: text/vnd.tiddlywiki
         <$button class="pm-btn" set=<<stateTiddler>> setTo="show">
           {{$:/core/images/list-bullet}} Add a todo
         </$button>
-        <$list filter="[is[current]!tag[done]]">
+        <$list filter=<<pm-is-open>>>
           or {{||$:/plugins/nico/pm/ui/buttons/ArchiveProjectButton}}
         </$list>
       </$reveal>
@@ -74,14 +74,13 @@ type: text/vnd.tiddlywiki
   </$vars>
 \end
 
-<$list filter="[all[current]tag[Project]] [all[current]tag[SubProject]]" variable="ignore">
+<$list filter=<<pm-is-project>> variable="ignore">
   {{||$:/plugins/nico/pm/ui/project/ArchivedProjectBanner}}
 
   <h2>Todos {{||$:/plugins/nico/pm/images/pie}}</h2>
 
   <$macrocall
     $name="todo-list"
-    tag={{!!title}}
     emptyMessage={{$:/plugins/nico/pm/ui/welcome/EmptyProject}}
   />
   <<project-actions-form>>

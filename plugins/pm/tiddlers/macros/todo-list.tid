@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20201202200514984
+modified: 20201211221718275
 tags: $:/tags/Macro
 title: $:/plugins/nico/pm/macros/todo-list
 type: text/vnd.tiddlywiki
@@ -8,13 +8,13 @@ type: text/vnd.tiddlywiki
   <$action-listops $tags="-[<projectTag>]"/>
 \end
 
-\define todo-list(tag emptyMessage:"''🙌 All done!''")
-  <$vars projectTag=<<__tag__>> dragHandle="yes">
+\define todo-list(emptyMessage:"''🙌 All done!''")
+  <$vars projectTag={{!!title}} dragHandle="yes">
     <div class="pm-todos">
       <$macrocall
         $name="list-tagged-draggable"
-        tag=<<__tag__>>
-        subFilter="!has[draft.of]!tag[done]"
+        tag=<<projectTag>>
+        subFilter=<<pm-todos-subfilter>>
         emptyMessage=<<__emptyMessage__>>
         itemTemplate="$:/plugins/nico/pm/ui/todo/TodoItem"
       />
@@ -22,10 +22,10 @@ type: text/vnd.tiddlywiki
   </$vars>
 \end
 
-\define todo-list-completed(tag)
+\define todo-list-completed()
   <div class="pm-todos">
     <$list
-      filter="[!has[draft.of]tag<__tag__>tag[done]sort[created]]"
+      filter=<<pm-completed-todos>>
       template="$:/plugins/nico/pm/ui/todo/TodoItem"
     />
   </div>

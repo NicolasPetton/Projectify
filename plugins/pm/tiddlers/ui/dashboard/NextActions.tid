@@ -1,11 +1,14 @@
 caption: {{$:/plugins/nico/pm/images/funnel}} Next
 created: 20200425195221581
 list-after: $:/plugins/nico/pm/ui/dashbaord/Schedule
-modified: 20201209143620129
+modified: 20201211234059171
 tags: $:/plugins/nico/pm/tags/dashboard
 title: $:/plugins/nico/pm/ui/NextActions
 type: text/vnd.tiddlywiki
 
 <dl>
-  <$list filter="[tag[Project]!tag[done]]" template="$:/plugins/nico/pm/ui/project/ProjectNextActionTemplate"/>
-  </dl>
+  <$list
+    filter=<<pm-active-projects>>
+    template="$:/plugins/nico/pm/ui/project/ProjectNextActionTemplate"
+  />
+</dl>

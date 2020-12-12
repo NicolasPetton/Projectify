@@ -1,10 +1,10 @@
 created: 20200420105800700
-modified: 20201209132912692
+modified: 20201211234143708
 tags: $:/tags/ViewToolbar
 title: $:/plugins/nico/pm/ui/buttons/ToggleTodoButton
 type: text/vnd.tiddlywiki
 
-<$list filter="[all[current]tag[todo]]">
+<$list filter=<<pm-is-todo>>>
   <span class="pm-toggle-todo-button">
     <$checkbox tag="done">
       {{||$:/plugins/nico/pm/ui/buttons/Checkbox}}

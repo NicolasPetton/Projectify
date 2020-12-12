@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20201209143812991
+modified: 20201211233715611
 tags:
 title: $:/plugins/nico/pm/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -24,7 +24,7 @@ type: text/vnd.tiddlywiki
     <$link to={{!!title}}><$view field="title"/></$link>
   </$checkbox>
   
-  <$list filter="[all[current]!tag[done]]">
+  <$list filter=<<pm-is-open>>>
     {{||$:/plugins/nico/pm/ui/todo/TodoDueDate}}
   </$list>
 </div>

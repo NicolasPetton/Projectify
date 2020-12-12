@@ -1,6 +1,6 @@
 caption: {{$:/plugins/nico/pm/images/tasks}} Projects
 created: 20200424193106051
-modified: 20201209132522473
+modified: 20201211232948723
 tags:
 title: $:/plugins/nico/pm/ui/dashboard/Projects
 type: text/vnd.tiddlywiki
@@ -42,7 +42,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define archived-projects()
-  <$list filter="[tag[Project]!title[Inbox]tag[done]limit[1]]" variable="ignore">
+  <$list filter=<<pm-has-archived-projects>> variable="ignore">
     <$reveal type="match" state="$:/state/pm-show-archived" text="">
       <$button class="tc-btn-invisible pm-link-muted" set="$:/state/pm-show-archived" setTo="show">
         {{$:/plugins/nico/pm/images/eye}} Show archived
@@ -57,11 +57,11 @@ type: text/vnd.tiddlywiki
       <h2>Archive</h2>
 
       <ul class="pm-projects">
-        <$list filter="[tag[Project]!title[Inbox]tag[done]]">
+        <$list filter=<<pm-archived-projects>>>
           <li class="pm-project">
             {{||$:/plugins/nico/pm/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
             <div class="pm-project-infos">
-              <$count filter="[tag{!!title}!has[draft.of]!tag[done]]"/> open tasks
+              <$count filter=<<pm-open-todos>>/> open tasks
             </div>
           </li>
         </$list>
@@ -73,15 +73,15 @@ type: text/vnd.tiddlywiki
 <h2>Projects</h2>
 
 <ul class="pm-projects">
-  <$list filter="[tag[Project]!title[Inbox]!tag[done]]">
-      <$droppable actions=<<refile-inbox-actions>>>
-        <li class="pm-project">
-          {{||$:/plugins/nico/pm/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
-          <div class="pm-project-infos">
-            <$count filter="[tag{!!title}!has[draft.of]!tag[done]]"/> open tasks
-          </div>
-        </li>
-      </$droppable>
+  <$list filter=<<pm-active-projects>>>
+    <$droppable actions=<<refile-inbox-actions>>>
+      <li class="pm-project">
+        {{||$:/plugins/nico/pm/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
+        <div class="pm-project-infos">
+          <$count filter=<<pm-open-todos>>/> open tasks
+        </div>
+      </li>
+    </$droppable>
   </$list>
 </ul>
 

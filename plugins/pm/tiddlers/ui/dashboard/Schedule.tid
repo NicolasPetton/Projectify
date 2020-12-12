@@ -7,18 +7,31 @@ title: $:/plugins/nico/pm/ui/dashbaord/Schedule
 type: text/vnd.tiddlywiki
 
 \define schedule-today()
-  <$list filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]]" template="$:/plugins/nico/pm/ui/todo/TodoItem" emptyMessage="🌞 All clear!"/>
+  <$list
+    filter=<<pm-todos-due-today>>
+    template="$:/plugins/nico/pm/ui/todo/TodoItem"
+    emptyMessage="🌞 All clear!"
+  />
 \end
 
 \define schedule-range(start end)
-  <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[$start$]days:due[$end$]sort[due]]" template="$:/plugins/nico/pm/ui/todo/TodoItem" emptyMessage="🌞 All clear!"/>
+  <$vars start=<<__start__>> end=<<__end__>>>  
+    <$list
+      filter=<<pm-todos-due-between>>
+      template="$:/plugins/nico/pm/ui/todo/TodoItem"
+      emptyMessage="🌞 All clear!"
+    />
+  </$vars>
 \end
 
 \define schedule-overdue()
-  <$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]]" template="$:/plugins/nico/pm/ui/todo/TodoItem"/>
+  <$list
+    filter=<<pm-todos-overdue>>
+    template="$:/plugins/nico/pm/ui/todo/TodoItem"
+  />
 \end
 
-<$list filter="[!has[draft.of]!tag[done]tag[todo]!days:due[-1]limit[1]]">
+<$list filter=<<pm-has-overdue-todos>>>
 
   !! Overdue
 

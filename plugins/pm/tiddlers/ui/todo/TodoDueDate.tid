@@ -1,5 +1,5 @@
 created: 20200424135048294
-modified: 20201209143813008
+modified: 20201211234538917
 tags: 
 title: $:/plugins/nico/pm/ui/todo/TodoDueDate
 type: text/vnd.tiddlywiki
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 
     <$button tag="a"><$action-deletefield $field="due" />Clear</$button>
 
-    <$list filter="[all[current]!has[draft.of]!tag[done]!days:due[-1]]">
+    <$list filter=<<pm-is-overdue>>>
       <span class="pm-count">
         <$view field="due" format="relativedate"/>
       </span>

@@ -6,9 +6,11 @@ title: $:/plugins/nico/pm/ui/inbox/Inbox
 type: text/vnd.tiddlywiki
 
 \define inbox-count()
-  <span class="pm-count">
-    <$list filter="[tag[Inbox]!has[draft.of]!tag[done]count[]]">{{!!title}}</$list> 
-  </span>
+  <$vars currentTiddler="Inbox">
+    <span class="pm-count">
+      <$count filter=<<pm-open-todos>>/>
+    </span>
+  </$vars>
 \end
 
 <h2>Inbox <$macrocall $name="inbox-count"/></h2>
@@ -20,4 +22,10 @@ type: text/vnd.tiddlywiki
     <label class="pm-label">Press ⏎ add to the inbox</label>
 </$keyboard>
 
-<$macrocall class="pm-inbox-input" $name="todo-list" tag="Inbox" emptyMessage={{$:/plugins/nico/pm/ui/welcome/EmptyInbox}}/>
+<$vars currentTiddler="Inbox">
+  <$macrocall
+    class="pm-inbox-input"
+    $name="todo-list"
+    emptyMessage={{$:/plugins/nico/pm/ui/welcome/EmptyInbox}}
+  />
+</$vars>
