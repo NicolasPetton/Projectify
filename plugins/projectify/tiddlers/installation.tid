@@ -1,5 +1,5 @@
 created: 20200427152938733
-modified: 20201212170920964
+modified: 20201212181057518
 tags: 
 title: $:/plugins/nico/projectify/installation
 type: text/vnd.tiddlywiki
@@ -21,7 +21,7 @@ While not strictly required, we strongly recommand installing the [[Relink|$:/pl
 
 Drag&drop the following link into your wiki
 
-* [[$:/plugins/nico/pm]]
+* [[$:/plugins/nico/projectify]]
 
 Then save & reload your wiki.
 
