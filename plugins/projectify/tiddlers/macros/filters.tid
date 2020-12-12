@@ -1,0 +1,87 @@
+created: 20201202200514984
+modified: 20201212170921030
+tags: $:/tags/Macro
+title: $:/plugins/nico/projectify/macros/filters
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define py-archived-projects()
+[tag[Project]!title[Inbox]tag[done]]
+\end
+
+\define py-active-projects()
+[tag[Project]!title[Inbox]!tag[done]]
+\end
+
+\define py-has-archived-projects()
+[tag[Project]!title[Inbox]tag[done]limit[1]]
+\end
+
+\define py-is-project()
+[all[current]tag[Project]] [all[current]tag[SubProject]]
+\end
+
+\define py-is-not-subproject()
+[all[current]!tag[SubProject]]
+\end
+
+\define py-is-empty-project()
+[!has[draft.of]tag{!!title}tag[todo]limit[1]]
+\end
+
+\define py-has-open-todos()
+[!has[draft.of]tag{!!title}tag[todo]!tag[done]limit[1]]
+\end
+
+\define py-has-completed-todos()
+[!has[draft.of]tag{!!title}tag[todo]tag[done]limit[1]]
+\end
+
+\define py-next-open-todo()
+[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]
+\end
+
+\define py-open-todos()
+[tag{!!title}tag[todo]!has[draft.of]!tag[done]]
+\end
+
+\define py-completed-todos()
+[!has[draft.of]tag{!!title}tag[done]sort[created]]
+\end
+
+\define py-todos-due-today()
+[!has[draft.of]!tag[done]tag[todo]days:due[0]]
+\end
+
+\define py-todos-overdue()
+[!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]]
+\end
+
+\define py-todos-due-between()
+[!has[draft.of]!tag[done]tag[todo]!days:due<start>days:due<end>sort[due]]
+\end
+
+\define py-has-overdue-todos()
+[!has[draft.of]!tag[done]tag[todo]!days:due[-1]limit[1]]
+\end
+
+\define py-is-todo()
+[all[current]tag[todo]]
+\end
+
+\define py-is-open()
+[all[current]!tag[done]]
+\end
+
+\define py-is-completed()
+[all[current]tag[done]]
+\end
+
+\define py-is-overdue()
+[all[current]!has[draft.of]!tag[done]!days:due[-1]]
+\end
+
+\define py-todos-subfilter()
+tag[todo]!has[draft.of]!tag[done]
+\end

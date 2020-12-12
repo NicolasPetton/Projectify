@@ -1,0 +1,30 @@
+created: 20200422200123438
+modified: 20201212170921051
+tags:
+title: $:/plugins/nico/projectify/ui/todo/TodoItem
+type: text/vnd.tiddlywiki
+
+\define drag-handle()
+  <$draggable
+    tag="span"
+    class="py-drag-handle"
+    tiddler={{!!title}}
+    startactions=<<todo-dragstart-actions>>>
+      {{$:/plugins/nico/projectify/images/drag-handle}}
+  </$draggable>
+\end
+
+<div class={{{ [all[current]tag[done]then[py-todo py-completed]else[py-todo]] }}}>
+  <$list filter="[<dragHandle>!is[blank]]" variable="ignore">
+    <<drag-handle>>
+  </$list>
+  
+  <$checkbox tag="done">
+    {{||$:/plugins/nico/projectify/ui/buttons/Checkbox}}
+    <$link to={{!!title}}><$view field="title"/></$link>
+  </$checkbox>
+  
+  <$list filter=<<py-is-open>>>
+    {{||$:/plugins/nico/projectify/ui/todo/TodoDueDate}}
+  </$list>
+</div>

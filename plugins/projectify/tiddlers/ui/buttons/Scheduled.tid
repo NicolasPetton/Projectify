@@ -1,0 +1,37 @@
+created: 20201210171047824
+creator: nico
+description: Show all todos scheduled for today
+modified: 20201212170921098
+modifier: nico
+tags: $:/tags/PageControls
+title: $:/plugins/nico/projectify/ui/buttons/Scheduled
+type: text/vnd.tiddlywiki
+
+<$button
+  popup="$:/state/py-scheduled-dropdown"
+  tooltip="Today's todos"
+  aria-label="Today's todos"
+  class=<<tv-config-toolbar-class>>
+  selectedClass="tc-selected"
+>
+  <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+    <span class="py-pill-container">
+      {{$:/plugins/nico/projectify/images/calendar-check}}
+      <$list filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]limit[1]]">
+        <div class="py-pill"></div>
+      </$list>
+    </span>
+  </$list>
+  <$list filter="[<tv-config-toolbar-text>match[yes]]">
+    <span class="tc-btn-text">Today's todos/></span>
+  </$list>
+</$button>
+
+<$reveal state="$:/state/py-scheduled-dropdown" type="popup" position="below" animate="no" retain="yes">
+  <div class="tc-drop-down py-scheduled-drop-down">
+    <h4>Today's tasks</h4>
+    <$list
+      filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]]"
+      emptyMessage="""<div class="clear">🌞 All clear!</div>""" />
+  </div>
+</$reveal>

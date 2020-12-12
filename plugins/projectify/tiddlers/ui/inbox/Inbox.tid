@@ -1,0 +1,31 @@
+caption: {{$:/plugins/nico/projectify/images/inbox}} Inbox
+created: 20200425193337699
+modified: 20201130164535731
+tags: 
+title: $:/plugins/nico/projectify/ui/inbox/Inbox
+type: text/vnd.tiddlywiki
+
+\define inbox-count()
+  <$vars currentTiddler="Inbox">
+    <span class="py-count">
+      <$count filter=<<py-open-todos>>/>
+    </span>
+  </$vars>
+\end
+
+<h2>Inbox <$macrocall $name="inbox-count"/></h2>
+
+<$keyboard key="enter">
+  <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
+  <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
+  <$edit-text class="py-input" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..."/>
+    <label class="py-label">Press ⏎ add to the inbox</label>
+</$keyboard>
+
+<$vars currentTiddler="Inbox">
+  <$macrocall
+    class="py-inbox-input"
+    $name="todo-list"
+    emptyMessage={{$:/plugins/nico/projectify/ui/welcome/EmptyInbox}}
+  />
+</$vars>

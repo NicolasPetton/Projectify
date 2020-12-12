@@ -1,0 +1,11 @@
+created: 20201208175952867
+modified: 20201212170921394
+tags: 
+title: $:/plugins/nico/projectify/ui/welcome/EmptyInbox
+type: text/vnd.tiddlywiki
+
+<div class="py-welcome">
+  <div class="icon">🎉</div>
+  <h3>You're all done!</h3>
+  <p>Everything is well organized, have a great <<now DDD>>!</p>
+</div>

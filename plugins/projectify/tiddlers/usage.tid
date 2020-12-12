@@ -1,0 +1,81 @@
+caption: Usage & Help
+created: 20200427133943777
+modified: 20201212170921456
+tags: 
+title: $:/plugins/nico/projectify/usage
+type: text/vnd.tiddlywiki
+
+! How to display the project dashboard
+
+The main entry point to the Project Manager plugin is the dashboard.
+The dashboard can be embedded ([[transcluded|https://tiddlywiki.com/#Transclusion]]) in any tiddler using the following:
+
+```
+{{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
+```
+<$reveal type="match" state="$:/state/py-usage-show-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/py-usage-show-dashboard" setTo="">Hide</$button>
+  <hr/>
+  {{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
+  <hr/>
+</$reveal>
+
+<$reveal type="nomatch" state="$:/state/py-usage-show-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/py-usage-show-dashboard" setTo="show">Show result</$button>
+</$reveal>
+
+! How to add extra tabs to the Dashboard
+
+Any tiddler with the tag <<tag $:/plugins/nico/projectify/tags/dashboard>> will be displayed as a tab in the dashboard.
+
+! What if I want to display the Inbox in a separate tab?
+
+You can build your own Dashboard using the following:
+
+```
+<<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Schedule" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/py-custom-dashboard" "py-tabs">>
+```
+<$reveal type="match" state="$:/state/py-usage-custom-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/py-usage-custom-dashboard" setTo="">Hide</$button>
+  <hr/>
+  <<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Schedule" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/py-custom-dashboard" "py-tabs">>
+  <hr/>
+</$reveal>
+
+<$reveal type="nomatch" state="$:/state/py-usage-custom-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/py-usage-custom-dashboard" setTo="show">Show result</$button>
+</$reveal>
+
+! Can I make sub-projects?
+
+Yes, just click the button `Make this into a sub-project` in the todo tiddler.
+This means that you can effectively make any todo a sub-project of another project, and go as deep as you wish!
+
+Note that only tiddlers with the <<tag Project>> tag will be listed in the Dashboard.
+
+```
+<<project>>
+```
+<$reveal type="match" state="$:/state/py-usage-subproject" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/py-usage-subproject" setTo="">Hide</$button>
+  <hr/>
+  <<project>>
+  <hr/>
+</$reveal>
+
+<$reveal type="nomatch" state="$:/state/py-usage-subproject" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/py-usage-subproject" setTo="show">Show result</$button>
+</$reveal>
+
+! Can I quickly capture todos to my inbox?
+
+''Yes!'' The default shortcut is {{$:/config/shortcuts/py-quick-capture}}, but you can change it in the [[Keyboard section of the Control Panel|$:/core/ui/ControlPanel/KeyboardShortcuts]].
+
+! Can I easily move todos out of the inbox?
+
+Yes, just drag a todo from the inbox into one of the projects.
+
+! Can I easily move todos between projects?
+
+Yes, just like with todos in the inbox, drag & drop a todo from one project into
+another to move it.

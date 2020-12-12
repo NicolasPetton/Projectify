@@ -1,0 +1,32 @@
+created: 20201202200514984
+modified: 20201212170921021
+tags: $:/tags/Macro
+title: $:/plugins/nico/projectify/macros/todo-list
+type: text/vnd.tiddlywiki
+
+\define todo-dragstart-actions()
+  <$action-listops $tags="-[<projectTag>]"/>
+\end
+
+\define todo-list(emptyMessage:"''🙌 All done!''")
+  <$vars projectTag={{!!title}} dragHandle="yes">
+    <div class="py-todos">
+      <$macrocall
+        $name="list-tagged-draggable"
+        tag=<<projectTag>>
+        subFilter=<<py-todos-subfilter>>
+        emptyMessage=<<__emptyMessage__>>
+        itemTemplate="$:/plugins/nico/projectify/ui/todo/TodoItem"
+      />
+    </div>
+  </$vars>
+\end
+
+\define todo-list-completed()
+  <div class="py-todos">
+    <$list
+      filter=<<py-completed-todos>>
+      template="$:/plugins/nico/projectify/ui/todo/TodoItem"
+    />
+  </div>
+\end

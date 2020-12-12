@@ -1,0 +1,89 @@
+caption: {{$:/plugins/nico/projectify/images/tasks}} Projects
+created: 20200424193106051
+modified: 20201212170921158
+tags:
+title: $:/plugins/nico/projectify/ui/dashboard/Projects
+type: text/vnd.tiddlywiki
+
+\define refile-inbox-actions()
+  <$fieldmangler tiddler=<<actionTiddler>>>
+    <$action-sendmessage $message="tm-add-tag" $param=<<currentTiddler>>/>
+    <$action-sendmessage $message="tm-remove-tag" $param="Inbox"/>
+  </$fieldmangler>
+\end
+
+\define projects-actions()
+  <$reveal type="match" state="$:/state/py-show-new-project-form" text="">
+
+    <$button class="py-btn btn-primary" set="$:/state/py-show-new-project-form" setTo="show">
+      {{$:/core/images/edit-button}}
+      New project
+    </$button>
+  </$reveal>
+
+  <$reveal type="match" state="$:/state/py-show-new-project-form" text="show">
+    <$keyboard key="enter">
+      <$action-createtiddler $basetitle={{$:/state/py-new-project!!project_name}} tags="Project"/>
+      <$action-setfield $tiddler="$:/state/py-new-project" project_name=""/>
+      <$edit-text class="py-input" focus="true" tiddler="$:/state/py-new-project" field="project_name" placeholder="Describe this project"/>
+    </$keyboard>
+    <div class="py-actions">
+      <$button class="py-btn btn-primary">
+        <$action-createtiddler $basetitle={{$:/state/py-new-project!!project_name}} tags="Project"/>
+        <$action-setfield $tiddler="$:/state/py-new-project" project_name=""/>
+        Add project
+      </$button>
+       or
+      <$button class="py-btn" set="$:/state/py-show-new-project-form" setTo="">
+        Cancel
+      </$button>
+    </div>
+  </$reveal>
+\end
+
+\define archived-projects()
+  <$list filter=<<py-has-archived-projects>> variable="ignore">
+    <$reveal type="match" state="$:/state/py-show-archived" text="">
+      <$button class="tc-btn-invisible py-link-muted" set="$:/state/py-show-archived" setTo="show">
+        {{$:/plugins/nico/projectify/images/eye}} Show archived
+      </$button>
+    </$reveal>
+
+    <$reveal type="match" state="$:/state/py-show-archived" text="show">
+      <$button class="tc-btn-invisible py-link-muted" set="$:/state/py-show-archived" setTo="">
+        {{$:/plugins/nico/projectify/images/eyeslash}} Hide archived
+      </$button>
+
+      <h2>Archive</h2>
+
+      <ul class="py-projects">
+        <$list filter=<<py-archived-projects>>>
+          <li class="py-project">
+            {{||$:/plugins/nico/projectify/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
+            <div class="py-project-infos">
+              <$count filter=<<py-open-todos>>/> open tasks
+            </div>
+          </li>
+        </$list>
+      </ul>
+    </$reveal>
+  </$list>
+\end
+
+<h2>Projects</h2>
+
+<ul class="py-projects">
+  <$list filter=<<py-active-projects>>>
+    <$droppable actions=<<refile-inbox-actions>>>
+      <li class="py-project">
+        {{||$:/plugins/nico/projectify/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
+        <div class="py-project-infos">
+          <$count filter=<<py-open-todos>>/> open tasks
+        </div>
+      </li>
+    </$droppable>
+  </$list>
+</ul>
+
+<<projects-actions>>
+<<archived-projects>>

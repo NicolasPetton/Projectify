@@ -1,0 +1,14 @@
+caption: {{$:/plugins/nico/projectify/images/funnel}} Next
+created: 20200425195221581
+list-after: $:/plugins/nico/projectify/ui/dashbaord/Schedule
+modified: 20201212170921087
+tags: $:/plugins/nico/projectify/tags/dashboard
+title: $:/plugins/nico/projectify/ui/NextActions
+type: text/vnd.tiddlywiki
+
+<dl>
+  <$list
+    filter=<<py-active-projects>>
+    template="$:/plugins/nico/projectify/ui/project/ProjectNextActionTemplate"
+  />
+</dl>

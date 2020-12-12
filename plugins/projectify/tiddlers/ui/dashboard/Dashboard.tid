@@ -1,0 +1,7 @@
+created: 20200424192751342
+modified: 20201212170921144
+tags: 
+title: $:/plugins/nico/projectify/ui/dashboard/Dashboard
+type: text/vnd.tiddlywiki
+
+<<tabs "[all[tiddlers+shadows]tag[$:/plugins/nico/projectify/tags/dashboard]]" "$:/plugins/nico/projectify/ui/dashboard/InboxAndProjects" "$:/state/projects-and-schedule"  "py-tabs">>

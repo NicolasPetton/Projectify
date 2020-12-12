@@ -1,0 +1,41 @@
+created: 20201207124527891
+modified: 20201212170921237
+title: $:/plugins/nico/projectify/images/pie
+type: text/vnd.tiddlywiki
+
+<$set name="PI" value="3.14">
+  <$set name="circumference" value={{{ [<PI>multiply[2]multiply[5]] }}}>
+    <$set name="all" value={{{ [tag<currentTiddler>!has[draft.of]count[]] }}}>
+      <$set name="closed" value={{{ [tag<currentTiddler>!has[draft.of]tag[done]count[]]}}}>
+	<$set name="ratio" value={{{ [<all>is[0]then<circumference>else<circumference>multiply<closed>divide<all>] }}}>
+        <svg
+          class="py-icon py-pie"
+          height="1em"
+          width="1em"
+          viewBox="0 0 30 30">
+
+          <circle
+            class="border"
+            r="14"
+            cx="15"
+            cy="15"
+            fill="white"
+            stroke="tomato"
+            stroke-width="2"/>
+
+          <circle
+            class="border"
+            r="5"
+            cx="15"
+            cy="15"
+            fill="transparent"
+            stroke="tomato"
+            stroke-width="10"
+            transform="rotate(-90) translate(-30)"
+            stroke-dasharray={{{ [<ratio>addsuffix[ 31.42]] }}}/>
+
+        </svg>
+      </$set>
+    </$set>
+  </$set>
+</$set>

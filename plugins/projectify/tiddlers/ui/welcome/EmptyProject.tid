@@ -1,0 +1,28 @@
+created: 20201208175952867
+modified: 20201212170921408
+tags: 
+title: $:/plugins/nico/projectify/ui/welcome/EmptyProject
+type: text/vnd.tiddlywiki
+
+\define emptyWelcomeMessage()
+  <div class="py-welcome">
+    <div class="icon">🚀</div>
+    <h3>Let's get started!</h3>
+    <p>
+      Keep your work organised by grouping todos in projects. <br/>
+      Drag & drop todos to move them between projects.
+    </p>
+  </div>
+\end
+  
+<$list
+  filter=<<py-is-empty-project>>
+  emptyMessage=<<emptyWelcomeMessage>>
+  variable="ignore">
+
+  <div class="py-welcome">
+    <div class="icon">🙌</div>
+    <h3>Well done!</h3>
+    <p>Looks like you've completed this project!</p>
+  </div>
+</$list>

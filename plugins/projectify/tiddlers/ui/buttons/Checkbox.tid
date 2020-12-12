@@ -1,0 +1,15 @@
+created: 20200428151242242
+modified: 20201212170921075
+tags: 
+title: $:/plugins/nico/projectify/ui/buttons/Checkbox
+type: text/vnd.tiddlywiki
+
+<span class="py-checkbox">
+  <$list filter=<<py-is-open>>>
+    <span class="todo"> {{$:/plugins/nico/projectify/images/checkbox}}</span>
+    <span class="todo-hover"> {{$:/plugins/nico/projectify/images/checkbox-checked}}</span>
+  </$list>
+  <$list filter=<<py-is-completed>>>
+    <span class="done"> {{$:/plugins/nico/projectify/images/checkbox-checked-solid}}</span>
+  </$list>
+</span>

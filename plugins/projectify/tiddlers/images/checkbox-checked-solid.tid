@@ -1,0 +1,21 @@
+created: 20200428151856963
+modified: 20201212170921211
+title: $:/plugins/nico/projectify/images/checkbox-checked-solid
+type: text/vnd.tiddlywiki
+
+<svg
+  width="1em"
+  height="1em"
+  fill="currentColor"
+  version="1.1"
+  viewBox="0 0 16 16"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect width="16" height="16" rx="2" />
+  <path
+    d="m13.354 4.146a0.5 0.5 0 0 1 0 0.708l-7 7a0.5 0.5 0 0 1-0.708 0l-3-3a0.50063 0.50063 0 1 1 0.708-0.708l2.646 2.647 6.646-6.647a0.5 0.5 0 0 1 0.708 0z"
+    clip-rule="evenodd"
+    fill="#fff"
+    fill-rule="evenodd"
+  />
+</svg>

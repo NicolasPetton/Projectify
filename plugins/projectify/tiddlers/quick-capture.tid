@@ -1,0 +1,10 @@
+created: 20200427182745230
+key: ((py-quick-capture))
+modified: 20201212170921478
+tags: $:/tags/KeyboardShortcut
+title: $:/plugins/nico/projectify/quick-capture
+type: text/vnd.tiddlywiki
+
+<$navigator story="$:/StoryList" history="$:/HistoryList">
+  <$action-navigate $to="$:/plugins/nico/projectify/QuickCapture"/>
+</$navigator>

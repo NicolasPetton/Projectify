@@ -1,0 +1,17 @@
+color: #0088cc
+created: 20200427182956318
+icon: $:/plugins/nico/projectify/images/quick-capture
+modified: 20201212170920830
+tags: 
+title: $:/plugins/nico/projectify/QuickCapture
+type: text/vnd.tiddlywiki
+
+!! {{$:/plugins/nico/projectify/images/tasks}} Quick add todo
+
+<$keyboard key="enter">
+  <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
+  <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
+  <$action-sendmessage $message="tm-close-tiddler"/>
+  <$edit-text class="py-input input-large" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..." focus="true"/> 
+  <label class="py-label py-right-aligned">Press ⏎ to capture</label>
+</$keyboard>

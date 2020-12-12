@@ -1,0 +1,14 @@
+created: 20200420105800700
+modified: 20201212170920929
+tags: $:/tags/ViewToolbar
+title: $:/plugins/nico/projectify/ui/buttons/ToggleTodoButton
+type: text/vnd.tiddlywiki
+
+<$list filter=<<py-is-todo>>>
+  <span class="py-toggle-todo-button">
+    <$checkbox tag="done">
+      {{||$:/plugins/nico/projectify/ui/buttons/Checkbox}}
+    </$checkbox>
+  </span>
+</$list>
+
