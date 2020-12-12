@@ -3,7 +3,7 @@
     "name": "Projectify",
     "description": "Simple project management for TiddlyWiki",
     "author": "NicolasPetton",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "core-version": ">=5.0.8",
     "source": "https://github.com/NicolasPetton/Projectify",
     "list": "installation usage changelog",
