@@ -32,21 +32,23 @@ type: text/vnd.tiddlywiki
 \end
 
 <$list filter=<<py-has-overdue-todos>>>
-
-  !! Overdue
-
-  <<schedule-overdue>>
-
+  <dl>
+    <dt>Overdue</dt>
+    <dd><<schedule-overdue>></dd>
+  </dl>
 </$list>
 
-!! Today
+<dl>
+  <dt>Today</dt>
+  <dd><<schedule-today>></dd>
+</dl>
 
-<<schedule-today>>
+<dl>
+  <dt>Next 7 days</dt>
+  <dd><<schedule-range 1 7>></dd>
+</dl>
 
-!! Next 7 days
-
-<<schedule-range 1 7>>
-
-!! Next 30 days
-
-<<schedule-range 7 30>>
+<dl>
+  <dt>Next 30 days</dt>
+  <dd><<schedule-range 7 30>></dd>
+</dl>

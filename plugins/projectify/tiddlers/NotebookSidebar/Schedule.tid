@@ -1,0 +1,9 @@
+caption: Schedule
+created: 20201212215945467
+modified: 20201212220354958
+list-before: $:/plugins/nico/projectify/NotebookSidebar/Projects
+tags: $:/themes/nico/notebook/tags/SidebarSection
+title: $:/plugins/nico/projectify/NotebookSidebar/Schedule
+type: text/vnd.tiddlywiki
+
+{{$:/plugins/nico/projectify/ui/dashbaord/Schedule}}
