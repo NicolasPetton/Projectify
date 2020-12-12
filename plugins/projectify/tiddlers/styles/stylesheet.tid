@@ -141,12 +141,13 @@ input.py-input.input-large {
 
 .py-projects .py-project,
 .py-todos .tc-menu-list-item {
-    border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .py-projects,
-.py-todos .tc-menu-list-item:first-child {
-    border-top: 1px solid #eee;
+.py-todos .tc-menu-list-item:first-child,
+.py-scheduled-todos .py-todo {
+  border-top: 1px solid #eee;
 }
 
 .py-todo, .py-project {
@@ -167,8 +168,10 @@ input.py-input.input-large {
   margin-left: 20px;
 }
 
-/* Align the completed todo with the non-completed ones that have a drag handle */
-.py-todo.py-completed > * {
+/* Align the completed/scheduled todos with the non-completed ones that have a
+   drag handle */
+.py-completed-todos .py-todo > *,
+.py-scheduled-todos .py-todo > *{
   padding-left: 18px;
 }
 	      

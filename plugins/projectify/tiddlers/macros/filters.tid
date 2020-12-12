@@ -46,6 +46,10 @@ type: text/vnd.tiddlywiki
 [tag{!!title}tag[todo]!has[draft.of]!tag[done]]
 \end
 
+\define py-scheduled-todos()
+[tag{!!title}tag[todo]!has[draft.of]!tag[done]has[due]sort[due]]
+\end
+
 \define py-completed-todos()
 [!has[draft.of]tag{!!title}tag[done]sort[created]]
 \end
@@ -82,6 +86,6 @@ type: text/vnd.tiddlywiki
 [all[current]!has[draft.of]!tag[done]!days:due[-1]]
 \end
 
-\define py-todos-subfilter()
-tag[todo]!has[draft.of]!tag[done]
+\define py-unscheduled-todos-subfilter()
+tag[todo]!has[draft.of]!tag[done]!has[due]
 \end

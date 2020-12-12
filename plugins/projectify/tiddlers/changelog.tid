@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20201208093546936
-modified: 20201212170921462
+modified: 20201212215716644
 tags: 
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -25,6 +25,7 @@ type: text/vnd.tiddlywiki
 * Improved style for the dashboard projects section
 * Improved layout for completed todos in a project
 * Added a drag handle for draggable todo items
+* Scheduled todos are always sorted first
 
 !! Fixes
 
