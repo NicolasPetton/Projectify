@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/nico/projectify",
+    "name": "Projectify",
+    "description": "Simple project management for TiddlyWiki",
+    "author": "NicolasPetton",
+    "version": "0.5.1",
+    "core-version": ">=5.0.8",
+    "source": "https://github.com/NicolasPetton/Projectify",
+    "list": "installation usage changelog",
+    "dependents": "$:/plugins/kixam/moment $:/plugins/kixam/datepicker $:/plugins/flibbles/relink",
+    "plugin-type": "plugin"
+}
