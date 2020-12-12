@@ -3,7 +3,7 @@
     "name": "Project Manager",
     "description": "Simple project management for TiddlyWiki",
     "author": "NicolasPetton",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "core-version": ">=5.0.8",
     "source": "https://github.com/NicolasPetton/ProjectManager",
     "list": "installation usage changelog",
