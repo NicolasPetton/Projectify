@@ -169,7 +169,7 @@ input.py-input.input-large {
 }
 
 /* Align the completed/scheduled todos with the non-completed ones that have a
-   drag handle */
+   drag handle. TODO: Check why the padding is different from the drag-handle's width */
 .py-completed-todos .py-todo > *,
 .py-scheduled-todos .py-todo > *{
   padding-left: 22px;
