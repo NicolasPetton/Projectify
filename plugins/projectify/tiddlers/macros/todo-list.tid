@@ -50,12 +50,12 @@ type: text/vnd.tiddlywiki
   </div>
 \end
   
-\define todo-list(emptyMessage:"''🙌 All done!''")
-  <$list filter=<<py-has-open-todos>> emptyMessage=<<__emptyMessage__>> variable="ignore">
-    <<todo-list-scheduled>>
-    <<todo-list-unscheduled>>
-
+\define todo-list(emptyTemplate)
+  <$list filter=<<py-has-no-open-todo>> variable="ignore">
+    <$transclude tiddler=<<__emptyTemplate__>>/>
   </$list>
+  <<todo-list-scheduled>>
+  <<todo-list-unscheduled>>
 \end
 
 \define todo-list-completed()

@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 
   <$macrocall
     $name="todo-list"
-    emptyMessage={{$:/plugins/nico/projectify/ui/welcome/EmptyProject}}
+    emptyTemplate="$:/plugins/nico/projectify/ui/welcome/EmptyProject"
   />
 
   {{||$:/plugins/nico/projectify/ui/forms/ProjectActions}}

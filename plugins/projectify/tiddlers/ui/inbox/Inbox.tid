@@ -21,6 +21,6 @@ type: text/vnd.tiddlywiki
   <$macrocall
     class="py-inbox-input"
     $name="todo-list"
-    emptyMessage={{$:/plugins/nico/projectify/ui/welcome/EmptyInbox}}
+    emptyTemplate="$:/plugins/nico/projectify/ui/welcome/EmptyInbox"
   />
 </$vars>

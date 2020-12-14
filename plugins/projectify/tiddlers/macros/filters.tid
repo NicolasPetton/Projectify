@@ -34,6 +34,10 @@ type: text/vnd.tiddlywiki
 [!has[draft.of]tag{!!title}tag[todo]!tag[done]limit[1]]
 \end
 
+\define py-has-no-open-todo()
+[!has[draft.of]tag{!!title}tag[todo]!tag[done]count[]match[0]]
+\end
+
 \define py-has-completed-todos()
 [!has[draft.of]tag{!!title}tag[todo]tag[done]limit[1]]
 \end
