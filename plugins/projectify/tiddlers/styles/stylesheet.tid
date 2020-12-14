@@ -172,7 +172,7 @@ input.py-input.input-large {
    drag handle */
 .py-completed-todos .py-todo > *,
 .py-scheduled-todos .py-todo > *{
-  padding-left: 18px;
+  padding-left: 22px;
 }
 	      
 .py-todo.py-completed a {
@@ -181,6 +181,8 @@ input.py-input.input-large {
 	    
 .py-drag-handle {
   color: <<colour muted-foreground>>;
+  width: 18px;
+  display: inline-block;
 }
 
 .py-drag-handle svg {
