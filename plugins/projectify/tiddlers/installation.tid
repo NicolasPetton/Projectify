@@ -4,7 +4,7 @@ tags:
 title: $:/plugins/nico/projectify/installation
 type: text/vnd.tiddlywiki
 
-! Dependencies
+!! Dependencies
 
 Project-Manager depends on the following plugins:
 
@@ -17,7 +17,7 @@ While not strictly required, we strongly recommand installing the [[Relink|$:/pl
 
 * [[$:/plugins/flibbles/relink]]
 
-! Plugin
+!! Plugin
 
 Drag&drop the following link into your wiki
 
@@ -25,7 +25,7 @@ Drag&drop the following link into your wiki
 
 Then save & reload your wiki.
 
-! Getting started
+!! Getting started
 
 Transclude the Dashboard tiddler into another tiddler like the following:
 
