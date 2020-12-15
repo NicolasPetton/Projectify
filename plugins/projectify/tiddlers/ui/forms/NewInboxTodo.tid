@@ -7,5 +7,8 @@ type: text/vnd.tiddlywiki
   <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
   <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
   <$edit-text class="py-input" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..."/>
-  <label class="py-label">Press <kbd>⏎</kbd> add to the inbox</label>
+  <label class="py-label">
+    Press <kbd>⏎</kbd> add to the inbox.
+    <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from anywhere.
+</label>
 </$keyboard>
