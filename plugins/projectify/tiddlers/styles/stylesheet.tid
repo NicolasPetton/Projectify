@@ -129,6 +129,7 @@ input.py-input.input-large {
   display: block;
   font-size: .8em;
   opacity: .6;
+  padding: 4px 0;
 }
 
 .py-right-aligned {
