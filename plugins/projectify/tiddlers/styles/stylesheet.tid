@@ -316,6 +316,7 @@ input.py-input.input-large {
   padding: 40px 20px;
   margin: 20px auto;
   background: <<colour message-background>>;
+  color: <<colour message-foreground>>;
   border-radius: 12px;
 }
 
