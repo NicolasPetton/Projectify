@@ -50,5 +50,5 @@ type: text/vnd.tiddlywiki
 
 <dl>
   <dt>Next 30 days</dt>
-  <dd><<schedule-range 7 30>></dd>
+  <dd><<schedule-range 8 30>></dd>
 </dl>
