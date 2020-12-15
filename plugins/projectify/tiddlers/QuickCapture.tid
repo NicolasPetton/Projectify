@@ -13,5 +13,5 @@ type: text/vnd.tiddlywiki
   <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
   <$action-sendmessage $message="tm-close-tiddler"/>
   <$edit-text class="py-input input-large" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..." focus="true"/> 
-  <label class="py-label py-right-aligned">Press ⏎ to capture</label>
+  <label class="py-label py-right-aligned">Press <kbd>⏎</kbd> to capture</label>
 </$keyboard>
