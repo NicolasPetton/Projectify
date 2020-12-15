@@ -70,6 +70,10 @@ type: text/vnd.tiddlywiki
 [!has[draft.of]!tag[done]tag[todo]!days:due<start>days:due<end>sort[due]]
 \end
 
+\define py-todos-due-after()
+[!has[draft.of]!tag[done]tag[todo]!days:due<start>sort[due]]
+\end
+
 \define py-has-overdue-todos()
 [!has[draft.of]!tag[done]tag[todo]!days:due[-1]limit[1]]
 \end

@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20201208093546936
-modified: 20201212215716644
+modified: 20201215203425613
 tags: 
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -17,6 +17,7 @@ type: text/vnd.tiddlywiki
 * The number of todos in a project is now represented with a small pie chart icon
 * Projects without active todos are now omitted from the "Next" dashboard section
 * New Schedule button in the page controls listings all todos scheduled today
+* New list in the Schedule tab of the dashboard listing all item scheduled to be done after the next 30 days.
 
 !! Improvements
 
