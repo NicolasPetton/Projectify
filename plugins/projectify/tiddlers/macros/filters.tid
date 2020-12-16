@@ -7,11 +7,11 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 
 \define py-archived-projects()
-[tag[Project]!title[Inbox]tag[done]]
+[tag[Project]!title[Inbox]tag[done]sort[title]]
 \end
 
 \define py-active-projects()
-[tag[Project]!title[Inbox]!tag[done]]
+[tag[Project]!title[Inbox]!tag[done]sort[title]]
 \end
 
 \define py-has-archived-projects()
