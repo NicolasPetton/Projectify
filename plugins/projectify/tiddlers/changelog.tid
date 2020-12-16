@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20201208093546936
-modified: 20201215203425613
+modified: 20201216162947554
 tags: 
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -15,6 +15,8 @@ type: text/vnd.tiddlywiki
 * New checkbox button in the view toolbar of todo tiddlers
 * New form to add new projects including an input for the project title
 * The number of todos in a project is now represented with a small pie chart icon
+* New card view of active projects in the dashboard
+* Projects in the dashboard can now be reordered
 * Projects without active todos are now omitted from the "Next" dashboard section
 * New Schedule button in the page controls listings all todos scheduled today
 * New list in the Schedule tab of the dashboard listing all item scheduled to be done after the next 30 days.

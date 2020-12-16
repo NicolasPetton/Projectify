@@ -1,0 +1,21 @@
+created: 20201216161736491
+modified: 20201216163546892
+title: $:/plugins/nico/projectify/ui/dashboard/ReorderProjects
+type: text/vnd.tiddlywiki
+
+<div class="tc-tiddler-info-foo">
+  <div class="py-label">
+    Drag & drop item in the list to reorder projects.
+  </div>
+
+  <$macrocall
+    $name="list-tagged-draggable"
+    tag="Project"
+    subFilter=<<py-is-active-subfilter>>
+  />
+
+  <$button class="py-btn">
+    Close
+    <$action-setfield $tiddler="$:/state/py-show-reorder-projects" text="no"/>
+  </$button>
+</div>

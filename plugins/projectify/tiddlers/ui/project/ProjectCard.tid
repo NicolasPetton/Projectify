@@ -1,0 +1,12 @@
+created: 20200424193106051
+modified: 20201216162837017
+tags:
+title: $:/plugins/nico/projectify/ui/project/ProjectCard
+type: text/vnd.tiddlywiki
+
+<$link overrideClass="py-card" to={{!!title}}>
+<h3><$text text=<<currentTiddler>>/></h3>
+  <div class="py-project-infos">
+    {{||$:/plugins/nico/projectify/images/pie}} <$count filter=<<py-open-todos>>/> open tasks
+  </div>
+</$link>

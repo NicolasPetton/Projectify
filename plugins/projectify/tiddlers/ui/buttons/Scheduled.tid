@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
   popup="$:/state/py-scheduled-dropdown"
   tooltip="Today's todos"
   aria-label="Today's todos"
-  class=<<tv-config-toolbar-class>>
+  class={{{ [[desktop-only ]addsuffix<tv-config-toolbar-class>] }}}
   selectedClass="tc-selected"
 >
   <$list filter="[<tv-config-toolbar-icons>match[yes]]">

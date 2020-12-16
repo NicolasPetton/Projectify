@@ -1,0 +1,13 @@
+created: 20200424193106051
+modified: 20201216130410090
+tags:
+title: $:/plugins/nico/projectify/ui/dashboard/ProjectCards
+type: text/vnd.tiddlywiki
+
+<div class="py-cards">
+  <$list filter=<<py-active-projects>>>
+    <$droppable actions=<<refile-inbox-actions>>>
+      {{||$:/plugins/nico/projectify/ui/project/ProjectCard}}
+    </$droppable>
+  </$list>
+</div>

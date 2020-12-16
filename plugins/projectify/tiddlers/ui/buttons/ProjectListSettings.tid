@@ -1,0 +1,35 @@
+created: 20201210171047824
+creator: nico
+description: Show all todos scheduled for today
+modified: 20201216162611992
+modifier: nico
+title: $:/plugins/nico/projectify/ui/buttons/ProjectListSettings
+type: text/vnd.tiddlywiki
+
+<$button
+  popup="$:/state/py-project-list-settings-dropdown"
+  tooltip="Options"
+  aria-label="Options"
+  class="tc-btn-invisible"
+  selectedClass="tc-selected"
+>
+  {{$:/core/images/down-arrow}}
+</$button>
+
+<$reveal state="$:/state/py-project-list-settings-dropdown" type="popup" position="below" animate="yes" class="tc-drop-down">
+  <$vars switchView={{{ [{$:/config/projectify/projects-view}match[list]then[cards]else[list]] }}}>
+    <$button class="tc-btn-invisible">
+      View as <$text text=<<switchView>>/>
+      <$action-setfield $tiddler="$:/config/projectify/projects-view" text=<<switchView>> />
+    </$button>
+  </$vars>
+
+  <$button
+    tooltip="Reorder projects"
+    aria-label="Reorder projects"
+    class="tc-btn-invisible"
+  >
+    Reorder projects
+    <$action-setfield $tiddler="$:/state/py-show-reorder-projects" text="yes">
+  </$button>
+</$reveal>

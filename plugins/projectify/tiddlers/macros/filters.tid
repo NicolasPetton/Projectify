@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-active-projects()
-[tag[Project]!title[Inbox]!tag[done]sort[title]]
+[tag[Project]!title[Inbox]!tag[done]]
 \end
 
 \define py-has-archived-projects()
@@ -96,4 +96,8 @@ type: text/vnd.tiddlywiki
 
 \define py-unscheduled-todos-subfilter()
 tag[todo]!has[draft.of]!tag[done]!has[due]
+\end
+
+\define py-is-active-subfilter()
+!tag[done]
 \end
