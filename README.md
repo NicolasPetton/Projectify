@@ -21,9 +21,9 @@ A demo is available at
 
 ## ChangeLog
 
-Here's a ChangeLog for the upcoming 1.0.0 release.  A more up-to-date version can be found [here](./plugins/projectify/tiddlers/changelog.tid).
+An up-to-date ChangeLog can be found [here](./plugins/projectify/tiddlers/changelog.tid).
 
-##### Release 1.0.0 (not yet released)
+##### Release 0.6.0
 
 ###### Features
 
@@ -33,7 +33,11 @@ Here's a ChangeLog for the upcoming 1.0.0 release.  A more up-to-date version ca
 * New checkbox button in the view toolbar of todo tiddlers
 * New form to add new projects including an input for the project title
 * The number of todos in a project is now represented with a small pie chart icon
+* New card view of active projects in the dashboard
+* Projects in the dashboard can now be reordered
 * Projects without active todos are now omitted from the "Next" dashboard section
+* New Schedule button in the page controls listings all todos scheduled today
+* New list in the Schedule tab of the dashboard listing all item scheduled to be done after the next 30 days.
 
 ###### Improvements
 
