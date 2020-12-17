@@ -1,17 +1,17 @@
 created: 20201202200514984
-modified: 20201217130256339
+modified: 20201217210137090
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/todo-list
 type: text/vnd.tiddlywiki
 
 \define todo-dragstart-actions()
-  <$action-setfield $tiddler="$:/state/py-drag-todo-from" text=<<projectTag>>/>
+  <$action-setfield $tiddler="$:/state/projectify/drag-todo-from" text=<<projectTag>>/>
 \end
 
 \define todo-list-drop-actions(tag)
 <!-- Same as list-tagged-draggable-drop-actions, but removing the item from its old project. -->
-<$action-listops $tiddler=<<actionTiddler>> $tags="-[{$:/state/py-drag-todo-from}] [<__tag__>]"/>
-<$action-setfield $tiddler="$:/state/py-drag-todo-from" text=""/>
+<$action-listops $tiddler=<<actionTiddler>> $tags="-[{$:/state/projectify/drag-todo-from}] [<__tag__>]"/>
+<$action-setfield $tiddler="$:/state/projectify/drag-todo-from" text=""/>
 <!-- Save the current ordering of the tiddlers with this tag -->
 <$set name="order" filter="[<__tag__>tagging[]]">
 <!-- Remove any list-after or list-before fields from the tiddlers with this tag -->

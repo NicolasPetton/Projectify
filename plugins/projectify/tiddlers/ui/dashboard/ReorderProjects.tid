@@ -1,5 +1,5 @@
 created: 20201216161736491
-modified: 20201216163546892
+modified: 20201217210136972
 title: $:/plugins/nico/projectify/ui/dashboard/ReorderProjects
 type: text/vnd.tiddlywiki
 
@@ -16,6 +16,6 @@ type: text/vnd.tiddlywiki
 
   <$button class="py-btn">
     Close
-    <$action-setfield $tiddler="$:/state/py-show-reorder-projects" text="no"/>
+    <$action-setfield $tiddler="$:/state/projectify/show-reorder-projects" text="no"/>
   </$button>
 </div>

@@ -1,13 +1,13 @@
 created: 20201210171047824
 creator: nico
 description: Show all todos scheduled for today
-modified: 20201216162611992
+modified: 20201217210137033
 modifier: nico
 title: $:/plugins/nico/projectify/ui/buttons/ProjectListSettings
 type: text/vnd.tiddlywiki
 
 <$button
-  popup="$:/state/py-project-list-settings-dropdown"
+  popup="$:/state/projectify/project-list-settings-dropdown"
   tooltip="Options"
   aria-label="Options"
   class="tc-btn-invisible"
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
   {{$:/core/images/down-arrow}}
 </$button>
 
-<$reveal state="$:/state/py-project-list-settings-dropdown" type="popup" position="below" animate="yes" class="tc-drop-down">
+<$reveal state="$:/state/projectify/project-list-settings-dropdown" type="popup" position="below" animate="yes" class="tc-drop-down">
   <$vars switchView={{{ [{$:/config/projectify/projects-view}match[list]then[cards]else[list]] }}}>
     <$button class="tc-btn-invisible">
       View as <$text text=<<switchView>>/>
@@ -30,6 +30,6 @@ type: text/vnd.tiddlywiki
     class="tc-btn-invisible"
   >
     Reorder projects
-    <$action-setfield $tiddler="$:/state/py-show-reorder-projects" text="yes">
+    <$action-setfield $tiddler="$:/state/projectify/show-reorder-projects" text="yes">
   </$button>
 </$reveal>

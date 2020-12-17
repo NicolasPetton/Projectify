@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20200427133943777
-modified: 20201215203656107
+modified: 20201217210137076
 tags: 
 title: $:/plugins/nico/projectify/usage
 type: text/vnd.tiddlywiki
@@ -13,15 +13,15 @@ The dashboard can be embedded ([[transcluded|https://tiddlywiki.com/#Transclusio
 ```
 {{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
 ```
-<$reveal type="match" state="$:/state/py-usage-show-dashboard" text="show">
-  <$button class="py-btn btn-primary" set="$:/state/py-usage-show-dashboard" setTo="">Hide</$button>
+<$reveal type="match" state="$:/state/projectify/usage-show-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/projectify/usage-show-dashboard" setTo="">Hide</$button>
   <hr/>
   {{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
   <hr/>
 </$reveal>
 
-<$reveal type="nomatch" state="$:/state/py-usage-show-dashboard" text="show">
-  <$button class="py-btn btn-primary" set="$:/state/py-usage-show-dashboard" setTo="show">Show result</$button>
+<$reveal type="nomatch" state="$:/state/projectify/usage-show-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/projectify/usage-show-dashboard" setTo="show">Show result</$button>
 </$reveal>
 
 !! How to add extra tabs to the Dashboard
@@ -33,17 +33,17 @@ Any tiddler with the tag <<tag $:/plugins/nico/projectify/tags/dashboard>> will 
 You can build your own Dashboard using the following:
 
 ```
-<<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Schedule" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/py-custom-dashboard" "py-tabs">>
+<<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Schedule" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/projectify/custom-dashboard" "py-tabs">>
 ```
-<$reveal type="match" state="$:/state/py-usage-custom-dashboard" text="show">
-  <$button class="py-btn btn-primary" set="$:/state/py-usage-custom-dashboard" setTo="">Hide</$button>
+<$reveal type="match" state="$:/state/projectify/usage-custom-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/projectify/usage-custom-dashboard" setTo="">Hide</$button>
   <hr/>
-  <<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Schedule" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/py-custom-dashboard" "py-tabs">>
+  <<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Schedule" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/projectify/custom-dashboard" "py-tabs">>
   <hr/>
 </$reveal>
 
-<$reveal type="nomatch" state="$:/state/py-usage-custom-dashboard" text="show">
-  <$button class="py-btn btn-primary" set="$:/state/py-usage-custom-dashboard" setTo="show">Show result</$button>
+<$reveal type="nomatch" state="$:/state/projectify/usage-custom-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/projectify/usage-custom-dashboard" setTo="show">Show result</$button>
 </$reveal>
 
 !! Can I make sub-projects?
