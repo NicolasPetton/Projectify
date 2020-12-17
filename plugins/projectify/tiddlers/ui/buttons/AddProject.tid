@@ -1,20 +1,7 @@
 created: 20201217210439140
-modified: 20201217222208897
+modified: 20201217232231494
 title: $:/plugins/nico/projectify/ui/buttons/AddProject
 type: text/vnd.tiddlywiki
-
-\define add-project-actions()
-  <$action-createtiddler
-    $basetitle={{$:/state/projectify/new-project!!project_name}}
-    description={{$:/state/projectify/new-project!!project_description}}
-    tags="Project"/>
-  <$action-setfield
-    $tiddler="$:/state/projectify/new-project"
-    project_name=""
-    project_description=""
-  />
-  <$action-setfield $tiddler="$:/state/projectify/show-new-project-popup" text=""/>
-\end
 
 <$button
   class="py-btn btn-primary"
@@ -33,36 +20,5 @@ type: text/vnd.tiddlywiki
   position="aboveright"
 >
   <h2> New project</h2>
-  <div class="py-form">
-    <$keyboard key="enter">
-      <<add-project-actions>>
-      <div class="py-control-group">
-        <div class="py-label">Name</div>
-        <$edit-text
-          class="py-input"
-          focus="true"
-          tiddler="$:/state/projectify/new-project"
-          field="project_name"
-        />
-      </div>
-      <div class="py-control-group">
-        <div class="py-label">Description (optional)</div>
-        <$edit-text
-          class="py-input"
-          tiddler="$:/state/projectify/new-project"
-          field="project_description"
-        />
-      </div>
-    </$keyboard>
-    <div class="py-actions">
-      <$button class="py-btn btn-primary">
-        <<add-project-actions>>
-        Save
-      </$button>
-       or
-      <$button class="py-btn" set="$:/state/projectify/show-new-project-popup" setTo="">
-        Cancel
-      </$button>
-    </div>
-  </div>
+  {{$:/plugins/nico/projectify/ui/forms/NewProject}}
 </$reveal>
