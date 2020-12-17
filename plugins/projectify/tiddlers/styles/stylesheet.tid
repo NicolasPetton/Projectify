@@ -206,8 +206,7 @@ input.py-input.input-large {
 }
 
 .py-projects,
-.py-todos .tc-menu-list-item:first-child,
-.py-scheduled-todos .py-todo {
+.py-todos .tc-menu-list-item:first-child {
   border-top: 1px solid #eee;
 }
 
@@ -229,10 +228,10 @@ input.py-input.input-large {
   margin-left: 20px;
 }
 
-/* Align the completed/scheduled todos with the non-completed ones that have a
-   drag handle. TODO: Check why the padding is different from the drag-handle's width */
-.py-completed-todos .py-todo > *,
-.py-scheduled-todos .py-todo > *{
+/* Align the completed todos with the non-completed ones that have a drag
+   handle. TODO: Check why the padding is different from the drag-handle's width
+   */
+.py-completed-todos .py-todo > * {
   padding-left: 22px;
 }
 	      

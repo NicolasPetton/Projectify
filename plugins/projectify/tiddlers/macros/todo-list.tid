@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20201212215126842
+modified: 20201217130256339
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/todo-list
 type: text/vnd.tiddlywiki
@@ -24,7 +24,7 @@ type: text/vnd.tiddlywiki
 </$set>
 \end
 
-\define todo-list-unscheduled()
+\define todo-list-filtered(subFilter)
   <$vars
     projectTag={{!!title}}
     dragHandle="yes"
@@ -34,28 +34,27 @@ type: text/vnd.tiddlywiki
       <$macrocall
         $name="list-tagged-draggable"
         tag=<<projectTag>>
-        subFilter=<<py-unscheduled-todos-subfilter>>
+        subFilter=<<__subFilter__>>
         itemTemplate="$:/plugins/nico/projectify/ui/todo/TodoItem"
       />
     </div>
   </$vars>
-\end
-
-\define todo-list-scheduled()
-  <div class="py-todos py-scheduled-todos">  
-    <$list 
-      filter=<<py-scheduled-todos>>
-      template="$:/plugins/nico/projectify/ui/todo/TodoItem"
-    />
-  </div>
 \end
   
 \define todo-list(emptyTemplate)
   <$list filter=<<py-has-no-open-todo>> variable="ignore">
     <$transclude tiddler=<<__emptyTemplate__>>/>
   </$list>
-  <<todo-list-scheduled>>
-  <<todo-list-unscheduled>>
+  <$list filter=<<py-has-scheduled-todos>> variable="ignore">
+    <label class="py-label">Scheduled</label>
+    <$macrocall $name="todo-list-filtered" subFilter=<<py-scheduled-todos-subfilter>>/>
+  </$list>
+  <$list filter=<<py-has-unscheduled-todos>> variable="ignore">
+    <$list filter=<<py-has-scheduled-todos>>>
+      <label class="py-label">Other tasks</label>
+    </$list>
+    <$macrocall $name="todo-list-filtered" subFilter=<<py-unscheduled-todos-subfilter>>/>
+  </$list>
 \end
 
 \define todo-list-completed()

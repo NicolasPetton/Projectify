@@ -1,9 +1,20 @@
 caption: Usage & Help
 created: 20201208093546936
-modified: 20201216210007099
+modified: 20201217130517668
 tags: 
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
+
+! Master
+
+!! Features
+
+* When a project has both scheduled and unscheduled items, split the todo-list in 2 distinct sections.
+
+!! Improvements
+
+* Add a drag handle on scheduled todo items as well, so they can be dragged & moved between projects.
+
 
 ! Release 0.6.0
 

@@ -38,6 +38,14 @@ type: text/vnd.tiddlywiki
 [!has[draft.of]tag{!!title}tag[todo]!tag[done]count[]match[0]]
 \end
 
+\define py-has-scheduled-todos()
+[!has[draft.of]tag{!!title}tag[todo]!tag[done]has[due]limit[1]]
+\end
+
+\define py-has-unscheduled-todos()
+[!has[draft.of]tag{!!title}tag[todo]!tag[done]!has[due]limit[1]]
+\end
+
 \define py-has-completed-todos()
 [!has[draft.of]tag{!!title}tag[todo]tag[done]limit[1]]
 \end
@@ -48,10 +56,6 @@ type: text/vnd.tiddlywiki
 
 \define py-open-todos()
 [tag{!!title}tag[todo]!has[draft.of]!tag[done]]
-\end
-
-\define py-scheduled-todos()
-[tag{!!title}tag[todo]!has[draft.of]!tag[done]has[due]sort[due]]
 \end
 
 \define py-completed-todos()
@@ -96,6 +100,10 @@ type: text/vnd.tiddlywiki
 
 \define py-unscheduled-todos-subfilter()
 tag[todo]!has[draft.of]!tag[done]!has[due]
+\end
+
+\define py-scheduled-todos-subfilter()
+tag[todo]!has[draft.of]!tag[done]has[due]sort[due]
 \end
 
 \define py-is-active-subfilter()
