@@ -1,6 +1,6 @@
 caption: {{$:/plugins/nico/projectify/images/tasks}} Projects
 created: 20200424193106051
-modified: 20201217210137012
+modified: 20201217210901430
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/Projects
 type: text/vnd.tiddlywiki
@@ -10,35 +10,6 @@ type: text/vnd.tiddlywiki
     <$action-sendmessage $message="tm-add-tag" $param=<<currentTiddler>>/>
     <$action-sendmessage $message="tm-remove-tag" $param="Inbox"/>
   </$fieldmangler>
-\end
-
-\define projects-actions()
-  <$reveal type="match" state="$:/state/projectify/show-new-project-form" text="">
-
-    <$button class="py-btn btn-primary" set="$:/state/projectify/show-new-project-form" setTo="show">
-      {{$:/core/images/edit-button}}
-      New project
-    </$button>
-  </$reveal>
-
-  <$reveal type="match" state="$:/state/projectify/show-new-project-form" text="show">
-    <$keyboard key="enter">
-      <$action-createtiddler $basetitle={{$:/state/projectify/new-project!!project_name}} tags="Project"/>
-      <$action-setfield $tiddler="$:/state/projectify/new-project" project_name=""/>
-      <$edit-text class="py-input" focus="true" tiddler="$:/state/projectify/new-project" field="project_name" placeholder="Describe this project"/>
-    </$keyboard>
-    <div class="py-actions">
-      <$button class="py-btn btn-primary">
-        <$action-createtiddler $basetitle={{$:/state/projectify/new-project!!project_name}} tags="Project"/>
-        <$action-setfield $tiddler="$:/state/projectify/new-project" project_name=""/>
-        Add project
-      </$button>
-       or
-      <$button class="py-btn" set="$:/state/projectify/show-new-project-form" setTo="">
-        Cancel
-      </$button>
-    </div>
-  </$reveal>
 \end
 
 \define archived-projects()
@@ -93,6 +64,6 @@ type: text/vnd.tiddlywiki
   {{$:/plugins/nico/projectify/ui/dashboard/ProjectCards}}
 </$reveal>
 
+{{$:/plugins/nico/projectify/ui/buttons/AddProject}}
 
-<<projects-actions>>
 <<archived-projects>>

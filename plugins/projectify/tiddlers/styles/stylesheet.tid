@@ -45,6 +45,22 @@ type: text/vnd.tiddlywiki
   box-shadow: 0 0 0 0.2rem #ffdcda;
 }
 
+.py-form .py-control-group {
+  margin: 8px 0;
+}
+
+.py-form .py-control-group .py-label {
+  padding: 0;
+}
+
+.py-actions {
+  margin: 10px 0 20px 0;
+}
+
+.py-form .py-actions {
+  margin-top: 20px;
+}
+
 .py-link-muted {
   text-decoration: underline;
   color: <<colour muted-foreground>>;
@@ -53,10 +69,6 @@ type: text/vnd.tiddlywiki
 .py-link-muted:hover,
 .py-link-muted:active {
   color: <<colour primary>>;
-}
-
-.py-actions {
-  margin: 10px 0 20px 0;
 }
 
 .py-heading-with-buttons h2 {
@@ -194,6 +206,14 @@ input.py-input.input-large {
   font-weight: bold;
   font-size: 1em;
   margin: 0 0 15px 0;
+}
+
+.py-popup {
+  background: <<colour tiddler-background>>;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 5px 20px;
+  width: 350px;
 }
 
 .py-projects, .py-todos {
