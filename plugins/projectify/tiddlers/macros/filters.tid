@@ -30,6 +30,10 @@ type: text/vnd.tiddlywiki
 [!has[draft.of]tag{!!title}tag[todo]limit[1]]
 \end
 
+\define py-has-todos()
+[!has[draft.of]tag{!!title}tag[todo]limit[1]]
+\end
+
 \define py-has-open-todos()
 [!has[draft.of]tag{!!title}tag[todo]!tag[done]limit[1]]
 \end
