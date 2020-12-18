@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20201217210137090
+modified: 20201218155143459
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/todo-list
 type: text/vnd.tiddlywiki
@@ -53,8 +53,8 @@ type: text/vnd.tiddlywiki
     <$list filter=<<py-has-scheduled-todos>>>
       <label class="py-label">Other tasks</label>
     </$list>
-    <$macrocall $name="todo-list-filtered" subFilter=<<py-unscheduled-todos-subfilter>>/>
   </$list>
+  <$macrocall $name="todo-list-filtered" subFilter=<<py-unscheduled-todos-subfilter>>/>
 \end
 
 \define todo-list-completed()
