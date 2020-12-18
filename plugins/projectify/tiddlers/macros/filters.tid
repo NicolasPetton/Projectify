@@ -74,6 +74,10 @@ type: text/vnd.tiddlywiki
 [!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]]
 \end
 
+\define py-todos-due-today-or-overdue()
+[!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]] [!has[draft.of]!tag[done]tag[todo]days:due[0]]
+\end
+
 \define py-todos-due-between()
 [!has[draft.of]!tag[done]tag[todo]!days:due<start>days:due<end>sort[due]]
 \end

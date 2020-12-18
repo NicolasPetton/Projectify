@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20201218133014846
+modified: 20201218135153207
 tags: 
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -9,15 +9,15 @@ type: text/vnd.tiddlywiki
 
 !! Features
 
-* When a project has both scheduled and unscheduled items, split the todo-list in 2 distinct sections.
+* When a project has both scheduled and unscheduled items, split the todo-list in 2 distinct sections
 * Project cards now show the project description if set
-* Item that have sub-tasks now show a pie chart in todo lists.
+* Item that have sub-tasks now show a pie chart in todo lists
 
 !! Improvements
 
 * Add a drag handle on scheduled todo items as well, so they can be dragged & moved between projects
 * The button to add projects now toggles a form rendered within a popup
-
+* The Schedule popup now shows overdue todos as well as today's todos
 
 ! Release 0.6.0
 

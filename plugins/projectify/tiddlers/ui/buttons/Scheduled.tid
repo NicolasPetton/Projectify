@@ -1,7 +1,7 @@
 created: 20201210171047824
 creator: nico
 description: Show all todos scheduled for today
-modified: 20201217210137061
+modified: 20201218135102391
 modifier: nico
 tags: $:/tags/PageControls
 title: $:/plugins/nico/projectify/ui/buttons/Scheduled
@@ -29,9 +29,10 @@ type: text/vnd.tiddlywiki
 
 <$reveal state="$:/state/projectify/scheduled-dropdown" type="popup" position="below" animate="no" retain="yes">
   <div class="tc-drop-down py-scheduled-drop-down">
-    <h4>Today's tasks</h4>
+    <h4>Today & Overdue</h4>
     <$list
-      filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]]"
-      emptyMessage="""<div class="clear">🌞 All clear!</div>""" />
+      filter=<<py-todos-due-today-or-overdue>>
+      emptyMessage="""<div class="clear">🌞 All clear!</div>"""
+    />
   </div>
 </$reveal>
