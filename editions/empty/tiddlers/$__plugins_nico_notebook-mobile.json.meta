@@ -1,0 +1,13 @@
+author: NicolasPetton
+core-version: >=5.1.22
+created: 20201219111632312
+dependents: 
+description: JavaScript hooks for mobile devices support of the Notebook theme
+list: 
+modified: 20201219111632312
+name: Mobile support for the Notebook theme
+plugin-type: plugin
+source: https://github.com/NicolasPetton/Notebook
+title: $:/plugins/nico/notebook-mobile
+type: application/json
+version: 1.0.0

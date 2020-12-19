@@ -1,0 +1,11 @@
+created: 20201205162005408
+creator: nico
+modified: 20201219110955018
+modifier: nico
+tags: [[Projectify v1.0 roadmap]] todo done
+title: Use a modal for the quick capture
+type: text/vnd.tiddlywiki
+
+See examples in [[WidgetMessage: tm-modal]].
+
+''Update'': Auto-focus on modals do not work, so I'm closing this ticket.

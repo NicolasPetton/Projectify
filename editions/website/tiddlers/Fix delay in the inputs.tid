@@ -1,0 +1,11 @@
+created: 20201212131650951
+creator: nico
+modified: 20201219110954725
+modifier: nico
+tags: todo [[Projectify v1.0 roadmap]] done
+title: Fix delay in the inputs
+type: text/vnd.tiddlywiki
+
+Look at how the $:/core/ui/EditTemplate template handles keyboard input to see if that could be the problem.
+
+''UPDATE'': Won't do unless I find it to be a problem after using it for a while.

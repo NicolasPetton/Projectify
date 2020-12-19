@@ -1,0 +1,11 @@
+created: 20201207232510404
+creator: nico
+modified: 20201219110954783
+modifier: nico
+tags: todo [[Projectify v1.0 roadmap]] done
+title: Hide the completed todos section by default
+type: text/vnd.tiddlywiki
+
+This will clean up the interface.
+
+''Update:'' Probably not a good idea, it's good UX to see completed items. 

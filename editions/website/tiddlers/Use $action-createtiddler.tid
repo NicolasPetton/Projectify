@@ -1,0 +1,11 @@
+created: 20201202155429390
+modified: 20201219110955012
+modifier: nico
+tags: [[Projectify v1.0 roadmap]] todo done
+title: Use $action-createtiddler
+type: text/vnd.tiddlywiki
+
+Use [[$:/core/modules/widgets/action-createtiddler.js]] when
+
+* creating a new todo in the inbox
+* creating a new todo in a project

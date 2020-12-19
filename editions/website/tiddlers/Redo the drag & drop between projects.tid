@@ -1,0 +1,12 @@
+created: 20201211080518347
+creator: nico
+modified: 20201219110954865
+modifier: nico
+tags: todo [[Projectify v1.0 roadmap]] done
+title: Redo the drag & drop between projects
+type: text/vnd.tiddlywiki
+
+Base a new macro `<<list-draggable-connected>>` on `<<list-tagged-draggable>>`.
+
+* When drag starts, register the tiddler in a state buffer
+* When drag ends, remove the state buffer tag from the action tiddler, before adding the new tag

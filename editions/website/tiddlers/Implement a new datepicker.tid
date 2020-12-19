@@ -1,0 +1,15 @@
+created: 20201202101908854
+modified: 20201219110954792
+modifier: nico
+tags: [[Projectify v1.0 roadmap]] todo
+title: Implement a new datepicker
+type: text/vnd.tiddlywiki
+
+Implement a new date picker, similar to the one in [[Zbrain]].
+
+[img[Screenshot from 2020-12-02 11-19-46.png]]
+
+!! References
+
+* [[$:/plugins/kixam/datepicker]]
+* [[https://github.com/Pikaday/Pikaday]]

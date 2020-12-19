@@ -1,0 +1,21 @@
+created: 20201206193626188
+creator: nico
+modified: 20201219110954716
+modifier: nico
+tags: [[Projectify v1.0 roadmap]] todo done
+title: Fix D&D when dragging the link of a todo
+type: text/vnd.tiddlywiki
+
+!! Problem
+
+When a moving a todo by dragging its link (not the drag handle), the todo is not deleted from its old project, but it will instead be in both the old and the new projects.
+
+This is because the `<$link>` widget does not support `startactions`, unlike `<$draggable>`, which is what the drag handle is using.
+
+!! Solution
+
+''UPDATE'': Might be fixed by [[Redo the drag & drop between projects]].
+
+Implement a custom `<$pm-link>` widget that has `startactions` and `endactions`.
+
+If possible, open a PR to TiddlyWiki  to add support for `startactions` and `endactions` to the `<$link>` widget.

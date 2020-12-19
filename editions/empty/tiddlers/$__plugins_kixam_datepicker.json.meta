@@ -1,0 +1,12 @@
+author: kixam
+core-version: >=5.1.8
+created: 20201130170503417
+dependents: 
+description: datepicker plugin for TiddlyWiki5, based on Pikaday version 1.6.1
+list: readme license usage
+modified: 20201219111228970
+plugin-type: plugin
+source: https://github.com/kixam/TW5-datepicker
+title: $:/plugins/kixam/datepicker
+type: application/json
+version: 0.5.2

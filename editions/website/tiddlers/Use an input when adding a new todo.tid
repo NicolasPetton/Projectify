@@ -1,0 +1,12 @@
+created: 20201202085358705
+modified: 20201219110955029
+modifier: nico
+tags: [[Projectify v1.0 roadmap]] todo
+title: Use an input when adding a new todo
+type: text/vnd.tiddlywiki
+
+When adding a new todo, use an input instead of showing the tiddler edit view.
+
+See [[Zbrain]] screenshot:
+
+[img[Screenshot from 2020-12-02 09-54-46.png]]

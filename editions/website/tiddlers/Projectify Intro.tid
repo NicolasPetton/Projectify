@@ -1,0 +1,36 @@
+created: 20201218161315664
+modified: 20201219110954832
+title: Projectify Intro
+type: text/vnd.tiddlywiki
+
+<div class="intro">
+  <div class="logo">{{$:/themes/nico/notebook/logo.svg}}</div>
+  <h1>Project & todo management for [[TiddlyWiki|https://tiddlywiki.com]].</h1>
+</div>
+
+<style>
+.intro {
+    margin-bottom: 40px;
+    padding: 60px 0;
+    text-align: center;
+    background: <<colour page-background>>;
+    border-radius: 20px;
+}
+
+.intro a.tc-tiddlylink-external {
+  text-decoration: none;
+  color: #7f4bca;
+}
+
+.intro .logo img {
+  max-width: 300px;
+  margin: 0;
+}
+
+.intro h1 {
+  color: #483355;
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.3em;
+}
+</style>
