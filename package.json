@@ -1,0 +1,33 @@
+{
+	"name": "projectify",
+	"version": "0.6.1",
+	"description": "Project and todo management in TiddlyWiki",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/nicolaspetton/projectify.git"
+	},
+	"keywords": [
+		"TiddlyWiki",
+		"TiddlyWiki-Plugin",
+		"project-management",
+		"todo-list"
+	],
+	"scripts": {
+		"build-website": "tiddlywiki editions/website/ --build index",
+		"build-empty": "tiddlywiki editions/empty/ --build index",
+		"build": "npm run build-website; npm run build-empty",
+		"serve": "tiddlywiki . --listen",
+		"serve-website": "tiddlywiki editions/website/ --listen",
+		"serve-empty": "tiddlywiki editions/website/ --listen"
+	},
+	"author": "Nicolas Petton",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nicolaspetton/projectify/issues"
+	},
+	"homepage": "https://github.com/nicolaspetton/projectify#readme"
+}
