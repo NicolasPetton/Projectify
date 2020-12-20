@@ -7,6 +7,9 @@ type: text/vnd.tiddlywiki
 
 ! Master
 
+!! Improvements
+
+* New icons from the OpenMoji project
 !! Fixes
 
 * Fix a typo in the Scheduled sidebar button

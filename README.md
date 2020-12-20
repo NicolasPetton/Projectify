@@ -57,3 +57,10 @@ An up-to-date ChangeLog can be found [here](./plugins/projectify/tiddlers/change
 
 * The `<<project>>` macro should not be used anymore. Instead, the plugin adds the <<tag SubProject>> tag to sub projects and renders their todo-list automatically.
 * Projects are now archived using the <<tag done>> tag. The former `Archived` tag is not used anymore.
+
+## License
+
+Projectify is released under the MIT license.
+
+Projectify uses the OpenMoji emoji icons
+(https://github.com/hfg-gmuend/openmoji), released under CC BY-SA 4.0.
