@@ -1,0 +1,30 @@
+{
+    "tiddlers": {
+        "$:/plugins/nico/projectify/LICENSE": {
+            "title": "$:/plugins/nico/projectify/LICENSE",
+            "created": "20200419141443144",
+            "creator": "nico",
+            "modified": "20201211132900439",
+            "modifier": "nico",
+            "tags": "",
+            "type": "text/vnd.tiddlywiki",
+            "text": "\nMIT License Copyright (c) 2020 [[Nicolas Petton|https://nicolas.petton.fr]] nicolas@petton.fr\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is furnished\nto do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice (including the next\nparagraph) shall be included in all copies or substantial portions of the\nSoftware.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS\nOR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF\nOR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+        },
+        "$:/plugins/nico/shields/shield": {
+            "title": "$:/plugins/nico/shields/shield",
+            "created": "20201215172057193",
+            "modified": "20201215172122777",
+            "tags": "$:/tags/Macro",
+            "type": "text/vnd.tiddlywiki",
+            "text": "\\define shield(label,status,colour)\n\\whitespace trim\n  <div class=\"shield shield-$colour$\">\n    <span class=\"label\">$label$</span>\n    <span class=\"status\">$status$</span>\n  </div>\n\\end\n"
+        },
+        "$:/plugins/nico/shields/stylesheet": {
+            "title": "$:/plugins/nico/shields/stylesheet",
+            "created": "20201215172003456",
+            "modified": "20201215173919738",
+            "tags": "$:/tags/Stylesheet",
+            "type": "text/vnd.tiddlywiki",
+            "text": "\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n.shield {\n  font-weight: normal;\n  display: inline-block;\n  color: white;\n  font-size: .8em;\n}\n\n.shield:hover {\n  text-decoration: none;\n}\n\n.shield .label {\n  background: #555;\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n  padding: 3px 6px;\n}\n\n.shield .status {\n  background: #40ba12;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n  padding: 3px 6px;\n}\n\n.shield.shield-purple .status {\n  background: #923293;\n}\n\n.shield.shield-red .status {\n  background: #cc5640;\n}\n\n.shield.shield-blue .status {\n  background: #0e7fbf;\n}\n"
+        }
+    }
+}
