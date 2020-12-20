@@ -18,6 +18,10 @@ type: text/vnd.tiddlywiki
 [tag[Project]!title[Inbox]tag[done]limit[1]]
 \end
 
+\define py-has-projects()
+[tag[Project]!title[Inbox]limit[1]]
+\end
+
 \define py-is-project()
 [all[current]tag[Project]] [all[current]tag[SubProject]]
 \end

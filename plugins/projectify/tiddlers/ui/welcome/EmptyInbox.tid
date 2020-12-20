@@ -1,11 +1,29 @@
 created: 20201208175952867
-modified: 20201212170921394
+modified: 20201220171925284
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyInbox
 type: text/vnd.tiddlywiki
 
-<div class="py-welcome">
-  <div class="icon">🎉</div>
-  <h3>You're all done!</h3>
-  <p>Everything is well organized, have a great <<now DDD>>!</p>
-</div>
+\define emptyWelcomeMessage()
+  <div class="py-welcome">
+    <div class="icon">{{$:/plugins/nico/projectify/images/postbox}}</div>
+    <h3>Collect tasks in the Inbox</h3>
+    <p>Collect tasks in the Inbox so you don't forget them, then get them out of
+      your head quickly!</p>
+    <p>You can also press <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from
+    anywhere.</p>
+  </div>
+\end
+
+<$list
+  filter=<<py-is-empty-project>>
+  emptyMessage=<<emptyWelcomeMessage>>
+  variable="ignore">
+
+  <div class="py-welcome">
+    <div class="icon">{{$:/plugins/nico/projectify/images/tada}}</div>
+    <h3>You're all done!</h3>
+    <p>Everything is well organized, have a great <<now DDD>>!</p>
+  </div>
+</$list>
+

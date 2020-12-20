@@ -411,7 +411,7 @@ input.py-input.input-large {
 }
 
 .py-welcome .icon {
-  font-size: 3em;
+  font-size: 6em;
 }
 
 .py-welcome h3 {

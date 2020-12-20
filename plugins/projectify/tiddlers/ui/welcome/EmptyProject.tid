@@ -1,12 +1,12 @@
 created: 20201208175952867
-modified: 20201212170921408
+modified: 20201220171614235
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyProject
 type: text/vnd.tiddlywiki
 
 \define emptyWelcomeMessage()
   <div class="py-welcome">
-    <div class="icon">🚀</div>
+    <div class="icon">{{$:/plugins/nico/projectify/images/rocket}}</div>
     <h3>Let's get started!</h3>
     <p>
       Keep your work organised by grouping todos in projects. <br/>
@@ -21,7 +21,7 @@ type: text/vnd.tiddlywiki
   variable="ignore">
 
   <div class="py-welcome">
-    <div class="icon">🙌</div>
+    <div class="icon">{{$:/plugins/nico/projectify/images/victory}}</div>
     <h3>Well done!</h3>
     <p>Looks like you've completed this project!</p>
   </div>

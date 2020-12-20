@@ -1,6 +1,6 @@
 caption: {{$:/plugins/nico/projectify/images/tasks}} Projects
 created: 20200424193106051
-modified: 20201217210901430
+modified: 20201220165054768
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/Projects
 type: text/vnd.tiddlywiki
@@ -57,12 +57,17 @@ type: text/vnd.tiddlywiki
   {{$:/plugins/nico/projectify/ui/dashboard/ReorderProjects}}
 </$reveal>
 
-<$reveal type="match" state="$:/config/projectify/projects-view" text="list">
-  {{$:/plugins/nico/projectify/ui/dashboard/ProjectList}}
-</$reveal>
-<$reveal type="nomatch" state="$:/config/projectify/projects-view" text="list">
-  {{$:/plugins/nico/projectify/ui/dashboard/ProjectCards}}
-</$reveal>
+<$list
+  filter=<<py-has-projects>>
+  emptyMessage={{$:/plugins/nico/projectify/ui/welcome/EmptyProjects}}
+>
+  <$reveal type="match" state="$:/config/projectify/projects-view" text="list">
+    {{$:/plugins/nico/projectify/ui/dashboard/ProjectList}}
+  </$reveal>
+  <$reveal type="nomatch" state="$:/config/projectify/projects-view" text="list">
+    {{$:/plugins/nico/projectify/ui/dashboard/ProjectCards}}
+  </$reveal>
+</$list>
 
 {{$:/plugins/nico/projectify/ui/buttons/AddProject}}
 
