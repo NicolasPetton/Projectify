@@ -1,7 +1,7 @@
 created: 20201210171047824
 creator: nico
 description: Show all todos scheduled for today
-modified: 20201218135102391
+modified: 20201220164135549
 modifier: nico
 tags: $:/tags/PageControls
 title: $:/plugins/nico/projectify/ui/buttons/Scheduled
@@ -23,7 +23,7 @@ type: text/vnd.tiddlywiki
     </span>
   </$list>
   <$list filter="[<tv-config-toolbar-text>match[yes]]">
-    <span class="tc-btn-text">Today's todos/></span>
+    <span class="tc-btn-text">Today's todos</span>
   </$list>
 </$button>
 

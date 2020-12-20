@@ -1,9 +1,15 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20201218170757698
+modified: 20201220164209189
 tags: 
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
+
+! Master
+
+!! Fixes
+
+* Fix a typo in the Scheduled sidebar button
 
 ! Release 0.6.1
 
