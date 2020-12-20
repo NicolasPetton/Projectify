@@ -1,0 +1,22 @@
+created: 20200426194806637
+modified: 20201220173104505
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/notebook
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+/* Notebook sidebar */
+
+.nc-sidebar .py-projects {
+  margin: 0;
+  border: 0;
+}
+
+.nc-sidebar .py-projects .py-project {
+  border-bottom: 0;
+}
+
+.nc-sidebar dl {
+  margin: 0;
+}
