@@ -1,5 +1,5 @@
 created: 20201208175952867
-modified: 20201220171925284
+modified: 20201220204612841
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyInbox
 type: text/vnd.tiddlywiki
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
   <div class="py-welcome">
     <div class="icon">{{$:/plugins/nico/projectify/images/postbox}}</div>
     <h3>Collect tasks in the Inbox</h3>
-    <p>Collect tasks in the Inbox so you don't forget them, then get them out of
+    <p>Collect tasks in the Inbox so you don't forget them, and get them out of
       your head quickly!</p>
     <p>You can also press <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from
     anywhere.</p>
