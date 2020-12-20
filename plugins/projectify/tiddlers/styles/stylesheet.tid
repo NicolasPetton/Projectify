@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201212170920852
+modified: 20201220204754482
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/stylesheet
 type: text/vnd.tiddlywiki
@@ -411,7 +411,7 @@ input.py-input.input-large {
 }
 
 .py-welcome .icon {
-  font-size: 6em;
+  font-size: 4em;
 }
 
 .py-welcome h3 {
