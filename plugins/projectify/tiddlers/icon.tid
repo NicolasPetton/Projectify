@@ -1,9 +1,9 @@
 created: 20201211131730353
-modified: 20201218162243388
+modified: 20201223204301934
 tags: $:/tags/Image
 title: $:/plugins/nico/projectify/icon
 type: text/vnd.tiddlywiki
 
 <div style="width:22pt;height:22pt">
-  {{$:/themes/nico/notebook/icon.svg}}
+  {{$:/themes/nico/notebook/images/icon.svg}}
 </div>
