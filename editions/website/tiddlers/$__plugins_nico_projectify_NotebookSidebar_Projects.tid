@@ -1,8 +1,0 @@
-caption: Projects
-created: 20200430123440360
-modified: 20201219110914667
-tags: $:/themes/nico/notebook/tags/SidebarSection
-title: $:/plugins/nico/projectify/NotebookSidebar/Projects
-type: text/vnd.tiddlywiki
-
-<<toc-selective-expandable "Project" "!tag[done]!tag[done]sort[title]">>
