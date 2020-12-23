@@ -1,10 +1,13 @@
 created: 20200424193106051
-modified: 20201217223457023
+modified: 20201223215149411
 tags:
 title: $:/plugins/nico/projectify/ui/project/ProjectCard
 type: text/vnd.tiddlywiki
 
-<$link overrideClass="py-card" to={{!!title}}>
+<$link overrideClass={{{ [[py-card ]addsuffix{!!card-color}] }}} to={{!!title}}>
+  <div class="py-card-options">
+    {{||$:/plugins/nico/projectify/ui/buttons/ProjectCardSettings}}
+  </div>
   <div class="py-card-head">
     <h3><$text text=<<currentTiddler>>/></h3>
     <div class="py-description">

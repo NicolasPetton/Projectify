@@ -1,11 +1,15 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20201220173240218
+modified: 20201223220119632
 tags: 
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
 ! Master
+
+!! Features
+
+* New color setting on project cards
 
 !! Improvements
 

@@ -1,0 +1,26 @@
+created: 20201210171047824
+modified: 20201223220159744
+title: $:/plugins/nico/projectify/ui/buttons/ProjectCardSettings
+type: text/vnd.tiddlywiki
+
+<$vars popupTiddler=<<qualify "$:/state/projectify/project-card-settings-dropdown">>>
+  <$button
+    popup=<<popupTiddler>>
+    tooltip="Card options"
+    aria-label="Card options"
+    class="tc-btn-invisible"
+    selectedClass="tc-selected"
+  >
+    {{$:/core/images/down-arrow}}
+  </$button>
+
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down">
+    <$list filter=<<py-project-card-colors>> variable="color">
+      <$button class="tc-btn-invisible">
+	<div class={{{ [[py-color-picker ]addsuffix<color>] }}}></div>
+	<<color>>
+	<$action-setfield card-color=<<color>>/>
+      </$button>
+    </$list>
+  </$reveal>
+</$vars>

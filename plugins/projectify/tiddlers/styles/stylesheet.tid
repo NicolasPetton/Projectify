@@ -181,6 +181,7 @@ input.py-input.input-large {
 }
 
 .py-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -198,25 +199,72 @@ input.py-input.input-large {
   box-shadow: 0 0 0 4px #d0e7ff;
 }
 
-.py-card svg {
-  fill: <<colour notification-background>>;
-}
-
 .py-card-head {
     overflow: hidden;
     max-height: 4.6em;
     line-height: 1.2em;
 }
 
-.py-card h3 {
+.py-card .py-card-head h3 {
   font-weight: bold;
   font-size: 1em;
   margin: 0;
+  margin-right: 10px;
+}
+
+.py-card .py-card-options {
+  position: absolute;
+  top: 4px;
+  right: 8px;
 }
 
 .py-card .py-description {
   opacity: .7;
   font-size: .9em;
+}
+
+.py-color-picker {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.3);
+  margin-right: 4px;
+  background: <<colour notification-background>>;
+  border: 1px solid <<colour muted-foreground>>;
+  border-radius: 50%;
+}
+
+.py-color-picker.blue {
+  background-color: #ccccff;
+}
+
+.py-color-picker.orange {
+  background-color: #ffe4cc;
+}
+
+.py-color-picker.green {
+  background-color: #ccffe4;
+}
+
+.py-color-picker.purple {
+  background-color: #ffccff;
+}
+
+.py-card.blue {
+  background-color: rgba(0,0,255,.2);
+}
+
+.py-card.orange {
+  background-color: rgba(255,122,0,.2);
+}
+
+.py-card.green {
+  background-color: rgba(0,255,122,.2);
+}
+
+.py-card.purple {
+  background-color: rgba(255,0,255,.2);
 }
 
 .py-popup {
@@ -265,11 +313,11 @@ input.py-input.input-large {
 .py-completed-todos .py-todo > * {
   padding-left: 22px;
 }
-	      
+
 .py-todo.py-completed a {
   color: <<colour muted-foreground>>;
 }
-	    
+
 .py-drag-handle {
   color: <<colour muted-foreground>>;
   width: 18px;

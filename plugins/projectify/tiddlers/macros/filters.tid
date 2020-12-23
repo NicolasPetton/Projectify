@@ -121,3 +121,7 @@ tag[todo]!has[draft.of]!tag[done]has[due]sort[due]
 \define py-is-active-subfilter()
 !tag[done]
 \end
+
+\define py-project-card-colors()
+default purple orange blue green
+\end
