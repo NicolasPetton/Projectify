@@ -252,19 +252,19 @@ input.py-input.input-large {
 }
 
 .py-card.blue {
-  background-color: rgba(0,0,255,.2);
+  background-color: rgba(0,0,255,.15);
 }
 
 .py-card.orange {
-  background-color: rgba(255,122,0,.2);
+  background-color: rgba(255,122,0,.15);
 }
 
 .py-card.green {
-  background-color: rgba(0,255,122,.2);
+  background-color: rgba(0,255,122,.15);
 }
 
 .py-card.purple {
-  background-color: rgba(255,0,255,.2);
+  background-color: rgba(255,0,255,.15);
 }
 
 .py-popup {
