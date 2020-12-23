@@ -1,8 +1,5 @@
 created: 20201210171047824
-creator: nico
-description: Show all todos scheduled for today
-modified: 20201217210137033
-modifier: nico
+modified: 20201223204610663
 title: $:/plugins/nico/projectify/ui/buttons/ProjectListSettings
 type: text/vnd.tiddlywiki
 
