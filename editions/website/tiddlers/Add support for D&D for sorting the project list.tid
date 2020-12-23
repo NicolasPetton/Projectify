@@ -1,9 +1,0 @@
-created: 20201202211347472
-creator: nico
-modified: 20201219110954593
-modifier: nico
-tags: [[Projectify v1.0 roadmap]] todo done
-title: Add support for D&D for sorting the project list
-type: text/vnd.tiddlywiki
-
-Add a link to reorder projects, that opens a dropdown similar to the tag list, listing all projects with drag&drop to reorder them.
