@@ -16,6 +16,7 @@ type: text/vnd.tiddlywiki
 !! Fixes
 
 * Fix a typo in the Scheduled sidebar button
+* Fix colors to work with dark palettes
 
 ! Release 0.6.1
 

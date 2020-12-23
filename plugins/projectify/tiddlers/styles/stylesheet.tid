@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 .py-btn {
   border-radius: 1.5em;
   border: 1px solid #ccc;
-  background: white;
+  background: <<colour tiddler-background>>;
   padding: .3em 1em;
   cursor: pointer;
   transition: box-shadow ease-in .1s;
