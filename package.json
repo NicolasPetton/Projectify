@@ -4,7 +4,12 @@
 	"description": "Project and todo management in TiddlyWiki",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build-website": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/website/ --build index",
+		"build-empty": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty/ --build index",
+		"build": "npm run build-website; npm run build-empty",
+		"serve": "nodemon -e tid,js,info --watch plugins ./node_modules/tiddlywiki/tiddlywiki.js . --listen",
+		"serve-website": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/website/ --listen",
+		"serve-empty": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/website/ --listen"
 	},
 	"repository": {
 		"type": "git",
@@ -16,18 +21,14 @@
 		"project-management",
 		"todo-list"
 	],
-	"scripts": {
-		"build-website": "tiddlywiki editions/website/ --build index",
-		"build-empty": "tiddlywiki editions/empty/ --build index",
-		"build": "npm run build-website; npm run build-empty",
-		"serve": "tiddlywiki . --listen",
-		"serve-website": "tiddlywiki editions/website/ --listen",
-		"serve-empty": "tiddlywiki editions/website/ --listen"
-	},
 	"author": "Nicolas Petton",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/nicolaspetton/projectify/issues"
 	},
-	"homepage": "https://github.com/nicolaspetton/projectify#readme"
+	"homepage": "https://github.com/nicolaspetton/projectify#readme",
+	"dependencies": {
+		"nodemon": "^2.0.6",
+		"tiddlywiki": "^5.1.22"
+	}
 }
