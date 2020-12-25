@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
   <$list filter="[<tv-config-toolbar-icons>match[yes]]">
     <span class="py-pill-container">
       {{$:/plugins/nico/projectify/images/calendar-check}}
-      <$list filter="[!has[draft.of]!tag[done]tag[todo]days:due[0]limit[1]]">
+      <$list filter="[[days:due[0]] [!days:due[-1]] +[!has[draft.of]!tag[done]tag[todo]limit[1]]">
         <div class="py-pill"></div>
       </$list>
     </span>
