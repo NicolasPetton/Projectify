@@ -79,7 +79,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-todos-due-today-or-overdue()
-[!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]] [!has[draft.of]!tag[done]tag[todo]days:due[0]]
+[days:due[0]] [!days:due[-1]] +[!has[draft.of]!tag[done]tag[todo]sort[due]]
 \end
 
 \define py-todos-due-between()
@@ -92,6 +92,10 @@ type: text/vnd.tiddlywiki
 
 \define py-has-overdue-todos()
 [!has[draft.of]!tag[done]tag[todo]!days:due[-1]limit[1]]
+\end
+
+\define py-has-todos-due-today-or-overdue()
+[days:due[0]] [!days:due[-1]] +[!has[draft.of]!tag[done]tag[todo]limit[1]]
 \end
 
 \define py-is-todo()

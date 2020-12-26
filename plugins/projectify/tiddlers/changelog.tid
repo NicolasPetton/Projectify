@@ -1,7 +1,7 @@
 caption: ChangeLog
 created: 20201208093546936
 modified: 20201223220300600
-tags: 
+tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
@@ -21,6 +21,7 @@ type: text/vnd.tiddlywiki
 
 * Fix a typo in the Scheduled sidebar button
 * Fix colors to work with dark palettes
+* Fix Scheduled button when there are overdue tasks
 
 ! Release 0.6.1
 
