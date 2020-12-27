@@ -1,9 +1,15 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20201223220300600
+modified: 20201227211114695
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
+
+! Master
+
+!! Features
+
+* All tiddler links can now be dropped within todo lists to add the target tiddlers as todos
 
 ! Release 0.7.0
 

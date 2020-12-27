@@ -1,12 +1,12 @@
 created: 20200424193106051
-modified: 20201216122810177
+modified: 20201227211557662
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectList
 type: text/vnd.tiddlywiki
 
 <ul class="py-projects">
   <$list filter=<<py-active-projects>>>
-    <$droppable actions=<<refile-inbox-actions>>>
+    <$droppable actions=<<project-refile-actions>>>
       <li class="py-project">
         {{||$:/plugins/nico/projectify/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
         <div class="py-project-infos">

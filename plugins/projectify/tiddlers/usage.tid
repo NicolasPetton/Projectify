@@ -1,6 +1,6 @@
 caption: Usage & Help
 created: 20200427133943777
-modified: 20201217210137076
+modified: 20201227212415244
 tags: 
 title: $:/plugins/nico/projectify/usage
 type: text/vnd.tiddlywiki
@@ -65,3 +65,11 @@ Yes, just drag a todo from the inbox into one of the projects.
 
 Yes, just like with todos in the inbox, drag & drop a todo from one project into
 another to move it.
+
+!! Can I drag any tiddler into a project?
+
+Yes, you can drag any tiddler link into a project to add the tiddler as a todo
+to that project.
+
+Setting [[$:/core/ui/ControlPanel/Settings/TitleLinks]] to display tiddler
+titles as links will make that even easier.

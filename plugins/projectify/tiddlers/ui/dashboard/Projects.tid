@@ -1,16 +1,9 @@
 caption: {{$:/plugins/nico/projectify/images/tasks}} Projects
 created: 20200424193106051
-modified: 20201220165054768
+modified: 20201227211807674
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/Projects
 type: text/vnd.tiddlywiki
-
-\define refile-inbox-actions()
-  <$fieldmangler tiddler=<<actionTiddler>>>
-    <$action-sendmessage $message="tm-add-tag" $param=<<currentTiddler>>/>
-    <$action-sendmessage $message="tm-remove-tag" $param="Inbox"/>
-  </$fieldmangler>
-\end
 
 \define archived-projects()
   <$list filter=<<py-has-archived-projects>> variable="ignore">

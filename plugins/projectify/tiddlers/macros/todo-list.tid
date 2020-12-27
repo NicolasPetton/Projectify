@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20201218155143459
+modified: 20201227211915842
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/todo-list
 type: text/vnd.tiddlywiki
@@ -8,9 +8,15 @@ type: text/vnd.tiddlywiki
   <$action-setfield $tiddler="$:/state/projectify/drag-todo-from" text=<<projectTag>>/>
 \end
 
+\define project-refile-actions()
+<!-- Macro similar to the todo-list drop actions, but used in project lists/cards -->
+  <$action-listops $tiddler=<<actionTiddler>> $tags="todo -[{$:/state/projectify/drag-todo-from}] [<currentTiddler>]"/>
+  <$action-setfield $tiddler="$:/state/projectify/drag-todo-from" text=""/>
+\end
+
 \define todo-list-drop-actions(tag)
-<!-- Same as list-tagged-draggable-drop-actions, but removing the item from its old project. -->
-<$action-listops $tiddler=<<actionTiddler>> $tags="-[{$:/state/projectify/drag-todo-from}] [<__tag__>]"/>
+<!-- Same as list-tagged-draggable-drop-actions, but removing the item from its old project and adding the todo tag. -->
+<$action-listops $tiddler=<<actionTiddler>> $tags="todo -[{$:/state/projectify/drag-todo-from}] [<__tag__>]"/>
 <$action-setfield $tiddler="$:/state/projectify/drag-todo-from" text=""/>
 <!-- Save the current ordering of the tiddlers with this tag -->
 <$set name="order" filter="[<__tag__>tagging[]]">
