@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201220173104505
+modified: 20201227225017752
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/notebook
 type: text/vnd.tiddlywiki
@@ -19,4 +19,9 @@ type: text/vnd.tiddlywiki
 
 .nc-sidebar dl {
   margin: 0;
+}
+
+.nc-sidebar .py-todo .py-due-date {
+  display: block;
+  padding-left: 22px;
 }
