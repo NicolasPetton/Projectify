@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201220204754482
+modified: 20201227224058975
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/stylesheet
 type: text/vnd.tiddlywiki
@@ -200,9 +200,9 @@ input.py-input.input-large {
 }
 
 .py-card-head {
-    overflow: hidden;
-    max-height: 4.6em;
-    line-height: 1.2em;
+  overflow: hidden;
+  height: 4.6em;
+  line-height: 1.2em;
 }
 
 .py-card .py-card-head h3 {

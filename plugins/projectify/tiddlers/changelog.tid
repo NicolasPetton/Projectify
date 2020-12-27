@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20201227223459867
+modified: 20201227224136646
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -15,6 +15,7 @@ type: text/vnd.tiddlywiki
 !! Fixes
 
 * Fix Scheduled button when there are overdue tasks
+* Fix rendering glitch of project titles in project cards
 
 ! Release 0.7.0
 
