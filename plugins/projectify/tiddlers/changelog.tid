@@ -1,14 +1,15 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20201228012820350
+modified: 20201228224133927
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
-! Master
+! 0.7.1
 
 !! Features
 
+* New Help tab in the dashboard
 * All tiddler links can now be dropped within todo lists to add the target tiddlers as todos
 * New "Projects" and "Schedule" tabs added to the sidebar
 
