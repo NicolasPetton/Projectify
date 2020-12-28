@@ -29,6 +29,6 @@
 	"homepage": "https://github.com/nicolaspetton/projectify#readme",
 	"dependencies": {
 		"nodemon": "^2.0.6",
-		"tiddlywiki": "^5.1.22"
+		"tiddlywiki": "^5.1.23"
 	}
 }
