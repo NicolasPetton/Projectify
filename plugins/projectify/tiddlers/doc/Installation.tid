@@ -1,7 +1,7 @@
 created: 20200427152938733
-modified: 20201212181057518
-tags: 
-title: $:/plugins/nico/projectify/installation
+modified: 20201228223622341
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/Installation
 type: text/vnd.tiddlywiki
 
 !! Dependencies
@@ -24,13 +24,3 @@ Drag&drop the following link into your wiki
 * [[$:/plugins/nico/projectify]]
 
 Then save & reload your wiki.
-
-!! Getting started
-
-Transclude the Dashboard tiddler into another tiddler like the following:
-
-```
-{{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
-```
-
-See [[Usage|$:/plugins/nico/projectify/usage]] for more information.

@@ -1,0 +1,31 @@
+created: 20201228014905847
+modified: 20201228220719512
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/Dashboard
+type: text/vnd.tiddlywiki
+
+The main entry point of Projectify is the dashboard.
+It displays the [[Inbox|$:/plugins/nico/projectify/doc/Inbox]], lists
+[[Projects|$:/plugins/nico/projectify/doc/Projects]], the
+[[Schedule|$:/plugins/nico/projectify/doc/Schedule]] and [[Next actions|$:/plugins/nico/projectify/doc/NextActions]].
+
+
+The dashboard can be embedded
+([[transcluded|https://tiddlywiki.com/#Transclusion]]) in any tiddler using the
+following:
+
+```
+{{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
+```
+<$reveal type="match" state="$:/state/projectify/usage-show-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/projectify/usage-show-dashboard" setTo="">Hide</$button>
+  <hr/>
+  {{$:/plugins/nico/projectify/ui/dashboard/Dashboard}}
+  <hr/>
+</$reveal>
+
+<$reveal type="nomatch" state="$:/state/projectify/usage-show-dashboard" text="show">
+  <$button class="py-btn btn-primary" set="$:/state/projectify/usage-show-dashboard" setTo="show">Show result</$button>
+</$reveal>
+
+The dashboard can be customized in many ways, for instance to [[display custom tabs|$:/plugins/nico/projectify/doc/DashboardCustomTabs]] or [[display the Inbox in a separate tab|$:/plugins/nico/projectify/doc/DashboardInboxSeparateTab]].

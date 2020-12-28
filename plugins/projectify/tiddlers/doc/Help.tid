@@ -1,0 +1,24 @@
+caption: {{$:/plugins/nico/projectify/images/info}} Help
+created: 20200427133943777
+modified: 20201228220304480
+tags: [[Projectify documentation]] $:/plugins/nico/projectify/tags/dashboard
+list-after: $:/plugins/nico/projectify/ui/NextActions
+title: $:/plugins/nico/projectify/doc/Help
+type: text/vnd.tiddlywiki
+
+{{$:/plugins/nico/projectify/ui/welcome/HelpWelcome}}
+
+<div class="py-cards">
+  <$list filter="[all[tiddlers+shadows]tag[$:/plugins/nico/projectify/tags/help-card]!has[draft.of]]">
+    <span>
+      <$link overrideClass="py-card" to={{!!title}}>
+	<div class="py-card-head">
+	  <h3>{{!!caption}}</h3>
+	</div>
+	<div class="py-description">
+	  {{!!description}}
+	</div>
+      </$link>
+    </span>
+  </$list>
+</div>

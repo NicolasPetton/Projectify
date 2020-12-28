@@ -1,0 +1,21 @@
+created: 20200427133943777
+modified: 20201228223509301
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/Inbox
+type: text/vnd.tiddlywiki
+
+Citing [[David Allen|https://en.wikipedia.org/wiki/David_Allen_(author)]]:
+
+<<<
+Your mind is for having ideas, not holding them.
+<<< David Allen
+
+The first step to get organized is to get everything out of your head.
+The [[Inbox|$:/plugins/nico/projectify/ui/inbox/Inbox]] is a special
+[[Project|$:/plugins/nico/projectify/doc/Projects]] where thoughts are captured
+so you don't forget them, and can get them out of your head quickly.
+
+[[Todos|$:/plugins/nico/projectify/doc/Todos]] in the [[Inbox|$:/plugins/nico/projectify/ui/inbox/Inbox]]
+can then be [[refiled|$:/plugins/nico/projectify/doc/Refiling]] into projects and/or [[scheduled|$:/plugins/nico/projectify/doc/Schedule]].
+
+Projectify also provides a simple way to [[quickly capture|$:/plugins/nico/projectify/doc/QuickCapture]] tasks into the Inbox.

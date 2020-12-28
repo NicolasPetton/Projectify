@@ -1,0 +1,9 @@
+created: 20200427133943777
+modified: 20201228022139318
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/QuickCapture
+type: text/vnd.tiddlywiki
+
+You can press <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to
+capture into the [[Inbox|$:/plugins/nico/projectify/doc/Inbox]] from anywhere.
+You can change it in the [[Keyboard section of the Control Panel|$:/core/ui/ControlPanel/KeyboardShortcuts]].

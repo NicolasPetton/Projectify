@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20201227225247498
+modified: 20201228012820350
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 !! Features
 
 * All tiddler links can now be dropped within todo lists to add the target tiddlers as todos
-* Projectify now adds "Projects" and "Schedule" tabs to the sidebar
+* New "Projects" and "Schedule" tabs added to the sidebar
 
 !! Fixes
 

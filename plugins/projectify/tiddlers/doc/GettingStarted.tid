@@ -1,0 +1,18 @@
+caption: Getting started
+description: Install & start using Projectify
+created: 20201228014905847
+modified: 20201228220319670
+tags: [[Projectify documentation]] $:/plugins/nico/projectify/tags/help-card
+title: $:/plugins/nico/projectify/doc/GettingStarted
+type: text/vnd.tiddlywiki
+
+Projectify is a [[TiddlyWiki|https://tiddlywiki.com]] plugin for managing
+projects & todo lists, inspired by projects such as
+[[Todoist|https://todoist.com]] and [[Basecamp|https://basecamp.com]]. It is
+released under the [[MIT license|$:/plugins/nico/projectify/LICENSE]].
+
+* See [[installation instructions|$:/plugins/nico/projectify/doc/installation]] for help on installing Projectify in an existing wiki.
+
+* For all changes in the latest {{$:/plugins/nico/projectify!!version}} release, see [[ChangeLog|$:/plugins/nico/projectify/changelog]].
+
+* The simplest way to get started is to transclude the [[Dashboard|$:/plugins/nico/projectify/doc/Dashboard]] into another tiddler.

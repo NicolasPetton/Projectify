@@ -6,7 +6,7 @@
     "version": "0.7.0",
     "core-version": ">=5.0.8",
     "source": "https://github.com/NicolasPetton/Projectify",
-    "list": "installation usage changelog LICENSE",
+    "list": "doc/Help changelog LICENSE",
     "dependents": "$:/plugins/kixam/moment $:/plugins/kixam/datepicker $:/plugins/flibbles/relink",
     "plugin-type": "plugin"
 }
