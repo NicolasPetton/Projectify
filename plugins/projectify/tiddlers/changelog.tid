@@ -1,11 +1,17 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20201228224133927
+modified: 20201230213527924
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
-! 0.7.1
+! Master
+
+!! Features
+
+* New search input in the Help tiddler
+
+! Release 0.7.1
 
 !! Features
 

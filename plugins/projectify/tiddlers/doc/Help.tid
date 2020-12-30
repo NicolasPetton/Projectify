@@ -1,12 +1,14 @@
 caption: {{$:/plugins/nico/projectify/images/info}} Help
 created: 20200427133943777
-modified: 20201228220304480
+modified: 20201229012135653
 tags: [[Projectify documentation]] $:/plugins/nico/projectify/tags/dashboard
 list-after: $:/plugins/nico/projectify/ui/NextActions
 title: $:/plugins/nico/projectify/doc/Help
 type: text/vnd.tiddlywiki
 
 {{$:/plugins/nico/projectify/ui/welcome/HelpWelcome}}
+
+{{$:/plugins/nico/projectify/ui/forms/HelpSearch}}
 
 <div class="py-cards">
   <$list filter="[all[tiddlers+shadows]tag[$:/plugins/nico/projectify/tags/help-card]!has[draft.of]]">
