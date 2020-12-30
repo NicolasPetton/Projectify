@@ -159,6 +159,10 @@ input.py-input.input-large {
   text-align: right;
 }
 
+.py-help-links {
+  text-align: right;
+}
+
 .py-reorder-projects:not([hidden]) {
   display: block;
 }

@@ -1,8 +1,6 @@
-caption: {{$:/plugins/nico/projectify/images/info}} Help
 created: 20200427133943777
-modified: 20201229012135653
-tags: [[Projectify documentation]] $:/plugins/nico/projectify/tags/dashboard
-list-after: $:/plugins/nico/projectify/ui/NextActions
+modified: 20201230213758432
+tags: [[Projectify documentation]]
 title: $:/plugins/nico/projectify/doc/Help
 type: text/vnd.tiddlywiki
 

@@ -1,7 +1,13 @@
 created: 20200424192751342
-modified: 20201212170921144
+modified: 20201230214758441
 tags: 
 title: $:/plugins/nico/projectify/ui/dashboard/Dashboard
 type: text/vnd.tiddlywiki
 
 <<tabs "[all[tiddlers+shadows]tag[$:/plugins/nico/projectify/tags/dashboard]]" "$:/plugins/nico/projectify/ui/dashboard/InboxAndProjects" "$:/state/projects-and-schedule"  "py-tabs">>
+
+<div class="py-help-links">
+  <$link to="$:/plugins/nico/projectify/doc/Help">
+    {{$:/plugins/nico/projectify/images/info}} Need help?
+  </$link>
+</div>
