@@ -1,5 +1,5 @@
 created: 20201212165938184
-modified: 20201228214028389
+modified: 20201230202700336
 title: ✨ About
 type: text/vnd.tiddlywiki
 
@@ -15,7 +15,8 @@ For all changes in the latest {{$:/plugins/nico/projectify!!version}} release, s
 
 !! Getting started
 
-Download a pre-configured wiki
+Download a pre-configured wiki:
+
 <a class="py-btn btn-primary" href="./empty.html" download="empty.html">
   Get Projectify
 </a>
