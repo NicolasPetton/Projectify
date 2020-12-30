@@ -1,5 +1,5 @@
 created: 20201217210439140
-modified: 20201217232231494
+modified: 20201230214353992
 title: $:/plugins/nico/projectify/ui/buttons/AddProject
 type: text/vnd.tiddlywiki
 
@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
   type="popup"
   class="tc-popup-keep py-popup"
   state="$:/state/projectify/show-new-project-popup"
-  position="aboveright"
+  position="above"
 >
   <h2> New project</h2>
   {{$:/plugins/nico/projectify/ui/forms/NewProject}}
