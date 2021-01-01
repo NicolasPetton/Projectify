@@ -191,7 +191,6 @@ input.py-input.input-large {
   justify-content: space-between;
   text-decoration: none;
   color: <<colour foreground>>;
-  background: <<colour notification-background>>;
   border-radius: 8px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
   padding: 20px;
@@ -234,40 +233,27 @@ input.py-input.input-large {
   vertical-align: middle;
   box-shadow: 0 0 4px 0 rgba(0,0,0,.3);
   margin-right: 4px;
-  background: <<colour notification-background>>;
   border: 1px solid <<colour muted-foreground>>;
   border-radius: 50%;
 }
 
-.py-color-picker.blue {
-  background-color: #ccccff;
+.py-card, .py-color-picker {
+  background-color: rgba(255,255,0,.15);
 }
 
-.py-color-picker.orange {
-  background-color: #ffe4cc;
-}
-
-.py-color-picker.green {
-  background-color: #ccffe4;
-}
-
-.py-color-picker.purple {
-  background-color: #ffccff;
-}
-
-.py-card.blue {
+.py-card.blue, .py-color-picker.blue {
   background-color: rgba(0,0,255,.15);
 }
 
-.py-card.orange {
+.py-card.orange, .py-color-picker.orange {
   background-color: rgba(255,122,0,.15);
 }
 
-.py-card.green {
+.py-card.green, .py-color-picker.green {
   background-color: rgba(0,255,122,.15);
 }
 
-.py-card.purple {
+.py-card.purple, .py-color-picker.purple {
   background-color: rgba(255,0,255,.15);
 }
 
