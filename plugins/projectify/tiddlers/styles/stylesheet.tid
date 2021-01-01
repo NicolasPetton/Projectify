@@ -20,29 +20,28 @@ type: text/vnd.tiddlywiki
 }
 
 .py-btn:active {
-  box-shadow: 0 0 0 0.2rem #cccccc55;
+  box-shadow: 0 0 0 0.2rem rgba(0,0,0,.08);
 }
 
 .py-btn.btn-primary {
   background-color: <<colour primary>>;
   border-color: <<colour primary>>;
-  color: white;
-  fill: white;
+  color: <<colour background>>;
+  fill: <<colour background>>;
 }
 
 .py-btn.btn-primary:active {
-  box-shadow: 0 0 0 0.2rem #d0e7ff;
+  box-shadow: 0 0 0 0.2rem rgba(0,125,255,.3);
 }
 
 .py-btn.btn-danger {
-  background-color: #ffefef;
-  border-color: #c63636;
-  color: #c63636;
-  fill: #c63636;
+  border-color: #e73939;
+  color: #e73939;
+  fill: #e73939;
 }
 
 .py-btn.btn-danger:active {
-  box-shadow: 0 0 0 0.2rem #ffdcda;
+  box-shadow: 0 0 0 0.2rem rgba(255,0,0,.2);
 }
 
 .py-form .py-control-group {
@@ -88,18 +87,19 @@ type: text/vnd.tiddlywiki
 
 .py-pie circle {
   stroke: <<colour primary>>;
+  fill: <<colour background>>;
 }
 
 input.py-input {
   transition: border .14s ease-in-out;
-  border: 1px solid #d9d9d9;
+  border: 1px solid <<colour tiddler-editor-border>>;
   padding: 8px;
   border-radius: 4px;
   width: 300px;
 }
 
 input.py-input:focus {
-  box-shadow: 0 0 0 0.2rem #e6f0ff;
+  box-shadow: 0 0 0.2rem 0 <<colour primary>>;
   outline: 0;
   border-color: <<colour primary>>;
 
@@ -199,7 +199,7 @@ input.py-input.input-large {
 }
 
 .py-card:hover {
-  box-shadow: 0 0 0 4px #d0e7ff;
+  box-shadow: 0 0 0 4px rgba(0,125,255,.3);
 }
 
 .py-card-head {
@@ -271,12 +271,12 @@ input.py-input.input-large {
 
 .py-projects .py-project,
 .py-todos .tc-menu-list-item {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .py-projects,
 .py-todos .tc-menu-list-item:first-child {
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .py-todo, .py-project {
@@ -357,8 +357,8 @@ input.py-input.input-large {
 
 .py-due-date,
 .py-todo-heading button.tc-btn-invisible {
-  color: #753e2d;
-  fill: #753e2d;
+  color: <<colour muted-foreground>>;
+  fill: <<colour muted-foreground>>;
   white-space: nowrap;
 }
 
@@ -425,16 +425,14 @@ input.py-input.input-large {
 
 .py-banner {
   padding: 10px 20px;
-  background: #f9f9d5;
-  border: 1px solid #dbdba8;
-  color: #626235;
+  background: <<colour message-background>>;
+  border: 1px solid <<colour message-foreground>>;
+  color: <<colour message-foreground>>;
   margin: 10px 0;
   border-radius: 3px;
 }
 
 .py-banner button {
-  color: #554535;
-  fill: #554535;
   text-decoration: underline;
 }
 
