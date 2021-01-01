@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20201212170921030
+modified: 20210101215253984
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -7,11 +7,11 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 
 \define py-archived-projects()
-[tag[Project]!title[Inbox]tag[done]sort[title]]
+[!has[draft.of]tag[Project]!title[Inbox]tag[done]sort[title]]
 \end
 
 \define py-active-projects()
-[tag[Project]!title[Inbox]!tag[done]]
+[!has[draft.of]tag[Project]!title[Inbox]!tag[done]]
 \end
 
 \define py-has-archived-projects()
