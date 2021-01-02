@@ -227,33 +227,45 @@ input.py-input.input-large {
 }
 
 .py-color-picker {
+  position: relative;
   width: 1em;
   height: 1em;
   display: inline-block;
   vertical-align: middle;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.3);
   margin-right: 4px;
-  border: 1px solid <<colour muted-foreground>>;
   border-radius: 50%;
+  background: <<colour tiddler-background>>;
 }
 
-.py-card, .py-color-picker {
+.py-color-picker::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 1px solid <<colour muted-foreground>>;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.3);
+}
+
+.py-card, .py-color-picker::after {
   background-color: rgba(255,255,0,.15);
 }
 
-.py-card.blue, .py-color-picker.blue {
+.py-card.blue, .py-color-picker.blue::after {
   background-color: rgba(0,0,255,.15);
 }
 
-.py-card.orange, .py-color-picker.orange {
+.py-card.orange, .py-color-picker.orange::after {
   background-color: rgba(255,122,0,.15);
 }
 
-.py-card.green, .py-color-picker.green {
+.py-card.green, .py-color-picker.green::after {
   background-color: rgba(0,255,122,.15);
 }
 
-.py-card.purple, .py-color-picker.purple {
+.py-card.purple, .py-color-picker.purple::after {
   background-color: rgba(255,0,255,.15);
 }
 
