@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210101215253984
+modified: 20210102214008548
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -129,3 +129,11 @@ tag[todo]!has[draft.of]!tag[done]has[due]sort[due]
 \define py-project-card-colors()
 default purple orange blue green
 \end
+
+\define todo-list-drop-tags()
+todo [all[current]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [<__tag__>]
+\end	
+
+\define project-refile-tags()
+todo [all[<actionTiddler>]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [<currentTiddler>]
+\end	

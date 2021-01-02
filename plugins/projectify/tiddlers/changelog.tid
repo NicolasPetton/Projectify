@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210101231938342
+modified: 20210102215102098
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -9,6 +9,7 @@ type: text/vnd.tiddlywiki
 
 !! Features
 
+* Todos can now be moved between projects by dragging title links
 * New search input in the Help tiddler
 * Update the stylesheets to work with dark colour palettes
 

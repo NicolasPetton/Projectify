@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20201218133100422
+modified: 20210102213643683
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -8,8 +8,7 @@ type: text/vnd.tiddlywiki
   <$draggable
     tag="span"
     class="py-drag-handle"
-    tiddler={{!!title}}
-    startactions=<<todo-dragstart-actions>>>
+    tiddler={{!!title}}>
       {{$:/plugins/nico/projectify/images/drag-handle}}
   </$draggable>
 \end
