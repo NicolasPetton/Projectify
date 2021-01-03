@@ -437,9 +437,8 @@ input.py-input.input-large {
 
 .py-banner {
   padding: 10px 20px;
-  background: <<colour message-background>>;
-  border: 1px solid <<colour message-foreground>>;
-  color: <<colour message-foreground>>;
+  background: <<colour notification-background>>;
+  border: 1px solid <<colour notification-border>>;
   margin: 10px 0;
   border-radius: 3px;
 }
