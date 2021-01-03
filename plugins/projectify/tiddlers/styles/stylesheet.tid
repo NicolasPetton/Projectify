@@ -415,7 +415,7 @@ input.py-input.input-large {
 }
 
 .py-projects .tc-droppable.tc-dragover {
-  background: #ffd;
+  background: rgba(255,255,100,0.3);
   display: block;
 }
 
