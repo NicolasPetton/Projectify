@@ -390,6 +390,12 @@ input.py-input.input-large {
   font-weight: bold;
 }
 
+.py-due-date.py-due-today {
+  color: <<colour primary>>;
+  fill: <<colour primary>>;
+  border-color: <<colour primary>>;
+}
+
 .py-todo .py-due-date {
   font-size: .8em;
   margin-left: 14px;

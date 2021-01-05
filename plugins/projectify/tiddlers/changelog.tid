@@ -20,6 +20,7 @@ type: text/vnd.tiddlywiki
 * Remove the dependency to $:/plugins/kixam/datepicker
 * Redesign Todo tiddler header buttons
 * Trigger auto-save when modifying a project or todo
+* Show today's date as "Today" in todo due dates
 
 !! Fixes
 

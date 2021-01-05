@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210105203742507
+modified: 20210105212630438
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -112,6 +112,18 @@ type: text/vnd.tiddlywiki
 
 \define py-is-overdue()
 [all[current]!has[draft.of]!tag[done]!days:due[-1]]
+\end
+
+\define py-is-due-today()
+[all[current]!has[draft.of]days:due[0]]
+\end
+
+\define py-is-due-later()
+[all[current]!has[draft.of]!days:due[1]]
+\end
+
+\define py-is-not-scheduled()
+[all[current]!has[draft.of]!has[due]]
 \end
 
 \define py-is-not-overdue()
