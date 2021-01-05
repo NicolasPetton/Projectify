@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20210105204647670
+modified: 20210105210944664
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -13,12 +13,16 @@ type: text/vnd.tiddlywiki
   </$draggable>
 \end
 
+\define save-actions()
+  <$action-sendmessage $message="tm-auto-save-wiki"/>
+\end
+
 <div class={{{ [all[current]tag[done]then[py-todo py-completed]else[py-todo]] }}}>
   <$list filter="[<dragHandle>!is[blank]]" variable="ignore">
     <<drag-handle>>
   </$list>
   
-  <$checkbox tag="done">
+  <$checkbox tag="done" actions=<<save-actions>>>
     {{||$:/plugins/nico/projectify/ui/buttons/Checkbox}}
     <$link to={{!!title}}><$view field="title"/></$link>
     <$list filter=<<py-has-todos>> variable="ignore">

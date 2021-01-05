@@ -13,6 +13,7 @@ type: text/vnd.tiddlywiki
       <$button class="py-btn">
       	Add sub-tasks
 	<$action-listops $tags="[[SubProject]]">
+	<$action-sendmessage $message="tm-auto-save-wiki"/>
       </$button>
     </$list>
     

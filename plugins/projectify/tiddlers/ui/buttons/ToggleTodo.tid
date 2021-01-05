@@ -1,12 +1,16 @@
 created: 20200420105800700
-modified: 20201212172647131
+modified: 20210105210845063
 tags: $:/tags/ViewToolbar
 title: $:/plugins/nico/projectify/ui/buttons/ToggleTodo
 type: text/vnd.tiddlywiki
 
+\define save-actions()
+  <$action-sendmessage $message="tm-auto-save-wiki"/>
+\end
+
 <$list filter=<<py-is-todo>>>
   <span class="py-toggle-todo-button">
-    <$checkbox tag="done">
+    <$checkbox tag="done" actions=<<save-actions>>>
       {{||$:/plugins/nico/projectify/ui/buttons/Checkbox}}
     </$checkbox>
   </span>

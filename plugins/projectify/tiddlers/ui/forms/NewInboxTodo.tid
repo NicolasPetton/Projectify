@@ -1,5 +1,5 @@
 created: 20201212173718479
-modified: 20201212173740392
+modified: 20210105205715554
 title: $:/plugins/nico/projectify/ui/forms/NewInboxTodo
 type: text/vnd.tiddlywiki
 
@@ -7,6 +7,7 @@ type: text/vnd.tiddlywiki
   <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
   <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
   <$edit-text class="py-input" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..."/>
+  <$action-sendmessage $message="tm-auto-save-wiki"/>
   <label class="py-label">
     Press <kbd>⏎</kbd> add to the inbox.
     <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from anywhere.

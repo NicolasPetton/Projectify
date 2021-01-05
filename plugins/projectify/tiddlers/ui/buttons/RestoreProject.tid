@@ -1,5 +1,5 @@
 created: 20201209151126748
-modified: 20201212172631003
+modified: 20210105210556531
 tags: 
 title: $:/plugins/nico/projectify/ui/buttons/RestoreProject
 type: text/vnd.tiddlywiki
@@ -7,6 +7,7 @@ type: text/vnd.tiddlywiki
 <$fieldmangler>
   <$button class="tc-btn-invisible">
     <$action-sendmessage $message="tm-remove-tag" $param="done"/>
-      Restore project
+    Restore project
+    <$action-sendmessage $message="tm-auto-save-wiki"/>
   </$button>
 </$fieldmangler>

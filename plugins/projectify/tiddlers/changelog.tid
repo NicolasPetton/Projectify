@@ -19,6 +19,7 @@ type: text/vnd.tiddlywiki
 * Display the link to the Help tiddler at the bottom of the Dashboard
 * Remove the dependency to $:/plugins/kixam/datepicker
 * Redesign Todo tiddler header buttons
+* Trigger auto-save when modifying a project or todo
 
 !! Fixes
 

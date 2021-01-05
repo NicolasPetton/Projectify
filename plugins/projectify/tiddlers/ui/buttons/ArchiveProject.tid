@@ -1,5 +1,5 @@
 created: 20201209150027612
-modified: 20201212172610883
+modified: 20210105210456896
 tags: 
 title: $:/plugins/nico/projectify/ui/buttons/ArchiveProject
 type: text/vnd.tiddlywiki
@@ -7,6 +7,7 @@ type: text/vnd.tiddlywiki
 <$fieldmangler>
   <$button class="py-btn btn-danger nc-archive-project">
     <$action-sendmessage $message="tm-add-tag" $param="done"/>
-      {{$:/core/images/delete-button}} Archive project
+    <$action-sendmessage $message="tm-auto-save-wiki"/>
+    {{$:/core/images/delete-button}} Archive project
   </$button>
 </$fieldmangler>

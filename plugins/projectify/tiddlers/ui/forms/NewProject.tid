@@ -1,5 +1,5 @@
 created: 20201217232220846
-modified: 20201217232236814
+modified: 20210105205831107
 title: $:/plugins/nico/projectify/ui/forms/NewProject
 type: text/vnd.tiddlywiki
 
@@ -14,6 +14,7 @@ type: text/vnd.tiddlywiki
     project_description=""
   />
   <$action-setfield $tiddler="$:/state/projectify/show-new-project-popup" text=""/>
+  <$action-sendmessage $message="tm-auto-save-wiki"/>
 \end
 
 <div class="py-form">
