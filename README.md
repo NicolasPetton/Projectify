@@ -28,7 +28,7 @@ An up-to-date ChangeLog can be found [here](./plugins/projectify/tiddlers/change
 ###### Features
 
 * Todos can now moved between projects using drag & drop
-* Todos can now be made into sub-projects by clicking the `Make this into a sub-project` button
+* Todos can now be made into sub-projects by clicking the `Add sub-tasks` button
 * Empty projects and Inbox now show a welcome screen
 * New checkbox button in the view toolbar of todo tiddlers
 * New form to add new projects including an input for the project title

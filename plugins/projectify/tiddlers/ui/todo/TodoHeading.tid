@@ -10,9 +10,8 @@ type: text/vnd.tiddlywiki
     {{||$:/plugins/nico/projectify/ui/todo/TodoDueDate}}
 
     <$list filter=<<py-is-not-subproject>>>
-      or
-      <$button class="tc-btn-invisible">
-        Make into a sub-project
+      <$button class="py-btn">
+      	Add sub-tasks
 	<$action-listops $tags="[[SubProject]]">
       </$button>
     </$list>

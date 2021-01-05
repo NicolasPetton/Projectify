@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20201227224058975
+modified: 20210105204526846
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/stylesheet
 type: text/vnd.tiddlywiki
@@ -312,8 +312,12 @@ input.py-input.input-large {
 /* Align the completed todos with the non-completed ones that have a drag
    handle. TODO: Check why the padding is different from the drag-handle's width
    */
-.py-completed-todos .py-todo > * {
+.py-completed-todos .py-todo .py-checkbox {
   padding-left: 22px;
+}
+
+.py-todo .py-todo-actions {
+  float: right;
 }
 
 .py-todo.py-completed a {
@@ -367,51 +371,33 @@ input.py-input.input-large {
   margin-bottom: 5px;
 }
 
-.py-due-date,
-.py-todo-heading button.tc-btn-invisible {
-  color: <<colour muted-foreground>>;
-  fill: <<colour muted-foreground>>;
-  white-space: nowrap;
+.py-todo-heading .py-due-date {
+  margin-right: 8px;
 }
 
-.py-todo-heading button.tc-btn-invisible {
-  text-decoration: underline;
+.py-due-date, .py-todo-heading .py-btn {
+  color: #999;
+  fill: #999;
+  padding: 2px 3px;
+  border-radius: 4px;
+  vertical-align: middle;
 }
 
-.py-due-date svg {
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-}
-
-.py-due-date a {
-  text-decoration: underline;
-  cursor: pointer;
+.py-due-date.py-overdue {
+  color: <<colour background>>;
+  background: #e73939;
+  border-color: #e73939;
+  font-weight: bold;
 }
 
 .py-todo .py-due-date {
-  padding-left: 14px;
   font-size: .8em;
-  transition: opacity ease-in-out .15s;
+  margin-left: 14px;
 }
 
-.py-todo .py-due-date.no-due-date {
-  opacity: 0;
-}
-
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .py-todo .py-due-date {
-    display: block;
-    margin-left: 6px;
-  }
-
-  .py-todo .py-due-date.no-due-date {
-    display: none;
-  }
-}
-
-.py-todo:hover .py-due-date.no-due-date {
-  opacity: 1;
+.py-due-date svg {
+  width: 1em;
+  height: 1em;
 }
 
 .py-projects .tc-droppable.tc-dragover {
