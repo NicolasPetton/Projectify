@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210105203906998
+modified: 20210105204149101
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -17,6 +17,7 @@ type: text/vnd.tiddlywiki
 !! Improvements
 
 * Display the link to the Help tiddler at the bottom of the Dashboard
+* Removed the dependency to $:/plugins/kixam/datepicker
 
 !! Fixes
 
