@@ -1,0 +1,102 @@
+created: 20210105171218832
+modified: 20210105171240503
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/date-picker
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+
+.tc-drop-down.py-date-picker {
+  min-width: auto;
+}
+
+.py-date-picker hr {
+  margin: 2px 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid <<colour muted-foreground>>;
+}
+
+.py-date-picker .tc-btn-invisible {
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.py-date-picker .tc-btn-invisible svg {
+    margin-right: 6px;
+}
+
+.py-date-picker .py-date-today svg {
+  fill: <<colour primary>>;
+}
+
+.py-date-picker .py-date-clear svg {
+  fill: <<colour muted-foreground>>;
+}
+
+.py-date-picker .pika-single {
+  margin: 0;
+  border: 0;
+  color: <<colour foreground>>;
+  background: transparent;
+}
+
+.py-date-picker .pika-lendar {
+  margin: 0;
+  border: 0;
+  width: 100%;
+}
+
+.py-date-picker .pika-lendar .pika-table {
+  margin: 0;
+}
+
+.py-date-picker .pika-lendar .pika-table th {
+  background: transparent;
+  font-weight: bold;
+  color: <<colour muted-foreground>>;
+}
+
+.py-date-picker .pika-lendar button,
+.py-date-picker .pika-button {
+  border-radius: 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.py-date-picker .pika-button {
+  padding: 6px 8px !important;
+}
+
+.py-date-picker .pika-prev,
+.py-date-picker .pika-next {
+  padding: 4px;
+  width: 20px;
+}
+
+.py-date-picker .pika-lendar button:hover,
+.py-date-picker .pika-lendar button:active,
+.py-date-picker .pika-next {
+  background-color: <<colour primary>>;
+  color: <<colour background>>;
+  border-radius: 3px;
+}
+
+.py-date-picker .pika-lendar .is-selected .pika-button,
+.py-date-picker .pika-lendar .has-event .pika-button {
+  background: <<colour muted-foreground>>;
+  color: <<colour tiddler-background>>;
+  box-shadow: none;
+  border-radius: 3px;
+}
+
+.py-date-picker .pika-label {
+  background-color: transparent;
+  color: <<colour foreground>>;
+}
+
+.py-date-picker .pika-lendar table th,
+.py-date-picker .pika-lendar table td {
+  border: 0 none;
+}

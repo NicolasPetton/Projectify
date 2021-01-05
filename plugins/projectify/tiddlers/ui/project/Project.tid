@@ -1,5 +1,5 @@
 created: 20201207165347344
-list-after: $:/plugins/nico/projectify/templates/TiddlerDueDateTemplate
+list-after: $:/plugins/nico/projectify/ui/todo/TodoHeading
 modified: 20201212174322186
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nico/projectify/ui/project/Project

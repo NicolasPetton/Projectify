@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210102214008548
+modified: 20210105203742507
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -114,6 +114,10 @@ type: text/vnd.tiddlywiki
 [all[current]!has[draft.of]!tag[done]!days:due[-1]]
 \end
 
+\define py-is-not-overdue()
+[all[current]!has[draft.of]] -[!days:due[-1]]
+\end
+
 \define py-unscheduled-todos-subfilter()
 tag[todo]!has[draft.of]!tag[done]!has[due]
 \end
@@ -132,8 +136,8 @@ default purple orange blue green
 
 \define todo-list-drop-tags()
 todo [all[current]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [<__tag__>]
-\end	
+\end
 
 \define project-refile-tags()
 todo [all[<actionTiddler>]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [<currentTiddler>]
-\end	
+\end
