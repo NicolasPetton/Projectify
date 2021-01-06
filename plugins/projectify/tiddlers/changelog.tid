@@ -5,6 +5,12 @@ tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
+! Master
+
+!! Fixes
+
+* Fix the rendering of due dates in Notebook sidebar
+
 ! Release 0.8.0
 
 !! Features
