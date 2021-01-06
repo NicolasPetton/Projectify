@@ -1,5 +1,5 @@
 created: 20200424135048294
-modified: 20210106090418777
+modified: 20210106121843091
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoDueDate
 type: text/vnd.tiddlywiki
@@ -23,7 +23,7 @@ type: text/vnd.tiddlywiki
       </$button>
     </$list>
     <$list filter=<<py-is-not-scheduled>>>
-      <$button class="py-btn py-due-date" popup=<<popupTiddler>>>
+      <$button class="py-btn py-due-date py-not-scheduled" popup=<<popupTiddler>>>
 	{{$:/plugins/nico/projectify/images/calendar-check}}
 	Schedule
       </$button>

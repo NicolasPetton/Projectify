@@ -401,6 +401,18 @@ input.py-input.input-large {
   margin-left: 14px;
 }
 
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .py-todo .py-not-scheduled {
+    opacity: 0;
+    transition: opacity ease-in .14s;
+  }
+
+  .py-todo:hover .py-not-scheduled {
+    opacity: 1;
+  }
+}
+
+
 .py-due-date svg {
   width: 1em;
   height: 1em;
