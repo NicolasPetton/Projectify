@@ -1,5 +1,5 @@
 created: 20201228014905847
-modified: 20201228020927441
+modified: 20210107215146431
 tags: [[Projectify documentation]]
 title: $:/plugins/nico/projectify/doc/DashboardInboxSeparateTab
 type: text/vnd.tiddlywiki
@@ -9,12 +9,12 @@ You can build your own Dashboard to display the
 following:
 
 ```
-<<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Schedule" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/projectify/custom-dashboard" "py-tabs">>
+<<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Today $:/plugins/nico/projectify/ui/dashbaord/Upcoming" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/projectify/custom-dashboard" "py-tabs">>
 ```
 <$reveal type="match" state="$:/state/projectify/usage-custom-dashboard" text="show">
   <$button class="py-btn btn-primary" set="$:/state/projectify/usage-custom-dashboard" setTo="">Hide</$button>
   <hr/>
-  <<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Schedule" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/projectify/custom-dashboard" "py-tabs">>
+  <<tabs "$:/plugins/nico/projectify/ui/inbox/Inbox $:/plugins/nico/projectify/ui/dashboard/Projects $:/plugins/nico/projectify/ui/dashbaord/Today $:/plugins/nico/projectify/ui/dashbaord/Upcoming" "$:/plugins/nico/projectify/ui/inbox/Inbox" "$:/state/projectify/custom-dashboard" "py-tabs">>
   <hr/>
 </$reveal>
 

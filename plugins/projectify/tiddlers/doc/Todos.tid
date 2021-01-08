@@ -1,5 +1,5 @@
 created: 20200427152938733
-modified: 20201228222137486
+modified: 20210107174641536
 tags: [[Projectify documentation]]
 title: $:/plugins/nico/projectify/doc/Todos
 type: text/vnd.tiddlywiki
@@ -8,4 +8,4 @@ Todos represent single units of work -- or tasks -- within [[Projects|$:/plugins
 
 Any tiddler with the <<tag todo>> tag will be recognized as a todo.
 
-Todos can be marked as done by checking their check box in the view toolbar. They can also be [[Scheduled|$:/plugins/nico/projectify/doc/Schedule]].
+Todos can be marked as done by checking their check box in the view toolbar. They can also be [[Scheduled|$:/plugins/nico/projectify/doc/Upcoming]].
