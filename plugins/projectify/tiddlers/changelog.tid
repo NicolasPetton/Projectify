@@ -10,6 +10,7 @@ type: text/vnd.tiddlywiki
 !! Improvements
 
 * Only show scheduling button in todos that are not scheduled on hover
+* Add a caption and description to ToggleTodo for the control panel
 
 !! Fixes
 
