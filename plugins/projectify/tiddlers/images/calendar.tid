@@ -1,7 +1,7 @@
 created: 20200423195159541
-modified: 20201212170921173
+modified: 20210107212455019
 tags: $:/tags/Image
-title: $:/plugins/nico/projectify/images/calendar-check
+title: $:/plugins/nico/projectify/images/calendar
 type: text/vnd.tiddlywiki
 
 <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-calendar-week" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
