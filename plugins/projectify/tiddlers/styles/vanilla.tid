@@ -1,0 +1,13 @@
+created: 20210107180235870
+modified: 20210107180407568
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/vanilla
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+/* Default sidebar */
+
+.py-sidebar-section {
+  max-width: 500px;
+}

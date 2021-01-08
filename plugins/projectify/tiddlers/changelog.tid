@@ -11,6 +11,7 @@ type: text/vnd.tiddlywiki
 
 * Only show scheduling button in todos that are not scheduled on hover
 * Add a caption and description to ToggleTodo for the control panel
+* Improve the rendering of sidebar sections by setting a max width
 
 !! Fixes
 
