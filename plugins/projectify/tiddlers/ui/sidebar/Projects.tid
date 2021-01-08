@@ -1,9 +1,11 @@
 caption: Projects
 created: 20200430123440360
 list-before: $:/plugins/nico/notebook/Sidebar/Open
-modified: 20201227223707796
+modified: 20210107182922953
 tags: $:/themes/nico/notebook/tags/SidebarSection $:/tags/SideBar
-title: $:/plugins/nico/projectify/Sidebar/Projects
+title: $:/plugins/nico/projectify/ui/sidebar/Projects
 type: text/vnd.tiddlywiki
 
-{{$:/plugins/nico/projectify/ui/dashboard/ProjectList}}
+<div class="py-sidebar-section">
+  {{$:/plugins/nico/projectify/ui/dashboard/ProjectList}}
+</div>

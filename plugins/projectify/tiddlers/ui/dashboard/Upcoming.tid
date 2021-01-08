@@ -1,0 +1,23 @@
+caption: {{$:/plugins/nico/projectify/images/calendar-checked}} Upcoming
+created: 20200424193230404
+list-after: $:/plugins/nico/projectify/ui/dashbaord/Today
+modified: 20210107221053331
+tags: $:/plugins/nico/projectify/tags/dashboard
+title: $:/plugins/nico/projectify/ui/dashbaord/Upcoming
+type: text/vnd.tiddlywiki
+
+<$vars showProjectLinks="yes">
+  <$list filter=<<py-has-overdue-todos>>>
+    <dl>
+      <dt>Overdue</dt>
+      <dd><<py-schedule-overdue>></dd>
+    </dl>
+  </$list>
+
+  <$list filter=<<py-upcoming-due-dates>>>
+    <dl>
+      <dt>{{||$:/plugins/nico/projectify/ui/dashboard/Date}}</dt>
+      <dd><$macrocall $name="py-schedule-day" day={{!!due}}/></dd>
+    </dl>
+  </$list>
+</$vars>

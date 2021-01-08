@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210105212630438
+modified: 20210108092837508
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -86,12 +86,12 @@ type: text/vnd.tiddlywiki
 [days:due[0]] [!days:due[-1]] +[!has[draft.of]!tag[done]tag[todo]sort[due]]
 \end
 
-\define py-todos-due-between()
-[!has[draft.of]!tag[done]tag[todo]!days:due<start>days:due<end>sort[due]]
+\define py-upcoming-due-dates()
+[tag[todo]!has[draft.of]!tag[done]has[due]sort[due]eachday[due]] -[!days:due[-1]]
 \end
 
-\define py-todos-due-after()
-[!has[draft.of]!tag[done]tag[todo]!days:due<start>sort[due]]
+\define py-todos-due-on()
+[!has[draft.of]!tag[done]tag[todo]sameday:due<day>]
 \end
 
 \define py-has-overdue-todos()

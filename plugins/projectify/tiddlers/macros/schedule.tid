@@ -1,0 +1,31 @@
+created: 20210107213957129
+modified: 20210107214628086
+tags: $:/tags/Macro
+title: $:/plugins/nico/projectify/macros/schedule
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+\define py-schedule-overdue()
+  <$list
+    filter=<<py-todos-overdue>>
+    template="$:/plugins/nico/projectify/ui/todo/TodoItem"
+  />
+\end
+
+\define py-schedule-day(day)
+  <$vars day=<<__day__>>>
+    <$list
+      filter=<<py-todos-due-on>>
+      template="$:/plugins/nico/projectify/ui/todo/TodoItem"
+      />
+  </$vars>
+\end
+
+\define py-schedule-today()
+  <$list
+    filter=<<py-todos-due-today>>
+    template="$:/plugins/nico/projectify/ui/todo/TodoItem"
+    emptyMessage="🌞 All clear!"
+  />
+\end  

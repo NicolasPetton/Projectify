@@ -1,0 +1,7 @@
+created: 20210107174519365
+modified: 20210107175324833
+title: $:/plugins/nico/projectify/ui/dashboard/Date
+type: text/vnd.tiddlywiki
+
+<$list filter=<<py-is-due-today>>>Today -- </$list>
+<$view field="due" format="date" template="DDth MMM"/>
