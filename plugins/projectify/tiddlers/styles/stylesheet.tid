@@ -358,7 +358,7 @@ input.py-input.input-large {
   background: <<colour primary>>;
 }
 
-.py-tabs .py-count {
+.tc-tab-buttons .py-count {
   font-size: 10px;
   padding: 4px;
   min-width: 18px;
