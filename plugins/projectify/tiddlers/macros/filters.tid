@@ -14,6 +14,10 @@ type: text/vnd.tiddlywiki
 [!has[draft.of]tag[Project]!title[Inbox]!tag[done]]
 \end
 
+\define py-all-projects-and-subprojects()
+[tag[Project]] [tag[SubProject]]
+\end
+
 \define py-has-archived-projects()
 [tag[Project]!title[Inbox]tag[done]limit[1]]
 \end

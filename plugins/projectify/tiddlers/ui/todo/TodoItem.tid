@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20210105210944664
+modified: 20210107212121730
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -35,4 +35,10 @@ type: text/vnd.tiddlywiki
       {{||$:/plugins/nico/projectify/ui/todo/TodoDueDate}}
     </$list>
   </span>
+
+  <$list filter="[<showProjectLinks>!is[blank]]" variable="ignore">
+    <$list filter="[all[current]tags[]filter<py-all-projects-and-subprojects>]">
+      <$link to={{!!title}} overrideClass="py-project-link"/>
+    </$list>
+  </$list>
 </div>

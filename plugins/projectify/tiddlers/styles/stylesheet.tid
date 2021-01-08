@@ -320,6 +320,12 @@ input.py-input.input-large {
   float: right;
 }
 
+.py-todo .py-project-link {
+  font-size: .8em;
+  color: #aaa;
+  float: right;
+}
+
 .py-todo.py-completed a {
   color: <<colour muted-foreground>>;
 }
