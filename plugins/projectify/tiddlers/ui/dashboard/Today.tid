@@ -1,7 +1,7 @@
-caption: {{$:/plugins/nico/projectify/images/sun}} Today
+caption: {{$:/plugins/nico/projectify/images/sun}} Today {{$:/plugins/nico/projectify/ui/dashbaord/TodayCount}}
 created: 20210107213438937
 list-after: $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects
-modified: 20210107221059944
+modified: 20210108114553910
 tags: $:/plugins/nico/projectify/tags/dashboard
 title: $:/plugins/nico/projectify/ui/dashbaord/Today
 type: text/vnd.tiddlywiki
