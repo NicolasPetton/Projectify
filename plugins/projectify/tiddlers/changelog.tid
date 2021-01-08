@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210108093729895
+modified: 20210108182137347
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -21,6 +21,7 @@ type: text/vnd.tiddlywiki
 
 !! Fixes
 
+* Fix the selection of months and years in the date picker
 * Fix the rendering of due dates in Notebook sidebar
 
 ! Release 0.8.0

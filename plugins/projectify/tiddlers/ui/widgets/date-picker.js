@@ -91,12 +91,12 @@ AbstractDatePickerWidget.prototype.setValue = function (date) {
 	$tw.rootWidget.dispatchEvent({type: "tm-auto-save-wiki"});
 };
 
-AbstractDatePickerWidget.prototype.formatDate = function (date) {
+AbstractDatePickerWidget.prototype.formatDate = function(date) {
 	// TW format is YYYYMMDDHHmmssSSS
 	return `${date.getFullYear()}${this.formatMonth(date)}${this.formatDay(date)}120000000`;
 };
 
-AbstractDatePickerWidget.prototype.formatMonth = function (date) {
+AbstractDatePickerWidget.prototype.formatMonth = function(date) {
 	let month = `${date.getMonth() + 1}`;
 	if (month.length === 1) {
 		month = `0${month}`;
@@ -105,7 +105,7 @@ AbstractDatePickerWidget.prototype.formatMonth = function (date) {
 	return month;
 };
 
-AbstractDatePickerWidget.prototype.formatDay = function (date) {
+AbstractDatePickerWidget.prototype.formatDay = function(date) {
 	let day = `${date.getDate()}`;
 	if (day.length === 1) {
 		day = `0${day}`;
@@ -133,7 +133,7 @@ var factory = function(getDate, cssClass) {
 		this.domNodes.push(this.domNode);
 	};
 
-	PickerWidget.prototype.createDomNode = function () {
+	PickerWidget.prototype.createDomNode = function() {
 		let btn = document.createElement("button");
 		btn.classList.add("tc-btn-invisible", cssClass);
 		btn.addEventListener("click", () => {
@@ -164,17 +164,29 @@ CalendarWidget.prototype.render = function(parent,nextSibling) {
 	this.domNodes.push(this.domNode);
 };
 
-CalendarWidget.prototype.renderCalendar = function () {
+CalendarWidget.prototype.renderCalendar = function() {
 	let calendar = new Pikaday({
 		firstDay: 1,
 		onSelect: () => {
 			this.setValue(calendar.getDate());
 			// Close the popup
 			$tw.popup.cancel(0);
-		}
+		},
+		onDraw: fixPopupClosing
 	});
 
 	calendar.setDate(this.getValue(), true);
+
+	// Prevent the month and year pickers click events from closing the TW
+	// popup. This function is called on each redraw (when a new month is
+	// selected).
+	function fixPopupClosing() {
+		setTimeout(() => {
+			calendar.el.querySelectorAll(".pika-label").forEach((elt) => {
+				elt.classList.add("tc-popup-handle");
+			});
+		}, 0);
+	}
 
 	return calendar.el;
 };
