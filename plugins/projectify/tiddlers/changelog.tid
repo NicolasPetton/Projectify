@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210105204149101
+modified: 20210108093206261
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -12,6 +12,7 @@ type: text/vnd.tiddlywiki
 * Only show scheduling button in todos that are not scheduled on hover
 * Add a caption and description to ToggleTodo for the control panel
 * Improve the rendering of sidebar sections by setting a max width
+* Update icons and colors of the date-picker
 
 !! Fixes
 

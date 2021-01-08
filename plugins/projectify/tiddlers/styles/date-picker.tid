@@ -27,12 +27,20 @@ type: text/vnd.tiddlywiki
     margin-right: 6px;
 }
 
+.py-date-picker .py-date-today {
+  color: <<colour primary>>;
+}
+
 .py-date-picker .py-date-today svg {
   fill: <<colour primary>>;
 }
 
+.py-date-picker .py-date-clear {
+  color: #e73939;
+}
+
 .py-date-picker .py-date-clear svg {
-  fill: <<colour muted-foreground>>;
+  fill: #e73939;
 }
 
 .py-date-picker .pika-single {

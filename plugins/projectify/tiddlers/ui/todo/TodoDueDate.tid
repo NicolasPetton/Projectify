@@ -1,5 +1,5 @@
 created: 20200424135048294
-modified: 20210106121843091
+modified: 20210107213043926
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoDueDate
 type: text/vnd.tiddlywiki
@@ -13,18 +13,18 @@ type: text/vnd.tiddlywiki
   <$list filter=<<py-is-not-overdue>>>
     <$list filter=<<py-is-due-today>>>
       <$button class="py-btn py-due-date py-due-today" popup=<<popupTiddler>>>
-      {{$:/plugins/nico/projectify/images/calendar-check}} Today
+      {{$:/plugins/nico/projectify/images/calendar}} Today
     </$button>
     </$list>
     <$list filter=<<py-is-due-later>>>
       <$button class="py-btn py-due-date" popup=<<popupTiddler>>>
-	{{$:/plugins/nico/projectify/images/calendar-check}}
+	{{$:/plugins/nico/projectify/images/calendar}}
 	<$view field="due" format="date" template="DDth mmm"/>
       </$button>
     </$list>
     <$list filter=<<py-is-not-scheduled>>>
       <$button class="py-btn py-due-date py-not-scheduled" popup=<<popupTiddler>>>
-	{{$:/plugins/nico/projectify/images/calendar-check}}
+	{{$:/plugins/nico/projectify/images/calendar}}
 	Schedule
       </$button>
     </$list>
@@ -32,9 +32,9 @@ type: text/vnd.tiddlywiki
 
   <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
     <div class="tc-drop-down py-date-picker">
-      <$py-date-today>{{$:/plugins/nico/projectify/images/calendar-check}} Today</$py-date-today>
-      <$py-date-tomorrow>{{$:/plugins/nico/projectify/images/calendar-check}} Tomorrow</$py-date-tomorrow>
-      <$py-date-next-week>{{$:/plugins/nico/projectify/images/calendar-check}} Next week</$py-date-next-week>
+      <$py-date-today>{{$:/plugins/nico/projectify/images/sun}} Today</$py-date-today>
+      <$py-date-tomorrow>{{$:/plugins/nico/projectify/images/calendar-event}} Tomorrow</$py-date-tomorrow>
+      <$py-date-next-week>{{$:/plugins/nico/projectify/images/calendar}} Next week</$py-date-next-week>
       <$py-date-clear>{{$:/plugins/nico/projectify/images/slash-circle}} Clear</$py-date-clear>
       <hr/>
       <$py-date-calendar/>
