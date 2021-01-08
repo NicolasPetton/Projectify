@@ -1,5 +1,6 @@
 created: 20201212165938184
-modified: 20210108092904043
+modified: 20210108200325472
+tags: 
 title: ✨ About
 type: text/vnd.tiddlywiki
 
@@ -9,22 +10,23 @@ type: text/vnd.tiddlywiki
 <$link to="$:/plugins/nico/projectify"><<shield label:Release status:{{$:/plugins/nico/projectify!!version}} colour:purple>></$link>
 <a href="https://tiddlywiki.com"><<shield label:~TiddlyWiki status:5.1.22+ colour:blue>></a>
 
-Projectify is a [[TiddlyWiki|https://tiddlywiki.com]] plugin for managing projects & todo lists, inspired by projects such as [[Todoist|https://todoist.com]] and [[Basecamp|https://basecamp.com]]. It is released under the MIT license.
+Projectify is project-management app for [[TiddlyWiki|https://tiddlywiki.com]], inspired by products like [[Todoist|https://todoist.com]] and [[Basecamp|https://basecamp.com]]. 
+
+[[TiddlyWiki|https://tiddlywiki.com]] is an excellent note-taking & knowledge-base app with [[unique features|https://tiddlywiki.com/#TiddlyWiki]]. Projectify brings project managment to ~TiddlyWIki, transforming it into a complete digital second brain.
+
+Projectify is carefully crafted, with attention to details. It is  evolving at a quick pace, soon reaching the version 1.0. Projectify is open-source, released under the MIT license.
 
 For all changes in the latest {{$:/plugins/nico/projectify!!version}} release, see [[ChangeLog|$:/plugins/nico/projectify/changelog]].
 
 !! Getting started
 
-Download a pre-configured wiki:
+Download a pre-configured empty wiki:
 
+@@
 <a class="py-btn btn-primary" href="./empty.html" download="empty.html">
   Get Projectify
 </a>
 
 Alternatively, see [[Installation|$:/plugins/nico/projectify/doc/Installation]] for installation instructions in an existing wiki.
 
-!! Contributing
-
-Bug reports & pull requests are most welcome!
-
-The project is hosted on ~GitHub at [[github.com/nicolaspetton/projectify|https://github.com/nicolaspetton/projectify]].
+If you are new to ~TiddlyWiki, we strongly encourage you to read the [[Getting started|https://tiddlywiki.com/#GettingStarted]] documentation.
