@@ -6,7 +6,7 @@ inspired by other tools like [Todoist](https://todoist.com) and
 
 ## Install
 
-See https://projectify.wiki#Installation
+See [Installation](https://projectify.wiki/#%24%3A%2Fplugins%2Fnico%2Fprojectify%2Fdoc%2FInstallation)
 
 ## Demo & Screenshots
 
