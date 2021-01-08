@@ -1,11 +1,11 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210108182137347
+modified: 20210108210607103
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
-! Master
+! Release 0.9.0
 
 !! Features
 
