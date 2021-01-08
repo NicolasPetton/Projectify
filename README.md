@@ -1,18 +1,17 @@
 # Projectify
 
-Projectify -- previously known as ProjectManager -- is a simple
-[TiddlyWiki](https://tiddlywiki.com) plugin for managing projects & todo lists,
-inspired by other tools such as [Todoist](https://todoist.com) and
+Projectify is a project management plugin for,
+inspired by other tools like [Todoist](https://todoist.com) and
 [Basecamp](https://basecamp.com).
 
 ## Install
 
-See https://nicolas.petton.fr/tw/projectify.html#Installation
+See https://projectify.wiki#Installation
 
 ## Demo & Screenshots
 
 A demo is available at
-[nicolas.petton.fr/tw/projectify.html](https://nicolas.petton.fr/tw/projectify.html).
+[projectify.wiki](https://projectify.wiki).
 
 <a href="./screenshots/dashboard.png"><img src="./screenshots/dashboard.png" width="24%" alt="Dashboard"/></a>
 <a href="./screenshots/new-project.png"><img src="./screenshots/new-project.png" width="24%" alt="New project"/></a>
