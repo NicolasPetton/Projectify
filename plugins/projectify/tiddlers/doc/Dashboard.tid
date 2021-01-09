@@ -1,5 +1,5 @@
 created: 20201228014905847
-modified: 20210107174641508
+modified: 20210109005507006
 tags: [[Projectify documentation]]
 title: $:/plugins/nico/projectify/doc/Dashboard
 type: text/vnd.tiddlywiki
@@ -9,6 +9,7 @@ It displays the [[Inbox|$:/plugins/nico/projectify/doc/Inbox]], lists
 [[Projects|$:/plugins/nico/projectify/doc/Projects]], the
 [[Schedule|$:/plugins/nico/projectify/doc/Upcoming]] and [[Next actions|$:/plugins/nico/projectify/doc/NextActions]].
 
+''Note:'' [[You do not have to use the dashboard|$:/plugins/nico/projectify/doc/TranscludingUIElements]] to use Projectify.
 
 The dashboard can be embedded
 ([[transcluded|https://tiddlywiki.com/#Transclusion]]) in any tiddler using the
