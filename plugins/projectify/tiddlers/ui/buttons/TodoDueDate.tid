@@ -1,7 +1,7 @@
 created: 20200424135048294
-modified: 20210107213043926
+modified: 20210109212549501
 tags:
-title: $:/plugins/nico/projectify/ui/todo/TodoDueDate
+title: $:/plugins/nico/projectify/ui/buttons/TodoDueDate
 type: text/vnd.tiddlywiki
 
 <$vars popupTiddler=<<qualify "$:/state/projectify/due-date-dropdown">>>

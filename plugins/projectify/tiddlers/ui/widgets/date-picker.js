@@ -6,7 +6,7 @@ module-type: widget
 py-date-picker widget factory.
 
 This widget is intended to be used within a drop-down (with the tc-drop-down CSS
-class). See $:/plugins/nico/projectify/ui/todo/TodoDueDate for usages.
+class). See $:/plugins/nico/projectify/ui/buttons/TodoDueDate for usages.
 
 \*/
 (function(){

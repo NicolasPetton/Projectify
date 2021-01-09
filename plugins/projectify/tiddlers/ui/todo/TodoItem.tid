@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20210107212121730
+modified: 20210109212549894
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -32,7 +32,7 @@ type: text/vnd.tiddlywiki
 
   <span class="py-todo-actions">
     <$list filter=<<py-is-open>>>
-      {{||$:/plugins/nico/projectify/ui/todo/TodoDueDate}}
+      {{||$:/plugins/nico/projectify/ui/buttons/TodoDueDate}}
     </$list>
   </span>
 

@@ -1,13 +1,13 @@
 created: 20200420105800700
 list-after: $:/core/ui/ViewTemplate/tags
-modified: 20201212170921039
+modified: 20210109212550254
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nico/projectify/ui/todo/TodoHeading
 type: text/vnd.tiddlywiki
 
 <$list filter=<<py-is-todo>>>
   <div class="py-todo-heading">
-    {{||$:/plugins/nico/projectify/ui/todo/TodoDueDate}}
+    {{||$:/plugins/nico/projectify/ui/buttons/TodoDueDate}}
 
     <$list filter=<<py-is-not-subproject>>>
       <$button class="py-btn">
