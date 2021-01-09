@@ -1,7 +1,7 @@
 created: 20200425201356996
-modified: 20201130164535753
+modified: 20210109210952349
 tags: 
-title: $:/plugins/nico/projectify/ui/project/ProjectNextActionTemplate
+title: $:/plugins/nico/projectify/ui/project/ProjectNextAction
 type: text/vnd.tiddlywiki
 
 <$list filter=<<py-has-open-todos>> variable="ignore">

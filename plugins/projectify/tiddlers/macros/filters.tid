@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210108092837508
+modified: 20210109212025634
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -16,6 +16,14 @@ type: text/vnd.tiddlywiki
 
 \define py-all-projects-and-subprojects()
 [tag[Project]] [tag[SubProject]]
+\end
+
+\define py-has-active-projects-with-todos()
+[!has[draft.of]!tag[done]tag[todo]limit[1]]
+\end
+
+\define py-has-scheduled-todos-in-projects()
+[!has[draft.of]tag[todo]!tag[done]has[due]limit[1]]
 \end
 
 \define py-has-archived-projects()

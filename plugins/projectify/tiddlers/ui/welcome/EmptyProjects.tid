@@ -1,5 +1,5 @@
 created: 20201220164609463
-modified: 20201220172138689
+modified: 20210109210752981
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyProjects
 type: text/vnd.tiddlywiki
@@ -7,5 +7,5 @@ type: text/vnd.tiddlywiki
 <div class="py-welcome">
   <div class="icon">{{$:/plugins/nico/projectify/images/compass}}</div>
   <h3>Stay organized!</h3>
-  <p>Get more efficient and organized by structuring your tasks in projects.</p>
+  <p>Get more efficient and organized by structuring your tasks in projects -- [[learn more|$:/plugins/nico/projectify/doc/Projects]].</p>
 </div>

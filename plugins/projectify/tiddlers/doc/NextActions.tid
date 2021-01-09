@@ -1,0 +1,12 @@
+created: 20200427152938733
+modified: 20210109211827377
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/NextActions
+type: text/vnd.tiddlywiki
+
+The [[Next actions|$:/plugins/nico/projectify/ui/NextActions]] tab of the
+[[Dashboard|$:/plugins/nico/projectify/doc/Dashboard]] lists the first open task
+of each of your projects, with the project title.
+
+The Next actions list gives a good high-level view of the next steps for each
+project, making it easier to decide what to focus on next.
