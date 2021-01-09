@@ -1,13 +1,13 @@
 created: 20200419141443144
 creator: nico
-modified: 20201211132900439
+modified: 20210109010329456
 modifier: nico
 tags:
 title: $:/plugins/nico/projectify/LICENSE
 type: text/vnd.tiddlywiki
 
 
-MIT License Copyright (c) 2020 [[Nicolas Petton|https://nicolas.petton.fr]] nicolas@petton.fr
+MIT License Copyright (c) 2020-2021 [[Nicolas Petton|https://nicolas.petton.fr]] nicolas@petton.fr
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
