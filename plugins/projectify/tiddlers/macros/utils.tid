@@ -1,0 +1,12 @@
+created: 20210109154610555
+modified: 20210109160021434
+tags: $:/tags/Macro
+title: $:/plugins/nico/projectify/macros/utils
+type: text/vnd.tiddlywiki
+
+\define py-tip(text)
+<div class="py-tip">
+  <span class="py-tip-icon">{{$:/plugins/nico/projectify/images/lightbulb}}</span>
+  ''Tip: ''$text$
+</div>
+\end

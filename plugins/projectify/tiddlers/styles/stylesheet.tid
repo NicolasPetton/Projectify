@@ -463,6 +463,18 @@ input.py-input.input-large {
   text-decoration: underline;
 }
 
+.py-tip {
+  margin: 10px;
+  background: <<colour notification-background>>;
+  color: <<colour notification-foreground>>;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.py-tip-icon {
+  font-size: 1.2em;
+}
+
 .py-welcome {
   max-width: 800px;
   text-align: center;

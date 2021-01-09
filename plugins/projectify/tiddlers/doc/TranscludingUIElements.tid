@@ -1,0 +1,15 @@
+created: 20210109005110640
+modified: 20210109005541273
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/TranscludingUIElements
+type: text/vnd.tiddlywiki
+
+Projectify can be used without using the [[dashboard|$:/plugins/nico/projectify/doc/Dashboard]].
+
+The various UI elements provided by Projectify can be linked or transcluded in
+any way that suits your workflow. For instance:
+
+* Tiddlers can be used as projects by adding the <<tag Project>> tag. The todo-list will be displayed automatically.
+* The Inbox can be displayed by transcluding [[$:/plugins/nico/projectify/ui/inbox/Inbox]].
+* Upcoming tasks can be displayed by transcluding [[$:/plugins/nico/projectify/ui/dashbaord/Upcoming]].
+* The full list of projects can be displayed by transcluding [[$:/plugins/nico/projectify/ui/dashboard/Projects]].

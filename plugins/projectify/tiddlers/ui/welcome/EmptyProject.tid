@@ -9,10 +9,11 @@ type: text/vnd.tiddlywiki
     <div class="icon">{{$:/plugins/nico/projectify/images/rocket}}</div>
     <h3>Let's get started!</h3>
     <p>
-      Keep your work organised by grouping todos in projects. <br/>
-      Drag & drop todos to move them between projects.
+      Keep your work organised by grouping todos in projects.
     </p>
   </div>
+
+<<py-tip "Drag & drop any tiddler below to add it as a task to this project.">>
 \end
   
 <$list
