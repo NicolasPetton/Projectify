@@ -1,10 +1,11 @@
 created: 20201208175952867
-modified: 20201220171614235
+modified: 20210109163841041
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyProject
 type: text/vnd.tiddlywiki
 
 \define emptyWelcomeMessage()
+<$droppable actions=<<project-refile-actions>>>
   <div class="py-welcome">
     <div class="icon">{{$:/plugins/nico/projectify/images/rocket}}</div>
     <h3>Let's get started!</h3>
@@ -12,6 +13,7 @@ type: text/vnd.tiddlywiki
       Keep your work organised by grouping todos in projects.
     </p>
   </div>
+</$droppable>
 
 <<py-tip "Drag & drop any tiddler below to add it as a task to this project.">>
 \end
@@ -21,9 +23,11 @@ type: text/vnd.tiddlywiki
   emptyMessage=<<emptyWelcomeMessage>>
   variable="ignore">
 
-  <div class="py-welcome">
-    <div class="icon">{{$:/plugins/nico/projectify/images/victory}}</div>
-    <h3>Well done!</h3>
-    <p>Looks like you've completed this project!</p>
-  </div>
+  <$droppable actions=<<project-refile-actions>>>
+    <div class="py-welcome">
+      <div class="icon">{{$:/plugins/nico/projectify/images/victory}}</div>
+      <h3>Well done!</h3>
+      <p>Looks like you've completed this project!</p>
+    </div>
+  </$droppable>
 </$list>
