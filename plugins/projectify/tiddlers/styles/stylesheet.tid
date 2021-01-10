@@ -523,13 +523,27 @@ input.py-input.input-large {
   border-bottom: 1px solid <<colour muted-foreground>>;
 }
 
+.tc-drop-down .py-priorities {
+  display: flex;
+  align-items: space-between;
+}
+
+.tc-drop-down.py-todo-actions-drop-down .py-priorities {
+  padding-bottom: 10px;
+}
+
+.tc-drop-down .py-priorities .tc-btn-invisible {
+  width: auto;
+  text-align: center;
+}
+
 .py-priority-3, .py-priority-3 svg,
 .py-drop-down .py-priority-3,
 .py-drop-down .py-priority-3 svg,
 .py-btn.py-priority-3 {
   fill: #e73939;
   color: #e73939;
-  border-color: #e73939;
+  border: none;
 }
 
 .py-priority-2, .py-priority-2 svg,
@@ -538,7 +552,7 @@ input.py-input.input-large {
 .py-btn.py-priority-2 {
   fill: #e77a39;
   color: #e77a39;
-  border-color: #e77a39;
+  border: none;
 }
 
 .py-priority-1, .py-priority-1 svg,
@@ -547,5 +561,5 @@ input.py-input.input-large {
 .py-btn.py-priority-1 {
   fill: #24cd5e;
   color: #24cd5e;
-  border-color: #24cd5e;
+  border: none;
 }

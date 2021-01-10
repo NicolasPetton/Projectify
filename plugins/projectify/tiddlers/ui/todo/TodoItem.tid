@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20210110174523359
+modified: 20210110184306664
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -30,12 +30,6 @@ type: text/vnd.tiddlywiki
       {{||$:/plugins/nico/projectify/images/pie}}
     </$list>
   </$checkbox>
-
-  {{||$:/plugins/nico/projectify/ui/todo/TodoActions}}
   
-  <$list filter="[<showProjectLinks>!is[blank]]" variable="ignore">
-    <$list filter="[all[current]tags[]filter<py-all-projects-and-subprojects>]">
-      <$link to={{!!title}} overrideClass="py-project-link"/>
-    </$list>
-  </$list>
+  {{||$:/plugins/nico/projectify/ui/todo/TodoActions}}
 </div>

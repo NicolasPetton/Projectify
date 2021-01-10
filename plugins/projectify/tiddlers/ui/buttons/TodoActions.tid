@@ -1,0 +1,22 @@
+created: 20210110175540346
+modified: 20210110180348336
+tags:
+title: $:/plugins/nico/projectify/ui/buttons/TodoActions
+type: text/vnd.tiddlywiki
+
+<$vars
+  popupTiddler=<<qualify "$:/state/projectify/todo-actions-dropdown">>
+  cssClass="py-btn"
+>
+  <$button class=<<cssClass>> popup=<<popupTiddler>>>
+    {{$:/plugins/nico/projectify/images/dots}}
+  </$button>
+
+  <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+    <div class="tc-drop-down py-drop-down py-date-picker py-todo-actions-drop-down">
+      {{||$:/plugins/nico/projectify/ui/forms/TodoPriority}}
+      <hr/>
+      {{||$:/plugins/nico/projectify/ui/forms/TodoDueDate}}
+    </div>
+  </$reveal>
+</$vars>

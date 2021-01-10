@@ -1,0 +1,21 @@
+created: 20210110175047050
+modified: 20210110175954318
+tags:
+title: $:/plugins/nico/projectify/ui/forms/TodoPriority
+type: text/vnd.tiddlywiki
+
+<div class="py-priorities">
+  <$list filter="3 2 1" variable="priority">
+    <$button class={{{ [[tc-btn-invisible py-priority-]addsuffix<priority>] }}}>
+      {{$:/plugins/nico/projectify/images/flag}}
+      <$action-setfield priority=<<priority>>/>
+      <$action-sendmessage $message="tm-auto-save-wiki"/>
+    </$button>
+  </$list>
+
+  <$button class="tc-btn-invisible">
+    {{$:/plugins/nico/projectify/images/slash-circle}}
+    <$action-deletefield $field="priority"/>
+    <$action-sendmessage $message="tm-auto-save-wiki"/>
+  </$button>
+</div>

@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210110174751353
+modified: 20210110203435966
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -13,6 +13,7 @@ type: text/vnd.tiddlywiki
 
 !! Improvements
 
+* New todo item layout
 * Add support for dragging todos in the welcome message of empty projects and inbox
 * Add welcome screens to the Upcoming and Next Actions tabs of the dashboard
 
