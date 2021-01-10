@@ -1,5 +1,5 @@
 created: 20200424135048294
-modified: 20210110180825081
+modified: 20210110214710692
 tags:
 title: $:/plugins/nico/projectify/ui/buttons/TodoPriority
 type: text/vnd.tiddlywiki
@@ -8,11 +8,9 @@ type: text/vnd.tiddlywiki
   popupTiddler=<<qualify "$:/state/projectify/due-priority-dropdown">>
   cssClass={{{ [[py-btn py-priority py-priority-]addsuffix{!!priority}] }}}
 >
-  <$reveal type="nomatch" state="!!priority" text="">
-    <$button class=<<cssClass>> popup=<<popupTiddler>>>
-      {{$:/plugins/nico/projectify/images/flag}}
-    </$button>
-  </$reveal>
+  <$button class=<<cssClass>> popup=<<popupTiddler>>>
+    {{$:/plugins/nico/projectify/images/flag}}
+  </$button>
 
   <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
     <div class="tc-drop-down py-drop-down">

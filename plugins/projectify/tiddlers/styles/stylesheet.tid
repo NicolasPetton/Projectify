@@ -320,6 +320,10 @@ input.py-input.input-large {
   float: right;
 }
 
+.py-todo .py-btn.py-priority {
+  border: none;
+}
+
 .py-todo .py-project-link {
   font-size: .8em;
   color: #aaa;
@@ -539,7 +543,6 @@ input.py-input.input-large {
 .py-btn.py-priority-3 {
   fill: #e73939;
   color: #e73939;
-  border: none;
 }
 
 .py-priority-2, .py-priority-2 svg,
@@ -548,7 +551,6 @@ input.py-input.input-large {
 .py-btn.py-priority-2 {
   fill: #e77a39;
   color: #e77a39;
-  border: none;
 }
 
 .py-priority-1, .py-priority-1 svg,
@@ -557,5 +559,4 @@ input.py-input.input-large {
 .py-btn.py-priority-1 {
   fill: #24cd5e;
   color: #24cd5e;
-  border: none;
 }

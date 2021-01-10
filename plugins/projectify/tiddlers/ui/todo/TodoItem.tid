@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20210110184306664
+modified: 20210110214734060
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -24,7 +24,9 @@ type: text/vnd.tiddlywiki
   
   <$checkbox tag="done" actions=<<save-actions>>>
     {{||$:/plugins/nico/projectify/ui/buttons/Checkbox}}
-    {{||$:/plugins/nico/projectify/ui/buttons/TodoPriority}}
+    <$reveal type="nomatch" state="!!priority" text="">
+      {{||$:/plugins/nico/projectify/ui/buttons/TodoPriority}}
+    </$reveal>
     <$link to={{!!title}}><$view field="title"/></$link>
     <$list filter=<<py-has-todos>> variable="ignore">
       {{||$:/plugins/nico/projectify/images/pie}}
