@@ -382,8 +382,8 @@ input.py-input.input-large {
 }
 
 .py-todo-heading {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 4px;
+  margin-bottom: 14px;
 }
 
 .py-todo-actions .py-btn,
