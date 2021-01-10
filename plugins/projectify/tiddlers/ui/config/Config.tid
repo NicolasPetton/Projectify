@@ -1,0 +1,8 @@
+created: 20200426194806637
+modified: 20210110214224617
+tags: $:/tags/ControlPanel
+title: $:/plugins/nico/projectify/ui/config/Config
+type: text/vnd.tiddlywiki
+caption: Projectify
+
+<<tabs "[all[shadows+tiddlers]tag[$:/plugins/nico/projectify/tags/Config]!has[draft.of]]" "$:/plugins/nico/projectify/ui/config/Dashboard" "$:/state/projectify/config">>

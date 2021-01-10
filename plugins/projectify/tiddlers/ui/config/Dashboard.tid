@@ -1,0 +1,16 @@
+created: 20200426194806637
+modified: 20210110214341346
+tags: $:/plugins/nico/projectify/tags/Config
+title: $:/plugins/nico/projectify/ui/config/Dashboard
+type: text/vnd.tiddlywiki
+caption: Dashboard
+
+\define projects-view()
+<$select tiddler="$:/config/projectify/projects-view">
+  <$list filter="list cards">
+    <option value=<<currentTiddler>>><<currentTiddler>></option>
+  </$list>
+</$select>
+\end
+
+|View project as |<<projects-view>> |
