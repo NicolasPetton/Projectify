@@ -528,10 +528,6 @@ input.py-input.input-large {
   align-items: space-between;
 }
 
-.tc-drop-down.py-todo-actions-drop-down .py-priorities {
-  padding-bottom: 10px;
-}
-
 .tc-drop-down .py-priorities .tc-btn-invisible {
   width: auto;
   text-align: center;
