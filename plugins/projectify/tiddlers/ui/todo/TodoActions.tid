@@ -1,0 +1,15 @@
+created: 20200422200123438
+modified: 20210110174010693
+tags:
+title: $:/plugins/nico/projectify/ui/todo/TodoActions
+type: text/vnd.tiddlywiki
+
+<span class="py-todo-actions">
+  <$list filter=<<py-is-not-scheduled>>>
+    {{||$:/plugins/nico/projectify/ui/buttons/TodoPriority}}
+  </$list>
+  {{||$:/plugins/nico/projectify/ui/buttons/TodoDueDate}}
+  <$list filter=<<py-is-scheduled>>>
+    {{||$:/plugins/nico/projectify/ui/buttons/TodoPriority}}
+  </$list>
+</span>

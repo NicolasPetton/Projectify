@@ -1,0 +1,32 @@
+created: 20200424135048294
+modified: 20210109224402589
+tags:
+title: $:/plugins/nico/projectify/ui/buttons/TodoPriority
+type: text/vnd.tiddlywiki
+
+<$vars
+  popupTiddler=<<qualify "$:/state/projectify/due-priority-dropdown">>
+  cssClass={{{ [[py-btn py-priority py-priority-]addsuffix{!!priority}] }}}
+>
+  <$button class=<<cssClass>> popup=<<popupTiddler>>>
+    {{$:/plugins/nico/projectify/images/flag}}
+  </$button>
+
+  <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+    <div class="tc-drop-down py-drop-down">
+      <$list filter="3 2 1" variable="priority">
+	<$button class={{{ [[tc-btn-invisible py-priority-]addsuffix<priority>] }}}>
+	  {{$:/plugins/nico/projectify/images/flag}}
+	    <$action-setfield priority=<<priority>>/>
+	    <$action-sendmessage $message="tm-auto-save-wiki"/>
+	</$button>
+      </$list>
+
+      <$button class="tc-btn-invisible">
+	{{$:/plugins/nico/projectify/images/slash-circle}}
+	<$action-deletefield $field="priority"/>
+	<$action-sendmessage $message="tm-auto-save-wiki"/>
+      </$button>
+    </div>
+  </$reveal>
+</$vars>

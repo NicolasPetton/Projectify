@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210109212025634
+modified: 20210110174337391
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -83,7 +83,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-todos-due-today()
-[!has[draft.of]!tag[done]tag[todo]days:due[0]]
+[!has[draft.of]!tag[done]tag[todo]days:due[0]!nsort[priority]]
 \end
 
 \define py-todos-overdue()
@@ -99,7 +99,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-todos-due-on()
-[!has[draft.of]!tag[done]tag[todo]sameday:due<day>]
+[!has[draft.of]!tag[done]tag[todo]sameday:due<day>!nsort[priority]]
 \end
 
 \define py-has-overdue-todos()
@@ -134,6 +134,10 @@ type: text/vnd.tiddlywiki
 [all[current]!has[draft.of]!days:due[1]]
 \end
 
+\define py-is-scheduled()
+[all[current]!has[draft.of]has[due]]
+\end
+  
 \define py-is-not-scheduled()
 [all[current]!has[draft.of]!has[due]]
 \end
@@ -143,7 +147,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-unscheduled-todos-subfilter()
-tag[todo]!has[draft.of]!tag[done]!has[due]
+tag[todo]!has[draft.of]!tag[done]!has[due]!nsort[priority]
 \end
 
 \define py-scheduled-todos-subfilter()

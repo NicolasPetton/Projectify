@@ -316,10 +316,6 @@ input.py-input.input-large {
   padding-left: 22px;
 }
 
-.py-todo .py-todo-actions {
-  float: right;
-}
-
 .py-todo .py-project-link {
   font-size: .8em;
   color: #aaa;
@@ -383,11 +379,9 @@ input.py-input.input-large {
   margin-bottom: 5px;
 }
 
-.py-todo-heading .py-due-date {
-  margin-right: 8px;
-}
-
-.py-due-date, .py-todo-heading .py-btn {
+.py-todo-actions .py-btn,
+.py-todo-heading .py-btn,
+.py-todo .py-btn.py-priority {
   color: #999;
   fill: #999;
   padding: 2px 3px;
@@ -408,22 +402,28 @@ input.py-input.input-large {
   border-color: <<colour primary>>;
 }
 
-.py-todo .py-due-date {
+.py-todo .py-todo-actions .py-btn {
   font-size: .8em;
-  margin-left: 14px;
+  margin-left: 6px;
 }
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .py-todo .py-not-scheduled {
+  .py-todo .py-todo-actions .py-btn.py-not-scheduled,
+  .py-todo .py-todo-actions .py-btn.py-priority- {
     opacity: 0;
     transition: opacity ease-in .14s;
   }
 
-  .py-todo:hover .py-not-scheduled {
-    opacity: 1;
+  .py-todo:hover .py-todo-actions .py-btn {
+    opacity: 1 !important;
   }
 }
 
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .py-todo .py-todo-actions {
+    float: right;
+  }
+}
 
 .py-due-date svg {
   width: 1em;
@@ -505,4 +505,51 @@ input.py-input.input-large {
 
 .py-scheduled-drop-down .clear {
   margin: 5px 10px;
+}
+
+.tc-drop-down.py-drop-down {
+  min-width: auto;
+}
+
+.tc-drop-down.py-drop-down .tc-btn-invisible {
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.tc-drop-down.py-drop-down .tc-btn-invisible svg {
+    margin-right: 6px;
+}
+
+.tc-drop-down.py-drop-down hr {
+  margin: 2px 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid <<colour muted-foreground>>;
+}
+
+.py-priority-3, .py-priority-3 svg,
+.py-drop-down .py-priority-3,
+.py-drop-down .py-priority-3 svg,
+.py-btn.py-priority-3 {
+  fill: #e73939;
+  color: #e73939;
+  border-color: #e73939;
+}
+
+.py-priority-2, .py-priority-2 svg,
+.py-drop-down .py-priority-2,
+.py-drop-down .py-priority-2 svg,
+.py-btn.py-priority-2 {
+  fill: #e77a39;
+  color: #e77a39;
+  border-color: #e77a39;
+}
+
+.py-priority-1, .py-priority-1 svg,
+.py-drop-down .py-priority-1,
+.py-drop-down .py-priority-1 svg,
+.py-btn.py-priority-1 {
+  fill: #24cd5e;
+  color: #24cd5e;
+  border-color: #24cd5e;
 }

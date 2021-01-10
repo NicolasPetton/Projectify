@@ -1,5 +1,5 @@
 created: 20200424135048294
-modified: 20210109212549501
+modified: 20210109213602600
 tags:
 title: $:/plugins/nico/projectify/ui/buttons/TodoDueDate
 type: text/vnd.tiddlywiki
@@ -31,7 +31,7 @@ type: text/vnd.tiddlywiki
   </$list>
 
   <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
-    <div class="tc-drop-down py-date-picker">
+    <div class="tc-drop-down py-drop-down py-date-picker">
       <$py-date-today>{{$:/plugins/nico/projectify/images/sun}} Today</$py-date-today>
       <$py-date-tomorrow>{{$:/plugins/nico/projectify/images/calendar-event}} Tomorrow</$py-date-tomorrow>
       <$py-date-next-week>{{$:/plugins/nico/projectify/images/calendar}} Next week</$py-date-next-week>

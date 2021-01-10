@@ -1,31 +1,10 @@
 created: 20210105171218832
-modified: 20210105171240503
+modified: 20210109213549465
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/date-picker
 type: text/vnd.tiddlywiki
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
-
-
-.tc-drop-down.py-date-picker {
-  min-width: auto;
-}
-
-.py-date-picker hr {
-  margin: 2px 0;
-  padding: 0;
-  border: 0;
-  border-bottom: 1px solid <<colour muted-foreground>>;
-}
-
-.py-date-picker .tc-btn-invisible {
-  font-size: 14px;
-  line-height: 2em;
-}
-
-.py-date-picker .tc-btn-invisible svg {
-    margin-right: 6px;
-}
 
 .py-date-picker .py-date-today {
   color: <<colour primary>>;
