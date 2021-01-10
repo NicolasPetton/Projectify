@@ -316,10 +316,13 @@ input.py-input.input-large {
   padding-left: 22px;
 }
 
+.py-todo .py-todo-actions {
+  float: right;
+}
+
 .py-todo .py-project-link {
   font-size: .8em;
   color: #aaa;
-  float: right;
 }
 
 .py-todo.py-completed a {
@@ -386,7 +389,6 @@ input.py-input.input-large {
   fill: #999;
   padding: 2px 3px;
   border-radius: 4px;
-  vertical-align: middle;
 }
 
 .py-due-date.py-overdue {
@@ -416,12 +418,6 @@ input.py-input.input-large {
 
   .py-todo:hover .py-todo-actions .py-btn {
     opacity: 1 !important;
-  }
-}
-
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .py-todo .py-todo-actions {
-    float: right;
   }
 }
 
