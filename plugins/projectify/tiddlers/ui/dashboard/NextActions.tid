@@ -1,13 +1,13 @@
 caption: {{$:/plugins/nico/projectify/images/funnel}} Next
 created: 20200425195221581
 list-after: $:/plugins/nico/projectify/ui/dashbaord/Schedule
-modified: 20210109211320887
+modified: 20210110205428038
 tags: $:/plugins/nico/projectify/tags/dashboard
 title: $:/plugins/nico/projectify/ui/NextActions
 type: text/vnd.tiddlywiki
 
 <$list
-  filter=<<py-has-active-projects-with-todos>>
+  filter=<<py-has-active-projects>>
   emptyMessage={{$:/plugins/nico/projectify/ui/welcome/EmptyNextActions}}
 >
   <dl>
