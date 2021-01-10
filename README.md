@@ -1,6 +1,6 @@
 # Projectify
 
-Projectify is a project management plugin for,
+Projectify is a project management plugin for [TiddlyWiki](https://tiddlywiki.com/),
 inspired by other tools like [Todoist](https://todoist.com) and
 [Basecamp](https://basecamp.com).
 
