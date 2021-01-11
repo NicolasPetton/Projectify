@@ -445,6 +445,19 @@ input.py-input.input-large {
   color: <<colour tiddler-title-foreground>>;
 }
 
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .py-tabs.tc-tab-buttons button {
+    font-size: 1.1em;
+    padding: 5px;
+  }
+
+  .py-tabs.tc-tab-buttons svg {
+    display: block;
+    font-size: 16px;
+    margin: 0 auto 6px auto;
+  }
+}
+
 .py-tabs.tc-tab-buttons button.tc-tab-selected {
   border: 0;
   border-bottom: 4px solid <<colour primary>>;
