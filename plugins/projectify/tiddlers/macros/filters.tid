@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210111180714072
+modified: 20210111203423529
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -145,7 +145,7 @@ type: text/vnd.tiddlywiki
 \define py-is-scheduled()
 [all[current]!has[draft.of]has[due]]
 \end
-  
+
 \define py-is-not-scheduled()
 [all[current]!has[draft.of]!has[due]]
 \end
@@ -177,3 +177,8 @@ todo [all[current]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [<__tag__>]
 \define project-refile-tags()
 todo [all[<actionTiddler>]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] [<currentTiddler>]
 \end
+
+\define py-convert-todo-into-project()
+[all[current]tags[]] -Inbox -[tag[Project]] -[tag[SubProject]] -SubProject -Inbox -todo Project
+\end
+
