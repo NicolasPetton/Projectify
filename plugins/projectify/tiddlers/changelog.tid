@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210111180840533
+modified: 20210111181012470
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -20,7 +20,11 @@ type: text/vnd.tiddlywiki
 * Display due dates for yesterday/tomorrow as "Yesterday"/"Tomorrow"
 * Add support for dragging todos in the welcome message of empty projects and inbox
 * Add welcome screens to the Upcoming and Next Actions tabs of the dashboard
-* Improved dashboard tabs on mobile. All tabs now fit on one row.
+* Improved dashboard tabs on mobile to fit all tabs on one row
+
+!! Fixes
+
+* Fix an annoying bug where the calendar picker keyboard events stay active after the popup has been closed
 
 ! Release 0.9.0
 

@@ -167,6 +167,7 @@ CalendarWidget.prototype.render = function(parent,nextSibling) {
 CalendarWidget.prototype.renderCalendar = function() {
 	let calendar = new Pikaday({
 		firstDay: 1,
+		keyboardInput: false,
 		onSelect: () => {
 			this.setValue(calendar.getDate());
 			// Close the popup
