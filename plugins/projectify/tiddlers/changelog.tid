@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210110214516099
+modified: 20210111151204956
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -11,6 +11,8 @@ type: text/vnd.tiddlywiki
 
 * New priority property on todos
 * New configuration tab to the Control Panel
+* New configuration setting for the default dashboard tab
+* New configuration setting for switching between the list and card view of projects
 
 !! Improvements
 

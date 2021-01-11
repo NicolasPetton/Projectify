@@ -1,10 +1,16 @@
 created: 20200424192751342
-modified: 20201230214758441
+modified: 20210111103157392
 tags: 
 title: $:/plugins/nico/projectify/ui/dashboard/Dashboard
 type: text/vnd.tiddlywiki
 
-<<tabs "[all[tiddlers+shadows]tag[$:/plugins/nico/projectify/tags/dashboard]]" "$:/plugins/nico/projectify/ui/dashboard/InboxAndProjects" "$:/state/projects-and-schedule"  "py-tabs">>
+<$macrocall
+  $name="tabs"
+  tabsList="[all[tiddlers+shadows]tag[$:/plugins/nico/projectify/tags/dashboard]]"
+  default={{$:/config/projectify/DefaultDashboardTab}}
+  state="$:/state/projects-and-schedule"
+  class="py-tabs"
+/>
 
 <div class="py-help-links">
   <$link to="$:/plugins/nico/projectify/doc/Help">

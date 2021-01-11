@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20210110214341346
+modified: 20210111102826039
 tags: $:/plugins/nico/projectify/tags/Config
 title: $:/plugins/nico/projectify/ui/config/Dashboard
 type: text/vnd.tiddlywiki
@@ -13,4 +13,15 @@ caption: Dashboard
 </$select>
 \end
 
+\define default-dashboard-tab()
+<$select tiddler="$:/config/projectify/DefaultDashboardTab">
+  <$list filter="[all[tiddlers+shadows]tag[$:/plugins/nico/projectify/tags/dashboard]]">
+    <option value=<<currentTiddler>>>
+      <$transclude field="caption"><$text text=<<currentTiddler>>/>
+    </$transclude></option>
+    <$select tiddler="$:/config/projectify/projects-view">
+</$select>
+\end
+
+|Default dashboard tab |<<default-dashboard-tab>> |
 |View project as |<<projects-view>> |
