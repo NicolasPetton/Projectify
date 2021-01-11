@@ -1,5 +1,5 @@
 created: 20200424135048294
-modified: 20210110175113354
+modified: 20210111163234477
 tags:
 title: $:/plugins/nico/projectify/ui/buttons/TodoDueDate
 type: text/vnd.tiddlywiki
@@ -7,7 +7,12 @@ type: text/vnd.tiddlywiki
 <$vars popupTiddler=<<qualify "$:/state/projectify/due-date-dropdown">>>
   <$list filter=<<py-is-overdue>>>
     <$button class="py-btn py-due-date py-overdue" popup=<<popupTiddler>>>
-      <$view field="due" format="relativedate"/>
+      <$list
+        filter=<<py-is-due-yesterday>>
+        emptyMessage="""<$view field="due" format="relativedate"/>"""
+      >
+	Yesterday
+      </$list>
     </$button>
   </$list>
   <$list filter=<<py-is-not-overdue>>>
@@ -19,7 +24,12 @@ type: text/vnd.tiddlywiki
     <$list filter=<<py-is-due-later>>>
       <$button class="py-btn py-due-date" popup=<<popupTiddler>>>
 	{{$:/plugins/nico/projectify/images/calendar}}
-	<$view field="due" format="date" template="DDth mmm"/>
+	<$list
+	  filter=<<py-is-due-tomorrow>>
+	  emptyMessage="""<$view field="due" format="date" template="DDth mmm"/>"""
+	>
+	  Tomorrow
+	</$list>
       </$button>
     </$list>
     <$list filter=<<py-is-not-scheduled>>>

@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210110205315733
+modified: 20210111180714072
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -128,6 +128,14 @@ type: text/vnd.tiddlywiki
 
 \define py-is-due-today()
 [all[current]!has[draft.of]days:due[0]]
+\end
+
+\define py-is-due-yesterday()
+[all[current]!has[draft.of]days:due[-1]]
+\end
+
+\define py-is-due-tomorrow()
+[all[current]!has[draft.of]days:due[1]]
 \end
 
 \define py-is-due-later()
