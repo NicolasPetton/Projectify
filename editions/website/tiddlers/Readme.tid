@@ -1,0 +1,37 @@
+created: 20210112221205605
+modified: 20210112214730328
+tags: 
+title: Readme
+type: text/vnd.tiddlywiki
+
+\define tv-wikilink-template() https://projectify.wiki#$uri_encoded$
+
+Projectify is project-management app for [[TiddlyWiki|https://tiddlywiki.com]], inspired by products like [[Todoist|https://todoist.com]] and [[Basecamp|https://basecamp.com]]. 
+
+[[TiddlyWiki|https://tiddlywiki.com]] is an excellent note-taking & knowledge-base app with [[unique features|https://tiddlywiki.com/#TiddlyWiki]]. Projectify brings project managment features to ~TiddlyWIki, extending it to let you [[capture thoughts|$:/plugins/nico/projectify/doc/Inbox]], [[plan projects|$:/plugins/nico/projectify/doc/Projects]] and [[schedule tasks|$:/plugins/nico/projectify/doc/Upcoming]].
+
+Projectify is carefully crafted, with an intuitive interface that integrates seamlessy with the core of ~TiddlyWiki. [[Drag and drop |https://tiddlywiki.com/#Drag%20and%20Drop]] any tiddler into a project to add it as a todo, [[transclude|https://tiddlywiki.com/#Transclusion]] and [[link|https://tiddlywiki.com/#Linking%20in%20WikiText]] other tiddlers into projects or tasks.
+
+For all changes in the latest {{$:/plugins/nico/projectify!!version}} release, see [[ChangeLog|$:/plugins/nico/projectify/changelog]].
+
+!! Screenshots & demo
+
+A demo is available at [[projectify.wki|https://projectify.wiki]].
+
+{{Screenshots}}
+
+!! Getting started
+
+Download a pre-configured empty wiki:
+
+<a class="py-btn btn-primary" href="https://projectify.wiki/empty.html" download="empty.html">
+  Get Projectify
+</a>
+
+Alternatively, see [[Installation|$:/plugins/nico/projectify/doc/Installation]] for installation instructions in an existing wiki.
+
+If you are new to ~TiddlyWiki, we strongly encourage you to read the [[Getting started|https://tiddlywiki.com/#GettingStarted]] documentation.
+
+!! Language packs
+
+Projectify is currently available in English and French. For the French language pack, install [[$:/plugins/nico/projectify-fr-FR]].

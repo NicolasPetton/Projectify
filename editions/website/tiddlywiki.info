@@ -15,6 +15,9 @@
 			"$:/plugins/tiddlywiki/tiddlyweb/save/offline",
             "projectify.html",
             "text/plain"
-        ]
+        ],
+		"readme": [
+			"--rendertiddler","Readme","README.md","text/html"
+		]
     }
 }
