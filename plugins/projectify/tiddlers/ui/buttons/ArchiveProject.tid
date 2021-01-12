@@ -1,13 +1,19 @@
 created: 20201209150027612
-modified: 20210105210456896
+modified: 20210112180541889
 tags: 
 title: $:/plugins/nico/projectify/ui/buttons/ArchiveProject
 type: text/vnd.tiddlywiki
 
+\define lingo-base() $:/language/projectify/
+
 <$fieldmangler>
-  <$button class="py-btn btn-danger nc-archive-project">
+  <$button
+    class="py-btn btn-danger nc-archive-project"
+    tooltip={{$:/language/projectify/ArchiveProject/Hint}}
+    aria-label={{$:/language/projectify/ArchiveProject/Hint}}
+  >
     <$action-sendmessage $message="tm-add-tag" $param="done"/>
     <$action-sendmessage $message="tm-auto-save-wiki"/>
-    {{$:/core/images/delete-button}} Archive project
+    {{$:/core/images/delete-button}} <<lingo ArchiveProject/Caption>>
   </$button>
 </$fieldmangler>

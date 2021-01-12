@@ -1,12 +1,14 @@
 created: 20210110175047050
-modified: 20210110175051186
+modified: 20210112182234031
 tags:
 title: $:/plugins/nico/projectify/ui/forms/TodoDueDate
 type: text/vnd.tiddlywiki
 
-<$py-date-today>{{$:/plugins/nico/projectify/images/sun}} Today</$py-date-today>
-<$py-date-tomorrow>{{$:/plugins/nico/projectify/images/calendar-event}} Tomorrow</$py-date-tomorrow>
-<$py-date-next-week>{{$:/plugins/nico/projectify/images/calendar}} Next week</$py-date-next-week>
-<$py-date-clear>{{$:/plugins/nico/projectify/images/slash-circle}} Clear</$py-date-clear>
+\define lingo-base() $:/language/projectify/
+
+<$py-date-today>{{$:/plugins/nico/projectify/images/sun}} <<lingo Today>></$py-date-today>
+<$py-date-tomorrow>{{$:/plugins/nico/projectify/images/calendar-event}} <<lingo Tomorrow>></$py-date-tomorrow>
+<$py-date-next-week>{{$:/plugins/nico/projectify/images/calendar}} <<lingo NextWeek>></$py-date-next-week>
+<$py-date-clear>{{$:/plugins/nico/projectify/images/slash-circle}} <<lingo Clear>></$py-date-clear>
 <hr/>
 <$py-date-calendar/>

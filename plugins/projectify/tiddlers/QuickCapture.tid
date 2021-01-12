@@ -1,17 +1,25 @@
 color: #0088cc
 created: 20200427182956318
 icon: $:/plugins/nico/projectify/images/quick-capture
-modified: 20201212170920830
+modified: 20210112184228423
 tags: 
 title: $:/plugins/nico/projectify/QuickCapture
 type: text/vnd.tiddlywiki
 
-!! {{$:/plugins/nico/projectify/images/tasks}} Quick add todo
+\define lingo-base() $:/language/projectify/
+
+!! {{$:/plugins/nico/projectify/images/tasks}} <<lingo QuickAddTodo>>
 
 <$keyboard key="enter">
   <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
   <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
   <$action-sendmessage $message="tm-close-tiddler"/>
-  <$edit-text class="py-input input-large" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..." focus="true"/> 
-  <label class="py-label py-right-aligned">Press <kbd>⏎</kbd> to capture</label>
+  <$edit-text
+    class="py-input input-large"
+    tiddler="$:/state/Inbox"
+    field="todo_name"
+    placeholder={{$:/language/projectify/AddToInbox/Placeholder}}
+    focus="true"
+  /> 
+  <label class="py-label py-right-aligned"><<lingo QuickCapture/Hint>></label>
 </$keyboard>

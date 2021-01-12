@@ -1,8 +1,10 @@
 created: 20200424192751342
-modified: 20210111103157392
+modified: 20210112180541564
 tags: 
 title: $:/plugins/nico/projectify/ui/dashboard/Dashboard
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 <$macrocall
   $name="tabs"
@@ -14,6 +16,6 @@ type: text/vnd.tiddlywiki
 
 <div class="py-help-links">
   <$link to="$:/plugins/nico/projectify/doc/Help">
-    {{$:/plugins/nico/projectify/images/info}} Need help?
+    {{$:/plugins/nico/projectify/images/info}} <<lingo Help>>
   </$link>
 </div>

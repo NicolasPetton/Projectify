@@ -1,21 +1,23 @@
-caption: {{$:/plugins/nico/projectify/images/sun}} Today {{$:/plugins/nico/projectify/ui/dashbaord/TodayCount}}
+caption: {{$:/plugins/nico/projectify/images/sun}} {{$:/language/projectify/Today}} {{$:/plugins/nico/projectify/ui/dashbaord/TodayCount}}
 created: 20210107213438937
 list-after: $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects
-modified: 20210108114553910
+modified: 20210112180541507
 tags: $:/plugins/nico/projectify/tags/dashboard
 title: $:/plugins/nico/projectify/ui/dashbaord/Today
 type: text/vnd.tiddlywiki
 
+\define lingo-base() $:/language/projectify/
+
 <$vars showProjectLinks="yes">
   <$list filter=<<py-has-overdue-todos>>>
     <dl>
-      <dt>Overdue</dt>
+      <dt><<lingo Overdue>></dt>
       <dd><<py-schedule-overdue>></dd>
     </dl>
   </$list>
 
   <dl>
-    <dt>Today</dt>
+    <dt><<lingo Today>></dt>
     <dd><<py-schedule-today>></dd>
   </dl>
 </$vars>

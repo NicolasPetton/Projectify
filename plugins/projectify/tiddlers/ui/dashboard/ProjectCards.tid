@@ -1,5 +1,5 @@
 created: 20200424193106051
-modified: 20201227211557680
+modified: 20210112173931437
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectCards
 type: text/vnd.tiddlywiki
@@ -7,7 +7,7 @@ type: text/vnd.tiddlywiki
 <div class="py-cards">
   <$list filter=<<py-active-projects>>>
     <$droppable actions=<<project-refile-actions>>>
-      {{||$:/plugins/nico/projectify/ui/project/ProjectCard}}
+      {{||$:/plugins/nico/projectify/ui/dashboard/ProjectCard}}
     </$droppable>
   </$list>
 </div>

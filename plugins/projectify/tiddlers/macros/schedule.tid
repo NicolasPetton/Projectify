@@ -1,5 +1,5 @@
 created: 20210107213957129
-modified: 20210107214628086
+modified: 20210112205701918
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/schedule
 type: text/vnd.tiddlywiki
@@ -26,6 +26,6 @@ type: text/vnd.tiddlywiki
   <$list
     filter=<<py-todos-due-today>>
     template="$:/plugins/nico/projectify/ui/todo/TodoItem"
-    emptyMessage="🌞 All clear!"
+    emptyMessage="🌞 {{$:/language/projectify/AllClear}}"
   />
 \end  

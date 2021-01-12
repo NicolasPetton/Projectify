@@ -1,0 +1,8 @@
+title: $:/language/projectify/WelcomeInboxDescription
+created: 20210112203922871
+modified: 20210112204214632
+
+<p>Collect tasks in the Inbox so you don't forget them, and get them out of your
+  head quickly!</p>
+<p>You can also press <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to
+  capture from anywhere.</p>

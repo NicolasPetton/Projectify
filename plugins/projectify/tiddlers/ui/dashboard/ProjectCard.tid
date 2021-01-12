@@ -1,8 +1,10 @@
 created: 20200424193106051
-modified: 20201223215149411
+modified: 20210112180541639
 tags:
-title: $:/plugins/nico/projectify/ui/project/ProjectCard
+title: $:/plugins/nico/projectify/ui/dashboard/ProjectCard
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 <$link overrideClass={{{ [[py-card ]addsuffix{!!card-color}] }}} to={{!!title}}>
   <div class="py-card-options">
@@ -15,6 +17,6 @@ type: text/vnd.tiddlywiki
     </div>
   </div>
   <div class="py-project-infos">
-    {{||$:/plugins/nico/projectify/images/pie}} <$count filter=<<py-open-todos>>/> open tasks
+    {{||$:/plugins/nico/projectify/images/pie}} <$count filter=<<py-open-todos>>/> <<lingo OpenTasks>>
   </div>
 </$link>

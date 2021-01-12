@@ -1,15 +1,20 @@
 created: 20201212173718479
-modified: 20210105205715554
+modified: 20210112180541662
 title: $:/plugins/nico/projectify/ui/forms/NewInboxTodo
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 <$keyboard key="enter">
   <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
   <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
-  <$edit-text class="py-input" tiddler="$:/state/Inbox" field="todo_name" placeholder="Add to inbox..."/>
+  <$edit-text
+    class="py-input" tiddler="$:/state/Inbox"
+    field="todo_name"
+    placeholder={{$:/language/projectify/AddToInbox/Placeholder}}
+  />
   <$action-sendmessage $message="tm-auto-save-wiki"/>
   <label class="py-label">
-    Press <kbd>⏎</kbd> add to the inbox.
-    <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from anywhere.
+    <<lingo AddToInbox/Hint>>
 </label>
 </$keyboard>

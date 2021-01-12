@@ -1,14 +1,16 @@
 created: 20200426194806637
-modified: 20210111102826039
+modified: 20210112180542154
 tags: $:/plugins/nico/projectify/tags/Config
 title: $:/plugins/nico/projectify/ui/config/Dashboard
 type: text/vnd.tiddlywiki
-caption: Dashboard
+caption: {{$:/language/projectify/Dashboard}}
+
+\define lingo-base() $:/language/projectify/
 
 \define projects-view()
 <$select tiddler="$:/config/projectify/projects-view">
   <$list filter="list cards">
-    <option value=<<currentTiddler>>><<currentTiddler>></option>
+    <option value=<<currentTiddler>>><$macrocall $name="lingo" title=<<currentTiddler>>/></option>
   </$list>
 </$select>
 \end
@@ -23,5 +25,5 @@ caption: Dashboard
 </$select>
 \end
 
-|Default dashboard tab |<<default-dashboard-tab>> |
-|View project as |<<projects-view>> |
+|<<lingo DefaultDashboardTab>> |<<default-dashboard-tab>> |
+|<<lingo ViewProjectsAs>> |<<projects-view>> |

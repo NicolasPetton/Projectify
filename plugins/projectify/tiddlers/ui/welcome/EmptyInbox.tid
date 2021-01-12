@@ -1,5 +1,5 @@
 created: 20201208175952867
-modified: 20210109205514951
+modified: 20210112204614106
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyInbox
 type: text/vnd.tiddlywiki
@@ -7,11 +7,8 @@ type: text/vnd.tiddlywiki
 \define emptyWelcomeMessage()
   <div class="py-welcome">
     <div class="icon">{{$:/plugins/nico/projectify/images/postbox}}</div>
-    <h3>Collect tasks in the Inbox</h3>
-    <p>Collect tasks in the Inbox so you don't forget them, and get them out of
-      your head quickly!</p>
-    <p>You can also press <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from
-    anywhere.</p>
+    <h3>{{$:/language/projectify/WelcomeInboxTitle}}</h3>
+    {{$:/language/projectify/WelcomeInboxDescription}}
   </div>
 \end
 
@@ -23,8 +20,8 @@ type: text/vnd.tiddlywiki
 
     <div class="py-welcome">
       <div class="icon">{{$:/plugins/nico/projectify/images/tada}}</div>
-      <h3>You're all done!</h3>
-      <p>Everything is well organized, have a great <<now DDD>>!</p>
+      <h3>{{$:/language/projectify/EmptyInboxTitle}}</h3>
+      {{$:/language/projectify/EmptyInboxDescription}}
     </div>
   </$list>
 </$droppable>

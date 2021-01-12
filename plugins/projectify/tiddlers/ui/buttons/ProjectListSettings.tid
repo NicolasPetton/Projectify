@@ -1,12 +1,14 @@
 created: 20201210171047824
-modified: 20201223204610663
+modified: 20210112180541814
 title: $:/plugins/nico/projectify/ui/buttons/ProjectListSettings
 type: text/vnd.tiddlywiki
 
+\define lingo-base() $:/language/projectify/
+
 <$button
   popup="$:/state/projectify/project-list-settings-dropdown"
-  tooltip="Options"
-  aria-label="Options"
+  tooltip={{$:/language/projectify/Options/Hint}}
+  aria-label={{$:/language/projectify/Options/Hint}}
   class="tc-btn-invisible"
   selectedClass="tc-selected"
 >
@@ -16,16 +18,17 @@ type: text/vnd.tiddlywiki
 <$reveal state="$:/state/projectify/project-list-settings-dropdown" type="popup" position="below" animate="yes" class="tc-drop-down">
   <$vars switchView={{{ [{$:/config/projectify/projects-view}match[list]then[cards]else[list]] }}}>
     <$button class="tc-btn-invisible">
-      View as <$text text=<<switchView>>/>
+      <$list filter="[<switchView>match[list]]">
+	<<lingo ViewAsList>>
+      </$list>
+      <$list filter="[<switchView>match[cards]]">
+	<<lingo ViewAsCards>>
+      </$list>
       <$action-setfield $tiddler="$:/config/projectify/projects-view" text=<<switchView>> />
     </$button>
   </$vars>
 
-  <$button
-    tooltip="Reorder projects"
-    aria-label="Reorder projects"
-    class="tc-btn-invisible"
-  >
+  <$button class="tc-btn-invisible">
     Reorder projects
     <$action-setfield $tiddler="$:/state/projectify/show-reorder-projects" text="yes">
   </$button>

@@ -1,6 +1,6 @@
-caption: {{$:/plugins/nico/projectify/images/inbox}} Inbox
+caption: {{$:/plugins/nico/projectify/images/inbox}} {{$:/language/projectify/Inbox}}
 created: 20200425193337699
-modified: 20201130164535731
+modified: 20210112182518459
 tags: 
 title: $:/plugins/nico/projectify/ui/inbox/Inbox
 type: text/vnd.tiddlywiki
@@ -13,7 +13,7 @@ type: text/vnd.tiddlywiki
   </$vars>
 \end
 
-<h2>Inbox <<inbox-count>></h2>
+<h2>{{$:/language/projectify/Inbox}} <<inbox-count>></h2>
 
 {{$:/plugins/nico/projectify/ui/forms/NewInboxTodo}}
 

@@ -1,8 +1,10 @@
 created: 20200424135048294
-modified: 20210111163234477
+modified: 20210112183254123
 tags:
 title: $:/plugins/nico/projectify/ui/buttons/TodoDueDate
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 <$vars popupTiddler=<<qualify "$:/state/projectify/due-date-dropdown">>>
   <$list filter=<<py-is-overdue>>>
@@ -11,14 +13,14 @@ type: text/vnd.tiddlywiki
         filter=<<py-is-due-yesterday>>
         emptyMessage="""<$view field="due" format="relativedate"/>"""
       >
-	Yesterday
+	<<lingo Yesterday>>
       </$list>
     </$button>
   </$list>
   <$list filter=<<py-is-not-overdue>>>
     <$list filter=<<py-is-due-today>>>
       <$button class="py-btn py-due-date py-due-today" popup=<<popupTiddler>>>
-      {{$:/plugins/nico/projectify/images/calendar}} Today
+      {{$:/plugins/nico/projectify/images/calendar}} <<lingo Today>>
     </$button>
     </$list>
     <$list filter=<<py-is-due-later>>>
@@ -26,16 +28,16 @@ type: text/vnd.tiddlywiki
 	{{$:/plugins/nico/projectify/images/calendar}}
 	<$list
 	  filter=<<py-is-due-tomorrow>>
-	  emptyMessage="""<$view field="due" format="date" template="DDth mmm"/>"""
+	  emptyMessage="""<$view field="due" format="date" template={{$:/language/projectify/DateFormat}}/>"""
 	>
-	  Tomorrow
+	  <<lingo Tomorrow>>
 	</$list>
       </$button>
     </$list>
     <$list filter=<<py-is-not-scheduled>>>
       <$button class="py-btn py-due-date py-not-scheduled" popup=<<popupTiddler>>>
 	{{$:/plugins/nico/projectify/images/calendar}}
-	Schedule
+	<<lingo buttons/Schedule/Caption>>
       </$button>
     </$list>
   </$list>

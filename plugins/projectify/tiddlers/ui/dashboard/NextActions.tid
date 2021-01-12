@@ -1,7 +1,7 @@
-caption: {{$:/plugins/nico/projectify/images/funnel}} Next
+caption: {{$:/plugins/nico/projectify/images/funnel}} {{$:/language/projectify/Next}}
 created: 20200425195221581
 list-after: $:/plugins/nico/projectify/ui/dashbaord/Schedule
-modified: 20210110205428038
+modified: 20210112180541447
 tags: $:/plugins/nico/projectify/tags/dashboard
 title: $:/plugins/nico/projectify/ui/NextActions
 type: text/vnd.tiddlywiki

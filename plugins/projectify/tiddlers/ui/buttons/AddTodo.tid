@@ -1,8 +1,16 @@
 created: 20201212172804699
-modified: 20201212172830771
+modified: 20210112180541864
 title: $:/plugins/nico/projectify/ui/buttons/AddTodo
 type: text/vnd.tiddlywiki
 
-<$button class="py-btn" set=<<stateTiddler>> setTo="show">
-  {{$:/core/images/list-bullet}} Add a todo
+\define lingo-base() $:/language/projectify/
+
+<$button
+  class="py-btn"
+  set=<<stateTiddler>>
+  setTo="show"
+  tooltip={{$:/language/projectify/AddTodo/Hint}}
+  aria-label={{$:/language/projectify/AddTodo/Hint}}
+>
+  {{$:/core/images/list-bullet}} <<lingo AddTodo/Caption>>
 </$button>

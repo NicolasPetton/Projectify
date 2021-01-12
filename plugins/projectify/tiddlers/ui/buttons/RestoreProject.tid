@@ -1,13 +1,15 @@
 created: 20201209151126748
-modified: 20210105210556531
+modified: 20210112180541974
 tags: 
 title: $:/plugins/nico/projectify/ui/buttons/RestoreProject
 type: text/vnd.tiddlywiki
 
+\define lingo-base() $:/language/projectify/
+
 <$fieldmangler>
   <$button class="tc-btn-invisible">
     <$action-sendmessage $message="tm-remove-tag" $param="done"/>
-    Restore project
+    <<lingo RestoreProject>>
     <$action-sendmessage $message="tm-auto-save-wiki"/>
   </$button>
 </$fieldmangler>

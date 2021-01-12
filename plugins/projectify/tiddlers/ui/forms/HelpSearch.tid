@@ -1,5 +1,5 @@
 created: 20201229010310903
-modified: 20201230213433893
+modified: 20210112180541419
 tags:
 title: $:/plugins/nico/projectify/ui/forms/HelpSearch
 type: text/vnd.tiddlywiki
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
     type="search"
     focusPopup="$:/state/projectify/popup-help-search"
     class="tc-popup-handle py-input"
-    placeholder="Search..."
+    placeholder={{$:/language/projectify/HelpSearch/Placeholder}}
     default=""
   />
   

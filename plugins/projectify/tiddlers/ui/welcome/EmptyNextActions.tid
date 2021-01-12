@@ -1,13 +1,11 @@
 created: 20210109205838748
-modified: 20210109211726953
+modified: 20210112205157492
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyNextActions
 type: text/vnd.tiddlywiki
 
 <div class="py-welcome">
   <div class="icon">{{$:/plugins/nico/projectify/images/palmtree}}</div>
-  <h3>All clear!</h3>
-  <p>
-    The first task of each active project will appear here -- [[learn more|$:/plugins/nico/projectify/doc/NextActions]].
-  </p>
+  <h3>{{$:/language/projectify/EmptyInboxDescription}}</h3>
+  {{$:/language/projectify/EmptyNextActionsDescription}}
 </div>

@@ -1,14 +1,16 @@
 created: 20201207165347344
 list-after: $:/plugins/nico/projectify/ui/todo/TodoHeading
-modified: 20201212174322186
+modified: 20210112183836741
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nico/projectify/ui/project/Project
 type: text/vnd.tiddlywiki
 
+\define lingo-base() $:/language/projectify/
+
 <$list filter=<<py-is-project>> variable="ignore">
   {{||$:/plugins/nico/projectify/ui/project/ArchivedProjectBanner}}
 
-  <h2>Todos {{||$:/plugins/nico/projectify/images/pie}}</h2>
+  <h2><<lingo Todos>> {{||$:/plugins/nico/projectify/images/pie}}</h2>
 
   <$macrocall
     $name="todo-list"

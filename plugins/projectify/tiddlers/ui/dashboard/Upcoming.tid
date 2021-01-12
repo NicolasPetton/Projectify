@@ -1,10 +1,12 @@
-caption: {{$:/plugins/nico/projectify/images/calendar-checked}} Upcoming
+caption: {{$:/plugins/nico/projectify/images/calendar-checked}} {{$:/language/projectify/Upcoming}}
 created: 20200424193230404
 list-after: $:/plugins/nico/projectify/ui/dashbaord/Today
-modified: 20210109212031501
+modified: 20210112180541537
 tags: $:/plugins/nico/projectify/tags/dashboard
 title: $:/plugins/nico/projectify/ui/dashbaord/Upcoming
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 <$vars showProjectLinks="yes">
   <$list
@@ -13,7 +15,7 @@ type: text/vnd.tiddlywiki
   >
     <$list filter=<<py-has-overdue-todos>>>
       <dl>
-	<dt>Overdue</dt>
+	<dt><<lingo Overdue>></dt>
 	<dd><<py-schedule-overdue>></dd>
       </dl>
     </$list>

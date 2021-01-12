@@ -1,7 +1,9 @@
 created: 20201212172804699
-modified: 20201217210137044
+modified: 20210112180542104
 title: $:/plugins/nico/projectify/ui/buttons/ToggleCompletedTodos
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 <$list filter=<<py-has-completed-todos>> variable="ignore">
   <$vars stateTiddler={{{ [{!!title}addprefix[$:/state/projectify/show-completed-]] }}}>
@@ -9,7 +11,7 @@ type: text/vnd.tiddlywiki
     <$reveal type="match" state=<<stateTiddler>> text="">
       <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="show">
         {{$:/plugins/nico/projectify/images/eye}}
-	<$count filter=<<py-completed-todos>>/> completed
+	<$count filter=<<py-completed-todos>>/> <<lingo Completed/Caption>>
       </$button>
     </$reveal>
 
@@ -18,7 +20,7 @@ type: text/vnd.tiddlywiki
 
       <div class="py-actions">
         <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="">
-          {{$:/plugins/nico/projectify/images/eyeslash}} Hide completed
+          {{$:/plugins/nico/projectify/images/eyeslash}} <<lingo HideCompleted/Caption>>
         </$button>
       </div>
     </$reveal>

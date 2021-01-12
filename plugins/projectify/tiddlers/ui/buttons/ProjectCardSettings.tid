@@ -1,13 +1,13 @@
 created: 20201210171047824
-modified: 20201223220159744
+modified: 20210112180541840
 title: $:/plugins/nico/projectify/ui/buttons/ProjectCardSettings
 type: text/vnd.tiddlywiki
 
 <$vars popupTiddler=<<qualify "$:/state/projectify/project-card-settings-dropdown">>>
   <$button
     popup=<<popupTiddler>>
-    tooltip="Card options"
-    aria-label="Card options"
+    tooltip={{$:/language/projectify/CardOptions/Hint}}
+    aria-label={{$:/language/projectify/CardOptions/Hint}}
     class="tc-btn-invisible"
     selectedClass="tc-selected"
   >

@@ -1,8 +1,10 @@
 created: 20200424193106051
-modified: 20201227211557662
+modified: 20210112180541590
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectList
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 <ul class="py-projects">
   <$list filter=<<py-active-projects>>>
@@ -10,7 +12,7 @@ type: text/vnd.tiddlywiki
       <li class="py-project">
         {{||$:/plugins/nico/projectify/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
         <div class="py-project-infos">
-          <$count filter=<<py-open-todos>>/> open tasks
+          <$count filter=<<py-open-todos>>/> <<lingo OpenTasks>>
         </div>
       </li>
     </$droppable>

@@ -1,5 +1,5 @@
 created: 20210110175540346
-modified: 20210111194922966
+modified: 20210112180541790
 tags:
 title: $:/plugins/nico/projectify/ui/buttons/TodoActions
 type: text/vnd.tiddlywiki
@@ -8,7 +8,12 @@ type: text/vnd.tiddlywiki
   popupTiddler=<<qualify "$:/state/projectify/todo-actions-dropdown">>
   cssClass="py-btn"
 >
-  <$button class=<<cssClass>> popup=<<popupTiddler>>>
+  <$button
+    class=<<cssClass>>
+    popup=<<popupTiddler>>
+    tooltip={{$:/language/projectify/TodoActions/Hint}}
+    aria-label={{$:/language/projectify/TodoActions/Hint}}
+  >
     {{$:/plugins/nico/projectify/images/dots}}
   </$button>
 
