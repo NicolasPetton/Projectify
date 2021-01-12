@@ -1,0 +1,20 @@
+{
+    "description": "Projectify website",
+	"plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+        "tiddlywiki/highlight"
+    ],
+    "themes": [
+        "tiddlywiki/vanilla",
+        "tiddlywiki/snowwhite"
+    ],
+	"build": {
+        "index": [
+            "--rendertiddler",
+			"$:/plugins/tiddlywiki/tiddlyweb/save/offline",
+            "projectify.html",
+            "text/plain"
+        ]
+    }
+}
