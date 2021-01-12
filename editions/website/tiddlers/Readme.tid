@@ -1,10 +1,12 @@
 created: 20210112221205605
-modified: 20210112214730328
+modified: 20210112215053343
 tags: 
 title: Readme
 type: text/vnd.tiddlywiki
 
 \define tv-wikilink-template() https://projectify.wiki#$uri_encoded$
+
+! Projectify
 
 Projectify is project-management app for [[TiddlyWiki|https://tiddlywiki.com]], inspired by products like [[Todoist|https://todoist.com]] and [[Basecamp|https://basecamp.com]]. 
 
@@ -14,11 +16,9 @@ Projectify is carefully crafted, with an intuitive interface that integrates sea
 
 For all changes in the latest {{$:/plugins/nico/projectify!!version}} release, see [[ChangeLog|$:/plugins/nico/projectify/changelog]].
 
-!! Screenshots & demo
+!! Demo
 
 A demo is available at [[projectify.wki|https://projectify.wiki]].
-
-{{Screenshots}}
 
 !! Getting started
 
