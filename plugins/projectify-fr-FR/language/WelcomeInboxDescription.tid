@@ -1,0 +1,9 @@
+title: $:/language/projectify/WelcomeInboxDescription
+created: 20210112203922871
+modified: 20210112204430521
+
+<p>Collectez les tâches dans la boîte de réception pour ne pas les oublier, et
+  les sortir vite de votre tête!</p>
+<p>Vous pouvez également appuyer
+  sur <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> pour capturer une tâche
+  depuis n'importe où.</p>

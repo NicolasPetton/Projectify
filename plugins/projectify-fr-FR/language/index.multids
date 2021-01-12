@@ -1,0 +1,64 @@
+title: $:/language/projectify/
+
+AddProject/Caption: Ajouter un projet
+AddProject/Hint: Créer un nouveau projet
+AddSubTasks/Caption: Ajouter des sous-tâches
+AddToInbox/Hint: Appuyer sur <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> pour ajouter depuis n'importe où.
+AddToInbox/Placeholder: Ajouter à la boîte de réception...
+AddTodo/Caption: Ajouter une tâche
+AddTodo/Hint: Ajouter une nouvelle tâche au projet
+AddTodoToProject/Placeholder: Décrivez cette tâche...
+AllClear: Tout est clair!
+Archive: Archive
+ArchiveProject/Caption: Archiver ce project
+ArchiveProject/Hint: Supprimer ce project de la liste des projets actifs
+Cancel/Caption: Annuler
+CardOptions/Hint: Options de la carte
+Clear: Effacer
+Close/Caption: Fermer
+Completed/Caption: Terminés
+ConvertIntoProject: Convertir en projet
+Dashboard: Tableau de bord
+DateFormat: DD mmm
+DefaultDashboardTab: Onglet par défaut dans le tableau de bord
+DragTodoTip: Glissez & déposez un tiddler ci-dessous pour ajouter une tâche à ce projet.
+Help: Besoin d'aide?
+HelpSearch/Placeholder: Rechercher...
+HideArchived/Caption: Masquer les projets archivés
+HideCompleted/Caption: Masquer les tâches terminées
+Inbox: Boîte de réception
+More: Plus
+MoreActions/Hint: Autres actions
+NewProject: Nouveau project
+NewProjectDescription: Description (facultatif)
+NewProjectTitle: Titre
+Next: Suivant
+NextWeek: La semaine prochaine
+OpenTasks: tâches ouvertes
+Options/Hint: Options
+Or: ou
+Overdue: En retard
+Priority/Hint: Priorité
+ProjectArchived: Ce project est archivé.
+Projects: Projets
+QuickAddTodo: Ajout rapide d'une tâche
+QuickCapture/Hint: Appuyer sur <kbd>⏎</kbd> pour capturer.
+ReorderProjects/Hint: Glisser & déposer les éléments de la liste pour réordonner les projets
+RestoreProject: Restaurer le project
+Save/Caption: Sauvegarder
+Schedule/Caption: Planifier
+ShowArchived/Caption: Afficher les projets archivés
+Tip: Astuce
+Today: Aujourd'hui
+TodayAndOverdue: Aujourd'hui et en retard
+TodaysTodos: Aujourd'hui
+TodoActions/Hint: Actions
+Todos: Tâches
+Tomorrow: Demain
+Upcoming: À venir
+ViewAsCards: Afficher en cartes
+ViewAsList: Afficher en liste
+ViewProjectsAs: Affichage des projets
+Yesterday: Hier
+cards: cartes
+list: liste

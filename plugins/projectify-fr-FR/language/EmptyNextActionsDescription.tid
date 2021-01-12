@@ -1,0 +1,7 @@
+title: $:/language/projectify/EmptyNextActionsDescription
+created: 20210112203922871
+modified: 20210112204829315
+
+<p>
+  La première tâche de chaque projet actif sera affichée ici -- [[en apprendre plus|$:/plugins/nico/projectify/doc/NextActions]].
+</p>

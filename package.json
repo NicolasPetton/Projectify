@@ -7,7 +7,7 @@
 		"build-website": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/website/ --build index",
 		"build-empty": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty/ --build index",
 		"build": "npm run build-website; npm run build-empty",
-		"serve": "nodemon -e tid,js,info --watch plugins ./node_modules/tiddlywiki/tiddlywiki.js . --listen",
+		"serve": "nodemon -e tid,multids,js,info --watch plugins ./node_modules/tiddlywiki/tiddlywiki.js . --listen",
 		"serve-website": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/website/ --listen",
 		"serve-empty": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty/ --listen"
 	},
