@@ -1,0 +1,13 @@
+{
+    "tiddlers": {
+        "$:/plugins/nico/notebook-mobile/js/notebookSidebarNav.js": {
+            "title": "$:/plugins/nico/notebook-mobile/js/notebookSidebarNav.js",
+            "text": "/*\\\ntitle: $:/themes/nico/notebook-mobile/js/notebookSidebarNav.js\ntype: application/javascript\nmodule-type: global\n\nCloses the notebook sidebar on mobile when navigating\n\n\\*/\n(function(){\n\n    /*jslint node: true, browser: true */\n    /*global $tw: false */\n    \"use strict\";\n\n    const isOnMobile = () => {\n\t\tlet bottombar = document.querySelector('.nc-bottombar');\n\t\treturn bottombar && bottombar.getClientRects().length > 0;\n    };\n\n    const closeSidebar = () => {\n\t\t$tw.wiki.setText(\"$:/state/notebook-sidebar\", \"text\", undefined, \"no\");\n    };\n\n    const closeSidebarOnMobile = () => {\n\t\tif (isOnMobile()) {\n            console.log(\"closing sidebar\");\n\t\t\tcloseSidebar();\n\t\t};\n    };\n\n    const setup = () => {\n\t\t$tw.hooks.addHook(\"th-navigating\",function(event) {\n\t\t\tcloseSidebarOnMobile();\n\t\t\treturn event;\n\t\t});\n    };\n\n    setup();\n\n    exports.closeNotebookSidebar = closeSidebar;\n})();\n",
+            "type": "application/javascript",
+            "module-type": "global",
+            "created": "20200430151329085",
+            "modified": "20201210200127495",
+            "tags": ""
+        }
+    }
+}
