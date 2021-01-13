@@ -168,6 +168,7 @@ CalendarWidget.prototype.renderCalendar = function() {
 	let calendar = new Pikaday({
 		firstDay: 1,
 		keyboardInput: false,
+		i18n: this.getLabels(),
 		onSelect: () => {
 			this.setValue(calendar.getDate());
 			// Close the popup
@@ -190,6 +191,41 @@ CalendarWidget.prototype.renderCalendar = function() {
 	}
 
 	return calendar.el;
+};
+
+CalendarWidget.prototype.getLabels = function() {
+	return {
+        previousMonth : "Previous Month",
+        nextMonth     : "Next Month",
+        months        : this.getMonthLabels(),
+        monthsShort   : this.getShortMonthLabels(),
+        weekdays      : this.getDayLabels(),
+        weekdaysShort : this.getShortDayLabels(),
+    };
+};
+
+CalendarWidget.prototype.getMonthLabels = function() {
+	return this._mapRange(12, i => this._getDateLabel(`Long/Month/${i+1}`));
+};
+
+CalendarWidget.prototype.getShortMonthLabels = function() {
+	return this._mapRange(12, i => this._getDateLabel(`)Short/Month/${i+1}`));
+};
+
+CalendarWidget.prototype.getDayLabels = function() {
+	return this._mapRange(7, i => this._getDateLabel(`Long/Day/${i}`));
+};
+
+CalendarWidget.prototype.getShortDayLabels = function() {
+	return this._mapRange(7, i => this._getDateLabel(`Short/Day/${i}`));
+};
+
+CalendarWidget.prototype._mapRange = function(n, f) {
+	return Array.from(new Array(n)).map((_, i) => f(i));
+};
+
+CalendarWidget.prototype._getDateLabel = function(title) {
+	return this.wiki.getTextReference(`$:/language/Date/${title}`);
 };
 
 exports["py-date-today"] = factory(getToday, "py-date-today");
