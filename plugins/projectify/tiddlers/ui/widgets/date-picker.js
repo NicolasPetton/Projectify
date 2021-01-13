@@ -209,7 +209,7 @@ CalendarWidget.prototype.getMonthLabels = function() {
 };
 
 CalendarWidget.prototype.getShortMonthLabels = function() {
-	return this._mapRange(12, i => this._getDateLabel(`)Short/Month/${i+1}`));
+	return this._mapRange(12, i => this._getDateLabel(`Short/Month/${i+1}`));
 };
 
 CalendarWidget.prototype.getDayLabels = function() {
