@@ -1,6 +1,6 @@
-caption: Upcoming
+caption: {{$:/language/projectify/Upcoming}}
 created: 20201212215945467
-modified: 20210107182928619
+modified: 20210114183426471
 list-before: $:/plugins/nico/projectify/NotebookSidebar/Projects
 tags: $:/themes/nico/notebook/tags/SidebarSection $:/tags/SideBar
 title: $:/plugins/nico/projectify/ui/sidebar/Upcoming
