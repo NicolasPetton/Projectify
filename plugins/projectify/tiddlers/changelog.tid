@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210112211520117
+modified: 20210114213953991
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -11,6 +11,10 @@ type: text/vnd.tiddlywiki
 
 * Add support for converting todos into projects
 * New french (fr-FR) language plugin
+
+!! Improvements
+
+* Render todo items using the new $:/plugins/nico/projectify/ui/todo/TodoCaption template
 
 ! Release 0.10.0
 

@@ -1,6 +1,6 @@
 created: 20201210171047824
 description: Show all todos scheduled for today
-modified: 20210112180541918
+modified: 20210114213630207
 tags: $:/tags/PageControls
 title: $:/plugins/nico/projectify/ui/buttons/Scheduled
 type: text/vnd.tiddlywiki
@@ -33,6 +33,10 @@ type: text/vnd.tiddlywiki
     <$list
       filter=<<py-todos-due-today-or-overdue>>
       emptyMessage="""<div class="clear">🌞 <<lingo AllClear>></div>"""
-    />
+    >
+      <$link to={{!!title}}>
+	{{||$:/plugins/nico/projectify/ui/todo/TodoCaption}}
+      </$link>
+    </$list>
   </div>
 </$reveal>
