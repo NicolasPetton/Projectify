@@ -1,0 +1,63 @@
+title: $:/language/projectify/
+
+AddProject/Caption: Add project
+AddProject/Hint: Create a newproject
+AddSubTasks/Caption: Add sub-tasks
+AddToInbox/Hint: Press <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from anywhere.
+AddToInbox/Placeholder: Add to inbox...
+AddTodo/Caption: Add a todo
+AddTodo/Hint: Add a new todo to the project
+AddTodoToProject/Placeholder: Describe this task...
+AllClear: All clear!
+Archive: Archive
+ArchiveProject/Caption: Archive project
+ArchiveProject/Hint: Remove this project from the active project list
+Cancel/Caption: Cancel
+CardOptions/Hint: Card options
+Clear: Clear
+Close/Caption: Close
+Completed/Caption: Completed
+ConvertIntoProject: Convert into project
+Dashboard: Dashboard
+DefaultDashboardTab: Default dashboard tab
+DragTodoTip: Drag & drop any tiddler below to add it as a task to this project.
+Help: Need help?
+HelpSearch/Placeholder: Search...
+HideArchived/Caption: Hide archived
+HideCompleted/Caption: Hide completed
+Inbox: Inbox
+More: More
+MoreActions/Hint: More actions
+NewProject: Create new project
+NewProjectDescription: Description (optional)
+NewProjectTitle: Title
+Next: Next
+NextWeek: Next week
+OpenTasks: open tasks
+Options/Hint: Options
+Or: or
+Overdue: Overdue
+Priority/Hint: Priority
+ProjectArchived: This project is archived.
+Projects: Projects
+QuickAddTodo: Quick add todo
+QuickCapture/Hint: Press <kbd>⏎</kbd> to capture.
+ReorderProjects/Hint: Drag & drop items in the list to reorder projects
+RestoreProject: Restore project
+Save/Caption: Save
+Schedule/Caption: Schedule
+ShowArchived/Caption: Show archived
+Tip: Tip
+Today: Today
+TodayAndOverdue: Today and overdue
+TodaysTodos: Today's todos
+TodoActions/Hint: Actions
+Todos: Todos
+Tomorrow: Tomorrow
+Upcoming: Upcoming
+ViewAsCards: View as cards
+ViewAsList: View as list
+ViewProjectsAs: View projects as
+Yesterday: Yesterday
+cards: cards
+list: list
