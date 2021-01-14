@@ -19,6 +19,7 @@ Close/Caption: Close
 Completed/Caption: Completed
 ConvertIntoProject: Convert into project
 Dashboard: Dashboard
+DateFormat: DDth mmm
 DefaultDashboardTab: Default dashboard tab
 DragTodoTip: Drag & drop any tiddler below to add it as a task to this project.
 Help: Need help?
