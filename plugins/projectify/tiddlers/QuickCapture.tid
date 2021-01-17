@@ -1,7 +1,7 @@
 color: #0088cc
 created: 20200427182956318
 icon: $:/plugins/nico/projectify/images/quick-capture
-modified: 20210112184228423
+modified: 20210117163056438
 tags: 
 title: $:/plugins/nico/projectify/QuickCapture
 type: text/vnd.tiddlywiki
@@ -11,12 +11,12 @@ type: text/vnd.tiddlywiki
 !! {{$:/plugins/nico/projectify/images/tasks}} <<lingo QuickAddTodo>>
 
 <$keyboard key="enter">
-  <$action-createtiddler $basetitle={{$:/state/Inbox!!todo_name}} tags="Inbox todo"/>
-  <$action-setfield $tiddler="$:/state/Inbox" todo_name=""/>
+  <$action-createtiddler $basetitle={{$:/state/projectify/QuickCapture!!todo_name}} tags="Inbox todo"/>
+  <$action-setfield $tiddler="$:/state/projectify/QuickCapture" todo_name=""/>
   <$action-sendmessage $message="tm-close-tiddler"/>
   <$edit-text
     class="py-input input-large"
-    tiddler="$:/state/Inbox"
+    tiddler="$:/state/projectify/QuickCapture"
     field="todo_name"
     placeholder={{$:/language/projectify/AddToInbox/Placeholder}}
     focus="true"
