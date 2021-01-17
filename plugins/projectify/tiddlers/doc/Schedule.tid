@@ -1,0 +1,10 @@
+created: 20200427152938733
+modified: 20210117205436104
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/Schedule
+type: text/vnd.tiddlywiki
+
+[[Todos|$:/plugins/nico/projectify/doc/Todos]] with a due date will appear in
+the [[Upcoming|$:/plugins/nico/projectify/ui/dashbaord/Upcoming]] or
+[[Today|$:/plugins/nico/projectify/ui/dashbaord/Today]] tab of the
+[[Dashboard|$:/plugins/nico/projectify/doc/Dashboard]].
