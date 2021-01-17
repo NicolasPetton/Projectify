@@ -1,5 +1,5 @@
 created: 20210116205450353
-modified: 20210117165915970
+modified: 20210117223225413
 title: $:/plugins/nico/projectify/ui/buttons/ContextFilter
 type: text/vnd.tiddlywiki
 
@@ -22,7 +22,7 @@ type: text/vnd.tiddlywiki
     </$reveal>
   </$button>
 
-  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down">
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down py-drop-down">
     <$list filter=<<py-all-contexts>> variable="context">
       <$vars colour={{{ [<context>get[color]] }}}>
 	<$button class="tc-btn-invisible">
@@ -38,5 +38,10 @@ type: text/vnd.tiddlywiki
       {{$:/plugins/nico/projectify/images/slash-circle}} <<lingo Clear>>
       <$action-deletetiddler $tiddler=<<stateTiddler>>/>
     </$button>
+
+    <hr/>
+    <$link to="$:/plugins/nico/projectify/ui/config/Contexts">
+      <<lingo EditContexts>>
+    </$link>
   </$reveal>
 </$vars>

@@ -1,5 +1,5 @@
 created: 20201210171047824
-modified: 20210117173510013
+modified: 20210117223404605
 title: $:/plugins/nico/projectify/ui/buttons/ProjectCardSettings
 type: text/vnd.tiddlywiki
 
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
     {{$:/core/images/down-arrow}}
   </$button>
 
-  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down">
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down py-drop-down">
     <$list filter=<<py-all-contexts>> variable="context">
       <$button class="tc-btn-invisible">
 	<$tiddler tiddler=<<context>>>
@@ -25,6 +25,7 @@ type: text/vnd.tiddlywiki
 	<$action-setfield context=<<context>>/>
       </$button>
     </$list>
+    <hr/>
     <$link to="$:/plugins/nico/projectify/ui/config/Contexts">
       <<lingo EditContexts>>
     </$link>

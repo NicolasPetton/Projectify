@@ -195,7 +195,7 @@ type: text/vnd.tiddlywiki
 }
 
 .tc-drop-down.py-drop-down {
-  min-width: auto;
+  min-width: 200px;
 }
 
 .tc-drop-down.py-drop-down .tc-btn-invisible {
