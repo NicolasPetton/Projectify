@@ -1,10 +1,8 @@
 created: 20201212165938184
-modified: 20210112221150765
+modified: 20210117203901687
 tags: 
 title: ✨ About
 type: text/vnd.tiddlywiki
-
-{{Projectify Intro}}
 
 <$link to="$:/plugins/nico/projectify/LICENSE"><<shield label:License status:MIT>></$link>
 <$link to="$:/plugins/nico/projectify"><<shield label:Release status:{{$:/plugins/nico/projectify!!version}} colour:purple>></$link>
