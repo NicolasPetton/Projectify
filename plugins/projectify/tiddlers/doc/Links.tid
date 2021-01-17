@@ -1,12 +1,12 @@
 caption: External links
 description: Useful links to online resources
 created: 20201228214411502
-modified: 20201228221329074
+modified: 20210117203643063
 tags: [[Projectify documentation]] $:/plugins/nico/projectify/tags/help-card
 title: $:/plugins/nico/projectify/doc/Links
 type: text/vnd.tiddlywiki
 
 !! External links
 
-* [[Online website|https://nicolas.petton.fr/tw/projectify.html]]
+* [[Online website|https://projectify.wiki]]
 * [[GitHub repository|https://github.com/nicolaspetton/projectify]]
