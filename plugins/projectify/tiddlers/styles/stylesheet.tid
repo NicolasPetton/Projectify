@@ -276,6 +276,11 @@ input.py-input.input-large {
   border: 1px solid <<colour muted-foreground>>;
 }
 
+.py-context-wrapper {
+  margin-top: -4px;
+  margin-bottom: 10px;
+}
+
 .py-popup {
   background: <<colour tiddler-background>>;
   border-radius: 8px;
@@ -324,6 +329,10 @@ input.py-input.input-large {
 .py-project .py-project-heading {
   display: flex;
   justify-content: space-between;
+}
+
+.py-project .py-project-heading .py-project-context {
+  font-size: .9em;
 }
 
 /* Align the completed todos with the non-completed ones that have a drag
@@ -605,4 +614,5 @@ input.py-input.input-large {
 
 .py-project-context-manager-table input[type="color"] {
   width: 50px;
+  padding: 3px;
 }

@@ -1,5 +1,5 @@
 created: 20201210171047824
-modified: 20210117164225266
+modified: 20210117173510013
 title: $:/plugins/nico/projectify/ui/buttons/ProjectCardSettings
 type: text/vnd.tiddlywiki
 
@@ -27,6 +27,6 @@ type: text/vnd.tiddlywiki
     </$list>
     <$link to="$:/plugins/nico/projectify/ui/config/Contexts">
       <<lingo EditContexts>>
-      </$link>
+    </$link>
   </$reveal>
 </$vars>

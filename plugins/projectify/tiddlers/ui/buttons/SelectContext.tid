@@ -1,0 +1,41 @@
+created: 20210116205450353
+modified: 20210117172256323
+title: $:/plugins/nico/projectify/ui/buttons/SelectContext
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
+
+<$vars popupTiddler=<<qualify "$:/state/projectify/context-dropdown">>>
+  <$button
+    popup=<<popupTiddler>>
+    class="py-btn btn-small"
+    tooltip=<<lingo SetContext/Hint>>
+  >
+    <$reveal type="nomatch" state="!!context" text="">
+      <$tiddler tiddler={{!!context}}>
+	{{||$:/plugins/nico/projectify/ui/context/Context}}
+      </$tiddler>
+    </$reveal>
+    <$reveal type="match" state="!!context" text="">
+      <<lingo SetContext/Caption>>
+    </$reveal>
+  </$button>
+
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down">
+    <$list filter=<<py-all-contexts>> variable="context">
+      <$button class="tc-btn-invisible">
+	<$tiddler tiddler=<<context>>>
+	  {{||$:/plugins/nico/projectify/ui/context/Context}}
+	</$tiddler>
+	<$action-setfield context=<<context>>/>
+      </$button>
+    </$list>
+    <$button class="tc-btn-invisible">
+      {{$:/plugins/nico/projectify/images/slash-circle}} <<lingo Clear>>
+      <$action-deletefield $field="context"/>
+    </$button>
+    <$link to="$:/plugins/nico/projectify/ui/config/Contexts">
+      <<lingo EditContexts>>
+    </$link>
+  </$reveal>
+</$vars>

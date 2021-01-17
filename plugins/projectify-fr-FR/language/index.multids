@@ -53,7 +53,9 @@ ReorderProjects/Hint: Glisser & déposer les éléments de la liste pour réordo
 RestoreProject: Restaurer le project
 Save/Caption: Sauvegarder
 Schedule/Caption: Planifier
-ShowArchived/Caption: Afficher les projets archivés
+SetContext/Caption: Définir le contexte
+SetContext/Hint: Select a context for this project
+ShowArchived/Caption: Sélectionnez un contexte pour ce projet
 Tip: Astuce
 Today: Aujourd'hui
 TodayAndOverdue: Aujourd'hui et en retard

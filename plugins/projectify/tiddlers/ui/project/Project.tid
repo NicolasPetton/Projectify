@@ -1,6 +1,6 @@
 created: 20201207165347344
 list-after: $:/plugins/nico/projectify/ui/todo/TodoHeading
-modified: 20210112183836741
+modified: 20210117173243911
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nico/projectify/ui/project/Project
 type: text/vnd.tiddlywiki
@@ -8,6 +8,9 @@ type: text/vnd.tiddlywiki
 \define lingo-base() $:/language/projectify/
 
 <$list filter=<<py-is-project>> variable="ignore">
+  <div class="py-context-wrapper">
+    {{||$:/plugins/nico/projectify/ui/buttons/SelectContext}}
+  </div>
   {{||$:/plugins/nico/projectify/ui/project/ArchivedProjectBanner}}
 
   <h2><<lingo Todos>> {{||$:/plugins/nico/projectify/images/pie}}</h2>
