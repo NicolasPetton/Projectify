@@ -1,5 +1,5 @@
 created: 20201218161315664
-modified: 20210117210848269
+modified: 20210117211443669
 tags: $:/tags/AboveStory
 title: Projectify Intro
 type: text/vnd.tiddlywiki
@@ -15,10 +15,10 @@ type: text/vnd.tiddlywiki
 }
 
 .intro {
-    padding: 60px 0;
+    padding: 40px 0;
+    max-width: 700px;
+    margin:  auto;
     text-align: center;
-    background-color: #ebebdf;
-    border-radius: 20px;
 }
 
 .intro a.tc-tiddlylink-external {
