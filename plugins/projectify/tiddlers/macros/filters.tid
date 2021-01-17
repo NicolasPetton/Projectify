@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210117163526825
+modified: 20210117233412694
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -19,7 +19,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-all-contexts()
-[tag[$:/plugins/nico/projectify/tags/Context]]
+[tag[$:/plugins/nico/projectify/tags/Context]sort[title]]
 \end
 
 \define py-has-scheduled-todos-in-projects()
