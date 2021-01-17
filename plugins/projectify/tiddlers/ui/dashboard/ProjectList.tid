@@ -1,20 +1,15 @@
 created: 20200424193106051
-modified: 20210112180541590
+modified: 20210117163453122
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectList
 type: text/vnd.tiddlywiki
 
-\define lingo-base() $:/language/projectify/
-
 <ul class="py-projects">
   <$list filter=<<py-active-projects>>>
-    <$droppable actions=<<project-refile-actions>>>
-      <li class="py-project">
-        {{||$:/plugins/nico/projectify/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
-        <div class="py-project-infos">
-          <$count filter=<<py-open-todos>>/> <<lingo OpenTasks>>
-        </div>
-      </li>
-    </$droppable>
+    <$list filter="[all[current]field:context<context>] [<context>is[blank]] +[limit[1]]" variable="ignore">
+      <$droppable actions=<<project-refile-actions>>>
+	{{||$:/plugins/nico/projectify/ui/dashboard/ProjectListItem}}
+      </$droppable>
+    </$list>
   </$list>
 </ul>

@@ -1,7 +1,9 @@
 created: 20201210171047824
-modified: 20210112180541840
+modified: 20210117164225266
 title: $:/plugins/nico/projectify/ui/buttons/ProjectCardSettings
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 <$vars popupTiddler=<<qualify "$:/state/projectify/project-card-settings-dropdown">>>
   <$button
@@ -15,12 +17,16 @@ type: text/vnd.tiddlywiki
   </$button>
 
   <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down">
-    <$list filter=<<py-project-card-colors>> variable="color">
+    <$list filter=<<py-all-contexts>> variable="context">
       <$button class="tc-btn-invisible">
-	<div class={{{ [[py-color-picker ]addsuffix<color>] }}}></div>
-	<<color>>
-	<$action-setfield card-color=<<color>>/>
+	<$tiddler tiddler=<<context>>>
+	  {{||$:/plugins/nico/projectify/ui/context/Context}}
+	</$tiddler>
+	<$action-setfield context=<<context>>/>
       </$button>
     </$list>
+    <$link to="$:/plugins/nico/projectify/ui/config/Contexts">
+      <<lingo EditContexts>>
+      </$link>
   </$reveal>
 </$vars>

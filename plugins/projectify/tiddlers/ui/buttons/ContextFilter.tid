@@ -1,0 +1,42 @@
+created: 20210116205450353
+modified: 20210117165915970
+title: $:/plugins/nico/projectify/ui/buttons/ContextFilter
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
+
+<$vars
+  popupTiddler=<<qualify "$:/state/projectify/context-filter-dropdown">>
+  stateTiddler="$:/state/projectify/project-context-filter"
+>
+  <$button popup=<<popupTiddler>> class="py-btn btn-small">
+    {{$:/plugins/nico/projectify/images/funnel}}
+    <$reveal type="match" state=<<stateTiddler>> text="">
+      <<lingo FilterProjects>>
+    </$reveal>
+    <$reveal type="nomatch" state=<<stateTiddler>> text="">
+      Projects in
+      <$tiddler tiddler={{{ [<stateTiddler>get[text]] }}}>
+	{{||$:/plugins/nico/projectify/ui/context/Context}}
+      </$tiddler>
+    </$reveal>
+  </$button>
+
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down">
+    <$list filter=<<py-all-contexts>> variable="context">
+      <$vars colour={{{ [<context>get[color]] }}}>
+	<$button class="tc-btn-invisible">
+	  <$tiddler tiddler=<<context>>>
+	    {{||$:/plugins/nico/projectify/ui/context/Context}}
+	  </$tiddler>
+	  <$action-setfield $tiddler=<<stateTiddler>> text=<<context>>/>
+	</$button>
+      </$vars>
+    </$list>
+
+    <$button class="tc-btn-invisible">
+      {{$:/plugins/nico/projectify/images/slash-circle}} <<lingo Clear>>
+      <$action-deletetiddler $tiddler=<<stateTiddler>>/>
+    </$button>
+  </$reveal>
+</$vars>

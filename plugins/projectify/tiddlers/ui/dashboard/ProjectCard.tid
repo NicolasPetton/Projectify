@@ -1,22 +1,35 @@
 created: 20200424193106051
-modified: 20210112180541639
+modified: 20210117163244893
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectCard
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
-<$link overrideClass={{{ [[py-card ]addsuffix{!!card-color}] }}} to={{!!title}}>
-  <div class="py-card-options">
-    {{||$:/plugins/nico/projectify/ui/buttons/ProjectCardSettings}}
-  </div>
-  <div class="py-card-head">
-    <h3><$text text=<<currentTiddler>>/></h3>
-    <div class="py-description">
-      {{!!description}}
+\define card-style()
+background-color: $(background)$;
+\end
+
+<$vars context={{!!context}}>
+  <$vars background={{{ [<context>get[color]] }}}>
+    <div class="py-card-wrapper" style=<<card-style>>>
+      <$link overrideClass="py-card" to={{!!title}}>
+	<div class="py-card-options">
+	  {{||$:/plugins/nico/projectify/ui/buttons/ProjectCardSettings}}
+	</div>
+	<div class="py-card-head">
+	  <h3><$text text=<<currentTiddler>>/></h3>
+	  <div class="py-description">
+	    {{!!description}}
+	  </div>
+	</div>
+	<div class="py-project-infos">
+	  {{||$:/plugins/nico/projectify/images/pie}}
+	  <$count filter=<<py-open-todos>>/>
+	  <<lingo OpenTasks>>
+	</div>
+	<div class="py-project-context"><<context>></div>
+      </$link>
     </div>
-  </div>
-  <div class="py-project-infos">
-    {{||$:/plugins/nico/projectify/images/pie}} <$count filter=<<py-open-todos>>/> <<lingo OpenTasks>>
-  </div>
-</$link>
+  </$vars>
+</$vars>

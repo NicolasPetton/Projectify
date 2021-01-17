@@ -1,44 +1,21 @@
 caption: {{$:/plugins/nico/projectify/images/tasks}} Projects
 created: 20200424193106051
-modified: 20210112180541689
+modified: 20210116214320960
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/Projects
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
-\define archived-projects()
-  <$list filter=<<py-has-archived-projects>> variable="ignore">
-    <$reveal type="match" state="$:/state/projectify/show-archived" text="">
-      <$button class="tc-btn-invisible py-link-muted" set="$:/state/projectify/show-archived" setTo="show">
-        {{$:/plugins/nico/projectify/images/eye}} <<lingo ShowArchived/Caption>>
-      </$button>
-    </$reveal>
+<div class="py-projects-heading">
+  <span>
+    <h2><<lingo Projects>></h2>
+    {{$:/plugins/nico/projectify/ui/buttons/ProjectListSettings}}
+  </span>
 
-    <$reveal type="match" state="$:/state/projectify/show-archived" text="show">
-      <$button class="tc-btn-invisible py-link-muted" set="$:/state/projectify/show-archived" setTo="">
-        {{$:/plugins/nico/projectify/images/eyeslash}} <<lingo HideArchived/Caption>>
-      </$button>
-
-      <h2><<lingo Archive>></h2>
-
-      <ul class="py-projects">
-        <$list filter=<<py-archived-projects>>>
-          <li class="py-project">
-            {{||$:/plugins/nico/projectify/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
-            <div class="py-project-infos">
-              <$count filter=<<py-open-todos>>/> <<lingo OpenTasks>>
-            </div>
-          </li>
-        </$list>
-      </ul>
-    </$reveal>
-  </$list>
-\end
-
-<div class="py-heading-with-buttons">
-  <h2><<lingo Projects>></h2>
-  {{$:/plugins/nico/projectify/ui/buttons/ProjectListSettings}}
+  <div class="py-context-filter">
+    {{$:/plugins/nico/projectify/ui/buttons/ContextFilter}}
+  </div>
 </div>
 
 <$reveal
@@ -52,18 +29,6 @@ type: text/vnd.tiddlywiki
   {{$:/plugins/nico/projectify/ui/dashboard/ReorderProjects}}
 </$reveal>
 
-<$list
-  filter=<<py-has-projects>>
-  emptyMessage={{$:/plugins/nico/projectify/ui/welcome/EmptyProjects}}
->
-  <$reveal type="match" state="$:/config/projectify/projects-view" text="list">
-    {{$:/plugins/nico/projectify/ui/dashboard/ProjectList}}
-  </$reveal>
-  <$reveal type="nomatch" state="$:/config/projectify/projects-view" text="list">
-    {{$:/plugins/nico/projectify/ui/dashboard/ProjectCards}}
-  </$reveal>
-</$list>
-
+{{$:/plugins/nico/projectify/ui/dashboard/ActiveProjects}}
 {{$:/plugins/nico/projectify/ui/buttons/AddProject}}
-
-<<archived-projects>>
+{{$:/plugins/nico/projectify/ui/dashboard/ArchivedProjects}}

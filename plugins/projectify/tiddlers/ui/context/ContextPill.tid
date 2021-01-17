@@ -1,0 +1,7 @@
+created: 20210117163947721
+modified: 20210117164942061
+tags:
+title: $:/plugins/nico/projectify/ui/context/ContextPill
+type: text/vnd.tiddlywiki
+
+<div class="py-context-pill" style={{{ [[background-color: ]addsuffix<colour>] }}}></div>

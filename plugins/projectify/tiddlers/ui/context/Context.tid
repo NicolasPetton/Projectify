@@ -1,0 +1,11 @@
+created: 20210117163947721
+modified: 20210117164940692
+tags:
+title: $:/plugins/nico/projectify/ui/context/Context
+type: text/vnd.tiddlywiki
+
+<$vars colour={{{ [all[current]get[color]] }}}>
+  {{||$:/plugins/nico/projectify/ui/context/ContextPill}}
+  {{!!title}}
+</$vars>
+

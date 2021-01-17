@@ -1,0 +1,28 @@
+created: 20210116212646239
+modified: 20210116213055945
+tags:
+title: $:/plugins/nico/projectify/ui/dashboard/ArchivedProjects
+type: text/vnd.tiddlywiki
+
+
+<$list filter=<<py-has-archived-projects>> variable="ignore">
+  <$reveal type="match" state="$:/state/projectify/show-archived" text="">
+    <$button class="tc-btn-invisible py-link-muted" set="$:/state/projectify/show-archived" setTo="show">
+      {{$:/plugins/nico/projectify/images/eye}} <<lingo ShowArchived/Caption>>
+    </$button>
+  </$reveal>
+
+  <$reveal type="match" state="$:/state/projectify/show-archived" text="show">
+    <$button class="tc-btn-invisible py-link-muted" set="$:/state/projectify/show-archived" setTo="">
+      {{$:/plugins/nico/projectify/images/eyeslash}} <<lingo HideArchived/Caption>>
+    </$button>
+
+    <h2><<lingo Archive>></h2>
+
+    <ul class="py-projects">
+      <$list filter=<<py-archived-projects>>>
+	{{||$:/plugins/nico/projectify/ui/dashboard/ProjectListItem}}
+      </$list>
+    </ul>
+  </$reveal>
+</$list>

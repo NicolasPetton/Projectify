@@ -23,6 +23,11 @@ type: text/vnd.tiddlywiki
   box-shadow: 0 0 0 0.2rem rgba(0,0,0,.08);
 }
 
+.py-btn.btn-small {
+  font-size: .9em;
+  padding: .2em .8em;
+}
+
 .py-btn.btn-primary {
   background-color: <<colour primary>>;
   border-color: <<colour primary>>;
@@ -70,13 +75,18 @@ type: text/vnd.tiddlywiki
   color: <<colour primary>>;
 }
 
-.py-heading-with-buttons h2 {
+.py-projects-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.py-projects-heading h2 {
   margin: 0;
   display: inline-block;
 
 }
 
-.py-heading-with-buttons > button {
+.py-projects-heading > button {
   display: inline-block;
   margin-left: 5px;
 }
@@ -184,6 +194,12 @@ input.py-input.input-large {
   }
 }
 
+.py-card-wrapper {
+  /* Default background-color */
+  background-color: rgba(255,255,0,.15);
+  border-radius: 8px;
+}
+
 .py-card {
   position: relative;
   display: flex;
@@ -194,7 +210,7 @@ input.py-input.input-large {
   border-radius: 8px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
   padding: 20px;
-  height: 130px;
+  height: 150px;
   font-size: .9em;
 }
 
@@ -226,18 +242,30 @@ input.py-input.input-large {
   font-size: .9em;
 }
 
-.py-color-picker {
+.py-card .py-project-context {
+  font-size: .9em;
+  font-weight: bold;
+  text-align: center;
+  padding: 1px;
+  margin-bottom: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background: rgba(0,0,0,.1);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.py-context-pill {
   position: relative;
   width: 1em;
   height: 1em;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 4px;
   border-radius: 50%;
   background: <<colour tiddler-background>>;
 }
 
-.py-color-picker::after {
+.py-context-pill::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -246,27 +274,6 @@ input.py-input.input-large {
   bottom: 0;
   border-radius: 50%;
   border: 1px solid <<colour muted-foreground>>;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.3);
-}
-
-.py-card, .py-color-picker::after {
-  background-color: rgba(255,255,0,.15);
-}
-
-.py-card.blue, .py-color-picker.blue::after {
-  background-color: rgba(0,0,255,.15);
-}
-
-.py-card.orange, .py-color-picker.orange::after {
-  background-color: rgba(255,122,0,.15);
-}
-
-.py-card.green, .py-color-picker.green::after {
-  background-color: rgba(0,255,122,.15);
-}
-
-.py-card.purple, .py-color-picker.purple::after {
-  background-color: rgba(255,0,255,.15);
 }
 
 .py-popup {
@@ -291,10 +298,15 @@ input.py-input.input-large {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.py-todo, .py-project {
+.py-todo {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 5px 0;
+}
+
+.py-project {
+  list-style: none;
   padding: 5px 0;
 }
 
@@ -307,6 +319,11 @@ input.py-input.input-large {
   line-height: 1em;
   color: <<colour muted-foreground>>;
   margin-left: 20px;
+}
+
+.py-project .py-project-heading {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Align the completed todos with the non-completed ones that have a drag
@@ -572,4 +589,20 @@ input.py-input.input-large {
 .py-btn.py-priority-1 {
   fill: #24cd5e;
   color: #24cd5e;
+}
+
+.py-project-context-manager-table {
+  width: 100%;
+}
+
+.py-project-context-manager-table td {
+  padding: 4px;
+}
+
+.py-project-context-manager-table input {
+  width: 100%;
+}
+
+.py-project-context-manager-table input[type="color"] {
+  width: 50px;
 }

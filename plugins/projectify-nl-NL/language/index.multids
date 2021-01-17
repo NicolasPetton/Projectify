@@ -2,6 +2,8 @@ title: $:/language/projectify/
 
 AddProject/Caption: Add project
 AddProject/Hint: Create a newproject
+AddContext/Caption: Add context
+AddContext/Hint: Create a new context
 AddSubTasks/Caption: Add sub-tasks
 AddToInbox/Hint: Press <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from anywhere.
 AddToInbox/Placeholder: Add to inbox...
@@ -18,10 +20,14 @@ Clear: Clear
 Close/Caption: Close
 Completed/Caption: Completed
 ConvertIntoProject: Convert into project
+Context: Context
+Contexts: Contexts
 Dashboard: Dashboard
 DateFormat: DDth mmm
 DefaultDashboardTab: Default dashboard tab
 DragTodoTip: Drag & drop any tiddler below to add it as a task to this project.
+EditContexts: Edit contexts
+FilterProjects: Fitler projects
 Help: Need help?
 HelpSearch/Placeholder: Search...
 HideArchived/Caption: Hide archived

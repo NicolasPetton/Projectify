@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210111203423529
+modified: 20210117163526825
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -16,6 +16,10 @@ type: text/vnd.tiddlywiki
 
 \define py-all-projects-and-subprojects()
 [tag[Project]] [tag[SubProject]]
+\end
+
+\define py-all-contexts()
+[tag[$:/plugins/nico/projectify/tags/Context]]
 \end
 
 \define py-has-scheduled-todos-in-projects()
@@ -164,10 +168,6 @@ tag[todo]!has[draft.of]!tag[done]has[due]sort[due]
 
 \define py-is-active-subfilter()
 !tag[done]
-\end
-
-\define py-project-card-colors()
-default purple orange blue green
 \end
 
 \define todo-list-drop-tags()

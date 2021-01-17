@@ -1,0 +1,66 @@
+created: 20210114221324413
+modified: 20210117165000709
+tags: $:/plugins/nico/projectify/tags/Config
+title: $:/plugins/nico/projectify/ui/config/Contexts
+list-after: $:/plugins/nico/projectify/ui/config/Dashboard
+type: text/vnd.tiddlywiki
+caption: {{$:/language/projectify/Contexts}}
+
+\define lingo-base() $:/language/TagManager/
+
+\define context-editor()
+<tr>
+  <td>{{||$:/plugins/nico/projectify/ui/context/Context}}</td>
+  <td>
+    <$list filter={{$:/plugins/nico/projectify/config/DefaultContextColours}} variable="colour">
+      <$button class="tc-btn-invisible">
+	{{$:/plugins/nico/projectify/ui/context/ContextPill}}
+	<$action-setfield $field="color" $value=<<colour>>/>
+      </$button>
+    </$list>
+    <$edit-text field="color" tag="input" type="color"/>
+  </td>
+  <td>
+    <$button class="py-btn btn-danger btn-small">
+      {{$:/core/images/delete-button}} {{$:/language/Buttons/Delete/Caption}}
+    </$button>
+  </td>
+</tr>
+\end
+
+!! {{$:/language/projectify/Contexts}}
+
+<table class="py-project-context-manager-table">
+  <tbody>
+    <tr>
+      <th>{{$:/language/projectify/Context}}</th>
+      <th><<lingo Colour/Heading>></th>
+      <th></th>
+    </tr>
+
+    <$list filter=<<py-all-contexts>>>
+      <<context-editor>>
+    </$list>
+  </tbody>
+</table>
+
+{{$:/plugins/nico/projectify/ui/buttons/AddContext}}
+
+!! Default context colours
+
+<table class="py-project-context-manager-table">
+  <tbody>
+    <tr>
+      <td><<lingo Colour/Heading>></td>
+      <td>
+	<$edit-text
+	  tiddler="$:/plugins/nico/projectify/config/DefaultContextColours"
+	  field="text"
+	  tag="input"
+	/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
