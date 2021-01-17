@@ -1,0 +1,33 @@
+created: 20210117210451364
+modified: 20210117210508330
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/context
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+.py-context-pill {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: <<colour tiddler-background>>;
+}
+
+.py-context-pill::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 1px solid <<colour muted-foreground>>;
+}
+
+.py-context-wrapper {
+  margin-top: -4px;
+  margin-bottom: 10px;
+}

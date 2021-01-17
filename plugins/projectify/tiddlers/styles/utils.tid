@@ -98,3 +98,19 @@ type: text/vnd.tiddlywiki
   padding: 4px;
   min-width: 18px;
 }
+
+.py-pill-container {
+  position: relative;
+}
+
+.py-pill-container .py-pill {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #df3f3f;
+}
+
+modified: 20210117210522162

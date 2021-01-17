@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20210105204526846
+modified: 20210117210812225
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/stylesheet
 type: text/vnd.tiddlywiki
@@ -29,32 +29,6 @@ type: text/vnd.tiddlywiki
 
 .py-reorder-projects:not([hidden]) {
   display: block;
-}
-
-.py-context-pill {
-  position: relative;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 50%;
-  background: <<colour tiddler-background>>;
-}
-
-.py-context-pill::after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 50%;
-  border: 1px solid <<colour muted-foreground>>;
-}
-
-.py-context-wrapper {
-  margin-top: -4px;
-  margin-bottom: 10px;
 }
 
 .py-projects, .py-todos {
@@ -101,6 +75,7 @@ type: text/vnd.tiddlywiki
 
 .py-project .py-project-heading .py-project-context {
   font-size: .9em;
+  white-space: nowrap;
 }
 
 /* Align the completed todos with the non-completed ones that have a drag
@@ -125,20 +100,6 @@ type: text/vnd.tiddlywiki
 
 .py-todo.py-completed a {
   color: <<colour muted-foreground>>;
-}
-
-.py-pill-container {
-  position: relative;
-}
-
-.py-pill-container .py-pill {
-  position: absolute;
-  top: 0;
-  right: 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  background: #df3f3f;
 }
 
 .py-todo-heading {
