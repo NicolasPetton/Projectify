@@ -1,7 +1,8 @@
 card-color: default
+context: @home
 created: 20200427203232728
 list: [[Book flights]]
-modified: 20201223210352854
+modified: 20210117205133842
 tags: Project Archived
 title: Book vacation trip
 type: text/vnd.tiddlywiki
