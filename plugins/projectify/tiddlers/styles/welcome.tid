@@ -1,0 +1,30 @@
+created: 20210117173623112
+modified: 20210117174118787
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/welcome
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+
+.py-welcome {
+  max-width: 800px;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 20px auto;
+  background: <<colour message-background>>;
+  color: <<colour message-foreground>>;
+  border-radius: 12px;
+}
+
+.py-welcome .icon {
+  font-size: 4em;
+}
+
+.py-welcome h3 {
+  font-weight: bold;
+}
+
+.py-welcome p {
+  margin: 0;
+}

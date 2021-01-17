@@ -1,0 +1,85 @@
+created: 20210117173623112
+modified: 20210117174010858
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/cards
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+.py-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.py-cards span {
+  width: calc(33% - 20px);
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .py-cards span {
+    width: calc(50% - 20px);
+  }
+}
+
+.py-card-wrapper {
+  /* Default background-color */
+  background-color: rgba(255,255,0,.15);
+  border-radius: 8px;
+}
+
+.py-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: <<colour foreground>>;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  height: 150px;
+  font-size: .9em;
+}
+
+.py-card:hover {
+  box-shadow: 0 0 0 4px rgba(0,125,255,.3);
+}
+
+.py-card-head {
+  overflow: hidden;
+  height: 4.6em;
+  line-height: 1.2em;
+}
+
+.py-card .py-card-head h3 {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.py-card .py-card-options {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+.py-card .py-description {
+  opacity: .7;
+  font-size: .9em;
+}
+
+.py-card .py-project-context {
+  font-size: .9em;
+  font-weight: bold;
+  text-align: center;
+  padding: 1px;
+  margin-bottom: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background: rgba(0,0,0,.1);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

@@ -1,0 +1,100 @@
+created: 20210117173623112
+modified: 20210117174613237
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/utils
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+.py-link-muted {
+  text-decoration: underline;
+  color: <<colour muted-foreground>>;
+}
+
+.py-link-muted:hover,
+.py-link-muted:active {
+  color: <<colour primary>>;
+}
+
+.py-icon {
+  vertical-align: middle;
+}
+
+.py-pie circle {
+  stroke: <<colour primary>>;
+  fill: <<colour background>>;
+}
+    
+.py-due-date svg {
+  width: 1em;
+  height: 1em;
+}
+
+.py-label {
+  display: block;
+  font-size: .8em;
+  opacity: .6;
+  padding: 4px 0;
+}
+
+.py-right-aligned {
+  text-align: right;
+}
+
+.py-drag-handle {
+  color: <<colour muted-foreground>>;
+  width: 18px;
+  display: inline-block;
+}
+
+.py-drag-handle svg {
+  vertical-align: middle;
+}
+
+.py-banner {
+  padding: 10px 20px;
+  background: <<colour notification-background>>;
+  border: 1px solid <<colour notification-border>>;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+.py-banner button {
+  text-decoration: underline;
+}
+
+.py-tip {
+  margin: 10px;
+  background: <<colour notification-background>>;
+  color: <<colour notification-foreground>>;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.py-tip-icon {
+  font-size: 1.2em;
+}
+
+.py-count {
+  background: #df3f3f;
+  color: white;
+  font-weight: bold;
+  padding: 6px;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 24px;
+  min-width: 24px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.py-count.info {
+  background: <<colour primary>>;
+}
+
+.tc-tab-buttons .py-count {
+  font-size: 10px;
+  padding: 4px;
+  min-width: 18px;
+}

@@ -6,75 +6,6 @@ type: text/vnd.tiddlywiki
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 
-.py-btn {
-  border-radius: 1.5em;
-  border: 1px solid #ccc;
-  background: <<colour tiddler-background>>;
-  padding: .3em 1em;
-  cursor: pointer;
-  transition: box-shadow ease-in .1s;
-}
-
-.py-btn:focus {
-  outline: 0 none;
-}
-
-.py-btn:active {
-  box-shadow: 0 0 0 0.2rem rgba(0,0,0,.08);
-}
-
-.py-btn.btn-small {
-  font-size: .9em;
-  padding: .2em .8em;
-}
-
-.py-btn.btn-primary {
-  background-color: <<colour primary>>;
-  border-color: <<colour primary>>;
-  color: <<colour background>>;
-  fill: <<colour background>>;
-}
-
-.py-btn.btn-primary:active {
-  box-shadow: 0 0 0 0.2rem rgba(0,125,255,.3);
-}
-
-.py-btn.btn-danger {
-  border-color: #e73939;
-  color: #e73939;
-  fill: #e73939;
-}
-
-.py-btn.btn-danger:active {
-  box-shadow: 0 0 0 0.2rem rgba(255,0,0,.2);
-}
-
-.py-form .py-control-group {
-  margin: 8px 0;
-}
-
-.py-form .py-control-group .py-label {
-  padding: 0;
-}
-
-.py-actions {
-  margin: 10px 0 20px 0;
-}
-
-.py-form .py-actions {
-  margin-top: 20px;
-}
-
-.py-link-muted {
-  text-decoration: underline;
-  color: <<colour muted-foreground>>;
-}
-
-.py-link-muted:hover,
-.py-link-muted:active {
-  color: <<colour primary>>;
-}
-
 .py-projects-heading {
   display: flex;
   justify-content: space-between;
@@ -91,168 +22,13 @@ type: text/vnd.tiddlywiki
   margin-left: 5px;
 }
 
-.py-icon {
-  vertical-align: middle;
-}
-
-.py-pie circle {
-  stroke: <<colour primary>>;
-  fill: <<colour background>>;
-}
-
-input.py-input {
-  transition: border .14s ease-in-out;
-  border: 1px solid <<colour tiddler-editor-border>>;
-  padding: 8px;
-  border-radius: 4px;
-  width: 300px;
-}
-
-input.py-input:focus {
-  box-shadow: 0 0 0.2rem 0 <<colour primary>>;
-  outline: 0;
-  border-color: <<colour primary>>;
-
-}
-
-input.py-input.input-large {
-  width: 100%;
-  padding: .5em 1em;
-  font-size: 1.1em;
-}
-
-.py-todo input[type="checkbox"],
-.py-toggle-todo-button input[type="checkbox"] {
-  display: none;
-}
-
-.py-checkbox {
-  color: <<colour muted-foreground>>;
-  cursor: pointer;
-  transition: all ease-in .2s;
-  margin-right: 3px;
-}
-
-.py-checkbox .todo-hover {
-  display: none;
-}
-
-.py-checkbox:hover .todo-hover {
-  display: initial;
-}
-
-.py-checkbox:hover .todo {
-  display: none;
-}
-
-.py-checkbox:hover {
-  color: #2da562;
-}
-
-.py-checkbox .done {
-  color: #2da562;
-}
-
 .tc-titlebar .py-checkbox svg {
   width: 22pt;
   height: 22pt;
 }
 
-.py-label {
-  display: block;
-  font-size: .8em;
-  opacity: .6;
-  padding: 4px 0;
-}
-
-.py-right-aligned {
-  text-align: right;
-}
-
-.py-help-links {
-  text-align: right;
-}
-
 .py-reorder-projects:not([hidden]) {
   display: block;
-}
-
-.py-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.py-cards span {
-  width: calc(33% - 20px);
-}
-
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .py-cards span {
-    width: calc(50% - 20px);
-  }
-}
-
-.py-card-wrapper {
-  /* Default background-color */
-  background-color: rgba(255,255,0,.15);
-  border-radius: 8px;
-}
-
-.py-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-decoration: none;
-  color: <<colour foreground>>;
-  border-radius: 8px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  height: 150px;
-  font-size: .9em;
-}
-
-.py-card:hover {
-  box-shadow: 0 0 0 4px rgba(0,125,255,.3);
-}
-
-.py-card-head {
-  overflow: hidden;
-  height: 4.6em;
-  line-height: 1.2em;
-}
-
-.py-card .py-card-head h3 {
-  font-weight: bold;
-  font-size: 1em;
-  margin: 0;
-  margin-right: 10px;
-}
-
-.py-card .py-card-options {
-  position: absolute;
-  top: 4px;
-  right: 8px;
-}
-
-.py-card .py-description {
-  opacity: .7;
-  font-size: .9em;
-}
-
-.py-card .py-project-context {
-  font-size: .9em;
-  font-weight: bold;
-  text-align: center;
-  padding: 1px;
-  margin-bottom: -20px;
-  margin-left: -20px;
-  margin-right: -20px;
-  background: rgba(0,0,0,.1);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 .py-context-pill {
@@ -279,14 +55,6 @@ input.py-input.input-large {
 .py-context-wrapper {
   margin-top: -4px;
   margin-bottom: 10px;
-}
-
-.py-popup {
-  background: <<colour tiddler-background>>;
-  border-radius: 8px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  padding: 5px 20px;
-  width: 350px;
 }
 
 .py-projects, .py-todos {
@@ -359,40 +127,6 @@ input.py-input.input-large {
   color: <<colour muted-foreground>>;
 }
 
-.py-drag-handle {
-  color: <<colour muted-foreground>>;
-  width: 18px;
-  display: inline-block;
-}
-
-.py-drag-handle svg {
-  vertical-align: middle;
-}
-
-.py-count {
-  background: #df3f3f;
-  color: white;
-  font-weight: bold;
-  padding: 6px;
-  font-size: 12px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 24px;
-  min-width: 24px;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-.py-count.info {
-  background: <<colour primary>>;
-}
-
-.tc-tab-buttons .py-count {
-  font-size: 10px;
-  padding: 4px;
-  min-width: 18px;
-}
-
 .py-pill-container {
   position: relative;
 }
@@ -451,11 +185,6 @@ input.py-input.input-large {
   }
 }
 
-.py-due-date svg {
-  width: 1em;
-  height: 1em;
-}
-
 .py-projects .tc-droppable.tc-dragover {
   background: rgba(255,255,100,0.3);
   display: block;
@@ -488,52 +217,6 @@ input.py-input.input-large {
   border: 0;
   border-bottom: 4px solid <<colour primary>>;
   color: <<colour tiddler-title-foreground>>;
-}
-
-.py-banner {
-  padding: 10px 20px;
-  background: <<colour notification-background>>;
-  border: 1px solid <<colour notification-border>>;
-  margin: 10px 0;
-  border-radius: 3px;
-}
-
-.py-banner button {
-  text-decoration: underline;
-}
-
-.py-tip {
-  margin: 10px;
-  background: <<colour notification-background>>;
-  color: <<colour notification-foreground>>;
-  padding: 10px;
-  border-radius: 6px;
-}
-
-.py-tip-icon {
-  font-size: 1.2em;
-}
-
-.py-welcome {
-  max-width: 800px;
-  text-align: center;
-  padding: 40px 20px;
-  margin: 20px auto;
-  background: <<colour message-background>>;
-  color: <<colour message-foreground>>;
-  border-radius: 12px;
-}
-
-.py-welcome .icon {
-  font-size: 4em;
-}
-
-.py-welcome h3 {
-  font-weight: bold;
-}
-
-.py-welcome p {
-  margin: 0;
 }
 
 .py-scheduled-drop-down h4 {
