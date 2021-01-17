@@ -1,10 +1,10 @@
 created: 20201228014905847
-modified: 20201228105935853
+modified: 20210117205300355
 tags: [[Projectify documentation]]
 title: $:/plugins/nico/projectify/doc/Refiling
 type: text/vnd.tiddlywiki
 
 
-* To move a [[Todo|$:/plugins/nico/projectify/doc/Todos]] from the [[Inbox|$:/plugins/nico/projectify/doc/Inbox]], just drag & drop it using the {{$:/plugins/nico/projectify/images/drag-handle}} handle into one of the projects below the inbox.
+* To move a [[Todo|$:/plugins/nico/projectify/doc/Todos]] from the [[Inbox|$:/plugins/nico/projectify/doc/Inbox]], just drag & drop the todo using the {{$:/plugins/nico/projectify/images/drag-handle}} handle into one of the projects below the inbox.
 
-* To move [[Todos|$:/plugins/nico/projectify/doc/Todos]] between [[Projects|$:/plugins/nico/projectify/doc/Projects]], just like with todos in the inbox, drag & drop a todo using the {{$:/plugins/nico/projectify/images/drag-handle}} handle from one project into another to move it. 
+* To move [[Todos|$:/plugins/nico/projectify/doc/Todos]] between [[Projects|$:/plugins/nico/projectify/doc/Projects]], drag & drop the todo using the {{$:/plugins/nico/projectify/images/drag-handle}} handle from one project into another. 

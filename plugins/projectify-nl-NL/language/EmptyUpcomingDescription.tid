@@ -1,7 +1,7 @@
 title: $:/language/projectify/EmptyUpcomingDescription
 created: 20210112203922871
-modified: 20210112211028620
+modified: 20210117205436135
 
 <p>
-  All scheduled tasks will appear here -- [[learn more|$:/plugins/nico/projectify/doc/Upcoming]].
+  All scheduled tasks will appear here -- [[learn more|$:/plugins/nico/projectify/doc/Schedule]].
 </p>

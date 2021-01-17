@@ -1,5 +1,5 @@
 created: 20210112221205605
-modified: 20210112215053343
+modified: 20210117205357811
 tags: 
 title: Readme
 type: text/vnd.tiddlywiki
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 Projectify is project-management app for [[TiddlyWiki|https://tiddlywiki.com]], inspired by products like [[Todoist|https://todoist.com]] and [[Basecamp|https://basecamp.com]]. 
 
-[[TiddlyWiki|https://tiddlywiki.com]] is an excellent note-taking & knowledge-base app with [[unique features|https://tiddlywiki.com/#TiddlyWiki]]. Projectify brings project managment features to ~TiddlyWIki, extending it to let you [[capture thoughts|$:/plugins/nico/projectify/doc/Inbox]], [[plan projects|$:/plugins/nico/projectify/doc/Projects]] and [[schedule tasks|$:/plugins/nico/projectify/doc/Upcoming]].
+[[TiddlyWiki|https://tiddlywiki.com]] is an excellent note-taking & knowledge-base app with [[unique features|https://tiddlywiki.com/#TiddlyWiki]]. Projectify brings project managment features to ~TiddlyWIki, extending it to let you [[capture thoughts|$:/plugins/nico/projectify/doc/Inbox]], [[plan projects|$:/plugins/nico/projectify/doc/Projects]] and [[schedule tasks|$:/plugins/nico/projectify/doc/Schedule]].
 
 Projectify is carefully crafted, with an intuitive interface that integrates seamlessy with the core of ~TiddlyWiki. [[Drag and drop |https://tiddlywiki.com/#Drag%20and%20Drop]] any tiddler into a project to add it as a todo, [[transclude|https://tiddlywiki.com/#Transclusion]] and [[link|https://tiddlywiki.com/#Linking%20in%20WikiText]] other tiddlers into projects or tasks.
 

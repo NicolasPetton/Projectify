@@ -1,5 +1,5 @@
 created: 20200427133943777
-modified: 20210107174641524
+modified: 20210117205436065
 tags: [[Projectify documentation]]
 title: $:/plugins/nico/projectify/doc/Inbox
 type: text/vnd.tiddlywiki
@@ -16,6 +16,6 @@ The [[Inbox|$:/plugins/nico/projectify/ui/inbox/Inbox]] is a special
 so you don't forget them, and can get them out of your head quickly.
 
 [[Todos|$:/plugins/nico/projectify/doc/Todos]] in the [[Inbox|$:/plugins/nico/projectify/ui/inbox/Inbox]]
-can then be [[refiled|$:/plugins/nico/projectify/doc/Refiling]] into projects and/or [[scheduled|$:/plugins/nico/projectify/doc/Upcoming]].
+can then be [[refiled|$:/plugins/nico/projectify/doc/Refiling]] into projects and/or [[scheduled|$:/plugins/nico/projectify/doc/Schedule]].
 
 Projectify also provides a simple way to [[quickly capture|$:/plugins/nico/projectify/doc/QuickCapture]] tasks into the Inbox.
