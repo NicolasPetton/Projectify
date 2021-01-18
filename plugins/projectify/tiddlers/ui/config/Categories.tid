@@ -1,20 +1,20 @@
 created: 20210114221324413
-modified: 20210117165000709
+modified: 20210118092220006
 tags: $:/plugins/nico/projectify/tags/Config
-title: $:/plugins/nico/projectify/ui/config/Contexts
+title: $:/plugins/nico/projectify/ui/config/Categories
 list-after: $:/plugins/nico/projectify/ui/config/Dashboard
 type: text/vnd.tiddlywiki
-caption: {{$:/language/projectify/Contexts}}
+caption: {{$:/language/projectify/Categories}}
 
 \define lingo-base() $:/language/TagManager/
 
-\define context-editor()
+\define category-editor()
 <tr>
-  <td>{{||$:/plugins/nico/projectify/ui/context/Context}}</td>
+  <td>{{||$:/plugins/nico/projectify/ui/category/Category}}</td>
   <td>
-    <$list filter={{$:/plugins/nico/projectify/config/DefaultContextColours}} variable="colour">
+    <$list filter={{$:/plugins/nico/projectify/config/DefaultCategoryColours}} variable="colour">
       <$button class="tc-btn-invisible">
-	{{$:/plugins/nico/projectify/ui/context/ContextPill}}
+	{{$:/plugins/nico/projectify/ui/category/CategoryPill}}
 	<$action-setfield $field="color" $value=<<colour>>/>
       </$button>
     </$list>
@@ -28,33 +28,33 @@ caption: {{$:/language/projectify/Contexts}}
 </tr>
 \end
 
-!! {{$:/language/projectify/Contexts}}
+!! {{$:/language/projectify/Categories}}
 
-<table class="py-project-context-manager-table">
+<table class="py-project-category-manager-table">
   <tbody>
     <tr>
-      <th>{{$:/language/projectify/Context}}</th>
+      <th>{{$:/language/projectify/Category}}</th>
       <th><<lingo Colour/Heading>></th>
       <th></th>
     </tr>
 
-    <$list filter=<<py-all-contexts>>>
-      <<context-editor>>
+    <$list filter=<<py-all-categories>>>
+      <<category-editor>>
     </$list>
   </tbody>
 </table>
 
-{{$:/plugins/nico/projectify/ui/buttons/AddContext}}
+{{$:/plugins/nico/projectify/ui/buttons/AddCategory}}
 
-!! Default context colours
+!! Default category colours
 
-<table class="py-project-context-manager-table">
+<table class="py-project-category-manager-table">
   <tbody>
     <tr>
       <td><<lingo Colour/Heading>></td>
       <td>
 	<$edit-text
-	  tiddler="$:/plugins/nico/projectify/config/DefaultContextColours"
+	  tiddler="$:/plugins/nico/projectify/config/DefaultCategoryColours"
 	  field="text"
 	  tag="input"
 	/>

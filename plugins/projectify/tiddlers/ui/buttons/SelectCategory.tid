@@ -1,0 +1,41 @@
+created: 20210116205450353
+modified: 20210118092320409
+title: $:/plugins/nico/projectify/ui/buttons/SelectCategory
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
+
+<$vars popupTiddler=<<qualify "$:/state/projectify/category-dropdown">>>
+  <$button
+    popup=<<popupTiddler>>
+    class="py-btn btn-small"
+    tooltip=<<lingo SetCategory/Hint>>
+  >
+    <$reveal type="nomatch" state="!!category" text="">
+      <$tiddler tiddler={{!!category}}>
+	{{||$:/plugins/nico/projectify/ui/category/Category}}
+      </$tiddler>
+    </$reveal>
+    <$reveal type="match" state="!!category" text="">
+      <<lingo SetCategory/Caption>>
+    </$reveal>
+  </$button>
+
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down">
+    <$list filter=<<py-all-categories>> variable="category">
+      <$button class="tc-btn-invisible">
+	<$tiddler tiddler=<<category>>>
+	  {{||$:/plugins/nico/projectify/ui/category/Category}}
+	</$tiddler>
+	<$action-setfield category=<<category>>/>
+      </$button>
+    </$list>
+    <$button class="tc-btn-invisible">
+      {{$:/plugins/nico/projectify/images/slash-circle}} <<lingo Clear>>
+      <$action-deletefield $field="category"/>
+    </$button>
+    <$link to="$:/plugins/nico/projectify/ui/config/Categories">
+      <<lingo EditCategories>>
+    </$link>
+  </$reveal>
+</$vars>

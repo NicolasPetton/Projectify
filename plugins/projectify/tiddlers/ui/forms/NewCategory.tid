@@ -1,21 +1,21 @@
 created: 20210114223425845
-modified: 20210116124214560
-title: $:/plugins/nico/projectify/ui/forms/NewContext
+modified: 20210118092219993
+title: $:/plugins/nico/projectify/ui/forms/NewCategory
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
 \define add-project-actions()
   <$action-createtiddler
-    $basetitle={{$:/state/projectify/new-context!!tag_name}}
-    color={{$:/state/projectify/new-context!!color}}
-    tags="$:/plugins/nico/projectify/tags/Context"/>
+    $basetitle={{$:/state/projectify/new-category!!tag_name}}
+    color={{$:/state/projectify/new-category!!color}}
+    tags="$:/plugins/nico/projectify/tags/Category"/>
   <$action-setfield
-    $tiddler="$:/state/projectify/new-context"
+    $tiddler="$:/state/projectify/new-category"
     tag_name=""
     color=""
   />
-  <$action-setfield $tiddler="$:/state/projectify/show-new-context-popup" text=""/>
+  <$action-setfield $tiddler="$:/state/projectify/show-new-category-popup" text=""/>
   <$action-sendmessage $message="tm-auto-save-wiki"/>
 \end
 
@@ -23,11 +23,11 @@ type: text/vnd.tiddlywiki
   <$keyboard key="enter">
     <<add-project-actions>>
     <div class="py-control-group">
-      <div class="py-label"><<lingo Context>></div>
+      <div class="py-label"><<lingo Category>></div>
       <$edit-text
         class="py-input"
         focus="true"
-        tiddler="$:/state/projectify/new-context"
+        tiddler="$:/state/projectify/new-category"
         field="tag_name"
       />
     </div>
@@ -35,7 +35,7 @@ type: text/vnd.tiddlywiki
       <div class="py-label">{{$:/language/TagManager/Colour/Heading}}</div>
       <$edit-text
         class="py-input"
-        tiddler="$:/state/projectify/new-context"
+        tiddler="$:/state/projectify/new-category"
         field="color"
       />
     </div>
@@ -46,7 +46,7 @@ type: text/vnd.tiddlywiki
 	<<lingo Save/Caption>>
     </$button>
     <<lingo Or>>
-    <$button class="py-btn" set="$:/state/projectify/show-new-context-popup" setTo="">
+    <$button class="py-btn" set="$:/state/projectify/show-new-category-popup" setTo="">
       <<lingo Cancel/Caption>>
     </$button>
   </div>

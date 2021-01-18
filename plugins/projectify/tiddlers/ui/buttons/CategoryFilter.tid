@@ -1,13 +1,13 @@
 created: 20210116205450353
-modified: 20210117223225413
-title: $:/plugins/nico/projectify/ui/buttons/ContextFilter
+modified: 20210118092320399
+title: $:/plugins/nico/projectify/ui/buttons/CategoryFilter
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
 <$vars
-  popupTiddler=<<qualify "$:/state/projectify/context-filter-dropdown">>
-  stateTiddler="$:/state/projectify/project-context-filter"
+  popupTiddler=<<qualify "$:/state/projectify/category-filter-dropdown">>
+  stateTiddler="$:/state/projectify/project-category-filter"
 >
   <$button popup=<<popupTiddler>> class="py-btn btn-small">
     {{$:/plugins/nico/projectify/images/funnel}}
@@ -17,19 +17,19 @@ type: text/vnd.tiddlywiki
     <$reveal type="nomatch" state=<<stateTiddler>> text="">
       Projects in
       <$tiddler tiddler={{{ [<stateTiddler>get[text]] }}}>
-	{{||$:/plugins/nico/projectify/ui/context/Context}}
+	{{||$:/plugins/nico/projectify/ui/category/Category}}
       </$tiddler>
     </$reveal>
   </$button>
 
   <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down py-drop-down">
-    <$list filter=<<py-all-contexts>> variable="context">
-      <$vars colour={{{ [<context>get[color]] }}}>
+    <$list filter=<<py-all-categories>> variable="category">
+      <$vars colour={{{ [<category>get[color]] }}}>
 	<$button class="tc-btn-invisible">
-	  <$tiddler tiddler=<<context>>>
-	    {{||$:/plugins/nico/projectify/ui/context/Context}}
+	  <$tiddler tiddler=<<category>>>
+	    {{||$:/plugins/nico/projectify/ui/category/Category}}
 	  </$tiddler>
-	  <$action-setfield $tiddler=<<stateTiddler>> text=<<context>>/>
+	  <$action-setfield $tiddler=<<stateTiddler>> text=<<category>>/>
 	</$button>
       </$vars>
     </$list>
@@ -40,8 +40,8 @@ type: text/vnd.tiddlywiki
     </$button>
 
     <hr/>
-    <$link to="$:/plugins/nico/projectify/ui/config/Contexts">
-      <<lingo EditContexts>>
+    <$link to="$:/plugins/nico/projectify/ui/config/Categories">
+      <<lingo EditCategories>>
     </$link>
   </$reveal>
 </$vars>

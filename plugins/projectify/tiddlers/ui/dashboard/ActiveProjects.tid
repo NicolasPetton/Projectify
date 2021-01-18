@@ -1,5 +1,5 @@
 created: 20210116214213972
-modified: 20210116215326483
+modified: 20210118092251921
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ActiveProjects
 type: text/vnd.tiddlywiki
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
   filter=<<py-has-projects>>
   emptyMessage={{$:/plugins/nico/projectify/ui/welcome/EmptyProjects}}
   >
-  <$vars context={{$:/state/projectify/project-context-filter}}>
+  <$vars category={{$:/state/projectify/project-category-filter}}>
     <$reveal type="match" state="$:/config/projectify/projects-view" text="list">
       {{$:/plugins/nico/projectify/ui/dashboard/ProjectList}}
     </$reveal>

@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210117211442373
+modified: 20210118092220033
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -9,9 +9,9 @@ type: text/vnd.tiddlywiki
 
 !! Features
 
-* Add contexts to projects, with colours and filtering from the dashboard
+* Add categories to projects, with colours and filtering from the dashboard
 * New button to convert todos into projects
-* New context configuration tab in the Control Panel
+* New category configuration tab in the Control Panel
 * New French (fr-FR) language add-on plugin
 
 !! Improvements

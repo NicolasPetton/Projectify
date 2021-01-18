@@ -1,12 +1,12 @@
 created: 20210117210451364
-modified: 20210117210508330
+modified: 20210118092251871
 tags: $:/tags/Stylesheet
-title: $:/plugins/nico/projectify/styles/context
+title: $:/plugins/nico/projectify/styles/category
 type: text/vnd.tiddlywiki
 
 \rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
 
-.py-context-pill {
+.py-category-pill {
   position: relative;
   width: 1em;
   height: 1em;
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
   background: <<colour tiddler-background>>;
 }
 
-.py-context-pill::after {
+.py-category-pill::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -27,7 +27,7 @@ type: text/vnd.tiddlywiki
   border: 1px solid <<colour muted-foreground>>;
 }
 
-.py-context-wrapper {
+.py-category-wrapper {
   margin-top: -4px;
   margin-bottom: 10px;
 }

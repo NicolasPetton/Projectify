@@ -73,7 +73,7 @@ type: text/vnd.tiddlywiki
   justify-content: space-between;
 }
 
-.py-project .py-project-heading .py-project-context {
+.py-project .py-project-heading .py-project-category {
   font-size: .9em;
   white-space: nowrap;
 }
@@ -248,19 +248,19 @@ type: text/vnd.tiddlywiki
   color: #24cd5e;
 }
 
-.py-project-context-manager-table {
+.py-project-category-manager-table {
   width: 100%;
 }
 
-.py-project-context-manager-table td {
+.py-project-category-manager-table td {
   padding: 4px;
 }
 
-.py-project-context-manager-table input {
+.py-project-category-manager-table input {
   width: 100%;
 }
 
-.py-project-context-manager-table input[type="color"] {
+.py-project-category-manager-table input[type="color"] {
   width: 50px;
   padding: 3px;
 }

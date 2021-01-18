@@ -1,0 +1,26 @@
+created: 20210114223231533
+modified: 20210118092219909
+title: $:/plugins/nico/projectify/ui/buttons/AddCategory
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
+
+<$button
+  class="py-btn btn-primary"
+  popup="$:/state/projectify/show-new-category-popup"
+  tooltip={{$:/language/projectify/AddCategory/Hint}}
+  aria-label={{$:/language/projectify/AddCategory/Hint}}
+>
+  {{$:/core/images/edit-button}}
+  <<lingo AddCategory/Caption>>
+</$button>
+
+<$reveal
+  type="popup"
+  class="tc-popup-keep py-popup"
+  state="$:/state/projectify/show-new-category-popup"
+  position="above"
+>
+  <h2><<lingo Category>></h2>
+  {{$:/plugins/nico/projectify/ui/forms/NewCategory}}
+</$reveal>

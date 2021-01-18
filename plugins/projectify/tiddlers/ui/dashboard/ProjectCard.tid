@@ -1,5 +1,5 @@
 created: 20200424193106051
-modified: 20210117180437180
+modified: 20210118092219932
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectCard
 type: text/vnd.tiddlywiki
@@ -10,8 +10,8 @@ type: text/vnd.tiddlywiki
 background-color: $(background)$;
 \end
 
-<$vars context={{!!context}}>
-  <$vars background={{{ [<context>get[color]] }}}>
+<$vars category={{!!category}}>
+  <$vars background={{{ [<category>get[color]] }}}>
     <div class="py-card-wrapper" style=<<card-style>>>
       <$link overrideClass="py-card" to={{!!title}}>
 	<div class="py-card-options">
@@ -28,8 +28,8 @@ background-color: $(background)$;
 	  <$count filter=<<py-open-todos>>/>
 	  <<lingo OpenTasks>>
 	</div>
-	<div class="py-project-context">
-	  <$text text=<<context>>/>
+	<div class="py-project-category">
+	  <$text text=<<category>>/>
 	</div>
       </$link>
     </div>

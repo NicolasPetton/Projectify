@@ -1,0 +1,24 @@
+created: 20200427152938733
+modified: 20210118093411208
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/Categories
+type: text/vnd.tiddlywiki
+
+You can group similar [[Projects|$:/plugins/nico/projectify/doc/Projects]]
+together by using Categories.
+
+Categories can have colours, making it easy to visually distinguish projects by
+category.
+
+From within the [[Dashboard|$:/plugins/nico/projectify/doc/Dashboard]], you can
+filter projects by category, giving you a quick overview of all the active
+projects for a given category.
+
+Here are a few common categories you might want to use to get started:
+
+* ''@work'' --- Groups all projects related to work.
+* ''@home'' --- Groups all projects to work on when at home.
+* ''@computer'' --- Groups all projects to work on when at the computer.
+
+Categories can be customized in the dedicated
+[[Control Panel section|$:/plugins/nico/projectify/ui/config/Categories]].

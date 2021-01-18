@@ -1,12 +1,12 @@
 created: 20200424193106051
-modified: 20210117163453122
+modified: 20210118092219920
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectList
 type: text/vnd.tiddlywiki
 
 <ul class="py-projects">
   <$list filter=<<py-active-projects>>>
-    <$list filter="[all[current]field:context<context>] [<context>is[blank]] +[limit[1]]" variable="ignore">
+    <$list filter="[all[current]field:category<category>] [<category>is[blank]] +[limit[1]]" variable="ignore">
       <$droppable actions=<<project-refile-actions>>>
 	{{||$:/plugins/nico/projectify/ui/dashboard/ProjectListItem}}
       </$droppable>

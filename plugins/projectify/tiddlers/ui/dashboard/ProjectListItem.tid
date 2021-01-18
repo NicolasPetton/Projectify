@@ -1,21 +1,21 @@
 created: 20210116212900413
-modified: 20210117170031050
+modified: 20210118092219942
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectListItem
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
-<$vars context={{!!context}}>
+<$vars category={{!!category}}>
   <li class="py-project">
     <div class="py-project-heading">
       <div class="py-project-title">
 	{{||$:/plugins/nico/projectify/images/pie}} <$link to={{!!title}}><$view field="title"/></$link>
       </div>
-      <$list filter=<<context>> variable="ignore">
-	<div class="py-project-context">
-	  <$tiddler tiddler=<<context>>>
-	    {{||$:/plugins/nico/projectify/ui/context/Context}}
+      <$list filter=<<category>> variable="ignore">
+	<div class="py-project-category">
+	  <$tiddler tiddler=<<category>>>
+	    {{||$:/plugins/nico/projectify/ui/category/Category}}
 	  </$tiddler>
 	</div>
       </$list>

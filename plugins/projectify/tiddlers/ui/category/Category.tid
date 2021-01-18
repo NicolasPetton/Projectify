@@ -1,11 +1,11 @@
 created: 20210117163947721
-modified: 20210117180147429
+modified: 20210118092219999
 tags:
-title: $:/plugins/nico/projectify/ui/context/Context
+title: $:/plugins/nico/projectify/ui/category/Category
 type: text/vnd.tiddlywiki
 
 <$vars colour={{{ [all[current]get[color]] }}}>
-  {{||$:/plugins/nico/projectify/ui/context/ContextPill}}
+  {{||$:/plugins/nico/projectify/ui/category/CategoryPill}}
   <$text text={{!!title}}>
 </$vars>
 

@@ -2,8 +2,8 @@ title: $:/language/projectify/
 
 AddProject/Caption: Ajouter un projet
 AddProject/Hint: Créer un nouveau projet
-AddContext/Caption: Ajouter un contexte
-AddContext/Hint: Créer un nouveau contexte
+AddCategory/Caption: Ajouter un catégorie
+AddCategory/Hint: Créer un nouveau catégorie
 AddSubTasks/Caption: Ajouter des sous-tâches
 AddToInbox/Hint: Appuyer sur <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> pour ajouter depuis n'importe où.
 AddToInbox/Placeholder: Ajouter à la boîte de réception...
@@ -20,13 +20,13 @@ Clear: Effacer
 Close/Caption: Fermer
 Completed/Caption: Terminés
 ConvertIntoProject: Convertir en projet
-Context: Contexte
-Contexts: Contextes
+Category: Catégorie
+Categories: Catégories
 Dashboard: Tableau de bord
 DateFormat: DD mmm
 DefaultDashboardTab: Onglet par défaut dans le tableau de bord
 DragTodoTip: Glissez & déposez un tiddler ci-dessous pour ajouter une tâche à ce projet.
-EditContexts: Personnaliser les contextes
+EditCategories: Personnaliser les catégories
 FilterProjects: Filter les projets
 Help: Besoin d'aide?
 HelpSearch/Placeholder: Rechercher...
@@ -53,9 +53,9 @@ ReorderProjects/Hint: Glisser & déposer les éléments de la liste pour réordo
 RestoreProject: Restaurer le project
 Save/Caption: Sauvegarder
 Schedule/Caption: Planifier
-SetContext/Caption: Définir le contexte
-SetContext/Hint: Select a context for this project
-ShowArchived/Caption: Sélectionnez un contexte pour ce projet
+SetCategory/Caption: Définir le catégorie
+SetCategory/Hint: Sélectionnez un categorie pour ce projet
+ShowArchived/Caption: Afficher les projets archivés
 Tip: Astuce
 Today: Aujourd'hui
 TodayAndOverdue: Aujourd'hui et en retard
