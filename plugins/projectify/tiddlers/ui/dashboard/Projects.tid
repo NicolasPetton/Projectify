@@ -1,6 +1,6 @@
 caption: {{$:/plugins/nico/projectify/images/tasks}} Projects
 created: 20200424193106051
-modified: 20210118092219962
+modified: 20210118183707377
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/Projects
 type: text/vnd.tiddlywiki
@@ -8,10 +8,10 @@ type: text/vnd.tiddlywiki
 \define lingo-base() $:/language/projectify/
 
 <div class="py-projects-heading">
-  <span>
+  <div class="py-title">
     <h2><<lingo Projects>></h2>
     {{$:/plugins/nico/projectify/ui/buttons/ProjectListSettings}}
-  </span>
+  </div>
 
   <div class="py-category-filter">
     {{$:/plugins/nico/projectify/ui/buttons/CategoryFilter}}

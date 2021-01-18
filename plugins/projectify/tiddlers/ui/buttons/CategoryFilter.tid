@@ -1,5 +1,5 @@
 created: 20210116205450353
-modified: 20210118092320399
+modified: 20210118182714845
 title: $:/plugins/nico/projectify/ui/buttons/CategoryFilter
 type: text/vnd.tiddlywiki
 
@@ -34,14 +34,17 @@ type: text/vnd.tiddlywiki
       </$vars>
     </$list>
 
-    <$button class="tc-btn-invisible">
-      {{$:/plugins/nico/projectify/images/slash-circle}} <<lingo Clear>>
-      <$action-deletetiddler $tiddler=<<stateTiddler>>/>
-    </$button>
-
     <hr/>
     <$link to="$:/plugins/nico/projectify/ui/config/Categories">
       <<lingo EditCategories>>
     </$link>
   </$reveal>
+
+  <$reveal type="nomatch" state=<<stateTiddler>> text="">
+    <$button class="tc-btn-invisible btn-small py-link-muted">
+      <<lingo Clear>>
+	<$action-deletetiddler $tiddler=<<stateTiddler>>/>
+    </$button>
+  </$reveal>
+
 </$vars>

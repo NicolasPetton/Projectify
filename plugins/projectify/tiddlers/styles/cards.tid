@@ -1,5 +1,5 @@
 created: 20210117173623112
-modified: 20210118092251830
+modified: 20210118183219607
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/cards
 type: text/vnd.tiddlywiki
@@ -14,12 +14,12 @@ type: text/vnd.tiddlywiki
 }
 
 .py-cards span {
-  width: calc(33% - 20px);
+  width: calc(33% - 12px);
 }
 
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .py-cards span {
-    width: calc(50% - 20px);
+    width: calc(50% - 11px);
   }
 }
 

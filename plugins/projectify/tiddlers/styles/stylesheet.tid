@@ -14,7 +14,16 @@ type: text/vnd.tiddlywiki
 .py-projects-heading h2 {
   margin: 0;
   display: inline-block;
+}
 
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .py-projects-heading {
+    display: block;
+  }
+
+  .py-projects-heading .py-title {
+    margin-bottom: 20px;
+  }
 }
 
 .py-projects-heading > button {
