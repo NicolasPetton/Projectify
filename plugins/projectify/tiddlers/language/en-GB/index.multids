@@ -36,6 +36,7 @@ Inbox: Inbox
 More: More
 MoreActions/Hint: More actions
 NewProject: Create new project
+NewProjectCategory: Category (optional)
 NewProjectDescription: Description (optional)
 NewProjectTitle: Title
 Next: Next
