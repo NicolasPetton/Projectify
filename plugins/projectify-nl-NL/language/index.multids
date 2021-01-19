@@ -1,70 +1,70 @@
 title: $:/language/projectify/
 
-AddProject/Caption: Add project
-AddProject/Hint: Create a newproject
-AddCategory/Caption: Add category
-AddCategory/Hint: Create a new category
-AddSubTasks/Caption: Add sub-tasks
-AddToInbox/Hint: Press <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> to capture from anywhere.
-AddToInbox/Placeholder: Add to inbox...
-AddTodo/Caption: Add a todo
-AddTodo/Hint: Add a new todo to the project
-AddTodoToProject/Placeholder: Describe this task...
-AllClear: All clear!
-Archive: Archive
-ArchiveProject/Caption: Archive project
-ArchiveProject/Hint: Remove this project from the active project list
-Cancel/Caption: Cancel
-CardOptions/Hint: Card options
-Clear: Clear
-Close/Caption: Close
-Completed/Caption: Completed
-ConvertIntoProject: Convert into project
-Category: Category
-Categories: Categories
+AddProject/Caption: Voeg project toe
+AddProject/Hint: Creeër een nieuw project
+AddCategory/Caption: Voeg categorie toe
+AddCategory/Hint: Creeër een categorie
+AddSubTasks/Caption: Voeg sub-taken toe
+AddToInbox/Hint: Druk op <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> om op elk moment een taak toe te voegen.
+AddToInbox/Placeholder: Voeg toe aan Inbox...
+AddTodo/Caption: Voeg een taak toe
+AddTodo/Hint: Voeg een nieuwe taak toe aan het project
+AddTodoToProject/Placeholder: Beschrijf deze taak...
+AllClear: Alles is af!
+Archive: Archief
+ArchiveProject/Caption: Archiveer project
+ArchiveProject/Hint: Verwijder dit project van de actieve projecten lijst
+Cancel/Caption: Annuleer
+CardOptions/Hint: Kaart opties
+Clear: Geen datum
+Close/Caption: Sluit
+Completed/Caption: Voltooid
+ConvertIntoProject: Omzetten in project
+Category: Categorie
+Categories: Categorieën
 Dashboard: Dashboard
-DateFormat: DDth mmm
-DefaultDashboardTab: Default dashboard tab
-DragTodoTip: Drag & drop any tiddler below to add it as a task to this project.
-EditCategories: Edit categories
-FilterProjects: Fitler projects
-Help: Need help?
-HelpSearch/Placeholder: Search...
-HideArchived/Caption: Hide archived
-HideCompleted/Caption: Hide completed
+DateFormat: DD mmm
+DefaultDashboardTab: Standaard dashboard tabblad
+DragTodoTip: Versleep een Tiddler naar hieronder om het als een taak aan dit project toe te voegen.
+EditCategories: Bewerk categorieën
+FilterProjects: Fitler projecten
+Help: Hulp nodig?
+HelpSearch/Placeholder: Zoek...
+HideArchived/Caption: Verberg gearchiveerde projecten
+HideCompleted/Caption: Verberg voltooide taken
 Inbox: Inbox
-More: More
-MoreActions/Hint: More actions
-NewProject: Create new project
-NewProjectDescription: Description (optional)
-NewProjectTitle: Title
-Next: Next
-NextWeek: Next week
-OpenTasks: open tasks
-Options/Hint: Options
-Or: or
-Overdue: Overdue
-Priority/Hint: Priority
-ProjectArchived: This project is archived.
-Projects: Projects
-QuickAddTodo: Quick add todo
-QuickCapture/Hint: Press <kbd>⏎</kbd> to capture.
-ReorderProjects/Hint: Drag & drop items in the list to reorder projects
-RestoreProject: Restore project
-Save/Caption: Save
-Schedule/Caption: Schedule
+More: Meer
+MoreActions/Hint: Meer acties
+NewProject: Creeër een nieuw project
+NewProjectDescription: Omschrijving (optioneel)
+NewProjectTitle: Titel
+Next: Volgende
+NextWeek: Volgende week
+OpenTasks: Openstaande taken
+Options/Hint: Opties
+Or: of
+Overdue: Over tijd
+Priority/Hint: Prioriteit
+ProjectArchived: Dit project is gearchiveerd.
+Projects: Projecten
+QuickAddTodo: Snel taak toevoegen
+QuickCapture/Hint: Druk op <kbd>⏎</kbd> om snel een taak toe te voegen.
+ReorderProjects/Hint: Versleep items in de lijst om projecten opnieuw te ordenen
+RestoreProject: Herstel project
+Save/Caption: Opslaan
+Schedule/Caption: Plan in
 ShowArchived/Caption: Show archived
 Tip: Tip
-Today: Today
-TodayAndOverdue: Today and overdue
-TodaysTodos: Today's todos
-TodoActions/Hint: Actions
-Todos: Todos
-Tomorrow: Tomorrow
-Upcoming: Upcoming
-ViewAsCards: View as cards
-ViewAsList: View as list
-ViewProjectsAs: View projects as
-Yesterday: Yesterday
-cards: cards
-list: list
+Today: Vandaag
+TodayAndOverdue: Vandaag en over tijd
+TodaysTodos: Taken van vandaag
+TodoActions/Hint: Acties
+Todos: Taken
+Tomorrow: Morgen
+Upcoming: Aankomend
+ViewAsCards: Bekijk als kaarten
+ViewAsList: Bekijk als lijst
+ViewProjectsAs: Bekijk projecten als
+Yesterday: Gisteren
+cards: kaarten
+list: lijst
