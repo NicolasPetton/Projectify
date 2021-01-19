@@ -1,15 +1,15 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210119141235870
+modified: 20210119220615972
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
-! Master
+! Release 0.11.0
 
 !! Features
 
-* Add categories to projects, with colours and filtering from the dashboard
+* Add support for categories in projects, with colours and filtering from the dashboard
 * New button to convert todos into projects
 * New category configuration tab in the Control Panel
 * New French (fr-FR) language add-on plugin
