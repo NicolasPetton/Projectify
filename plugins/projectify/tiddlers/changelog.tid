@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210118092220033
+modified: 20210119141235870
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -13,6 +13,7 @@ type: text/vnd.tiddlywiki
 * New button to convert todos into projects
 * New category configuration tab in the Control Panel
 * New French (fr-FR) language add-on plugin
+* New Dutch (nl-NL) language add-on plugin
 
 !! Improvements
 
