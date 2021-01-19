@@ -1,5 +1,5 @@
 created: 20210114221324413
-modified: 20210118092220006
+modified: 20210119111151083
 tags: $:/plugins/nico/projectify/tags/Config
 title: $:/plugins/nico/projectify/ui/config/Categories
 list-after: $:/plugins/nico/projectify/ui/config/Dashboard
@@ -23,6 +23,7 @@ caption: {{$:/language/projectify/Categories}}
   <td>
     <$button class="py-btn btn-danger btn-small">
       {{$:/core/images/delete-button}} {{$:/language/Buttons/Delete/Caption}}
+      <$action-deletetiddler $tiddler=<<currentTiddler>>>
     </$button>
   </td>
 </tr>
