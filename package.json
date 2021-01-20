@@ -4,13 +4,13 @@
 	"description": "Project and todo management in TiddlyWiki",
 	"main": "index.js",
 	"scripts": {
-		"build-website": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/website/ --build index",
+		"build-demo": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/demo/ --build index",
 		"build-empty": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty/ --build index",
 		"build-empty-fr": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty-fr-FR/ --build index",
-		"build-readme": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/website/ --output . --build readme",
-		"build": "npm run build-website; npm run build-empty; npm run build-empty-fr; npm run build-readme ",
+		"build-readme": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/demo/ --output . --build readme",
+		"build": "npm run build-demo; npm run build-empty; npm run build-empty-fr; npm run build-readme ",
 		"serve": "nodemon -e tid,multids,js,info --watch plugins ./node_modules/tiddlywiki/tiddlywiki.js . --listen",
-		"serve-website": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/website/ --listen",
+		"serve-demo": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/demo/ --listen",
 		"serve-empty": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty/ --listen",
 		"serve-empty-fr": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty-fr-FR/ --listen"
 	},
