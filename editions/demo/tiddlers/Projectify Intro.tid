@@ -1,19 +1,15 @@
 created: 20201218161315664
-modified: 20210117211443669
-tags: $:/tags/AboveStory
+modified: 20210120190316641
+tags: 
 title: Projectify Intro
 type: text/vnd.tiddlywiki
 
-<div class="intro tc-adjust-top-of-scroll">
+<div class="intro">
   <div class="logo">{{$:/themes/nico/notebook/images/logo.svg}}</div>
   <h1>Project management for [[TiddlyWiki|https://tiddlywiki.com]].</h1>
 </div>
 
 <style>
-.tc-story-river {
-  margin-top: 0 !important;
-}
-
 .intro {
     padding: 40px 0;
     max-width: 700px;

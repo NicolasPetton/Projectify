@@ -1,5 +1,5 @@
 created: 20201212165938184
-modified: 20210117203901687
+modified: 20210120190245258
 tags: 
 title: ✨ About
 type: text/vnd.tiddlywiki
@@ -8,4 +8,5 @@ type: text/vnd.tiddlywiki
 <$link to="$:/plugins/nico/projectify"><<shield label:Release status:{{$:/plugins/nico/projectify!!version}} colour:purple>></$link>
 <a href="https://tiddlywiki.com"><<shield label:~TiddlyWiki status:5.1.22+ colour:blue>></a>
 
+{{Projectify Intro}}
 {{Readme}}
