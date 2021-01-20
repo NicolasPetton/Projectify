@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="256"
+   height="256"
+   viewBox="0 0 67.733333 67.733333"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2">
+    <linearGradient
+       xlink:href="#linearGradient904"
+       id="linearGradient906"
+       x1="30.978144"
+       y1="29.909761"
+       x2="48.025448"
+       y2="86.426224"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-2.0545247e-6)" />
+    <linearGradient
+       id="linearGradient904">
+      <stop
+         style="stop-color:#7f4bca;stop-opacity:1;"
+         offset="0"
+         id="stop900" />
+      <stop
+         style="stop-color:#852788;stop-opacity:1"
+         offset="1"
+         id="stop902" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <circle
+       style="fill:url(#linearGradient906);fill-opacity:1;stroke:none;stroke-width:8.7394;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path833"
+       cx="33.866665"
+       cy="33.866665"
+       r="29.744209" />
+    <path
+       id="circle835"
+       style="fill:#e7bffb;fill-opacity:1;stroke:none;stroke-width:6.71192;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 34.046504,11.023356 v 22.061705 c 0,0.463542 -0.373102,0.837157 -0.836644,0.837157 H 11.023101 A 22.843748,22.843748 0 0 0 33.866667,56.709977 22.843748,22.843748 0 0 0 56.710233,33.866407 22.843748,22.843748 0 0 0 34.046504,11.023356 Z" />
+  </g>
+</svg>

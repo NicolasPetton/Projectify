@@ -1,0 +1,234 @@
+@import "./reset.css";
+
+/* Variables */
+
+:root {
+  --foreground: #3F3B3B;
+  --light-foreground: #7c7c67;
+  --very-light-foreground: #a4a491;
+  --background: #f4f4ee;
+  --primary: #7f4bca;
+  --secondary: #58e474;
+  --light: #fafafa;
+}
+
+/* General & typograpy */
+
+body {
+  font-family: "fira sans", sans;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  padding: 0 20px;
+}
+
+h1, h2 {
+  font-size: 1.8em;
+  line-height: 1.4em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all ease-in .1s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.link-button,
+.menu a.link-button {
+  padding: .4em 1em;
+  text-decoration: none;
+  background-color: var(--primary);
+  color: var(--light);
+  border-radius: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+a.link-button:hover,
+.menu a.link-button:hover {
+  text-decoration: none;
+  background: var(--secondary);
+  color: color: var(--light);
+}
+
+section {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+/* Menu */
+
+.menu {
+  padding: 20px 0;
+  line-height: 2em;
+}
+
+.menu a {
+  font-weight: 600;
+  color: var(--foreground);
+  text-decoration: underline;
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+.menu a:hover {
+  color: var(--primary);
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  color: var(--light-foreground);
+  font-size: .9em;
+  margin: 30px 0;
+}
+
+footer p {
+  margin-bottom: .5em;
+}
+
+footer a {
+  color: var(--light-foreground);
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+/* Intro & Teaser */
+
+.intro {
+  padding: 50px;
+  text-align: center;
+}
+
+.intro img {
+  width: 340px;
+  max-width: 90%;
+}
+
+.intro p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+.teaser img {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.teaser p {
+  font-size: 1.6em;
+  padding: 60px 0;
+  margin: 0;
+}
+
+.teaser .link-button {
+  padding: .5em 1em;
+}
+
+/* Animations */
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pop {
+  animation: pop .6s ease-out forwards;
+}
+
+.animate {
+  opacity: 0;
+}
+
+.glow-hover:hover {
+  animation: glow .4s ease-out forwards;
+}
+
+.animate.appear {
+  animation: pop .3s ease-out forwards;
+  animation-delay: .2s;
+}
+
+/* Why sections */
+
+.why {
+  padding-bottom: 100px;
+}
+
+.why::before {
+  content: " ";
+  display: block;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    var(--very-light-foreground) 10px,
+    var(--very-light-foreground) 20px
+  );
+  height: 4px;
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+}
+
+.why .content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.why .content > * {
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 350px;
+}
+
+.why .content .heading {
+  flex-grow: 0;
+  margin-bottom: 20px;
+}
+
+.why .content .heading p {
+  font-size: 1.2em;
+}
