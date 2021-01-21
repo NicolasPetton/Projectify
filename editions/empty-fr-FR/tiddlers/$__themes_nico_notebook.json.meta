@@ -1,13 +1,13 @@
 author: NicolasPetton
 core-version: >=5.1.22
-created: 20210117204853476
+created: 20210120215228434
 dependents: $:/themes/tiddlywiki/vanilla $:/plugins/nico/notebook-mobile
 description: A clean, uncluttered TiddlyWiki theme
 list: LICENSE changelog
-modified: 20210117204853476
+modified: 20210120215228434
 name: Notebook theme
 plugin-type: theme
 source: https://github.com/NicolasPetton/Notebook
 title: $:/themes/nico/notebook
 type: application/json
-version: 1.3.3
+version: 1.3.5

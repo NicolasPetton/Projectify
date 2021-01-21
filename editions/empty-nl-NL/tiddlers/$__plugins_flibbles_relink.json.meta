@@ -4,7 +4,7 @@ created: 20190921200305594
 dependents: 
 description: Relink - flexibility when relinking renamed tiddlers
 list: readme configuration
-modified: 20201219111228843
+modified: 20201130170503431
 plugin-type: plugin
 source: https://github.com/flibbles/tw5-relink
 tags: tb
