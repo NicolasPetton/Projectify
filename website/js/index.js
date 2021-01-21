@@ -9,7 +9,7 @@ function animate() {
 				observer.unobserve(entry.target);
 			}
 		});
-	}, {threshold: 0.3});
+	}, {threshold: 0.2});
 
 	elements.forEach((element) => {
 		observer.observe(element);
