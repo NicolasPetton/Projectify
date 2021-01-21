@@ -51,6 +51,7 @@ Projects: Projecten
 QuickAddTodo: Snel taak toevoegen
 QuickCapture/Hint: Druk op <kbd>⏎</kbd> om snel een taak toe te voegen.
 ReorderProjects/Hint: Versleep items in de lijst om projecten opnieuw te ordenen
+ReorderProjects/Caption: Herschik projecten
 RestoreProject: Herstel project
 Save/Caption: Opslaan
 Schedule/Caption: Plan in

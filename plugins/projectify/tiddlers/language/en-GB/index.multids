@@ -51,6 +51,7 @@ Projects: Projects
 QuickAddTodo: Quick add todo
 QuickCapture/Hint: Press <kbd>⏎</kbd> to capture.
 ReorderProjects/Hint: Drag & drop items in the list to reorder projects
+ReorderProjects/Caption: Reorder projects
 RestoreProject: Restore project
 Save/Caption: Save
 Schedule/Caption: Schedule

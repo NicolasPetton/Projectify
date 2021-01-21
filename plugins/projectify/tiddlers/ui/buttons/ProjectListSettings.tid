@@ -1,5 +1,5 @@
 created: 20201210171047824
-modified: 20210112180541814
+modified: 20210121182326872
 title: $:/plugins/nico/projectify/ui/buttons/ProjectListSettings
 type: text/vnd.tiddlywiki
 
@@ -29,7 +29,7 @@ type: text/vnd.tiddlywiki
   </$vars>
 
   <$button class="tc-btn-invisible">
-    Reorder projects
+    <<lingo ReorderProjects/Caption>>
     <$action-setfield $tiddler="$:/state/projectify/show-reorder-projects" text="yes">
   </$button>
 </$reveal>

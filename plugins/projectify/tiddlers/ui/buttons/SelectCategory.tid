@@ -1,5 +1,5 @@
 created: 20210116205450353
-modified: 20210118092320409
+modified: 20210121182141462
 title: $:/plugins/nico/projectify/ui/buttons/SelectCategory
 type: text/vnd.tiddlywiki
 
@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
   <$button
     popup=<<popupTiddler>>
     class="py-btn btn-small"
-    tooltip=<<lingo SetCategory/Hint>>
+    tooltip={{$:/language/projectify/SetCategory/Hint}}
   >
     <$reveal type="nomatch" state="!!category" text="">
       <$tiddler tiddler={{!!category}}>
