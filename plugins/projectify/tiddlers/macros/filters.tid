@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210121101721514
+modified: 20210121210535924
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -48,6 +48,10 @@ type: text/vnd.tiddlywiki
 
 \define py-is-empty-project()
 [all[tiddlers]tag{!!title}tag[todo]!has[draft.of]limit[1]]
+\end
+
+\define py-has-category()
+[all[current]has[category]]
 \end
 
 \define py-has-todos()

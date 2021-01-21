@@ -1,5 +1,5 @@
 created: 20200424193106051
-modified: 20210118092219932
+modified: 20210121210551371
 tags:
 title: $:/plugins/nico/projectify/ui/dashboard/ProjectCard
 type: text/vnd.tiddlywiki
@@ -28,9 +28,11 @@ background-color: $(background)$;
 	  <$count filter=<<py-open-todos>>/>
 	  <<lingo OpenTasks>>
 	</div>
-	<div class="py-project-category">
-	  <$text text=<<category>>/>
-	</div>
+	<$list filter=<<py-has-category>> variable="ignore">
+	  <div class="py-project-category">
+	    <$text text=<<category>>/>
+	  </div>
+	</$list>
       </$link>
     </div>
   </$vars>
