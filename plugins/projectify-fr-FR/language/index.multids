@@ -2,18 +2,18 @@ title: $:/language/projectify/
 
 AddProject/Caption: Ajouter un projet
 AddProject/Hint: Créer un nouveau projet
-AddCategory/Caption: Ajouter un catégorie
-AddCategory/Hint: Créer un nouveau catégorie
+AddCategory/Caption: Ajouter une catégorie
+AddCategory/Hint: Créer une nouvelle catégorie
 AddSubTasks/Caption: Ajouter des sous-tâches
 AddToInbox/Hint: Appuyer sur <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> pour ajouter depuis n'importe où.
 AddToInbox/Placeholder: Ajouter à la boîte de réception...
 AddTodo/Caption: Ajouter une tâche
 AddTodo/Hint: Ajouter une nouvelle tâche au projet
 AddTodoToProject/Placeholder: Décrivez cette tâche...
-AllClear: Tout est clair!
+AllClear: Tout est clair !
 Archive: Archive
 ArchiveProject/Caption: Archiver ce project
-ArchiveProject/Hint: Supprimer ce project de la liste des projets actifs
+ArchiveProject/Hint: Supprimer ce projet de la liste des projets actifs
 Cancel/Caption: Annuler
 CardOptions/Hint: Options de la carte
 Clear: Effacer
@@ -28,7 +28,7 @@ DefaultDashboardTab: Onglet par défaut dans le tableau de bord
 DragTodoTip: Glissez & déposez un tiddler ci-dessous pour ajouter une tâche à ce projet.
 EditCategories: Personnaliser les catégories
 FilterProjects: Filter les projets
-Help: Besoin d'aide?
+Help: Besoin d'aide ?
 HelpSearch/Placeholder: Rechercher...
 HideArchived/Caption: Masquer les projets archivés
 HideCompleted/Caption: Masquer les tâches terminées
@@ -46,16 +46,16 @@ Options/Hint: Options
 Or: ou
 Overdue: En retard
 Priority/Hint: Priorité
-ProjectArchived: Ce project est archivé.
+ProjectArchived: Ce projet est archivé.
 Projects: Projets
 QuickAddTodo: Ajout rapide d'une tâche
 QuickCapture/Hint: Appuyer sur <kbd>⏎</kbd> pour capturer.
 ReorderProjects/Hint: Glisser & déposer les éléments de la liste pour réordonner les projets
-RestoreProject: Restaurer le project
+RestoreProject: Restaurer le projet
 Save/Caption: Sauvegarder
 Schedule/Caption: Planifier
-SetCategory/Caption: Définir le catégorie
-SetCategory/Hint: Sélectionnez un categorie pour ce projet
+SetCategory/Caption: Définir la catégorie
+SetCategory/Hint: Sélectionnez une categorie pour ce projet
 ShowArchived/Caption: Afficher les projets archivés
 Tip: Astuce
 Today: Aujourd'hui
