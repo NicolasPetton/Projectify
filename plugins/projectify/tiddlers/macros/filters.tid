@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210118092320388
+modified: 20210121101721514
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -7,111 +7,111 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 
 \define py-archived-projects()
-[!has[draft.of]tag[Project]!title[Inbox]tag[done]sort[title]]
+[all[tiddlers]tag[Project]!has[draft.of]!title[Inbox]tag[done]sort[title]]
 \end
 
 \define py-active-projects()
-[!has[draft.of]tag[Project]!title[Inbox]!tag[done]]
+[all[tiddlers]tag[Project]!has[draft.of]!title[Inbox]!tag[done]]
 \end
 
 \define py-all-projects-and-subprojects()
-[tag[Project]] [tag[SubProject]]
+[all[tiddlers]tag[Project]] [all[tiddlers]tag[SubProject]]
 \end
 
 \define py-all-categories()
-[tag[$:/plugins/nico/projectify/tags/Category]sort[title]]
+[all[tiddlers]tag[$:/plugins/nico/projectify/tags/Category]sort[title]]
 \end
 
 \define py-has-scheduled-todos-in-projects()
-[!has[draft.of]tag[todo]!tag[done]has[due]limit[1]]
+[all[tiddlers]tag[todo]!tag[done]!has[draft.of]has[due]limit[1]]
 \end
 
 \define py-has-active-projects()
-[!has[draft.of]tag[Project]!tag[done]limit[1]]
+[all[tiddlers]tag[Project]!has[draft.of]!tag[done]limit[1]]
 \end
 
 \define py-has-archived-projects()
-[tag[Project]!title[Inbox]tag[done]limit[1]]
+[all[tiddlers]tag[Project]!title[Inbox]tag[done]limit[1]]
 \end
 
 \define py-has-projects()
-[tag[Project]!title[Inbox]limit[1]]
+[all[tiddlers]tag[Project]!title[Inbox]limit[1]]
 \end
 
 \define py-is-project()
-[all[current]tag[Project]] [all[current]tag[SubProject]]
+[all[tiddlers]all[current]tag[Project]] [all[current]tag[SubProject]]
 \end
 
 \define py-is-not-subproject()
-[all[current]!tag[SubProject]]
+[all[tiddlers]all[current]!tag[SubProject]]
 \end
 
 \define py-is-empty-project()
-[!has[draft.of]tag{!!title}tag[todo]limit[1]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]limit[1]]
 \end
 
 \define py-has-todos()
-[!has[draft.of]tag{!!title}tag[todo]limit[1]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]limit[1]]
 \end
 
 \define py-has-open-todos()
-[!has[draft.of]tag{!!title}tag[todo]!tag[done]limit[1]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]!tag[done]limit[1]]
 \end
 
 \define py-has-no-open-todo()
-[!has[draft.of]tag{!!title}tag[todo]!tag[done]count[]match[0]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]!tag[done]count[]match[0]]
 \end
 
 \define py-has-scheduled-todos()
-[!has[draft.of]tag{!!title}tag[todo]!tag[done]has[due]limit[1]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]!tag[done]has[due]limit[1]]
 \end
 
 \define py-has-unscheduled-todos()
-[!has[draft.of]tag{!!title}tag[todo]!tag[done]!has[due]limit[1]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]!tag[done]!has[due]limit[1]]
 \end
 
 \define py-has-completed-todos()
-[!has[draft.of]tag{!!title}tag[todo]tag[done]limit[1]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]tag[done]limit[1]]
 \end
 
 \define py-next-open-todo()
-[!has[daft.of]tag{!!title}tag[todo]!tag[done]limit[1]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]!tag[done]limit[1]]
 \end
 
 \define py-open-todos()
-[tag{!!title}tag[todo]!has[draft.of]!tag[done]]
+[all[tiddlers]tag{!!title}tag[todo]!has[draft.of]!tag[done]]
 \end
 
 \define py-completed-todos()
-[!has[draft.of]tag{!!title}tag[done]sort[created]]
+[all[tiddlers]tag{!!title}tag[done]!has[draft.of]sort[created]]
 \end
 
 \define py-todos-due-today()
-[!has[draft.of]!tag[done]tag[todo]days:due[0]!nsort[priority]]
+[all[tiddlers]!tag[done]tag[todo]!has[draft.of]days:due[0]!nsort[priority]]
 \end
 
 \define py-todos-overdue()
-[!has[draft.of]!tag[done]tag[todo]!days:due[-1]sort[due]]
+[all[tiddlers]!tag[done]tag[todo]!has[draft.of]!days:due[-1]sort[due]]
 \end
 
 \define py-todos-due-today-or-overdue()
-[days:due[0]] [!days:due[-1]] +[!has[draft.of]!tag[done]tag[todo]sort[due]]
+[all[tiddlers]days:due[0]] [all[tiddlers]!days:due[-1]] +[!has[draft.of]!tag[done]tag[todo]sort[due]]
 \end
 
 \define py-upcoming-due-dates()
-[tag[todo]!has[draft.of]!tag[done]has[due]sort[due]eachday[due]] -[!days:due[-1]]
+[all[tiddlers]tag[todo]!has[draft.of]!tag[done]has[due]sort[due]eachday[due]] -[!days:due[-1]]
 \end
 
 \define py-todos-due-on()
-[!has[draft.of]!tag[done]tag[todo]sameday:due<day>!nsort[priority]]
+[all[tiddlers]!tag[done]tag[todo]!has[draft.of]sameday:due<day>!nsort[priority]]
 \end
 
 \define py-has-overdue-todos()
-[!has[draft.of]!tag[done]tag[todo]!days:due[-1]limit[1]]
+[all[tiddlers]!tag[done]tag[todo]!has[draft.of]!days:due[-1]limit[1]]
 \end
 
 \define py-has-todos-due-today-or-overdue()
-[days:due[0]] [!days:due[-1]] +[!has[draft.of]!tag[done]tag[todo]limit[1]]
+[all[tiddlers]days:due[0]] [all[tiddlers]!days:due[-1]] +[!has[draft.of]!tag[done]tag[todo]limit[1]]
 \end
 
 \define py-is-todo()
@@ -127,7 +127,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-is-overdue()
-[all[current]!has[draft.of]!tag[done]!days:due[-1]]
+[all[current]!tag[done]!has[draft.of]!days:due[-1]]
 \end
 
 \define py-is-due-today()
