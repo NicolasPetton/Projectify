@@ -1,0 +1,20 @@
+created: 20210121181105314
+modified: 20210121181112691
+tags: $:/tags/Stylesheet
+title: $:/plugins/nico/projectify/styles/quick-capture
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+[data-tiddler-title^="$:/plugins/nico/projectify/QuickCapture"] .tc-title,
+[data-tiddler-title^="$:/plugins/nico/projectify/QuickCapture"] .tc-subtitle {
+  display: none;
+}
+
+[data-tiddler-title^="$:/plugins/nico/projectify/QuickCapture"] svg {
+  fill: <<colour primary>>;
+  vertical-align: middle;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 6px;
+}
