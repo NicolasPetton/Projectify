@@ -44,6 +44,7 @@ NextWeek: La semaine prochaine
 OpenTasks: tâches ouvertes
 Options/Hint: Options
 Or: ou
+OtherTasks: Autres tâches
 Overdue: En retard
 Priority/Hint: Priorité
 ProjectArchived: Ce projet est archivé.
@@ -55,6 +56,7 @@ ReorderProjects/Caption: Réordonner les projets
 RestoreProject: Restaurer le projet
 Save/Caption: Sauvegarder
 Schedule/Caption: Planifier
+Scheduled: Planifié
 SetCategory/Caption: Définir la catégorie
 SetCategory/Hint: Sélectionnez une categorie pour ce projet
 ShowArchived/Caption: Afficher les projets archivés

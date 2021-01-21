@@ -1,8 +1,10 @@
 created: 20201202200514984
-modified: 20210102214208997
+modified: 20210121214546784
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/todo-list
 type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/projectify/
 
 \define project-refile-actions()
 <!-- Macro similar to the todo-list drop actions, but used in project lists/cards -->
@@ -46,12 +48,12 @@ type: text/vnd.tiddlywiki
     <$transclude tiddler=<<__emptyTemplate__>>/>
   </$list>
   <$list filter=<<py-has-scheduled-todos>> variable="ignore">
-    <label class="py-label">Scheduled</label>
+    <label class="py-label"><<lingo Scheduled>></label>
     <$macrocall $name="todo-list-filtered" subFilter=<<py-scheduled-todos-subfilter>>/>
   </$list>
   <$list filter=<<py-has-unscheduled-todos>> variable="ignore">
     <$list filter=<<py-has-scheduled-todos>>>
-      <label class="py-label">Other tasks</label>
+      <label class="py-label"><<lingo OtherTasks>></label>
     </$list>
   </$list>
   <$macrocall $name="todo-list-filtered" subFilter=<<py-unscheduled-todos-subfilter>>/>

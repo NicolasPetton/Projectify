@@ -44,6 +44,7 @@ NextWeek: Volgende week
 OpenTasks: Openstaande taken
 Options/Hint: Opties
 Or: of
+OtherTasks: Andere taken
 Overdue: Over tijd
 Priority/Hint: Prioriteit
 ProjectArchived: Dit project is gearchiveerd.
@@ -55,6 +56,7 @@ ReorderProjects/Caption: Herschik projecten
 RestoreProject: Herstel project
 Save/Caption: Opslaan
 Schedule/Caption: Plan in
+Scheduled: Gepland
 ShowArchived/Caption: Show archived
 ShowWelcomeMessages: Toon welkomstberichten
 Tip: Tip
