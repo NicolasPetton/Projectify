@@ -58,6 +58,7 @@ Schedule/Caption: Schedule
 SetCategory/Caption: Set category
 SetCategory/Hint: Select a category for this project
 ShowArchived/Caption: Show archived
+ShowWelcomeMessages: Show welcome messages
 Tip: Tip
 Today: Today
 TodayAndOverdue: Today and overdue

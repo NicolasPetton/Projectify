@@ -1,11 +1,13 @@
 created: 20201220164609463
-modified: 20210112205549558
+modified: 20210121213043396
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyProjects
 type: text/vnd.tiddlywiki
 
-<div class="py-welcome">
-  <div class="icon">{{$:/plugins/nico/projectify/images/compass}}</div>
-  <h3>{{$:/language/projectify/EmptyProjectsTitle}}</h3>
-  {{$:/language/projectify/EmptyProjectsDescription}}
-</div>
+<$reveal type="match" state="$:/config/projectify/ShowWelcomeMessages" text="yes">
+  <div class="py-welcome">
+    <div class="icon">{{$:/plugins/nico/projectify/images/compass}}</div>
+    <h3>{{$:/language/projectify/EmptyProjectsTitle}}</h3>
+    {{$:/language/projectify/EmptyProjectsDescription}}
+  </div>
+</$reveal>

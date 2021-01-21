@@ -1,0 +1,19 @@
+created: 20210121211818576
+modified: 20210121212645277
+tags: $:/plugins/nico/projectify/tags/Config
+title: $:/plugins/nico/projectify/ui/config/Basics
+list-before: $:/plugins/nico/projectify/ui/config/Dashboard
+type: text/vnd.tiddlywiki
+caption: {{$:/language/ControlPanel/Basics/Caption}}
+
+\define lingo-base() $:/language/projectify/
+
+\define select-show-welcome-messages()
+<$select tiddler="$:/config/projectify/ShowWelcomeMessages">
+  <option value="yes">{{$:/language/Yes}}</option>
+  <option value="no">{{$:/language/No}}</option>
+</$select>
+\end
+
+|<<lingo ShowWelcomeMessages>> |<<select-show-welcome-messages>> |
+

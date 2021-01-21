@@ -1,12 +1,13 @@
 created: 20201228214016943
-modified: 20201228214225224
+modified: 20210121213113867
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/HelpWelcome
 type: text/vnd.tiddlywiki
 
-<div class="py-welcome">
-  <div class="icon">{{$:/plugins/nico/projectify/images/waving-hand}}</div>
-  <h3>Help & documentation</h3>
-  <p>Getting started, guides, customization, etc.</p>
-</div>
-
+<$reveal type="match" state="$:/config/projectify/ShowWelcomeMessages" text="yes">
+  <div class="py-welcome">
+    <div class="icon">{{$:/plugins/nico/projectify/images/waving-hand}}</div>
+    <h3>Help & documentation</h3>
+    <p>Getting started, guides, customization, etc.</p>
+  </div>
+</$reveal>

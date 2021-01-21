@@ -58,6 +58,7 @@ Schedule/Caption: Planifier
 SetCategory/Caption: Définir la catégorie
 SetCategory/Hint: Sélectionnez une categorie pour ce projet
 ShowArchived/Caption: Afficher les projets archivés
+ShowWelcomeMessages: Afficher les messages d'accueil
 Tip: Astuce
 Today: Aujourd'hui
 TodayAndOverdue: Aujourd'hui et en retard

@@ -1,11 +1,13 @@
 created: 20210109205838748
-modified: 20210112205157492
+modified: 20210121213035107
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyNextActions
 type: text/vnd.tiddlywiki
 
-<div class="py-welcome">
-  <div class="icon">{{$:/plugins/nico/projectify/images/palmtree}}</div>
-  <h3>{{$:/language/projectify/EmptyInboxDescription}}</h3>
-  {{$:/language/projectify/EmptyNextActionsDescription}}
-</div>
+<$reveal type="match" state="$:/config/projectify/ShowWelcomeMessages" text="yes">
+  <div class="py-welcome">
+    <div class="icon">{{$:/plugins/nico/projectify/images/palmtree}}</div>
+    <h3>{{$:/language/projectify/EmptyInboxDescription}}</h3>
+    {{$:/language/projectify/EmptyNextActionsDescription}}
+  </div>
+</$reveal>

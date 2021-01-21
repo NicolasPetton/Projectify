@@ -1,5 +1,5 @@
 created: 20201208175952867
-modified: 20210112204614106
+modified: 20210121213009835
 tags: 
 title: $:/plugins/nico/projectify/ui/welcome/EmptyInbox
 type: text/vnd.tiddlywiki
@@ -12,16 +12,18 @@ type: text/vnd.tiddlywiki
   </div>
 \end
 
-<$droppable actions=<<project-refile-actions>>>
-  <$list
-    filter=<<py-is-empty-project>>
-    emptyMessage=<<emptyWelcomeMessage>>
-    variable="ignore">
+<$reveal type="match" state="$:/config/projectify/ShowWelcomeMessages" text="yes">
+  <$droppable actions=<<project-refile-actions>>>
+    <$list
+      filter=<<py-is-empty-project>>
+      emptyMessage=<<emptyWelcomeMessage>>
+      variable="ignore">
 
-    <div class="py-welcome">
-      <div class="icon">{{$:/plugins/nico/projectify/images/tada}}</div>
-      <h3>{{$:/language/projectify/EmptyInboxTitle}}</h3>
-      {{$:/language/projectify/EmptyInboxDescription}}
-    </div>
-  </$list>
-</$droppable>
+      <div class="py-welcome">
+	<div class="icon">{{$:/plugins/nico/projectify/images/tada}}</div>
+	<h3>{{$:/language/projectify/EmptyInboxTitle}}</h3>
+	{{$:/language/projectify/EmptyInboxDescription}}
+      </div>
+    </$list>
+  </$droppable>
+</$reveal>
