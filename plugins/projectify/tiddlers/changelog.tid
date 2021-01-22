@@ -20,6 +20,7 @@ type: text/vnd.tiddlywiki
 
 * Fix several translation issues
 * If a project has no category, do not render it in the project card
+* Fix the position of the count tag in the Today dashboard tab
 
 ! Release 0.11.0
 

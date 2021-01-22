@@ -97,6 +97,7 @@ type: text/vnd.tiddlywiki
   font-size: 10px;
   padding: 4px;
   min-width: 18px;
+  margin-top: -0.5rem;
 }
 
 .py-pill-container {
