@@ -166,9 +166,9 @@ type: text/vnd.tiddlywiki
 
 .py-tabs.tc-tab-buttons button {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.2em;
   border: 0;
-  padding: 5px 10px;
+  padding: .6em .8em .4em .8em;
   background: transparent;
   cursor: pointer;
   color: <<colour tiddler-title-foreground>>;
