@@ -29,6 +29,11 @@ type: text/vnd.tiddlywiki
   border-radius: 8px;
 }
 
+.py-cards .tc-dragover .py-card-wrapper .py-card {
+  background: rgba(0,125,255,.3);
+  box-shadow: 0 0 0 4px rgba(0,125,255,.3);
+}
+
 .py-card {
   position: relative;
   display: flex;
