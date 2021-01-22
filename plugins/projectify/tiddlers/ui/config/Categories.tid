@@ -1,5 +1,5 @@
 created: 20210114221324413
-modified: 20210119111151083
+modified: 20210122102933541
 tags: $:/plugins/nico/projectify/tags/Config
 title: $:/plugins/nico/projectify/ui/config/Categories
 list-after: $:/plugins/nico/projectify/ui/config/Dashboard
@@ -12,7 +12,7 @@ caption: {{$:/language/projectify/Categories}}
 <tr>
   <td>{{||$:/plugins/nico/projectify/ui/category/Category}}</td>
   <td>
-    <$list filter={{$:/plugins/nico/projectify/config/DefaultCategoryColours}} variable="colour">
+    <$list filter={{$:/config/projectify/DefaultCategoryColours}} variable="colour">
       <$button class="tc-btn-invisible">
 	{{$:/plugins/nico/projectify/ui/category/CategoryPill}}
 	<$action-setfield $field="color" $value=<<colour>>/>
@@ -55,7 +55,7 @@ caption: {{$:/language/projectify/Categories}}
       <td><<lingo Colour/Heading>></td>
       <td>
 	<$edit-text
-	  tiddler="$:/plugins/nico/projectify/config/DefaultCategoryColours"
+	  tiddler="$:/config/projectify/DefaultCategoryColours"
 	  field="text"
 	  tag="input"
 	/>
