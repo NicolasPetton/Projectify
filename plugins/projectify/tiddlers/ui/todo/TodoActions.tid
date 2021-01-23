@@ -1,12 +1,12 @@
 created: 20200422200123438
-modified: 20210110183105666
+modified: 20210123144643887
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoActions
 type: text/vnd.tiddlywiki
 
 <span class="py-todo-actions">
   <$list filter="[<showProjectLinks>!is[blank]]" variable="ignore">
-    <$list filter="[all[current]tags[]filter<py-all-projects-and-subprojects>]">
+    <$list filter="[all[current]tags[]filter<py-all-projects-and-subprojects-filter>]">
       <$link to={{!!title}} overrideClass="py-project-link"/>
     </$list>
   </$list>

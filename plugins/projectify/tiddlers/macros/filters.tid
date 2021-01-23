@@ -14,10 +14,6 @@ type: text/vnd.tiddlywiki
 [all[tiddlers]tag[Project]!has[draft.of]!title[Inbox]!tag[done]]
 \end
 
-\define py-all-projects-and-subprojects()
-[all[tiddlers]tag[Project]] [all[tiddlers]tag[SubProject]]
-\end
-
 \define py-all-categories()
 [all[tiddlers]tag[$:/plugins/nico/projectify/tags/Category]sort[title]]
 \end
@@ -172,6 +168,10 @@ tag[todo]!has[draft.of]!tag[done]has[due]sort[due]
 
 \define py-is-active-subfilter()
 !tag[done]
+\end
+
+\define py-all-projects-and-subprojects-filter()
+[tag[Project]] [tag[SubProject]]
 \end
 
 \define todo-list-drop-tags()
