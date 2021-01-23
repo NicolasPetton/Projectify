@@ -80,7 +80,12 @@ input.py-input:focus {
 
 }
 
-input.py-input.input-large {
+input.py-input.input-larger {
+  width: 450px;
+  max-width: 100%;
+}
+
+Input.py-input.input-large {
   width: 100%;
   padding: .5em 1em;
   font-size: 1.1em;
