@@ -27,6 +27,7 @@ type: text/vnd.tiddlywiki
   /* Default background-color */
   background-color: rgba(255,255,0,.15);
   border-radius: 8px;
+  transition: box-shadow ease-in .14s;
 }
 
 .py-cards .tc-dragover .py-card-wrapper .py-card {
@@ -48,7 +49,7 @@ type: text/vnd.tiddlywiki
   font-size: .9em;
 }
 
-.py-card:hover {
+.py-card-wrapper:hover {
   box-shadow: 0 0 0 4px rgba(0,125,255,.3);
 }
 
