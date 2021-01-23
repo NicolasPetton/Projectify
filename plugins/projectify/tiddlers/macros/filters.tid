@@ -1,5 +1,5 @@
 created: 20201202200514984
-modified: 20210121210535924
+modified: 20210123202945886
 tags: $:/tags/Macro
 title: $:/plugins/nico/projectify/macros/filters
 type: text/vnd.tiddlywiki
@@ -76,6 +76,10 @@ type: text/vnd.tiddlywiki
 
 \define py-next-open-todo()
 [all[tiddlers]tag{!!title}tag[todo]!has[draft.of]!tag[done]limit[1]]
+\end
+
+\define py-filtered-todos()
+[all[tiddlers]tag[todo]subfilter<todoFilter>sort[title]]
 \end
 
 \define py-open-todos()

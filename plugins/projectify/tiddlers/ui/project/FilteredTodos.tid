@@ -1,0 +1,14 @@
+created: 20210122215039550
+modified: 20210123140740864
+tags: 
+title: $:/plugins/nico/projectify/ui/project/FilteredTodos
+type: text/vnd.tiddlywiki
+
+<$list filter=<<py-has-filtered-todos>> variable="ignore">
+  <dt class="py-project">
+    <$link to={{!!title}}><$view field="title"/></$link> {{||$:/plugins/nico/projectify/images/pie}}
+  </dt>
+  <dd>
+    <$list filter=<<py-filtered-todos>> template="$:/plugins/nico/projectify/ui/todo/TodoItem"></$list>
+  </dd>
+</$list>

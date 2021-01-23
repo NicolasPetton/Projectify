@@ -1,0 +1,44 @@
+created: 20210122212615059
+modified: 20210123152400707
+caption: {{$:/plugins/nico/projectify/images/funnel}} {{$:/language/Search/Filter/Caption}}
+list-after: $:/plugins/nico/projectify/ui/NextActions
+tags: $:/plugins/nico/projectify/tags/dashboard
+title: $:/plugins/nico/projectify/ui/Everything
+type: text/vnd.tiddlywiki
+
+{{$:/language/Search/Filter/Hint}}
+
+<$vars stateTiddler="$:/state/projectify/todo-filter">
+  <$edit-text class="py-input input-larger" tiddler=<<stateTiddler>> field="filter"/>
+  <$vars popupTiddler=<<qualify "$:/state/projectify/todo-filter-dropdown">>
+	 todoFilter={{$:/state/projectify/todo-filter!!filter}}
+	 showProjectLinks="yes">
+    <span class="tc-popup-keep">
+      <$button popup=<<popupTiddler>> class="tc-btn-invisible">
+	{{$:/core/images/down-arrow}}
+      </$button>
+    </span>
+
+    <$reveal state=<<popupTiddler>> type="popup" position="belowleft">
+      <div class="tc-drop-down py-drop-down">
+	<$button class="tc-btn-invisible">
+	  Outstanding
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  Scheduled
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]has[due]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  Completed
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[tag[done]]"/>
+	</$button>
+      </div>
+    </$reveal>
+
+    <dl>
+      <$count filter=<<py-filtered-todos>>/> {{$:/language/Search/Filter/Matches}}
+      <$list filter=<<py-filtered-todos>> template="$:/plugins/nico/projectify/ui/todo/TodoItem"></$list>
+    </dl>
+  </$vars>
+</$vars>
