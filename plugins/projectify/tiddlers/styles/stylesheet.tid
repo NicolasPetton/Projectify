@@ -176,13 +176,14 @@ type: text/vnd.tiddlywiki
 
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .py-tabs.tc-tab-buttons button {
-    font-size: 1.1em;
-    padding: 5px;
+    font-size: .8em;
+    padding: 8px;
   }
 
   .py-tabs.tc-tab-buttons button svg {
     display: block;
-    font-size: 16px;
+    width: 1.5rem;
+    height: 1.5rem;
     margin: 0 auto 6px auto;
   }
 }
