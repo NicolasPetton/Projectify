@@ -10,11 +10,15 @@ type: text/vnd.tiddlywiki
 !! Features
 
 * Add a configuration option to hide welcome messages
+* New filter tab in the dashboard
+* New icons for projects and next actions
 
 !! Improvements
 
 * Improve the rendering of the QuickCapture tiddler
 * Add a dragover style to project cards
+* Improved the layout of the dashboard tabs on mobile
+* New CSS transition on project card mouseover
 
 !! Fixes
 
