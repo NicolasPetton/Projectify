@@ -1,0 +1,77 @@
+title: $:/language/projectify/
+
+AddProject/Caption: 新增项目
+AddProject/Hint: 创建新的项目
+AddCategory/Caption: 添加类别
+AddCategory/Hint: 创建新的类别
+AddSubTasks/Caption: 添加子任务
+AddToInbox/Hint: 按 <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> 在页面内随时捕获。
+AddToInbox/Placeholder: 添加到收件箱...
+AddTodo/Caption: 添加一个待办事项
+AddTodo/Hint: 添加一个新的待办事项到此项目中
+AddTodoToProject/Placeholder: 为此任务添加描述...
+AllClear: 大功告成！
+Archive: 归档
+ArchiveProject/Caption: 归档项目
+ArchiveProject/Hint: 从活动项目列表中删除此项目
+Cancel/Caption: 取消
+CardOptions/Hint: 卡片选项
+Clear: 清除
+Close/Caption: 关闭
+Completed/Caption: 已完成
+ConvertIntoProject: 转换为项目
+Category: 类别
+Categories: 所有类别
+Dashboard: 仪表盘
+DateFormat: mmmDD日 DDD 
+DefaultDashboardTab: 仪表盘默认选项卡
+DragTodoTip: 通过拖放下面的任何Tddler，可将其作为任务添加到此项目中。
+EditCategories: 编辑类别
+FilterProjects: 过滤项目
+Help: 需要帮助？
+HelpSearch/Placeholder: 搜索...
+HideArchived/Caption: 隐藏已归档
+HideCompleted/Caption: 隐藏已完成
+Inbox: 收件箱
+More: 更多
+MoreActions/Hint: 更多动作
+NewProject: 创建新的项目
+NewProjectCategory: 类别 (可选的)
+NewProjectDescription: 描述 (可选的)
+NewProjectTitle: 标题
+Next: 随后
+NextWeek: 下周
+OpenTasks: 打开任务
+Options/Hint: 选项
+Or: 或
+OtherTasks: 其他任务
+Overdue: 逾期
+Priority/Hint: 优先级
+ProjectArchived: 此项目已归档。
+Projects: 所有项目
+QuickAddTodo: 快速添加待办事项
+QuickCapture/Hint: 按 <kbd>⏎</kbd> 进行捕获。
+ReorderProjects/Hint: 拖放列表中的项目以重新排序项目
+ReorderProjects/Caption: 重新排序项目
+RestoreProject: 恢复项目
+Save/Caption: 保存
+Schedule/Caption: 日程安排
+Scheduled: 已安排
+SetCategory/Caption: 设置类别
+SetCategory/Hint: 为该项目选择一个类别
+ShowArchived/Caption: 显示已归档事项
+ShowWelcomeMessages: 显示欢迎消息
+Tip: 提示
+Today: 今天
+TodayAndOverdue: 今天及逾期
+TodaysTodos: 我的一天
+TodoActions/Hint: 动作
+Todos: 待办事项
+Tomorrow: 明天
+Upcoming: 即将到来
+ViewAsCards: 以卡片形式查看
+ViewAsList: 以列表形式查看
+ViewProjectsAs: 更改项目查看形式
+Yesterday: 昨天
+cards: 卡片
+list: 列表

@@ -1,0 +1,10 @@
+{
+    "title": "$:/plugins/nico/projectify-zh-Hans",
+    "name": "projectify-zh-Hans",
+    "plugin-type": "plugin",
+    "description": "Projectify Chinese (Simplified)",
+	"parent-plugin": "$:/plugins/nico/projectify",
+    "author": "Hue<huetyan@pm.me>",
+    "version": "0.12.0",
+    "core-version": ">=5.1.22"  
+}

@@ -1,0 +1,8 @@
+title: $:/language/projectify/WelcomeInboxDescription
+created: 20210112203922871
+modified: 20210112204214632
+
+<p>把任务收集在收件箱里，这样你就不会忘记它们，然后迅速把它们
+  从你的脑海中抹去！</p>
+<p>你也可以通过按 <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> 在页面内
+  随时捕获。</p>
