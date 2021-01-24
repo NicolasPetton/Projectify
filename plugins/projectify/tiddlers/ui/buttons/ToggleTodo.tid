@@ -1,9 +1,10 @@
 created: 20200420105800700
-modified: 20210108091202783
+modified: 20210124162928585
 tags: $:/tags/ViewToolbar
 title: $:/plugins/nico/projectify/ui/buttons/ToggleTodo
 caption: {{||$:/plugins/nico/projectify/ui/buttons/Checkbox}} Toggle todo
 description: Projectify -- Toggle the state of the current todo tiddler
+list-before: $:/core/ui/Buttons/close
 type: text/vnd.tiddlywiki
 
 \define save-actions()
