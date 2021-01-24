@@ -1,5 +1,5 @@
 created: 20210112221205605
-modified: 20210119210930260
+modified: 20210124215059681
 tags: 
 title: Readme
 type: text/vnd.tiddlywiki
@@ -18,7 +18,7 @@ For all changes in the latest {{$:/plugins/nico/projectify!!version}} release, s
 
 !! Demo
 
-A demo is available at [[projectify.wki|https://projectify.wiki]].
+A demo is available at [[projectify.wiki|https://projectify.wiki]].
 
 !! Getting started
 
