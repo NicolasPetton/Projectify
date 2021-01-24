@@ -100,6 +100,9 @@ Input.py-input.input-large {
   color: <<colour muted-foreground>>;
   cursor: pointer;
   transition: all ease-in .2s;
+}
+
+.py-todo .py-checkbox {
   margin-right: 3px;
 }
 

@@ -32,8 +32,15 @@ type: text/vnd.tiddlywiki
 }
 
 .tc-titlebar .py-checkbox svg {
-  width: 22pt;
-  height: 22pt;
+  width: 26px;
+  height: 26px;
+  fill: <<colour tiddler-controls-foreground>>;
+}
+
+.tc-titlebar .py-checkbox .done svg {
+  width: 26px;
+  height: 26px;
+  fill: #2da562;
 }
 
 .py-reorder-projects:not([hidden]) {
