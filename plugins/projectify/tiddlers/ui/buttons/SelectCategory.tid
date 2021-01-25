@@ -1,5 +1,5 @@
 created: 20210116205450353
-modified: 20210121182141462
+modified: 20210125211734424
 title: $:/plugins/nico/projectify/ui/buttons/SelectCategory
 type: text/vnd.tiddlywiki
 
@@ -21,7 +21,7 @@ type: text/vnd.tiddlywiki
     </$reveal>
   </$button>
 
-  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down">
+  <$reveal state=<<popupTiddler>> type="popup" position="below" animate="yes" class="tc-drop-down py-drop-down">
     <$list filter=<<py-all-categories>> variable="category">
       <$button class="tc-btn-invisible">
 	<$tiddler tiddler=<<category>>>
@@ -34,6 +34,7 @@ type: text/vnd.tiddlywiki
       {{$:/plugins/nico/projectify/images/slash-circle}} <<lingo Clear>>
       <$action-deletefield $field="category"/>
     </$button>
+    <hr/>
     <$link to="$:/plugins/nico/projectify/ui/config/Categories">
       <<lingo EditCategories>>
     </$link>
