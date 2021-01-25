@@ -125,7 +125,7 @@ type: text/vnd.tiddlywiki
 
 .py-todo-heading .py-btn {
   font-size: .9em;
-  padding: .2em .8em;
+  padding: .3em .9em;
 }
 
 .py-todo-actions .py-btn,
