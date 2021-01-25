@@ -7,6 +7,10 @@ type: text/vnd.tiddlywiki
 
 ! Master
 
+!! Features
+
+* New Simplified Chinese translation plugin
+
 !! Improvements
 
 * Improve the rendering of the checkbox in the titlebar
