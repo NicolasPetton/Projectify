@@ -17,6 +17,7 @@ type: text/vnd.tiddlywiki
 * Render the checkbox button before the close button in the titlebar
 * Improve the category selection dropdown
 * When using the Relink plugin, automatically relink project categories
+* Add links to category tiddlers in the control panel
 
 ! Release 0.12.0
 

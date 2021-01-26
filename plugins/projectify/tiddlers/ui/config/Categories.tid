@@ -1,5 +1,5 @@
 created: 20210114221324413
-modified: 20210122102933541
+modified: 20210126095312829
 tags: $:/plugins/nico/projectify/tags/Config
 title: $:/plugins/nico/projectify/ui/config/Categories
 list-after: $:/plugins/nico/projectify/ui/config/Dashboard
@@ -10,7 +10,7 @@ caption: {{$:/language/projectify/Categories}}
 
 \define category-editor()
 <tr>
-  <td>{{||$:/plugins/nico/projectify/ui/category/Category}}</td>
+  <td><$link to=<<currentTiddler>>>{{||$:/plugins/nico/projectify/ui/category/Category}}</$link></td>
   <td>
     <$list filter={{$:/config/projectify/DefaultCategoryColours}} variable="colour">
       <$button class="tc-btn-invisible">
