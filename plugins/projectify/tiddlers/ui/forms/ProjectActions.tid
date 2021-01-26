@@ -1,5 +1,5 @@
 created: 20201207165347344
-modified: 20210112182029134
+modified: 20210126114718817
 title: $:/plugins/nico/projectify/ui/forms/ProjectActions
 type: text/vnd.tiddlywiki
 
@@ -16,7 +16,7 @@ type: text/vnd.tiddlywiki
   <$action-sendmessage $message="tm-auto-save-wiki"/>
 \end
 
-<$vars stateTiddler={{{ [{!!title}addprefix[$:/state/projectify/form-]] }}}
+<$vars stateTiddler=<<qualify "$:/temp/projectify/todo-form">>
        save-actions=<<project-add-todo-actions>>>
   <div class="py-actions">
     

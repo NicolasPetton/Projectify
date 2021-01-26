@@ -1,12 +1,12 @@
 created: 20201212172804699
-modified: 20210112180542104
+modified: 20210126114927680
 title: $:/plugins/nico/projectify/ui/buttons/ToggleCompletedTodos
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
 <$list filter=<<py-has-completed-todos>> variable="ignore">
-  <$vars stateTiddler={{{ [{!!title}addprefix[$:/state/projectify/show-completed-]] }}}>
+  <$vars stateTiddler=<<qualify "$:/state/projectify/show-completed">>>
 
     <$reveal type="match" state=<<stateTiddler>> text="">
       <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="show">

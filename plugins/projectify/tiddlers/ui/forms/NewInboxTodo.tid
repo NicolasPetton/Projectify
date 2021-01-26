@@ -1,15 +1,15 @@
 created: 20201212173718479
-modified: 20210123141151490
+modified: 20210126114817704
 title: $:/plugins/nico/projectify/ui/forms/NewInboxTodo
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
 <$keyboard key="enter">
-  <$action-createtiddler $basetitle={{$:/state/projectify/Inbox!!todo_name}} tags="Inbox todo"/>
-  <$action-setfield $tiddler="$:/state/projectify/Inbox" todo_name=""/>
+  <$action-createtiddler $basetitle={{$:/temp/projectify/Inbox!!todo_name}} tags="Inbox todo"/>
+  <$action-setfield $tiddler="$:/temp/projectify/Inbox" todo_name=""/>
   <$edit-text
-    class="py-input input-larger" tiddler="$:/state/projectify/Inbox"
+    class="py-input input-larger" tiddler="$:/temp/projectify/Inbox"
     field="todo_name"
     placeholder={{$:/language/projectify/AddToInbox/Placeholder}}
     />
