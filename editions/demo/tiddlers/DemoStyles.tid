@@ -1,0 +1,21 @@
+created: 20210127203128930
+modified: 20210127203201218
+tags: $:/tags/Stylesheet
+title: DemoStyles
+type: text/vnd.tiddlywiki
+
+.download-link {
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+}
+
+.download-link svg {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+}
+
