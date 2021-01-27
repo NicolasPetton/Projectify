@@ -1,0 +1,10 @@
+{
+	"title": "$:/plugins/nico/projectify-de-DE",
+	"name": "Projectify-de-DE",
+	"plugin-type": "plugin",
+	"description": "Projectify Deutsch (German)",
+	"parent-plugin": "$:/plugins/nico/projectify",
+	"author": "Gregor Fischer",
+	"version": "0.12.0",
+	"core-version": ">=5.1.22"
+}
