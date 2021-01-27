@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20210114213504536
+modified: 20210127110519030
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -30,6 +30,11 @@ type: text/vnd.tiddlywiki
     <$link to={{!!title}}>{{||$:/plugins/nico/projectify/ui/todo/TodoCaption}}</$link>
     <$list filter=<<py-has-todos>> variable="ignore">
       {{||$:/plugins/nico/projectify/images/pie}}
+    </$list>
+    <$list filter="[all[current]!text[]]">
+      <span class="py-todo-text-icon">
+	{{$:/plugins/nico/projectify/images/file}}
+      </span>
     </$list>
   </$checkbox>
   

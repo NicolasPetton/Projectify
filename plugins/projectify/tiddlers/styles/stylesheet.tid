@@ -1,5 +1,5 @@
 created: 20200426194806637
-modified: 20210117210812225
+modified: 20210127111843916
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/stylesheet
 type: text/vnd.tiddlywiki
@@ -112,6 +112,11 @@ type: text/vnd.tiddlywiki
 .py-todo .py-project-link {
   font-size: .8em;
   color: #aaa;
+}
+
+.py-todo .py-todo-text-icon {
+  color: #999;
+  fill: #999;
 }
 
 .py-todo.py-completed a {
