@@ -1,5 +1,5 @@
 created: 20210112221205605
-modified: 20210127111927717
+modified: 20210127180032519
 tags: 
 title: Readme
 type: text/vnd.tiddlywiki
@@ -20,13 +20,30 @@ For all changes in the latest {{$:/plugins/nico/projectify!!version}} release, s
 
 A demo is available at [[projectify.wiki|https://projectify.wiki]].
 
-!! Getting started
+!! Download
 
 Download a pre-configured empty wiki:
 
-<a class="py-btn btn-primary" href="https://projectify.wiki/empty.html" download="empty.html">
-  Get Projectify
+<a class="py-btn btn-primary download-link" href="https://projectify.wiki/empty.html" download="empty.html">
+  Get Projectify {{$:/core/images/save-button}}
 </a>
+
+<style>
+.download-link {
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+}
+
+.download-link svg {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+}
+</style>
 
 Alternatively, see [[Installation|$:/plugins/nico/projectify/doc/Installation]] for installation instructions in an existing wiki.
 
