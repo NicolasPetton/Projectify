@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210127111302946
+modified: 20210127111414858
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -10,6 +10,7 @@ type: text/vnd.tiddlywiki
 !! Features
 
 * New Simplified Chinese translation plugin
+* New German translation plugin
 * New icon indicator in todo-lists for tasks that have content
 
 !! Improvements

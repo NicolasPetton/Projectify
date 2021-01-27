@@ -38,10 +38,11 @@ Alternatively, see [[Installation|$:/plugins/nico/projectify/doc/Installation]] 
 
 !! Language packs
 
-Projectify is currently available in English, Dutch, French & Simplified Chinese.
+Projectify is currently available in English, Dutch, German, French & Simplified Chinese.
 
 * For the French language pack, install [[$:/plugins/nico/projectify-fr-FR]].
 * For the Dutch language pack, install [[$:/plugins/nico/projectify-nl-NL]].
+* For the German language pack, install [[$:/plugins/nico/projectify-de-DE]].
 * For the Simplified Chinese language pack, install [[$:/plugins/nico/projectify-zh-Hans]].
 
 !! Contributors
@@ -53,3 +54,4 @@ Many thanks to the following contributors:
 * [[@Joebordes|https://github.com/joebordes]]
 * [[@Silvyn|https://github.com/silvyn]]
 * [[@HueLiu|https://github.com/HueLiu]]
+* [[@gregorfischer|https://github.com/gregorfischer]]
