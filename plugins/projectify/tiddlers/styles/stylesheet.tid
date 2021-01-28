@@ -101,6 +101,10 @@ type: text/vnd.tiddlywiki
   padding-left: 22px;
 }
 
+.py-todo .tc-tiddlylink:hover {
+  text-decoration: none;
+}
+
 .py-todo .py-todo-actions {
   float: right;
 }

@@ -1,5 +1,5 @@
 created: 20200422200123438
-modified: 20210127110519030
+modified: 20210128180310384
 tags:
 title: $:/plugins/nico/projectify/ui/todo/TodoItem
 type: text/vnd.tiddlywiki
@@ -21,22 +21,24 @@ type: text/vnd.tiddlywiki
   <$list filter="[<dragHandle>!is[blank]]" variable="ignore">
     <<drag-handle>>
   </$list>
-  
+
   <$checkbox tag="done" actions=<<save-actions>>>
     {{||$:/plugins/nico/projectify/ui/buttons/Checkbox}}
     <$reveal type="nomatch" state="!!priority" text="">
       {{||$:/plugins/nico/projectify/ui/buttons/TodoPriority}}
     </$reveal>
-    <$link to={{!!title}}>{{||$:/plugins/nico/projectify/ui/todo/TodoCaption}}</$link>
-    <$list filter=<<py-has-todos>> variable="ignore">
-      {{||$:/plugins/nico/projectify/images/pie}}
-    </$list>
-    <$list filter="[all[current]!text[]]">
-      <span class="py-todo-text-icon">
-	{{$:/plugins/nico/projectify/images/file}}
-      </span>
-    </$list>
+    <$link to={{!!title}}>
+      {{||$:/plugins/nico/projectify/ui/todo/TodoCaption}}
+      <$list filter=<<py-has-todos>> variable="ignore">
+	{{||$:/plugins/nico/projectify/images/pie}}
+      </$list>
+      <$list filter="[all[current]!text[]]">
+	<span class="py-todo-text-icon">
+	  {{$:/plugins/nico/projectify/images/file}}
+	</span>
+      </$list>
+    </$link>
   </$checkbox>
-  
+
   {{||$:/plugins/nico/projectify/ui/todo/TodoActions}}
 </div>
