@@ -1,41 +1,41 @@
 title: $:/language/projectify/
 
-AddProject/Caption: Erstelle Projekt
+AddProject/Caption: Projekt erstellen
 AddProject/Hint: Erstelle ein neues Projekt
-AddCategory/Caption: Erstelle Kategorie
+AddCategory/Caption: Kategorie erstellen
 AddCategory/Hint: Erstelle eine neue Kategorie
-AddSubTasks/Caption: Erstelle Unter-Aufgabe
+AddSubTasks/Caption: Teilaufgabe erstellen
 AddToInbox/Hint: Verwende <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> um die Erfassung zu starten.
-AddToInbox/Placeholder: Erstelle Aufgabe...
-AddTodo/Caption: Erstelle Aufgabe
+AddToInbox/Placeholder: Aufgabe erstellen ...
+AddTodo/Caption: Aufgabe erstellen
 AddTodo/Hint: Erstelle eine neue Aufgabe im Projekt 
-AddTodoToProject/Placeholder: Beschreibe die Aufgabe...
+AddTodoToProject/Placeholder: Aufgabenbeschreibung ...
 AllClear: Alles erledigt!
 Archive: Archiv
-ArchiveProject/Caption: Archiviere Projekt
+ArchiveProject/Caption: Projekt archivieren
 ArchiveProject/Hint: Projekt aus der Liste der aktiven Projekte entfernen
 Cancel/Caption: Abbrechen
-CardOptions/Hint: Card options
+CardOptions/Hint: Einstellungen
 Clear: Entfernen
 Close/Caption: Schließen
 Completed/Caption: Abgeschlossen
-ConvertIntoProject: Konvertiere zu Projekt
+ConvertIntoProject: Zu Projekt konvertieren
 Category: Kategorie
 Categories: Kategorien
 Dashboard: Dashboard
 DateFormat: DD. mmm
-DefaultDashboardTab: Standard Dashboard Tab
-DragTodoTip: Durch Drag & Drop beliebige Tiddler als Aufgabe zum Projekt hinzufügen.
+DefaultDashboardTab: Standard Dashboard Ansicht
+DragTodoTip: Beliebige Tiddler durch Drag&Drop als Aufgabe zum Projekt hinzufügen.
 EditCategories: Kategorien bearbeiten
 FilterProjects: Projekte filtern
 Help: Hilfe benötigt?
-HelpSearch/Placeholder: Suche...
-HideArchived/Caption: Archivierte ausblenden
-HideCompleted/Caption: Abgeschlossene ausblenden
+HelpSearch/Placeholder: Suche ...
+HideArchived/Caption: Archivierte Projekte ausblenden
+HideCompleted/Caption: Abgeschlossene Aufgaben ausblenden
 Inbox: Inbox
 More: Mehr
 MoreActions/Hint: Mehr Aktionen
-NewProject: Neues Projekt erstellen
+NewProject: Neues Projekt
 NewProjectCategory: Kategorie (optional)
 NewProjectDescription: Beschreibung (optional)
 NewProjectTitle: Titel
@@ -44,23 +44,23 @@ NextWeek: Nächste Woche
 OpenTasks: Offene Aufgaben
 Options/Hint: Optionen
 Or: oder
-OtherTasks: Andere Aufgaben
+OtherTasks: Weitere Aufgaben
 Overdue: Überfällig
 Priority/Hint: Priorität
-ProjectArchived: Diese Projekt ist archiviert.
+ProjectArchived: Dieses Projekt ist archiviert.
 Projects: Projekte
-QuickAddTodo: Aufgabe schnell hinzufühgen
-QuickCapture/Hint: Verwende <kbd>⏎</kbd> zum Übernehmen.
-ReorderProjects/Hint: Projekte mit Drag & Drop in der Liste anordnen 
-ReorderProjects/Caption: Projekte anordnen 
+QuickAddTodo: Aufgabe hinzufügen
+QuickCapture/Hint: Zum Übernehmen <kbd>⏎</kbd> drücken.
+ReorderProjects/Hint: Projekte mit Drag&Drop in der Liste an die gewünschte Position ziehen
+ReorderProjects/Caption: Reihenfolge anpassen
 RestoreProject: Projekt wiederherstellen
 Save/Caption: Speichern
 Schedule/Caption: Zeitplan
 Scheduled: Geplant
 SetCategory/Caption: Kategorie auswählen
 SetCategory/Hint: Kategorie für das Projekt auswählen
-ShowArchived/Caption: Zeige archivierte
-ShowWelcomeMessages: Zeige Begrüßungsnachricht 
+ShowArchived/Caption: Archivierte Projekte
+ShowWelcomeMessages: Begrüßungsnachrichten anzeigen
 Tip: Hinweis
 Today: Heute
 TodayAndOverdue: Heute und Überfällig
@@ -68,11 +68,10 @@ TodaysTodos: Heutige Aufgaben
 TodoActions/Hint: Aktionen
 Todos: Aufgaben
 Tomorrow: Morgen
-Upcoming: Demnächst
-ViewAsCards: Ansicht als Karten 
-ViewAsList: Ansicht als Liste 
-ViewProjectsAs: Zeige Projekte als
+Upcoming: Geplant
+ViewAsCards: Kartenansicht verwenden
+ViewAsList: Listenansicht verwenden
+ViewProjectsAs: Projektdarstellung
 Yesterday: Gestern
-cards: Larten
+cards: Karten
 list: Liste
-
