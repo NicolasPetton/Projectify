@@ -1,10 +1,10 @@
 created: 20210112221205605
-modified: 20210127213032955
+modified: 20210127221433719
 tags: 
 title: Readme
 type: text/vnd.tiddlywiki
 
-\define tv-wikilink-template() https://projectify.wiki#$uri_encoded$
+\define tv-wikilink-template() https://projectify.wiki/demo.html#$uri_encoded$
 
 ! Projectify
 
