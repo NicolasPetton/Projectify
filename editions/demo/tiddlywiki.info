@@ -2,8 +2,7 @@
     "description": "Projectify website",
 	"plugins": [
         "tiddlywiki/tiddlyweb",
-        "tiddlywiki/filesystem",
-        "tiddlywiki/highlight"
+        "tiddlywiki/filesystem"
     ],
     "themes": [
         "tiddlywiki/vanilla",
