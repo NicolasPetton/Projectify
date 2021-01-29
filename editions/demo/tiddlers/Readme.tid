@@ -50,8 +50,8 @@ Projectify is currently available in English, Dutch, German, French & Simplified
 * Install [[Node.js|https://nodejs.org/en/]]
 * In the root folder of the project run `npm install`
 * To start the TiddlyWiki server, run `npm run serve`
-* To serve or build a specific language edition, refer to `package.json`
-* To HTML files for all editions, run `npm run build`
+* To serve or build a specific language edition, refer to `package.json`. The wiki is be available at http://localhost:8080.
+* To build HTML files for all editions, run `npm run build`
 
 !! Contributors
 
