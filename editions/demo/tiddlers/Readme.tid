@@ -45,6 +45,14 @@ Projectify is currently available in English, Dutch, German, French & Simplified
 * For the German language pack, install [[$:/plugins/nico/projectify-de-DE]].
 * For the Simplified Chinese language pack, install [[$:/plugins/nico/projectify-zh-Hans]].
 
+!! Development setup
+
+* Install [[Node.js|https://nodejs.org/en/]]
+* In the root folder of the project run `npm install`
+* To start the TiddlyWiki server, run `npm run serve`
+* To serve or build a specific language edition, refer to `package.json`
+* To HTML files for all editions, run `npm run build`
+
 !! Contributors
 
 Many thanks to the following people who have contributed to Projectify:
@@ -55,12 +63,3 @@ Many thanks to the following people who have contributed to Projectify:
 * [[@Silvyn|https://github.com/silvyn]]
 * [[@HueLiu|https://github.com/HueLiu]]
 * [[@gregorfischer|https://github.com/gregorfischer]]
-
-!! Development setup
-
-* Install [[Node.js|https://nodejs.org/en/]]
-* In the root folder of the project run `npm install`
-* To start the TiddlyWiki server, run `npm run serve`
-* To serve or build a specific language edition, refer to `package.json`
-* To HTML files for all editions, run `npm run build`
-
