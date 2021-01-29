@@ -2,5 +2,5 @@ title: $:/language/projectify/WelcomeInboxDescription
 created: 20210112203922871
 modified: 20210112204430521
 
-<p>Erstelle Aufgaben in der Inbox um sie nicht zu vergessen und schnell aus dem Kopg zu bekommen.</p>
-<p>Du kann jederzeit <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> verwenden um die Erfassung zu starten.</p>
+<p>Erstelle Aufgaben in der Inbox. So bekommst du sie aus dem Kopf, ohne sie zu vergessen.</p>
+<p>Du kann jederzeit <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> verwenden um die Erfassung aufzurufen.</p>
