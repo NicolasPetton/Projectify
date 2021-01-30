@@ -2,7 +2,12 @@
     "description": "Projectify website",
 	"plugins": [
         "tiddlywiki/tiddlyweb",
-        "tiddlywiki/filesystem"
+        "tiddlywiki/filesystem",
+		"nico/projectify",
+		"nico/projectify-de-DE",
+		"nico/projectify-fr-FR",
+		"nico/projectify-nl-NL",
+		"nico/projectify-zh-Hans"
     ],
     "themes": [
         "tiddlywiki/vanilla",

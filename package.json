@@ -4,17 +4,17 @@
 	"description": "Project and todo management in TiddlyWiki",
 	"main": "index.js",
 	"scripts": {
-		"build-demo": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/demo/ --build index",
-		"build-empty": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty/ --build index",
-		"build-empty-fr": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty-fr-FR/ --build index",
-		"build-empty-nl": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty-nl-NL/ --build index",
-		"build-readme": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/demo/ --output . --build readme",
+		"build-demo": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/demo/ --build index",
+		"build-empty": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty/ --build index",
+		"build-empty-fr": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-fr-FR/ --build index",
+		"build-empty-nl": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-nl-NL/ --build index",
+		"build-readme": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/demo/ --output . --build readme",
 		"build": "npm run build-demo; npm run build-empty; npm run build-empty-fr; npm run build-empty-nl; npm run build-readme ",
-		"serve": "npx nodemon -e tid,multids,js,info --watch plugins ./node_modules/tiddlywiki/tiddlywiki.js . --listen",
-		"serve-demo": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/demo/ --listen",
-		"serve-empty": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty/ --listen",
-		"serve-empty-fr": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty-fr-FR/ --listen",
-		"serve-empty-nl": "node ./node_modules/tiddlywiki/tiddlywiki.js editions/empty-nl-NL/ --listen"
+		"serve": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx nodemon -e tid,multids,js,info --watch plugins ./node_modules/tiddlywiki/tiddlywiki.js . --listen",
+		"serve-demo": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/demo/ --listen",
+		"serve-empty": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty/ --listen",
+		"serve-empty-fr": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-fr-FR/ --listen",
+		"serve-empty-nl": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-nl-NL/ --listen"
 	},
 	"repository": {
 		"type": "git",
@@ -33,7 +33,10 @@
 	},
 	"homepage": "https://github.com/nicolaspetton/projectify#readme",
 	"dependencies": {
-		"nodemon": "^2.0.6",
 		"tiddlywiki": "^5.1.23"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.6",
+		"cross-env": "^7.0.3"
 	}
 }

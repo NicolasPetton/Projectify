@@ -2,15 +2,13 @@
     "description": "Basic client-server edition",
     "plugins": [
         "tiddlywiki/tiddlyweb",
-        "tiddlywiki/filesystem"
+        "tiddlywiki/filesystem",
+		"nico/projectify"
     ],
     "themes": [
         "tiddlywiki/vanilla",
         "tiddlywiki/snowwhite"
     ],
-	"languages": [
-		"fr-FR"
-	],
     "build": {
         "index": [
             "--rendertiddler",

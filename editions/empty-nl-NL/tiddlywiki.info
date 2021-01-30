@@ -2,7 +2,9 @@
     "description": "Empty Projectify edition",
 	"plugins": [
         "tiddlywiki/tiddlyweb",
-        "tiddlywiki/filesystem"
+        "tiddlywiki/filesystem",
+		"nico/projectify",
+		"nico/projectify-nl-NL"
     ],
     "themes": [
         "tiddlywiki/vanilla",
