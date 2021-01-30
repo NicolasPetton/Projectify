@@ -1,0 +1,5 @@
+created: 20201218161619312
+list: $:/core/ui/PageTemplate/topleftbar $:/core/ui/PageTemplate/toprightbar [[Projectify Intro]] $:/core/ui/PageTemplate/story $:/core/ui/PageTemplate/alerts $:/core/ui/PageTemplate/drafts $:/core/ui/PageTemplate/pluginreloadwarning $:/themes/nico/notebook/ui/Bottombar $:/themes/nico/notebook/ui/Buttons/menu $:/themes/nico/notebook/ui/Sidebar $:/themes/nico/notebook/ui/Topbar
+modified: 20201219110914700
+title: $:/tags/PageTemplate
+type: text/vnd.tiddlywiki

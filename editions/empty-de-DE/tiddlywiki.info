@@ -4,20 +4,20 @@
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem",
 		"nico/projectify",
-		"nico/projectify-fr-FR"
+		"nico/projectify-de-DE"
     ],
     "themes": [
         "tiddlywiki/vanilla",
         "tiddlywiki/snowwhite"
     ],
 	"languages": [
-		"fr-FR"
+		"de-DE"
 	],
     "build": {
         "index": [
             "--rendertiddler",
 			"$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "empty-fr-FR.html",
+            "empty-nl-NL.html",
             "text/plain"
         ]
     }
