@@ -1,25 +1,26 @@
 created: 20201212172804699
-modified: 20210126114927680
+modified: 20210131212757806
 title: $:/plugins/nico/projectify/ui/buttons/ToggleCompletedTodos
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
 <$list filter=<<py-has-completed-todos>> variable="ignore">
-  <$vars stateTiddler=<<qualify "$:/state/projectify/show-completed">>>
+  <$vars stateTiddler=<<qualify "$:/state/projectify/show-completed">>
+	 default={{$:/config/projectify/ShowCompletedTodos}}>
 
-    <$reveal type="match" state=<<stateTiddler>> text="">
-      <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="show">
+    <$reveal type="nomatch" state=<<stateTiddler>> text="yes" default=<<default>>>
+      <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="yes">
         {{$:/plugins/nico/projectify/images/eye}}
 	<$count filter=<<py-completed-todos>>/> <<lingo Completed/Caption>>
       </$button>
     </$reveal>
 
-    <$reveal type="match" state=<<stateTiddler>> text="show">
+    <$reveal type="match" state=<<stateTiddler>> text="yes" default=<<default>>>
       <$macrocall $name="todo-list-completed"/>
 
       <div class="py-actions">
-        <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="">
+        <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="no">
           {{$:/plugins/nico/projectify/images/eyeslash}} <<lingo HideCompleted/Caption>>
         </$button>
       </div>

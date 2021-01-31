@@ -1,5 +1,5 @@
 created: 20210121211818576
-modified: 20210121212645277
+modified: 20210131212903344
 tags: $:/plugins/nico/projectify/tags/Config
 title: $:/plugins/nico/projectify/ui/config/Basics
 list-before: $:/plugins/nico/projectify/ui/config/Dashboard
@@ -15,5 +15,13 @@ caption: {{$:/language/ControlPanel/Basics/Caption}}
 </$select>
 \end
 
+\define select-show-completed-todos()
+<$select tiddler="$:/config/projectify/ShowCompletedTodos">
+  <option value="yes">{{$:/language/Yes}}</option>
+  <option value="no">{{$:/language/No}}</option>
+</$select>
+\end
+
 |<<lingo ShowWelcomeMessages>> |<<select-show-welcome-messages>> |
+|<<lingo ShowCompletedTodosByDefault>> |<<select-show-completed-todos>> |
 

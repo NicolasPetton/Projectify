@@ -60,6 +60,7 @@ Scheduled: 已安排
 SetCategory/Caption: 设置类别
 SetCategory/Hint: 为该项目选择一个类别
 ShowArchived/Caption: 显示已归档事项
+ShowCompletedTodosByDefault: Show completed todos by default
 ShowWelcomeMessages: 显示欢迎消息
 Tip: 提示
 Today: 今天

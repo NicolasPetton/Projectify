@@ -60,6 +60,7 @@ Scheduled: Scheduled
 SetCategory/Caption: Set category
 SetCategory/Hint: Select a category for this project
 ShowArchived/Caption: Show archived
+ShowCompletedTodosByDefault: Show completed todos by default
 ShowWelcomeMessages: Show welcome messages
 Tip: Tip
 Today: Today
