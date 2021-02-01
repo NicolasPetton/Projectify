@@ -9,7 +9,8 @@
 		"build-empty-fr": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-fr-FR/ --build index",
 		"build-empty-nl": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-nl-NL/ --build index",
 		"build-empty-de": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-de-DE/ --build index",
-		"build-empty-all": "npm run build-empty; npm run build-empty-fr; npm run build-empty-nl; npm run build-empty-de",
+		"build-empty-es": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-es-ES/ --build index",
+		"build-empty-all": "npm run build-empty; npm run build-empty-fr; npm run build-empty-nl; npm run build-empty-de; npm run build-empty-es",
 		"build-readme": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/demo/ --output . --build readme",
 		"build": "npm run build-demo; npm run build-empty-all; npm run build-readme",
 		"serve": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx nodemon -e tid,multids,js,info --watch plugins ./node_modules/tiddlywiki/tiddlywiki.js . --listen",
@@ -17,7 +18,8 @@
 		"serve-empty": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty/ --listen",
 		"serve-empty-fr": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-fr-FR/ --listen",
 		"serve-empty-nl": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-nl-NL/ --listen",
-		"serve-empty-de": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-de-DE/ --listen"
+		"serve-empty-de": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-de-DE/ --listen",
+		"serve-empty-es": "cross-env TIDDLYWIKI_PLUGIN_PATH=./plugins npx tiddlywiki editions/empty-es-ES/ --listen"
 	},
 	"repository": {
 		"type": "git",

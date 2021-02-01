@@ -9,6 +9,7 @@ type: text/vnd.tiddlywiki
 
 !! Improvements
 
+* New Castellano (Spain) translation and empty edition
 * New configuration option to show completed tasks by default
 * Move down the "convert into project" button in the todo actions dropdown
 

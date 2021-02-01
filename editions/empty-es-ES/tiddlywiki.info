@@ -1,28 +1,24 @@
 {
-    "description": "Projectify website",
+    "description": "Empty Projectify edition",
 	"plugins": [
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem",
 		"nico/projectify",
-		"nico/projectify-de-DE",
-		"nico/projectify-fr-FR",
-		"nico/projectify-nl-NL",
-		"nico/projectify-es-ES",
-		"nico/projectify-zh-Hans"
+		"nico/projectify-es-ES"
     ],
     "themes": [
         "tiddlywiki/vanilla",
         "tiddlywiki/snowwhite"
     ],
-	"build": {
+	"languages": [
+		"es-ES"
+	],
+    "build": {
         "index": [
             "--rendertiddler",
 			"$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "demo.html",
+            "empty-es-ES.html",
             "text/plain"
-        ],
-		"readme": [
-			"--rendertiddler","Readme","README.md","text/html"
-		]
+        ]
     }
 }

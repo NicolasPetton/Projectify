@@ -1,5 +1,5 @@
 created: 20210112221205605
-modified: 20210127221433719
+modified: 20210201195138855
 tags: 
 title: Readme
 type: text/vnd.tiddlywiki
@@ -38,11 +38,12 @@ Alternatively, see [[Installation|$:/plugins/nico/projectify/doc/Installation]] 
 
 !! Language packs
 
-Projectify is currently available in English, Dutch, German, French & Simplified Chinese.
+Projectify is currently available in English, Dutch, German, French, Castellano & Simplified Chinese.
 
 * For the French language pack, install [[$:/plugins/nico/projectify-fr-FR]].
 * For the Dutch language pack, install [[$:/plugins/nico/projectify-nl-NL]].
 * For the German language pack, install [[$:/plugins/nico/projectify-de-DE]].
+* For the Castellano language pack, install [[$:/plugins/nico/projectify-es-ES]].
 * For the Simplified Chinese language pack, install [[$:/plugins/nico/projectify-zh-Hans]].
 
 !! Development setup
