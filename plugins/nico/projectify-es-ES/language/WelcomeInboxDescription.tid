@@ -1,0 +1,8 @@
+title: $:/language/projectify/WelcomeInboxDescription
+created: 20210112203922871
+modified: 20210112204214632
+
+<p>Recopila tareas en la bandeja de entrada para no olvidarlas y sácarlas de la
+  cabeza rápidamente.</p>
+<p>También puede presionar <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> para
+  capturar desde cualquier lugar.</p>

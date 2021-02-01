@@ -1,0 +1,10 @@
+{
+	"title": "$:/plugins/nico/projectify-es-ES",
+	"name": "Projectify-es-ES",
+	"plugin-type": "plugin",
+	"description": "Projectify Castellano (Spain)",
+	"parent-plugin": "$:/plugins/nico/projectify",
+	"author": "JoeBordes",
+	"version": "0.13.0",
+	"core-version": ">=5.1.22"
+}

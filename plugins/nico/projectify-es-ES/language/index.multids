@@ -1,0 +1,78 @@
+title: $:/language/projectify/
+
+AddProject/Caption: Añadir proyecto
+AddProject/Hint: Crea un nuevo proyecto
+AddCategory/Caption: Añadir categoría
+AddCategory/Hint: Crea una nueva categoría
+AddSubTasks/Caption: Añadir sub-tareas
+AddToInbox/Hint: Pulsa <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> para capturar desde cualquier sitio.
+AddToInbox/Placeholder: Añadir a bandeja de entrada...
+AddTodo/Caption: Añadir a tareas
+AddTodo/Hint: Añadir una nueva tarea al proyecto
+AddTodoToProject/Placeholder: Describe esta tarea...
+AllClear: Todo terminado!
+Archive: Archiva
+ArchiveProject/Caption: Archiva proyecto
+ArchiveProject/Hint: Eliminar este proyecto de la lista de proyectos activos
+Cancel/Caption: Cancelar
+CardOptions/Hint: Opciones de tarjeta
+Clear: Vaciar
+Close/Caption: Cerrar
+Completed/Caption: Completado
+ConvertIntoProject: Convertir en proyecto
+Category: Categoría
+Categories: Categorías
+Dashboard: Cuadro de Mando
+DateFormat: DDth mmm
+DefaultDashboardTab: Pestaña por defecto en cuadro de mando
+DragTodoTip: Arrastre y suelte cualquier tiddler a continuación para agregarlo como una tarea a este proyecto.
+EditCategories: Editar categorías
+FilterProjects: Filtrar proyectos
+Help: Necesitas ayuda?
+HelpSearch/Placeholder: Busca...
+HideArchived/Caption: Esconder archivados
+HideCompleted/Caption: Esconder completados
+Inbox: Bandeja de Entrada
+More: Más
+MoreActions/Hint: Más acciones
+NewProject: Crea un nuevo proyecto
+NewProjectCategory: Categoría (opcional)
+NewProjectDescription: Descripción (opcional)
+NewProjectTitle: Título
+Next: Siguiente
+NextWeek: Siguiente semana
+OpenTasks: abrir tareas
+Options/Hint: Opciones
+Or: o
+OtherTasks: Otras tareas
+Overdue: Atrasada
+Priority/Hint: Prioridad
+ProjectArchived: Este proyecto está archivado.
+Projects: Proyectos
+QuickAddTodo: Añadir tarea
+QuickCapture/Hint: Pulsa <kbd>⏎</kbd> para capturar.
+ReorderProjects/Hint: Arrastre y suelte elementos en la lista para reordenar proyectos
+ReorderProjects/Caption: Reordenar proyectos
+RestoreProject: Restaurar proyecto
+Save/Caption: Guardar
+Schedule/Caption: Agendar
+Scheduled: Agendado
+SetCategory/Caption: Establecer categoría
+SetCategory/Hint: Seleccione una categoría para este proyecto
+ShowArchived/Caption: Mostrar archivados
+ShowCompletedTodosByDefault: Mostrar todos los completados de forma predeterminada
+ShowWelcomeMessages: Mostrar mensajes de bienvenida
+Tip: Consejo
+Today: Hoy
+TodayAndOverdue: Hoy y atrasados
+TodaysTodos: Tareas de hoy
+TodoActions/Hint: Acciones
+Todos: Tareas
+Tomorrow: Mañana
+Upcoming: Próximos
+ViewAsCards: Ver como tarjetas
+ViewAsList: Ver como lista
+ViewProjectsAs: Ver proyectos como
+Yesterday: Ayer
+cards: tarjetas
+list: listar
