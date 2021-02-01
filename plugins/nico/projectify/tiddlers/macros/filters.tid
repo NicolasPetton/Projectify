@@ -79,7 +79,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-filtered-todos()
-[all[tiddlers]tag[todo]subfilter<todoFilter>sort[title]]
+[all[tiddlers]subfilter<todoFilter>tag[todo]sort[title]]
 \end
 
 \define py-open-todos()
