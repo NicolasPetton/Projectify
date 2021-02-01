@@ -1,6 +1,6 @@
 created: 20201210171047824
 description: Show all todos scheduled for today
-modified: 20210114213630207
+modified: 20210201175357320
 tags: $:/tags/PageControls
 title: $:/plugins/nico/projectify/ui/buttons/Scheduled
 type: text/vnd.tiddlywiki
@@ -27,7 +27,7 @@ type: text/vnd.tiddlywiki
   </$list>
 </$button>
 
-<$reveal state="$:/state/projectify/scheduled-dropdown" type="popup" position="below" animate="no" retain="yes">
+<$reveal state="$:/state/projectify/scheduled-dropdown" type="popup" position="belowleft">
   <div class="tc-drop-down py-scheduled-drop-down">
     <h4><<ling TodayAndOverdue>></h4>
     <$list
