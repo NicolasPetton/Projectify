@@ -17,7 +17,7 @@
         "index": [
             "--rendertiddler",
 			"$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "empty-nl-NL.html",
+            "empty-de-DE.html",
             "text/plain"
         ]
     }
