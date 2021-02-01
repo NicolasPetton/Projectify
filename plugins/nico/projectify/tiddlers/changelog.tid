@@ -10,6 +10,7 @@ type: text/vnd.tiddlywiki
 !! Improvements
 
 * New configuration option to show completed tasks by default
+* Move down the "convert into project" button in the todo actions dropdown
 
 !! Fixes
 

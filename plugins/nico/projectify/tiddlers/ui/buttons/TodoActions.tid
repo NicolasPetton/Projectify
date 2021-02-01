@@ -1,5 +1,5 @@
 created: 20210110175540346
-modified: 20210112180541790
+modified: 20210201181117406
 tags:
 title: $:/plugins/nico/projectify/ui/buttons/TodoActions
 type: text/vnd.tiddlywiki
@@ -19,11 +19,11 @@ type: text/vnd.tiddlywiki
 
   <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
     <div class="tc-drop-down py-drop-down py-date-picker py-todo-actions-drop-down">
-      {{||$:/plugins/nico/projectify/ui/forms/TodoConvert}}
-      <hr/>
       {{||$:/plugins/nico/projectify/ui/forms/TodoPriority}}
       <hr/>
       {{||$:/plugins/nico/projectify/ui/forms/TodoDueDate}}
+      <hr/>
+      {{||$:/plugins/nico/projectify/ui/forms/TodoConvert}}
     </div>
   </$reveal>
 </$vars>

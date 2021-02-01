@@ -25,6 +25,7 @@ type: text/vnd.tiddlywiki
 .py-date-picker .pika-single {
   margin: 0;
   border: 0;
+  padding: 6px;
   color: <<colour foreground>>;
   background: transparent;
 }
