@@ -60,7 +60,7 @@ Scheduled: Geplant
 SetCategory/Caption: Kategorie auswählen
 SetCategory/Hint: Kategorie für das Projekt auswählen
 ShowArchived/Caption: Archivierte Projekte
-ShowCompletedTodosByDefault: Show completed todos by default
+ShowCompletedTodosByDefault: Abgeschlossene Aufgaben standardmäßig anzeigen
 ShowWelcomeMessages: Begrüßungsnachrichten anzeigen
 Tip: Hinweis
 Today: Heute
