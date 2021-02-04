@@ -1,43 +1,30 @@
 created: 20201207165347344
-modified: 20210126114718817
+modified: 20210204223351144
 title: $:/plugins/nico/projectify/ui/forms/ProjectActions
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
-\define project-add-todo-actions()
-  <$action-createtiddler
-    $basetitle={{{ [<stateTiddler>get[todo_name]] }}}
-    $savetitle="$:/state/projectify/new-todo"
-  />
-
-  <$action-listops $tiddler={{$:/state/projectify/new-todo}} $tags="[{!!title}] todo"/>
-  <$action-setfield $tiddler=<<stateTiddler>> todo_name=""/>
-  <$action-sendmessage $message="tm-auto-save-wiki"/>
-\end
-
-<$vars stateTiddler=<<qualify "$:/temp/projectify/todo-form">>
-       save-actions=<<project-add-todo-actions>>>
+<$vars
+  stateTiddler=<<qualify "$:/temp/projectify/todo-form">>
+  todo-tags="[{!!title}] todo"
+  placeholder={{$:/language/projectify/AddTodoToProject/Placeholder}}
+>
   <div class="py-actions">
+    <$reveal type="match" state=<<stateTiddler>> text="">
+      {{||$:/plugins/nico/projectify/ui/buttons/AddTodo}}
+      <$list filter=<<py-is-open>>>
+	<<lingo Or>> {{||$:/plugins/nico/projectify/ui/buttons/ArchiveProject}}
+      </$list>
+    </$reveal>
     
-   <$reveal type="match" state=<<stateTiddler>> text="">
-     {{||$:/plugins/nico/projectify/ui/buttons/AddTodo}}
-     <$list filter=<<py-is-open>>>
-       <<lingo Or>> {{||$:/plugins/nico/projectify/ui/buttons/ArchiveProject}}
-     </$list>
-   </$reveal>
-   
-   <$reveal type="match" state=<<stateTiddler>> text="show">
-     <$keyboard key="enter">
-       <<save-actions>>
-       <$edit-text class="py-input" focus="true" tiddler=<<stateTiddler>> field="todo_name" placeholder={{$:/language/projectify/AddTodoToProject/Placeholder}}/>
-     </$keyboard>
-     <div class="py-actions">
-       {{||$:/plugins/nico/projectify/ui/buttons/Save}}
-       or
-       {{||$:/plugins/nico/projectify/ui/buttons/Cancel}}
-     </div>
-   </$reveal>
-   
- </div>
+    <$reveal type="match" state=<<stateTiddler>> text="show">
+      {{||$:/plugins/nico/projectify/ui/forms/AddTodo}}
+      <div class="py-actions">
+	{{||$:/plugins/nico/projectify/ui/buttons/Save}}
+	or
+	{{||$:/plugins/nico/projectify/ui/buttons/Cancel}}
+      </div>
+    </$reveal>
+  </div>
 </$vars>

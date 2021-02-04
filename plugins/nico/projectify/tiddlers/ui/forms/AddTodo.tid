@@ -1,0 +1,28 @@
+created: 20201207165347344
+modified: 20210204223916170
+title: $:/plugins/nico/projectify/ui/forms/AddTodo
+type: text/vnd.tiddlywiki
+
+\define add-todo-actions()
+<$action-createtiddler
+  $basetitle={{{ [<stateTiddler>get[todo-name]] }}}
+  $savetitle="$:/state/projectify/new-todo"
+/>
+
+<$action-listops $tiddler={{$:/state/projectify/new-todo}} $tags=<<todo-tags>>/>
+<$action-setfield $tiddler=<<stateTiddler>> todo-name=""/>
+<$action-sendmessage $message="tm-auto-save-wiki"/>
+\end
+
+<$vars stateTiddler=<<qualify "$:/temp/projectify/add-todo-form">>>
+  <$keyboard key="enter">
+    <<add-todo-actions>>
+    <$edit-text
+      class="py-input"
+      focus="true"
+      tiddler=<<stateTiddler>>
+      field="todo-name"
+      placeholder=<<placeholder>>
+    />
+  </$keyboard>
+</$vars>
