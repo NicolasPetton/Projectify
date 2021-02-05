@@ -7,7 +7,7 @@ AddCategory/Hint: Créer une nouvelle catégorie
 AddSubTasks/Caption: Ajouter des sous-tâches
 AddToInbox/Hint: Appuyer sur <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> pour ajouter depuis n'importe où.
 AddToInbox/Placeholder: Ajouter à la boîte de réception...
-AddTodo/Caption: Ajouter une tâche
+AddTodo/Caption: Ajouter la tâche
 AddTodo/Hint: Ajouter une nouvelle tâche au projet
 AddTodoToProject/Placeholder: Décrivez cette tâche...
 AllClear: Tout est clair !
