@@ -12,6 +12,10 @@ type: text/vnd.tiddlywiki
 * New redesigned input for adding todos
 * New buttons for scheduling and setting a priority directly when adding a todo
 
+!! Fixes
+
+* Prevent creation of todos with empty titles
+
 ! Release 0.13.1
 
 !! Improvements

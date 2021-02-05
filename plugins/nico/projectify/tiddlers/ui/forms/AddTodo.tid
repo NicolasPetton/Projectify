@@ -1,24 +1,26 @@
 created: 20201207165347344
-modified: 20210205204831470
+modified: 20210205225015656
 title: $:/plugins/nico/projectify/ui/forms/AddTodo
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
 \define add-todo-actions()
-<$action-createtiddler
-  $basetitle={{{ [<stateTiddler>get[todo-name]] }}}
-  $savetitle="$:/temp/projectify/new-todo"
-/>
+<$list filter="[<stateTiddler>get[todo-name]trim[]!is[blank]]">
+  <$action-createtiddler
+    $basetitle={{{ [<stateTiddler>get[todo-name]] }}}
+    $savetitle="$:/temp/projectify/new-todo"
+  />
 
-<$action-listops $tiddler={{$:/temp/projectify/new-todo}} $tags=<<todo-tags>>/>
-<$action-setfield $tiddler={{$:/temp/projectify/new-todo}} due={{{ [<stateTiddler>get[due]] }}}/>
-<$action-setfield $tiddler={{$:/temp/projectify/new-todo}} priority={{{ [<stateTiddler>get[priority]] }}}/>
-<$action-deletefield $tiddler=<<stateTiddler>> $field="todo-name"/>
-<$action-deletefield $tiddler=<<stateTiddler>> $field="due"/>
-<$action-deletefield $tiddler=<<stateTiddler>> $field="priority"/>
+  <$action-listops $tiddler={{$:/temp/projectify/new-todo}} $tags=<<todo-tags>>/>
+  <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} due={{{ [<stateTiddler>get[due]] }}}/>
+  <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} priority={{{ [<stateTiddler>get[priority]] }}}/>
+  <$action-deletefield $tiddler=<<stateTiddler>> $field="todo-name"/>
+  <$action-deletefield $tiddler=<<stateTiddler>> $field="due"/>
+  <$action-deletefield $tiddler=<<stateTiddler>> $field="priority"/>
 
-<$action-sendmessage $message="tm-auto-save-wiki"/>
+  <$action-sendmessage $message="tm-auto-save-wiki"/>
+</$list>
 \end
 
 <$vars stateTiddler=<<qualify "$:/temp/projectify/add-todo-form">>>
