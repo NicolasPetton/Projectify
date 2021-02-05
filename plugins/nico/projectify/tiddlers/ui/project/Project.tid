@@ -1,6 +1,6 @@
 created: 20201207165347344
 list-after: $:/plugins/nico/projectify/ui/todo/TodoHeading
-modified: 20210119144230346
+modified: 20210205173559098
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nico/projectify/ui/project/Project
 type: text/vnd.tiddlywiki
@@ -11,6 +11,9 @@ type: text/vnd.tiddlywiki
   <$list filter=<<py-is-not-subproject>>>
     <div class="py-category-wrapper">
       {{||$:/plugins/nico/projectify/ui/buttons/SelectCategory}}
+      <$list filter=<<py-is-open>>>
+	{{||$:/plugins/nico/projectify/ui/buttons/ArchiveProject}}
+      </$list>
     </div>
   </$list>
   
@@ -23,7 +26,13 @@ type: text/vnd.tiddlywiki
     emptyTemplate="$:/plugins/nico/projectify/ui/welcome/EmptyProject"
   />
 
-  {{||$:/plugins/nico/projectify/ui/forms/ProjectActions}}
-
   {{||$:/plugins/nico/projectify/ui/buttons/ToggleCompletedTodos}}
+
+  <$vars
+    stateTiddler=<<qualify "$:/temp/projectify/todo-form">>
+    todo-tags="[{!!title}] todo"
+    placeholder={{$:/language/projectify/AddTodoToProject/Placeholder}}
+  >
+    {{||$:/plugins/nico/projectify/ui/forms/AddTodo}}
+  </$vars>
 </$list>

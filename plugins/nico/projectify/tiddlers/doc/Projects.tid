@@ -1,5 +1,5 @@
 created: 20200427152938733
-modified: 20201228222008629
+modified: 20210205175449859
 tags: [[Projectify documentation]]
 title: $:/plugins/nico/projectify/doc/Projects
 type: text/vnd.tiddlywiki
@@ -17,9 +17,8 @@ button in the projects section of the
 [[Dashboard|$:/plugins/nico/projectify/doc/Dashboard]] let you change how
 projects are displayed and reorder them.
 
-From within a project tiddler, the
-{{$:/plugins/nico/projectify/ui/buttons/AddTodo}} button lets you quickly add
-[[Todos|$:/plugins/nico/projectify/doc/Todos]] directly to a project. The
+At the bottom of a project tiddler, the input lets you quickly add
+[[Todos|$:/plugins/nico/projectify/doc/Todos]] directly to the project. The
 {{$:/plugins/nico/projectify/ui/buttons/ArchiveProject}} button lets you archive
 a project so that it is hidden from the main project list in the
 [[Dashboard|$:/plugins/nico/projectify/doc/Dashboard]].

@@ -1,5 +1,5 @@
 created: 20210117173623112
-modified: 20210117174118787
+modified: 20210205180906058
 tags: $:/tags/Stylesheet
 title: $:/plugins/nico/projectify/styles/welcome
 type: text/vnd.tiddlywiki
@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
   max-width: 800px;
   text-align: center;
   padding: 40px 20px;
-  margin: 20px auto;
+  margin: 0 auto;
   background: <<colour message-background>>;
   color: <<colour message-foreground>>;
   border-radius: 12px;

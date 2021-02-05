@@ -1,5 +1,5 @@
 created: 20201209150027612
-modified: 20210112180541889
+modified: 20210205111043378
 tags: 
 title: $:/plugins/nico/projectify/ui/buttons/ArchiveProject
 type: text/vnd.tiddlywiki
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 
 <$fieldmangler>
   <$button
-    class="py-btn btn-danger nc-archive-project"
+    class="py-btn btn-small btn-danger nc-archive-project"
     tooltip={{$:/language/projectify/ArchiveProject/Hint}}
     aria-label={{$:/language/projectify/ArchiveProject/Hint}}
   >

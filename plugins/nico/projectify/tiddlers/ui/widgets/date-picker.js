@@ -66,7 +66,13 @@ AbstractDatePickerWidget.prototype.refresh = function(changedTiddlers) {
 };
 
 AbstractDatePickerWidget.prototype.getTiddler = function() {
-	return this.wiki.getTiddler(this.title);
+	var tiddler = this.wiki.getTiddler(this.title);
+	if(!tiddler) {
+		this.wiki.addTiddler({title: this.title});
+		tiddler = this.wiki.getTiddler(this.title);
+	}
+
+	return tiddler;
 };
 
 AbstractDatePickerWidget.prototype.getValue = function() {

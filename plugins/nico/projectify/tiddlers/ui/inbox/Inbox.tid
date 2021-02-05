@@ -1,6 +1,6 @@
 caption: {{$:/plugins/nico/projectify/images/inbox}} {{$:/language/projectify/Inbox}}
 created: 20200425193337699
-modified: 20210204224309284
+modified: 20210205205023525
 tags: 
 title: $:/plugins/nico/projectify/ui/inbox/Inbox
 type: text/vnd.tiddlywiki
@@ -17,16 +17,15 @@ type: text/vnd.tiddlywiki
 
 <h2>{{$:/language/projectify/Inbox}} <<inbox-count>></h2>
 
+<label class="py-label py-right-aligned">
+  <<lingo AddToInbox/Hint>>
+</label>
 <$vars
   todo-tags="Inbox todo"
   placeholder={{$:/language/projectify/AddToInbox/Placeholder}}
 >
   {{$:/plugins/nico/projectify/ui/forms/AddTodo}}
-  <label class="py-label">
-    <<lingo AddToInbox/Hint>>
-  </label>
 </$vars>
-
 <$vars currentTiddler="Inbox">
   <$macrocall
     class="py-inbox-input"

@@ -1,6 +1,6 @@
 caption: {{$:/plugins/nico/projectify/images/collection}} {{$:/language/projectify/Projects}}
 created: 20200425193559847
-modified: 20210122213121097
+modified: 20210205175036448
 tags: $:/plugins/nico/projectify/tags/dashboard
 title: $:/plugins/nico/projectify/ui/dashboard/InboxAndProjects
 type: text/vnd.tiddlywiki

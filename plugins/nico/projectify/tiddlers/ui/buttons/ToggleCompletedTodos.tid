@@ -1,5 +1,5 @@
 created: 20201212172804699
-modified: 20210131212757806
+modified: 20210205173145448
 title: $:/plugins/nico/projectify/ui/buttons/ToggleCompletedTodos
 type: text/vnd.tiddlywiki
 
@@ -17,14 +17,12 @@ type: text/vnd.tiddlywiki
     </$reveal>
 
     <$reveal type="match" state=<<stateTiddler>> text="yes" default=<<default>>>
-      <$macrocall $name="todo-list-completed"/>
-
       <div class="py-actions">
         <$button class="tc-btn-invisible py-link-muted" set=<<stateTiddler>> setTo="no">
           {{$:/plugins/nico/projectify/images/eyeslash}} <<lingo HideCompleted/Caption>>
         </$button>
       </div>
+      <$macrocall $name="todo-list-completed"/>
     </$reveal>
-
   </$vars>
 </$list>
