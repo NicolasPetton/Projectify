@@ -141,7 +141,7 @@ type: text/vnd.tiddlywiki
 .py-todo .py-btn.py-priority {
   color: #999;
   fill: #999;
-  padding: 2px 3px;
+  padding: 4px 8px;
   border-radius: 4px;
 }
 
