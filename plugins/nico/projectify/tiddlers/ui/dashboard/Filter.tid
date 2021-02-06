@@ -1,5 +1,5 @@
 created: 20210122212615059
-modified: 20210123152400707
+modified: 20210206142638704
 caption: {{$:/plugins/nico/projectify/images/funnel}} {{$:/language/Search/Filter/Caption}}
 list-after: $:/plugins/nico/projectify/ui/NextActions
 tags: $:/plugins/nico/projectify/tags/dashboard
@@ -28,6 +28,18 @@ type: text/vnd.tiddlywiki
 	<$button class="tc-btn-invisible">
 	  Scheduled
 	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]has[due]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  High priority
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[3]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  Medium priority
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[2]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  Low priority
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[1]]"/>
 	</$button>
 	<$button class="tc-btn-invisible">
 	  Completed
