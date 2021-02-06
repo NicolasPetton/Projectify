@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210206150107552
+modified: 20210206205208368
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
@@ -15,6 +15,7 @@ type: text/vnd.tiddlywiki
 !! Improvements
 
 * New filters in dashboard tab for todo priorities
+* Documentation improvements WRT customizing Projectify
 
 !! Fixes
 

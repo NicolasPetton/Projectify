@@ -1,9 +1,27 @@
 created: 20201228014905847
-modified: 20201228020921622
+modified: 20210206205140144
 tags: [[Projectify documentation]]
 title: $:/plugins/nico/projectify/doc/DashboardCustomTabs
 type: text/vnd.tiddlywiki
 
-Any tiddler with the tag <<tag $:/plugins/nico/projectify/tags/dashboard>> will be displayed as a tab in the dashboard.
+Any tiddler with the tag <<tag $:/plugins/nico/projectify/tags/dashboard>> will
+be displayed as a tab in the dashboard.
+
+!! Listing high priority todos in the dashboard
+
+The example below demonstrate how to add a tab to the
+[[Dashboard|$:/plugins/nico/projectify/doc/Dashboard]] to list all
+[[Todos|$:/plugins/nico/projectify/doc/Todos]] marked as high-priority. Save a
+new tiddler with the content below, set its `caption` field to `High Priority`
+and add the tag <<tag $:/plugins/nico/projectify/tags/dashboard>>.
+
+```
+!! High priority todos    
+
+<$list
+  filter="[tag[todo]!tag[done]priority[3]]"
+  template="$:/plugins/nico/projectify/ui/todo/TodoItem"
+/>
+```
 
 You can also [[display the Inbox in a separate tab|$:/plugins/nico/projectify/doc/DashboardInboxSeparateTab]].

@@ -1,8 +1,9 @@
 caption: Core concepts
 description: Learn the basics of Projectify
 created: 20200427133943777
-modified: 20210122101837878
+modified: 20210206204400292
 tags: [[Projectify documentation]] $:/plugins/nico/projectify/tags/help-card
+list-after: $:/plugins/nico/projectify/doc/GettingStarted
 title: $:/plugins/nico/projectify/doc/CoreConcepts
 type: text/vnd.tiddlywiki
 
@@ -15,3 +16,4 @@ The following tiddlers will help you learn the basics of Projectify.
 * [[Categories|$:/plugins/nico/projectify/doc/Categories]]
 * [[Refiling|$:/plugins/nico/projectify/doc/Refiling]]
 * [[Schedule|$:/plugins/nico/projectify/doc/Schedule]]
+* [[Customizing Projectify|$:/plugins/nico/projectify/doc/Customizing]]

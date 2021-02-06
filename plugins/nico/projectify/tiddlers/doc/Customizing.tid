@@ -1,0 +1,8 @@
+created: 20210206204003498
+modified: 20210206204343092
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/Customizing
+type: text/vnd.tiddlywiki
+
+* [[Adding custom tabs to the bashboard|$:/plugins/nico/projectify/doc/DashboardCustomTabs]]
+* [[Customizing how todos are rendered|$:/plugins/nico/projectify/doc/Todos]]

@@ -1,8 +1,9 @@
 caption: External links
 description: Useful links to online resources
 created: 20201228214411502
-modified: 20210117203643063
+modified: 20210206203756938
 tags: [[Projectify documentation]] $:/plugins/nico/projectify/tags/help-card
+list-after: $:/plugins/nico/projectify/doc/CoreConcepts
 title: $:/plugins/nico/projectify/doc/Links
 type: text/vnd.tiddlywiki
 
