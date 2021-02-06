@@ -1,12 +1,12 @@
 created: 20201207165347344
-modified: 20210205225015656
+modified: 20210206210842918
 title: $:/plugins/nico/projectify/ui/forms/AddTodo
 type: text/vnd.tiddlywiki
 
 \define lingo-base() $:/language/projectify/
 
 \define add-todo-actions()
-<$list filter="[<stateTiddler>get[todo-name]trim[]!is[blank]]">
+<$list filter="[<stateTiddler>get[todo-name]trim[]!is[blank]]" variable="ignore">
   <$action-createtiddler
     $basetitle={{{ [<stateTiddler>get[todo-name]] }}}
     $savetitle="$:/temp/projectify/new-todo"
