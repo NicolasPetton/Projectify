@@ -1,0 +1,19 @@
+created: 20210521105044185
+modified: 20210521111003945
+tags: $:/plugins/nico/projectify/tags/Config
+title: $:/plugins/nico/projectify/ui/config/Calendar
+list-before: $:/plugins/nico/projectify/ui/config/Dashboard
+type: text/vnd.tiddlywiki
+caption: {{$:/language/projectify/Calendar}}
+
+\define lingo-base() $:/language/projectify/
+
+\define select-first-day-of-week()
+<$select tiddler="$:/config/projectify/FirstDayOfWeek">
+  <option value="1">{{$:/language/Date/Long/Day/1}}</option>
+  <option value="0">{{$:/language/Date/Long/Day/0}}</option>
+</$select>
+\end
+
+|<<lingo FirstDayOfWeek>> |<<select-first-day-of-week>> |
+

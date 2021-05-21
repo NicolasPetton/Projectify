@@ -172,7 +172,7 @@ CalendarWidget.prototype.render = function(parent,nextSibling) {
 
 CalendarWidget.prototype.renderCalendar = function() {
 	let calendar = new Pikaday({
-		firstDay: 1,
+		firstDay: parseInt(this.wiki.getTiddlerText("$:/config/projectify/FirstDayOfWeek")),
 		keyboardInput: false,
 		i18n: this.getLabels(),
 		onSelect: () => {

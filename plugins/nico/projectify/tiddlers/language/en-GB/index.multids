@@ -20,6 +20,7 @@ Clear: Clear
 Close/Caption: Close
 Completed/Caption: Completed
 ConvertIntoProject: Convert into project
+Calendar: Calendar
 Category: Category
 Categories: Categories
 Dashboard: Dashboard
@@ -28,6 +29,7 @@ DefaultDashboardTab: Default dashboard tab
 DragTodoTip: Drag & drop any tiddler below to add it as a task to this project.
 EditCategories: Edit categories
 FilterProjects: Filter projects
+FirstDayOfWeek: First day of week
 Help: Need help?
 HelpSearch/Placeholder: Search...
 HideArchived/Caption: Hide archived
