@@ -1,16 +1,16 @@
 caption: ChangeLog
 created: 20201208093546936
-modified: 20210521111637836
+modified: 20210521134528717
 tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
-! Master
+! Release 0.14.0
 
 !! Features
 
 * New redesigned input for adding todos
-* Add a configuration option for setting the first day of the week in date pickers
+* New configuration option for setting the first day of the week in date pickers
 * New buttons for scheduling and setting a priority directly when adding a todo
 * Do not render the form to add todos in archived projects
 

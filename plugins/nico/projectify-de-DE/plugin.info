@@ -5,6 +5,6 @@
 	"description": "Projectify Deutsch (German)",
 	"parent-plugin": "$:/plugins/nico/projectify",
 	"author": "Gregor Fischer",
-	"version": "0.13.1",
+	"version": "0.14.0",
 	"core-version": ">=5.1.22"
 }
