@@ -1,6 +1,6 @@
 created: 20201207165347344
 list-after: $:/plugins/nico/projectify/ui/todo/TodoHeading
-modified: 20210205173559098
+modified: 20210521102831888
 tags: $:/tags/ViewTemplate
 title: $:/plugins/nico/projectify/ui/project/Project
 type: text/vnd.tiddlywiki
@@ -28,11 +28,13 @@ type: text/vnd.tiddlywiki
 
   {{||$:/plugins/nico/projectify/ui/buttons/ToggleCompletedTodos}}
 
-  <$vars
-    stateTiddler=<<qualify "$:/temp/projectify/todo-form">>
-    todo-tags="[{!!title}] todo"
-    placeholder={{$:/language/projectify/AddTodoToProject/Placeholder}}
-  >
-    {{||$:/plugins/nico/projectify/ui/forms/AddTodo}}
-  </$vars>
+  <$list filter=<<py-is-open>>>
+    <$vars
+      stateTiddler=<<qualify "$:/temp/projectify/todo-form">>
+      todo-tags="[{!!title}] todo"
+      placeholder={{$:/language/projectify/AddTodoToProject/Placeholder}}
+    >
+      {{||$:/plugins/nico/projectify/ui/forms/AddTodo}}
+    </$vars>
+  </$list>
 </$list>
