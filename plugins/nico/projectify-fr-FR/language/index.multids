@@ -20,6 +20,7 @@ Clear: Effacer
 Close/Caption: Fermer
 Completed/Caption: Terminés
 ConvertIntoProject: Convertir en projet
+Calendar: Calendrier
 Category: Catégorie
 Categories: Catégories
 Dashboard: Tableau de bord
@@ -28,6 +29,7 @@ DefaultDashboardTab: Onglet par défaut dans le tableau de bord
 DragTodoTip: Glissez & déposez un tiddler ci-dessous pour ajouter une tâche à ce projet.
 EditCategories: Personnaliser les catégories
 FilterProjects: Filter les projets
+FirstDayOfWeek: Premier jour de la semaine
 Help: Besoin d'aide ?
 HelpSearch/Placeholder: Rechercher...
 HideArchived/Caption: Masquer les projets archivés

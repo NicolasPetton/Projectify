@@ -20,6 +20,7 @@ Clear: Entfernen
 Close/Caption: Schließen
 Completed/Caption: Abgeschlossen
 ConvertIntoProject: Zu Projekt konvertieren
+Calendar: kalender
 Category: Kategorie
 Categories: Kategorien
 Dashboard: Dashboard
@@ -28,6 +29,7 @@ DefaultDashboardTab: Standard Dashboard Ansicht
 DragTodoTip: Beliebige Tiddler durch Drag&Drop als Aufgabe zum Projekt hinzufügen.
 EditCategories: Kategorien bearbeiten
 FilterProjects: Projekte filtern
+FirstDayOfWeek: Erster Tag der Woche
 Help: Hilfe benötigt?
 HelpSearch/Placeholder: Suche ...
 HideArchived/Caption: Archivierte Projekte ausblenden

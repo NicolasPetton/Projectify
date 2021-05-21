@@ -20,6 +20,7 @@ Clear: Vaciar
 Close/Caption: Cerrar
 Completed/Caption: Completado
 ConvertIntoProject: Convertir en proyecto
+Calendar: Calendario
 Category: Categoría
 Categories: Categorías
 Dashboard: Cuadro de Mando
@@ -28,6 +29,7 @@ DefaultDashboardTab: Pestaña por defecto en cuadro de mando
 DragTodoTip: Arrastre y suelte cualquier tiddler a continuación para agregarlo como una tarea a este proyecto.
 EditCategories: Editar categorías
 FilterProjects: Filtrar proyectos
+FirstDayOfWeek: Primer dia de la semana
 Help: Necesitas ayuda?
 HelpSearch/Placeholder: Busca...
 HideArchived/Caption: Esconder archivados
